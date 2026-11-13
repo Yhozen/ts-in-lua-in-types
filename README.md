@@ -52,8 +52,9 @@ node scripts/hover.ts examples/hello.ts Out Jsx   # tsrs --lsp, like an editor
 ```
 
 `examples/add.ts` is the extreme case, `tsc` evaluating a type-level
-`Add<20, 22>`. It is ~16x the one-liner's work and more chunks than one
-hover's fuel pool holds (see below).
+`Add<20, 22>`. It is ~16x the one-liner's work, and it does not finish yet.
+One budget chunk goes past the checker's limits (TS2589) about 17k
+trampoline steps in, with 25 or with 10 steps per chunk.
 
 The API (`src/index.ts`):
 
@@ -90,13 +91,13 @@ with other slots.
 
 ## Scripts
 
-| command                            | what                                                                                                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `vp run build`                     | `scripts/build-image.ts`: emit the image (runs `vp run boot` if the snapshots are missing)                                                                                      |
-| `vp run gate:types`                | `scripts/types-gate.ts`: N inputs (default the 20 cheapest; `--all`, `--n`, `--only`, `--lib mini\|es5\|both`, `--jobs`) through the CLI chunk form, against `oracle/expected/` |
-| `vp run hover -- FILE TYPE`        | `scripts/hover.ts`: hover through `tsrs --lsp`                                                                                                                                  |
-| `vp run gen:hover`                 | `scripts/gen-hover.ts`: the hash tables of `src/hover.gen.ts`                                                                                                                   |
-| `vp run ref`, `vp run oracle`, ... | the reference and oracle gates (`AGENTS.md`)                                                                                                                                    |
+| command                            | what                                                                                                                                                                                       |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `vp run build`                     | `scripts/build-image.ts`: emit the image (runs `vp run boot` if the snapshots are missing)                                                                                                 |
+| `vp run gate:types`                | `scripts/types-gate.ts`: N inputs (default the 20 cheapest; `--all`, `--n`, `--only`, `--lib mini\|es5\|both`, `--jobs`, `--drive`) through the CLI chunk form, against `oracle/expected/` |
+| `vp run hover -- FILE TYPE`        | `scripts/hover.ts`: hover through `tsrs --lsp`                                                                                                                                             |
+| `vp run gen:hover`                 | `scripts/gen-hover.ts`: the hash tables of `src/hover.gen.ts`                                                                                                                              |
+| `vp run ref`, `vp run oracle`, ... | the reference and oracle gates (`AGENTS.md`)                                                                                                                                               |
 
 `src/` and `examples/` load the image, so the root project (`vp run check`)
 leaves them out; `examples/tsconfig.json` is their project.
