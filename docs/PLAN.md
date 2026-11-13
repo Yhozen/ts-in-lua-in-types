@@ -26,6 +26,18 @@ tslua under real Lua 5.4 (wasmoon), counting VM instructions with a count hook:
 | An inner type-level `Add<20, 22>` (recursive tuples) | 1.26M (~26k per inner recursion step) |
 | The one-liner with the real `lib.es5.d.ts` | 14.3M |
 
+**Correction (oracle, P1):** the counts above used a hook every 1,000
+instructions, which resonates with tight loops. Exact counts (hook of 1,
+`tsc.check` only, `oracle/manifest.json`): loading 1,619,754; an empty file
+236k (mini lib); the one-liner 253,614 (mini) and 14.27M (es5); median over
+328 inputs 324k (mini) and 14.34M (es5). A warm-up check in the same state
+changes no output and saves exactly 34,129 instructions per later check.
+
+**The tower is out of reach:** tslua checking lua-in-types v1's `int.ts` alone
+takes ~8.8G Lua instructions (59 s natively in wasm, 477 MB of Lua heap); the
+whole engine runs out of wasm32 memory after ~21G. That is ~160x the guess
+below, and far beyond what the types can run. Dropped from P5.
+
 - Heap after loading: 13.8 MB in real Lua; 9,373 tables, 164,177 entries,
   11,752 functions, 24,345 distinct strings (953 KB). A one-liner allocates
   295 KB.
@@ -97,15 +109,15 @@ Key ideas, tested or not:
 | Phase | Where | Gate |
 |---|---|---|
 | P0 measurements | here | done (above) |
-| P1 oracle | ts-in-types | tslua on real Lua (wasmoon) over a few hundred TS inputs, outputs and instruction counts stored; census and profile of what tslua uses |
-| P1 front end + IR | lua-in-types `src/aot/front`, `src/aot/ir` | parses and lowers all of tslua and both corpora; IR validates |
-| P1 numbers, strings | lua-in-types `src/aot/ref` | exact against wasmoon on generated cases |
-| P1 interpreter | lua-in-types `src/aot/ref` | v1 corpus (238) + v2 corpus + fuzz ≡ wasmoon |
-| P1 tslua on ref | ts-in-types | byte-identical diagnostics with the oracle on every input |
-| P2 type runtime | lua-in-types `src/aot/types` | each primitive ≡ ref on generated cases (int64 first) |
-| P3 emitter | lua-in-types `src/aot/emit` | corpus + fuzz: types ≡ ref (output, block count) |
+| P1 oracle | ts-in-types | done: 328 inputs, exact counts, census, profile, warm-up |
+| P1 front end + IR | lua-in-types `src/aot/front`, `src/aot/ir` | done: all 725 tslua files, 0 failures, <1 s |
+| P1 numbers, strings | lua-in-types `src/aot/ref` | done: ~10M random cases, 0 mismatches |
+| P1 interpreter | lua-in-types `src/aot/ref` | done: 238 + 103 corpus programs, 10,500 fuzz programs |
+| P1 tslua on ref | ts-in-types | met in a scratch run (348/348 byte-identical); to be committed as a gate |
+| P2 type runtime | lua-in-types `src/aot/types` | int64 done (11,835 assertions); tables + heap done (4,724); strings in progress |
+| P3 emitter | lua-in-types `src/aot/emit` | corpus + fuzz: types ≡ ref (output, block count); slice in progress |
 | P4 image + `TS<>` | ts-in-types | one-liner hover shows TS2322 in seconds |
-| P5 extremes | ts-in-types | real lib.es5 via staged builds; inner `Add<20, 22>`; the tower (lua-in-types' engine checked by tslua inside the types) |
+| P5 extremes | ts-in-types | real lib.es5 (cached parse in the image, or staged builds); inner `Add<20, 22>` |
 
 ## Risks
 
@@ -116,8 +128,9 @@ Key ideas, tested or not:
 - The gains of compiled code were measured on toy loops only.
 - `pairs` order: tslua is written not to depend on it; if it does somewhere,
   the oracle gate finds it.
-- The tower estimate (35-55M Lua instructions) is a guess from the inner
-  recursion cost.
+- tslua does not reuse the parsed `lib.es5.d.ts` between checks in one Lua
+  state (a warm-up saves 34k instructions, not 14M); the real lib needs its
+  parsed and bound source file cached in the image some other way.
 
 ## Appendix: experiment shapes
 
