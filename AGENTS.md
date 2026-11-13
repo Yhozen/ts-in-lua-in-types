@@ -31,3 +31,23 @@ ahead of time to type aliases). Read `docs/PLAN.md` first, then
   by hand.
 - Keep scratch files in `.run/` (git-ignored).
 - Before committing: `vp check --fix`, `vp run check`, `vp test`.
+
+## The oracle (P1)
+
+tslua under real Lua 5.4 (wasmoon) is the ground truth.
+
+- `lua/tsc.lua`: the harness, `check(files, args) -> output, status`.
+  Deterministic and free of io/os/debug/load/coroutines; it must also run on
+  the lua-in-types reference interpreter and in the types.
+- `scripts/tslua.ts`: runs a check in a fresh wasm instance. Instruction counts
+  are exact (count hook of 1) and reproducible only because `Date.now` is
+  frozen (Lua's string hash seed) and the instance is fresh with emscripten's
+  `_` variable pinned (heap addresses decide `pairs` order over table keys).
+  Outputs never depended on either.
+- `vp run oracle` rewrites `oracle/expected/` and `oracle/manifest.json`;
+  `vp run oracle -- --verify` reruns and compares outputs and counts.
+- `vp run upstream` reselects `oracle/inputs/upstream/` (TypeScript cases);
+  `vp run census` -> `docs/CENSUS.md`; `vp run profile` -> `docs/PROFILE.md`
+  and `oracle/profile.json`; `vp run tower` -> `oracle/tower.json`.
+- `oracle/inputs/**` is `-text` in `.gitattributes`: upstream cases keep their
+  CRLF line endings byte for byte.
