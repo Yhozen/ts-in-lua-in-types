@@ -1,0 +1,3344 @@
+{
+ "generated": "by scripts/warmup.ts (vp run warmup); do not edit",
+ "summary": {
+  "mini": {
+   "inputs": 328,
+   "outputsChanged": [],
+   "savedMin": 34129,
+   "savedMedian": 34129,
+   "savedMax": 34129,
+   "savedFractionMedian": 0.105
+  },
+  "es5": {
+   "inputs": 41,
+   "outputsChanged": [],
+   "savedMin": 34129,
+   "savedMedian": 34129,
+   "savedMax": 34129,
+   "savedFractionMedian": 0.002
+  }
+ },
+ "rows": [
+  {
+   "input": "assign-any-unknown",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313743,
+   "warm": 279614,
+   "saved": 34129
+  },
+  {
+   "input": "assign-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253614,
+   "warm": 219485,
+   "saved": 34129
+  },
+  {
+   "input": "assign-callback-bivariance",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 404663,
+   "warm": 370534,
+   "saved": 34129
+  },
+  {
+   "input": "assign-enum-number",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 312907,
+   "warm": 278778,
+   "saved": 34129
+  },
+  {
+   "input": "assign-function-params",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 328125,
+   "warm": 293996,
+   "saved": 34129
+  },
+  {
+   "input": "assign-function-return",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 296102,
+   "warm": 261973,
+   "saved": 34129
+  },
+  {
+   "input": "assign-index-signature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341360,
+   "warm": 307231,
+   "saved": 34129
+  },
+  {
+   "input": "assign-never",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298763,
+   "warm": 264634,
+   "saved": 34129
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300352,
+   "warm": 266223,
+   "saved": 34129
+  },
+  {
+   "input": "assign-object-excess",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324303,
+   "warm": 290174,
+   "saved": 34129
+  },
+  {
+   "input": "assign-object-literal-nested",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 442904,
+   "warm": 408775,
+   "saved": 34129
+  },
+  {
+   "input": "assign-object-missing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 301133,
+   "warm": 267004,
+   "saved": 34129
+  },
+  {
+   "input": "assign-optional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 380284,
+   "warm": 346155,
+   "saved": 34129
+  },
+  {
+   "input": "assign-readonly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405001,
+   "warm": 370872,
+   "saved": 34129
+  },
+  {
+   "input": "assign-structural-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334433,
+   "warm": 300304,
+   "saved": 34129
+  },
+  {
+   "input": "assign-symbol-bigint-like",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307397,
+   "warm": 273268,
+   "saved": 34129
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 439938,
+   "warm": 405809,
+   "saved": 34129
+  },
+  {
+   "input": "assign-variance-arrays",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 371353,
+   "warm": 337224,
+   "saved": 34129
+  },
+  {
+   "input": "assign-void",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 309273,
+   "warm": 275144,
+   "saved": 34129
+  },
+  {
+   "input": "assign-weak-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 336184,
+   "warm": 302055,
+   "saved": 34129
+  },
+  {
+   "input": "class-abstract",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289755,
+   "warm": 255626,
+   "saved": 34129
+  },
+  {
+   "input": "class-accessor",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 353666,
+   "warm": 319537,
+   "saved": 34129
+  },
+  {
+   "input": "class-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 358985,
+   "warm": 324856,
+   "saved": 34129
+  },
+  {
+   "input": "class-generic-constraint-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311260,
+   "warm": 277131,
+   "saved": 34129
+  },
+  {
+   "input": "class-implements",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285045,
+   "warm": 250916,
+   "saved": 34129
+  },
+  {
+   "input": "class-index-signature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 276897,
+   "warm": 242768,
+   "saved": 34129
+  },
+  {
+   "input": "class-override",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 359135,
+   "warm": 325006,
+   "saved": 34129
+  },
+  {
+   "input": "class-private-protected",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368535,
+   "warm": 334406,
+   "saved": 34129
+  },
+  {
+   "input": "class-static",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 318029,
+   "warm": 283900,
+   "saved": 34129
+  },
+  {
+   "input": "class-strict-property-init",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 278218,
+   "warm": 244089,
+   "saved": 34129
+  },
+  {
+   "input": "class-super-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319230,
+   "warm": 285101,
+   "saved": 34129
+  },
+  {
+   "input": "class-this-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 355759,
+   "warm": 321630,
+   "saved": 34129
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 580921,
+   "warm": 546792,
+   "saved": 34129
+  },
+  {
+   "input": "clean-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253088,
+   "warm": 218959,
+   "saved": 34129
+  },
+  {
+   "input": "clean-classes",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 464969,
+   "warm": 430840,
+   "saved": 34129
+  },
+  {
+   "input": "clean-comments-only",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 237963,
+   "warm": 203834,
+   "saved": 34129
+  },
+  {
+   "input": "clean-control-flow",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 528143,
+   "warm": 494014,
+   "saved": 34129
+  },
+  {
+   "input": "clean-declare",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313582,
+   "warm": 279453,
+   "saved": 34129
+  },
+  {
+   "input": "clean-destructuring",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 668618,
+   "warm": 634489,
+   "saved": 34129
+  },
+  {
+   "input": "clean-empty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 235955,
+   "warm": 201826,
+   "saved": 34129
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 322029,
+   "warm": 287900,
+   "saved": 34129
+  },
+  {
+   "input": "clean-functions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 327426,
+   "warm": 293297,
+   "saved": 34129
+  },
+  {
+   "input": "clean-generics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 551842,
+   "warm": 517713,
+   "saved": 34129
+  },
+  {
+   "input": "clean-labeled-loops",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 337287,
+   "warm": 303158,
+   "saved": 34129
+  },
+  {
+   "input": "clean-mapped-conditional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 382604,
+   "warm": 348475,
+   "saved": 34129
+  },
+  {
+   "input": "clean-object-methods",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 328001,
+   "warm": 293872,
+   "saved": 34129
+  },
+  {
+   "input": "clean-overloads-guards",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 365155,
+   "warm": 331026,
+   "saved": 34129
+  },
+  {
+   "input": "clean-type-level",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 755636,
+   "warm": 721507,
+   "saved": 34129
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299516,
+   "warm": 265387,
+   "saved": 34129
+  },
+  {
+   "input": "clean-unions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 420862,
+   "warm": 386733,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 297153,
+   "warm": 263024,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-builtin-utils",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 471277,
+   "warm": 437148,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-deferred",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286879,
+   "warm": 252750,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-distributive",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 472786,
+   "warm": 438657,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-infer-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 364799,
+   "warm": 330670,
+   "saved": 34129
+  },
+  {
+   "input": "conditional-infer",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 372171,
+   "warm": 338042,
+   "saved": 34129
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283181,
+   "warm": 249052,
+   "saved": 34129
+  },
+  {
+   "input": "enum-const",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 309083,
+   "warm": 274954,
+   "saved": 34129
+  },
+  {
+   "input": "enum-declaration-merge",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 257833,
+   "warm": 223704,
+   "saved": 34129
+  },
+  {
+   "input": "enum-numeric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324951,
+   "warm": 290822,
+   "saved": 34129
+  },
+  {
+   "input": "enum-string",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286910,
+   "warm": 252781,
+   "saved": 34129
+  },
+  {
+   "input": "error-abstract-instantiation",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320280,
+   "warm": 286151,
+   "saved": 34129
+  },
+  {
+   "input": "error-arg-count",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277843,
+   "warm": 243714,
+   "saved": 34129
+  },
+  {
+   "input": "error-await-outside-async",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 250828,
+   "warm": 216699,
+   "saved": 34129
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300457,
+   "warm": 266328,
+   "saved": 34129
+  },
+  {
+   "input": "error-comparison-no-overlap",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298925,
+   "warm": 264796,
+   "saved": 34129
+  },
+  {
+   "input": "error-const-assign",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265356,
+   "warm": 231227,
+   "saved": 34129
+  },
+  {
+   "input": "error-delete-non-optional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283101,
+   "warm": 248972,
+   "saved": 34129
+  },
+  {
+   "input": "error-duplicate-property",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289442,
+   "warm": 255313,
+   "saved": 34129
+  },
+  {
+   "input": "error-generic-arity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324448,
+   "warm": 290319,
+   "saved": 34129
+  },
+  {
+   "input": "error-implicit-any",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305195,
+   "warm": 271066,
+   "saved": 34129
+  },
+  {
+   "input": "error-index-implicit-any",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298848,
+   "warm": 264719,
+   "saved": 34129
+  },
+  {
+   "input": "error-label-break",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 260242,
+   "warm": 226113,
+   "saved": 34129
+  },
+  {
+   "input": "error-missing-return-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 262475,
+   "warm": 228346,
+   "saved": 34129
+  },
+  {
+   "input": "error-not-callable",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291809,
+   "warm": 257680,
+   "saved": 34129
+  },
+  {
+   "input": "error-object-possibly-undefined",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293573,
+   "warm": 259444,
+   "saved": 34129
+  },
+  {
+   "input": "error-operator-types",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333689,
+   "warm": 299560,
+   "saved": 34129
+  },
+  {
+   "input": "error-property-not-exist",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289549,
+   "warm": 255420,
+   "saved": 34129
+  },
+  {
+   "input": "error-redeclare",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 303180,
+   "warm": 269051,
+   "saved": 34129
+  },
+  {
+   "input": "error-satisfies",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 351743,
+   "warm": 317614,
+   "saved": 34129
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 271874,
+   "warm": 237745,
+   "saved": 34129
+  },
+  {
+   "input": "error-switch-case-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277441,
+   "warm": 243312,
+   "saved": 34129
+  },
+  {
+   "input": "error-this-implicit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293803,
+   "warm": 259674,
+   "saved": 34129
+  },
+  {
+   "input": "error-type-as-value",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 271405,
+   "warm": 237276,
+   "saved": 34129
+  },
+  {
+   "input": "error-unicode-position",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300285,
+   "warm": 266156,
+   "saved": 34129
+  },
+  {
+   "input": "error-unique-symbol-and-readonly-array",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 297543,
+   "warm": 263414,
+   "saved": 34129
+  },
+  {
+   "input": "error-unreachable-like",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265253,
+   "warm": 231124,
+   "saved": 34129
+  },
+  {
+   "input": "error-unused-ts-expect",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284462,
+   "warm": 250333,
+   "saved": 34129
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285475,
+   "warm": 251346,
+   "saved": 34129
+  },
+  {
+   "input": "error-value-as-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282300,
+   "warm": 248171,
+   "saved": 34129
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1362834,
+   "warm": 1328705,
+   "saved": 34129
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 45794147,
+   "warm": 45760018,
+   "saved": 34129
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 4118757,
+   "warm": 4084628,
+   "saved": 34129
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 23259827,
+   "warm": 23225698,
+   "saved": 34129
+  },
+  {
+   "input": "generic-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433951,
+   "warm": 399822,
+   "saved": 34129
+  },
+  {
+   "input": "generic-const-type-param",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 377328,
+   "warm": 343199,
+   "saved": 34129
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 392609,
+   "warm": 358480,
+   "saved": 34129
+  },
+  {
+   "input": "generic-default",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319724,
+   "warm": 285595,
+   "saved": 34129
+  },
+  {
+   "input": "generic-higher-order",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 442874,
+   "warm": 408745,
+   "saved": 34129
+  },
+  {
+   "input": "generic-identity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334855,
+   "warm": 300726,
+   "saved": 34129
+  },
+  {
+   "input": "generic-infer-from-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 373158,
+   "warm": 339029,
+   "saved": 34129
+  },
+  {
+   "input": "generic-inference-callback",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 505481,
+   "warm": 471352,
+   "saved": 34129
+  },
+  {
+   "input": "generic-inference-multiple",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 425312,
+   "warm": 391183,
+   "saved": 34129
+  },
+  {
+   "input": "generic-keyof-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 439446,
+   "warm": 405317,
+   "saved": 34129
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279613,
+   "warm": 245484,
+   "saved": 34129
+  },
+  {
+   "input": "generic-unresolved-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321734,
+   "warm": 287605,
+   "saved": 34129
+  },
+  {
+   "input": "indexed-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341784,
+   "warm": 307655,
+   "saved": 34129
+  },
+  {
+   "input": "indexed-union-key",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293932,
+   "warm": 259803,
+   "saved": 34129
+  },
+  {
+   "input": "interface-call-construct",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 361506,
+   "warm": 327377,
+   "saved": 34129
+  },
+  {
+   "input": "interface-extends-conflict",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 281287,
+   "warm": 247158,
+   "saved": 34129
+  },
+  {
+   "input": "interface-merge",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 304927,
+   "warm": 270798,
+   "saved": 34129
+  },
+  {
+   "input": "intersection-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 403010,
+   "warm": 368881,
+   "saved": 34129
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284088,
+   "warm": 249959,
+   "saved": 34129
+  },
+  {
+   "input": "keyof-typeof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 318743,
+   "warm": 284614,
+   "saved": 34129
+  },
+  {
+   "input": "literal-as-const",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 392906,
+   "warm": 358777,
+   "saved": 34129
+  },
+  {
+   "input": "literal-boolean",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 281488,
+   "warm": 247359,
+   "saved": 34129
+  },
+  {
+   "input": "literal-const-let",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 306812,
+   "warm": 272683,
+   "saved": 34129
+  },
+  {
+   "input": "literal-enum-member",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311616,
+   "warm": 277487,
+   "saved": 34129
+  },
+  {
+   "input": "literal-fresh-excess",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345660,
+   "warm": 311531,
+   "saved": 34129
+  },
+  {
+   "input": "literal-numeric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 338509,
+   "warm": 304380,
+   "saved": 34129
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307980,
+   "warm": 273851,
+   "saved": 34129
+  },
+  {
+   "input": "literal-widening-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 411682,
+   "warm": 377553,
+   "saved": 34129
+  },
+  {
+   "input": "lookup-element-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 342210,
+   "warm": 308081,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-custom-modifiers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 437582,
+   "warm": 403453,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-filter-keys",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 383374,
+   "warm": 349245,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-key-remap",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 447524,
+   "warm": 413395,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-partial-required",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 347415,
+   "warm": 313286,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-pick-omit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 370978,
+   "warm": 336849,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 363187,
+   "warm": 329058,
+   "saved": 34129
+  },
+  {
+   "input": "namespace-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323501,
+   "warm": 289372,
+   "saved": 34129
+  },
+  {
+   "input": "namespace-merge-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283038,
+   "warm": 248909,
+   "saved": 34129
+  },
+  {
+   "input": "namespace-merge-function",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285802,
+   "warm": 251673,
+   "saved": 34129
+  },
+  {
+   "input": "namespace-nested",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300006,
+   "warm": 265877,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-assertion-fn",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307565,
+   "warm": 273436,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-closure-reset",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321017,
+   "warm": 286888,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-control-flow-assign",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305228,
+   "warm": 271099,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433131,
+   "warm": 399002,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-equality",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344636,
+   "warm": 310507,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-exhaustive-never",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315296,
+   "warm": 281167,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-in",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333373,
+   "warm": 299244,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-instanceof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 340810,
+   "warm": 306681,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-optional-chain",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345535,
+   "warm": 311406,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-truthiness",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300765,
+   "warm": 266636,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-typeof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298047,
+   "warm": 263918,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368241,
+   "warm": 334112,
+   "saved": 34129
+  },
+  {
+   "input": "overload-arity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 294813,
+   "warm": 260684,
+   "saved": 34129
+  },
+  {
+   "input": "overload-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324826,
+   "warm": 290697,
+   "saved": 34129
+  },
+  {
+   "input": "overload-impl-incompatible",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279796,
+   "warm": 245667,
+   "saved": 34129
+  },
+  {
+   "input": "overload-method",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 331385,
+   "warm": 297256,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-alias-circular",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277250,
+   "warm": 243121,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-deep-readonly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 366269,
+   "warm": 332140,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-json",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 633817,
+   "warm": 599688,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 475807,
+   "warm": 441678,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-tuple-reverse",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 496849,
+   "warm": 462720,
+   "saved": 34129
+  },
+  {
+   "input": "rest-params",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323405,
+   "warm": 289276,
+   "saved": 34129
+  },
+  {
+   "input": "spread-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 342371,
+   "warm": 308242,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-bad-token",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 177816,
+   "warm": 143687,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-decl-modifiers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273632,
+   "warm": 239503,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-invalid-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 171296,
+   "warm": 137167,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-jsx-in-ts",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 170571,
+   "warm": 136442,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 165336,
+   "warm": 131207,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-missing-paren",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 165483,
+   "warm": 131354,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-numeric-literal",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 184765,
+   "warm": 150636,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-regex-errors",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 257522,
+   "warm": 223393,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-reserved-word",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 178084,
+   "warm": 143955,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-unexpected-keyword",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 167356,
+   "warm": 133227,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-unterminated-string",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 168481,
+   "warm": 134352,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-unterminated-template",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 166037,
+   "warm": 131908,
+   "saved": 34129
+  },
+  {
+   "input": "template-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 330629,
+   "warm": 296500,
+   "saved": 34129
+  },
+  {
+   "input": "template-infer",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 429034,
+   "warm": 394905,
+   "saved": 34129
+  },
+  {
+   "input": "template-intrinsics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 410898,
+   "warm": 376769,
+   "saved": 34129
+  },
+  {
+   "input": "template-union-expand",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 325517,
+   "warm": 291388,
+   "saved": 34129
+  },
+  {
+   "input": "tuple-labeled",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334942,
+   "warm": 300813,
+   "saved": 34129
+  },
+  {
+   "input": "tuple-length-index",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345956,
+   "warm": 311827,
+   "saved": 34129
+  },
+  {
+   "input": "tuple-optional-rest",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 395443,
+   "warm": 361314,
+   "saved": 34129
+  },
+  {
+   "input": "tuple-variadic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 502238,
+   "warm": 468109,
+   "saved": 34129
+  },
+  {
+   "input": "union-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299278,
+   "warm": 265149,
+   "saved": 34129
+  },
+  {
+   "input": "union-property-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321446,
+   "warm": 287317,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/ArrowFunctionExpression1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272273,
+   "warm": 238144,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/ClassDeclaration10",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277327,
+   "warm": 243198,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/ClassDeclaration21",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277740,
+   "warm": 243611,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/ambientEnumElementInitializer3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 258020,
+   "warm": 223891,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/anyAndUnknownHaveFalsyComponents",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 386482,
+   "warm": 352353,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/arguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 473772,
+   "warm": 439643,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 593245,
+   "warm": 559116,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/arrayLiteral1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267616,
+   "warm": 233487,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 637909,
+   "warm": 603780,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/assignmentToParenthesizedExpression1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273891,
+   "warm": 239762,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/baseClassImprovedMismatchErrors",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 644078,
+   "warm": 609949,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/breakInIterationOrSwitchStatement1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253422,
+   "warm": 219293,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/callOverloads2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405809,
+   "warm": 371680,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/capturedLetConstInLoop10_ES6",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 663242,
+   "warm": 629113,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333873,
+   "warm": 299744,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classExtendingQualifiedName",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 292523,
+   "warm": 258394,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classExtendsMultipleBaseClasses",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285167,
+   "warm": 251038,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classOrder1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289311,
+   "warm": 255182,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classVarianceResolveCircularity1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 370542,
+   "warm": 336413,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/collisionCodeGenModuleWithMethodChildren",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 395522,
+   "warm": 361393,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 393514,
+   "warm": 359385,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/commentOnArrayElement12",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265480,
+   "warm": 231351,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272466,
+   "warm": 238337,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/commentOnClassAccessor2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283624,
+   "warm": 249495,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/conditionalEqualityTestingNullability",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 533855,
+   "warm": 499726,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/conditionalExpressions2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 435278,
+   "warm": 401149,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/constructorArgsErrors3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272307,
+   "warm": 238178,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualSignatureInstatiationContravariance",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 492556,
+   "warm": 458427,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTypeSelfReferencing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 597681,
+   "warm": 563552,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTyping19",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341850,
+   "warm": 307721,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320543,
+   "warm": 286414,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTyping41",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320596,
+   "warm": 286467,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTypingOfArrayLiterals1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344864,
+   "warm": 310735,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTypingOfConditionalExpression",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 472040,
+   "warm": 437911,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextuallyTypingOrOperator",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 513300,
+   "warm": 479171,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declFileClassWithIndexSignature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265796,
+   "warm": 231667,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declFileOptionalInterfaceMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270671,
+   "warm": 236542,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitDestructuringArrayPattern3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311358,
+   "warm": 277229,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 470514,
+   "warm": 436385,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitNameConflictsWithAlias",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315350,
+   "warm": 281221,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitOptionalMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319202,
+   "warm": 285073,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 335176,
+   "warm": 301047,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/defaultValueInFunctionTypes",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334205,
+   "warm": 300076,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/deleteOperatorInStrictMode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267626,
+   "warm": 233497,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 384710,
+   "warm": 350581,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/discriminantsAndPrimitives",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 831775,
+   "warm": 797646,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344914,
+   "warm": 310785,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/duplicateErrorNameNotFound",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287553,
+   "warm": 253424,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/duplicateObjectLiteralProperty_computedName2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 475204,
+   "warm": 441075,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 363184,
+   "warm": 329055,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/emitSkipsThisWithRestParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 379663,
+   "warm": 345534,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/emitThisInSuperMethodCall",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 382891,
+   "warm": 348762,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/emptyFile",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 246071,
+   "warm": 211942,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/enumMemberResolution",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 193024,
+   "warm": 158895,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307916,
+   "warm": 273787,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/errorsForCallAndAssignmentAreSimilar",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 684723,
+   "warm": 650594,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/errorsWithInvokablesInUnions01",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 551069,
+   "warm": 516940,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/es6DeclOrdering",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323811,
+   "warm": 289682,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277965,
+   "warm": 243836,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/excessPropertyCheckWithSpread",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 402091,
+   "warm": 367962,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/exportArrayBindingPattern",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 331455,
+   "warm": 297326,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/exportDeclarationsInAmbientNamespaces2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284712,
+   "warm": 250583,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270411,
+   "warm": 236282,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/exportedBlockScopedDeclarations",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 455280,
+   "warm": 421151,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/externSemantics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291274,
+   "warm": 257145,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 306253,
+   "warm": 272124,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/functionAssignmentError",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286953,
+   "warm": 252824,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/functionOverloads43",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 468551,
+   "warm": 434422,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/functionWithDefaultParameterWithNoStatements10",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282936,
+   "warm": 248807,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/functionsWithModifiersInBlocks1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295427,
+   "warm": 261298,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305580,
+   "warm": 271451,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/genericConstraintDeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305386,
+   "warm": 271257,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/genericFunctions2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 391577,
+   "warm": 357448,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/genericTypeParameterEquivalence2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1229125,
+   "warm": 1194996,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/generics5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 349839,
+   "warm": 315710,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/identicalTypesNoDifferByCheckOrder",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1057280,
+   "warm": 1023151,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/implicitAnyAmbients",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433317,
+   "warm": 399188,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/indexerA",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 361514,
+   "warm": 327385,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 304151,
+   "warm": 270022,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/inferentialTypingObjectLiteralMethod1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 552953,
+   "warm": 518824,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/infinitelyExpandingBaseTypes2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 357560,
+   "warm": 323431,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 316420,
+   "warm": 282291,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/inheritanceStaticFuncOverridingProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313344,
+   "warm": 279215,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/innerExtern",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315276,
+   "warm": 281147,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/instanceSubtypeCheck1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344005,
+   "warm": 309876,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/instanceofTypeAliasToGenericClass",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 430615,
+   "warm": 396486,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 290084,
+   "warm": 255955,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/intersectionApparentTypeCaching",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 317612,
+   "warm": 283483,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/intersectionsAndOptionalProperties",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 616651,
+   "warm": 582522,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/lambdaPropSelf",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 398955,
+   "warm": 364826,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/letAndVarRedeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 492818,
+   "warm": 458689,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/letAsIdentifierInStrictMode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295565,
+   "warm": 261436,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/library_StringSlice",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307971,
+   "warm": 273842,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/localImportNameVsGlobalName",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 362283,
+   "warm": 328154,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291651,
+   "warm": 257522,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/moduleCodeGenTest5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 378562,
+   "warm": 344433,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/multiExtendsSplitInterfaces1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282573,
+   "warm": 248444,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307660,
+   "warm": 273531,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/namespaces2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 294383,
+   "warm": 260254,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 414158,
+   "warm": 380029,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/narrowingTypeofUndefined1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 435114,
+   "warm": 400985,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings15",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 362575,
+   "warm": 328446,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 660711,
+   "warm": 626582,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings8",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 301163,
+   "warm": 267034,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nestedTypeVariableInfersLiteral",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 764008,
+   "warm": 729879,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noCheckNoEmit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279607,
+   "warm": 245478,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noCrashOnMixin2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 485334,
+   "warm": 451205,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noEmitHelpers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272762,
+   "warm": 238633,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noImplicitAnyForIn",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 691953,
+   "warm": 657824,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noImplicitAnyIndexing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 649409,
+   "warm": 615280,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299861,
+   "warm": 265732,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nongenericConditionalNotPartiallyComputed",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295835,
+   "warm": 261706,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/objectLiteralArraySpecialization",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 514551,
+   "warm": 480422,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/objectLiteralMemberWithModifiers1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277110,
+   "warm": 242981,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/overloadAssignmentCompat",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 502341,
+   "warm": 468212,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/overrideBaseIntersectionMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 767647,
+   "warm": 733518,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/parseEntityNameWithReservedWord",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270836,
+   "warm": 236707,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/prespecializedGenericMembers1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 378907,
+   "warm": 344778,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 372768,
+   "warm": 338639,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/returnTypeTypeArguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1274827,
+   "warm": 1240698,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/scopeCheckClassProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298745,
+   "warm": 264616,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368099,
+   "warm": 333970,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/signatureInstantiationWithRecursiveConstraints",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 397170,
+   "warm": 363041,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/singletonLabeledTuple",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 407282,
+   "warm": 373153,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272062,
+   "warm": 237933,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/specializedLambdaTypeArguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 292875,
+   "warm": 258746,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 317544,
+   "warm": 283415,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/staticGetter1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267599,
+   "warm": 233470,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/staticInstanceResolution4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287554,
+   "warm": 253425,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/superCallAssignResult",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 327855,
+   "warm": 293726,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 316914,
+   "warm": 282785,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/superCallInStaticMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 463394,
+   "warm": 429265,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/superHasMethodsFromMergedInterface",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 314576,
+   "warm": 280447,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/superWithTypeArgument",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 188627,
+   "warm": 154498,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273270,
+   "warm": 239141,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/thisInPropertyBoundDeclarations",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 684039,
+   "warm": 649910,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typeArgumentConstraintResolution1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 445104,
+   "warm": 410975,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 618071,
+   "warm": 583942,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typeInferenceFixEarly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311196,
+   "warm": 277067,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 393353,
+   "warm": 359224,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typePredicateTopLevelTypeParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405249,
+   "warm": 371120,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/typeofUsedBeforeBlockScoped",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 330553,
+   "warm": 296424,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 312106,
+   "warm": 277977,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/unusedModuleInModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 260601,
+   "warm": 226472,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287036,
+   "warm": 252907,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/vardecl",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1091511,
+   "warm": 1057382,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 633214,
+   "warm": 599085,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/varianceReferences",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 931195,
+   "warm": 897066,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/voidAsOperator",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 274184,
+   "warm": 240055,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/vueLikeDataAndPropsInference2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 855340,
+   "warm": 821211,
+   "saved": 34129
+  },
+  {
+   "input": "assign-any-unknown",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319144,
+   "warm": 14285015,
+   "saved": 34129
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305753,
+   "warm": 14271624,
+   "saved": 34129
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14634311,
+   "warm": 14600182,
+   "saved": 34129
+  },
+  {
+   "input": "class-implements",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293605,
+   "warm": 14259476,
+   "saved": 34129
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14608052,
+   "warm": 14573923,
+   "saved": 34129
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14328408,
+   "warm": 14294279,
+   "saved": 34129
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14302910,
+   "warm": 14268781,
+   "saved": 34129
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293031,
+   "warm": 14258902,
+   "saved": 34129
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14351507,
+   "warm": 14317378,
+   "saved": 34129
+  },
+  {
+   "input": "error-label-break",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14265643,
+   "warm": 14231514,
+   "saved": 34129
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14321752,
+   "warm": 14287623,
+   "saved": 34129
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14290876,
+   "warm": 14256747,
+   "saved": 34129
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14443761,
+   "warm": 14409632,
+   "saved": 34129
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14285014,
+   "warm": 14250885,
+   "saved": 34129
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14303382,
+   "warm": 14269253,
+   "saved": 34129
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327274,
+   "warm": 14293145,
+   "saved": 34129
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14393917,
+   "warm": 14359788,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14442355,
+   "warm": 14408226,
+   "saved": 34129
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14377791,
+   "warm": 14343662,
+   "saved": 34129
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14433782,
+   "warm": 14399653,
+   "saved": 34129
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11345255,
+   "warm": 11311126,
+   "saved": 34129
+  },
+  {
+   "input": "template-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14349923,
+   "warm": 14315794,
+   "saved": 34129
+  },
+  {
+   "input": "union-call",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14307913,
+   "warm": 14273784,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14924989,
+   "warm": 14890860,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14345191,
+   "warm": 14311062,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14277867,
+   "warm": 14243738,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14329115,
+   "warm": 14294986,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14475915,
+   "warm": 14441786,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14350315,
+   "warm": 14316186,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14313317,
+   "warm": 14279188,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14275812,
+   "warm": 14241683,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14310981,
+   "warm": 14276852,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14309552,
+   "warm": 14275423,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14295485,
+   "warm": 14261356,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293239,
+   "warm": 14259110,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14666112,
+   "warm": 14631983,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305262,
+   "warm": 14271133,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14378169,
+   "warm": 14344040,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14322945,
+   "warm": 14288816,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14278671,
+   "warm": 14244542,
+   "saved": 34129
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14352157,
+   "warm": 14318028,
+   "saved": 34129
+  }
+ ]
+}
