@@ -74,3 +74,23 @@ tslua under real Lua 5.4 (wasmoon) is the ground truth.
   Lua that every output is unchanged with a warm cache (also with every input
   checked in sequence in one state) and records the cost in
   `oracle/libcache.json`.
+
+## The image in types (P4)
+
+- `vp run build` (`scripts/build-image.ts`): emits tslua from
+  `image/boot.<lib>.json` with lua-in-types' `emitFromSnapshot` (entry
+  `=check`, INPUT a type parameter, `drive: 25`, below the 50 lua-in-types suggests: see DRIVE). The program's code is
+  identical for both lib modes, so it is written once (`image/tslua.prog.d.ts`,
+  ~256 MB) and each lib gets its heap and start state (`image/tslua.<lib>.d.ts`:
+  `S0<INPUT>`, `Step<S>`). Git-ignored; rebuild after a submodule bump.
+- `src/index.ts`: `TS<>`/`TSMini<>` (hovers) and `TSStart`/`TSStep`/`TSOutput`
+  (CLI chunks). `src/hover.ts` runs a check in one alias, refuelling from
+  lua-in-types' fuel pool at a start and slots hashed from the source
+  (tables in `src/hover.gen.ts`, `vp run gen:hover`). Keep its bindings flat:
+  nested lookups (`P<P<P<A, c>, c>, c>`) made tsrs hang on the alias.
+- `src/` and `examples/` load the image: excluded from the root tsconfig and
+  from lint/format; `examples/tsconfig.json` is their project.
+- `vp run gate:types` (`scripts/types-gate.ts`): oracle inputs through the
+  CLI chunk form, compared with `oracle/expected/`; per-input entries and
+  logs in `.run/gate/<lib>/`. `node scripts/hover.ts examples/hello.ts Out`
+  hovers like an editor.
