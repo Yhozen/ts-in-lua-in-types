@@ -19,19 +19,15 @@
 //
 // Reported per input: pass/fail, the chunk at which the run ended (or the
 // last one reached), instantiations, check time, peak memory (max RSS), the
-// reference's IR ops from the image (oracle/ref-image-manifest.json) and the
-// reference's op count at its first float operation other than a table key,
-// a unary op or an equality (where the types stop until the float prelude exists), and the
+// reference's IR ops from the image (oracle/ref-image-manifest.json), and the
 // error if the run raised one. A summary goes to .run/gate/<lib>/report.json.
 import { spawn } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Snapshot } from "../vendor/lua-in-types/src/aot/ref/snapshot.ts";
 import { toBytes } from "../vendor/lua-in-types/src/aot/ref/value.ts";
 import { DRIVE, imageDir, libFile, progFile } from "./build-image.ts";
-import { fromImage, imagePath, refProgram, runCheck } from "./luaref.ts";
 import { expectedPath, inputPath } from "./oracle.ts";
-import { libs, root, type Lib } from "./tslua.ts";
+import { root, type Lib } from "./tslua.ts";
 
 interface RefEntry {
   input: string;
@@ -61,8 +57,6 @@ export interface GateRow {
   wallSeconds: number;
   peakBytes: number;
   refOps: number;
-  refOpsAtFloat?: number;
-  refFloatKind?: string;
 }
 
 const argv = process.argv.slice(2);
@@ -133,27 +127,6 @@ function runTsrs(dir: string): Promise<{ out: string; wall: number; peak: number
   });
 }
 
-/** The reference's op count at the first float operation the types do not compute inline yet. */
-function refFloat(
-  program: ReturnType<typeof refProgram>,
-  image: Snapshot,
-  lib: Lib,
-  source: string,
-): { ops?: number; kind?: string } {
-  const interp = fromImage(program, image);
-  // Interp.fl (private) counts every float operation.
-  const hook = interp as unknown as { fl: (k: string) => void };
-  const orig = hook.fl.bind(interp);
-  let hit: { ops: number; kind: string } | undefined;
-  hook.fl = (k: string) => {
-    if (hit === undefined && !/^(key|unop|cmp\.eq)/.test(k))
-      hit = { ops: interp.counters.ops, kind: k };
-    orig(k);
-  };
-  runCheck(interp, program, lib, source);
-  return hit ?? {};
-}
-
 async function main() {
   for (const f of [progFile, libFile("mini"), libFile("es5")])
     if (!existsSync(join(imageDir, f))) throw new Error(`image/${f} is missing: run vp run build`);
@@ -172,21 +145,15 @@ async function main() {
   if (only !== undefined) inputs = inputs.filter((n) => n.includes(only));
   else if (!argv.includes("--all")) inputs = inputs.slice(0, Number(opt("--n") ?? 20));
 
-  const program = refProgram();
   const rows: GateRow[] = [];
   for (const libName of libNames) {
-    const lib = libs[libName];
-    const image = JSON.parse(readFileSync(imagePath(libName), "utf8")) as Snapshot;
     const work = inputs.map((input) => {
       const ref = manifest.entries.find((e) => e.input === input && e.lib === libName)!;
       const source = readFileSync(inputPath(input), "utf8");
       const expected = readFileSync(expectedPath(input, libName), "utf8");
-      const fl = refFloat(program, image, lib, source);
-      return { input, ref, source, expected, fl };
+      return { input, ref, source, expected };
     });
-    console.log(
-      `${libName}: ${work.length} inputs, ${jobs} tsrs at a time (reference float sites done)`,
-    );
+    console.log(`${libName}: ${work.length} inputs, ${jobs} tsrs at a time`);
     let next = 0;
     await Promise.all(
       Array.from({ length: Math.min(jobs, work.length) }, async () => {
@@ -214,7 +181,6 @@ async function gateOne(
     ref: RefEntry;
     source: string;
     expected: string;
-    fl: { ops?: number; kind?: string };
   },
   lib: Lib["name"],
 ): Promise<GateRow> {
@@ -279,8 +245,6 @@ async function gateOne(
     wallSeconds: wall,
     peakBytes: peak,
     refOps: w.ref.ops,
-    refOpsAtFloat: w.fl.ops,
-    refFloatKind: w.fl.kind,
   };
 }
 
@@ -294,10 +258,7 @@ export const rowText = (r: GateRow): string =>
     `${(r.instantiations / 1e6).toFixed(0)}M inst`,
     `check ${r.checkSeconds.toFixed(1)} s (wall ${r.wallSeconds.toFixed(1)} s)`,
     `peak ${(r.peakBytes / 2 ** 30).toFixed(1)} GB`,
-    `ref ${r.refOps} ops` +
-      (r.refOpsAtFloat !== undefined
-        ? `, first float op (${r.refFloatKind}) at ${r.refOpsAtFloat} (${((100 * r.refOpsAtFloat) / r.refOps).toFixed(0)}%)`
-        : ", no float op"),
+    `ref ${r.refOps} ops`,
     ...(r.error ? [`error: ${r.error}`] : []),
     ...(r.otherErrors.length ? [`other: ${r.otherErrors.slice(0, 3).join(" | ")}`] : []),
   ].join("  ");
