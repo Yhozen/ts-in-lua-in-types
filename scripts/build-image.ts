@@ -25,12 +25,14 @@ import { imagePath, refProgram } from "./luaref.ts";
 import { libs, root, type Lib } from "./tslua.ts";
 
 /**
- * Trampoline steps per budget chunk. tslua's steps cost up to ~65k
- * instantiations; lua-in-types settled on 50, but with 50 one chunk of
- * upstream/superWithTypeArgument goes over the checker's budget (TS2589)
- * and with 10 it runs to the end, so 25.
+ * Trampoline steps per budget chunk. tslua's steps usually cost up to ~65k
+ * instantiations, but some cost ~500k. lua-in-types settled on 50. With 25,
+ * about one oracle input in eight has a chunk over the checker's 5M budget
+ * (TS2589), and a missing-property check still fails at 10. Smaller chunks
+ * cost no more in total (the one-liner: 435M at 25, 439M at 4), only more
+ * CLI statements and more fuel-pool nodes per hover.
  */
-export const DRIVE = 25;
+export const DRIVE = 4;
 export const imageDir = join(root, "image");
 export const progFile = "tslua.prog.d.ts";
 export const libFile = (lib: Lib["name"]): string => `tslua.${lib}.d.ts`;

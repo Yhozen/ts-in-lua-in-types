@@ -41,7 +41,7 @@ export type TSStart<Source extends string, Lib extends TSLib = "es5"> = Lib exte
   : StartEs5<Source>;
 
 /**
- * One budget chunk of a check (25 trampoline steps): one CLI statement each.
+ * One budget chunk of a check (4 trampoline steps): one CLI statement each.
  * A finished state stays as it is. Both lib modes run the same program.
  */
 export type TSStep<S> = Step<S>;

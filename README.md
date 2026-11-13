@@ -58,13 +58,13 @@ trampoline steps in, with 25 or with 10 steps per chunk.
 
 The API (`src/index.ts`):
 
-| type                               | what                                                                                         |
-| ---------------------------------- | -------------------------------------------------------------------------------------------- |
-| `TS<Source>`                       | tsc's output with the real `lib.es5.d.ts` (one alias, for hovers)                            |
-| `TSMini<Source>`                   | the same with tslua's 11-line stand-in lib                                                   |
-| `TSStart<Source, "es5" \| "mini">` | the start state, for the CLI                                                                 |
-| `TSStep<S>`                        | one budget chunk (25 trampoline steps): chain `type S1 = TSStep<S0>; ...`, one per statement |
-| `TSOutput<S>`                      | the output once the state is done, `"error: ...\n"` if Lua raised, else `"(still running)"`  |
+| type                               | what                                                                                        |
+| ---------------------------------- | ------------------------------------------------------------------------------------------- |
+| `TS<Source>`                       | tsc's output with the real `lib.es5.d.ts` (one alias, for hovers)                           |
+| `TSMini<Source>`                   | the same with tslua's 11-line stand-in lib                                                  |
+| `TSStart<Source, "es5" \| "mini">` | the start state, for the CLI                                                                |
+| `TSStep<S>`                        | one budget chunk (4 trampoline steps): chain `type S1 = TSStep<S0>; ...`, one per statement |
+| `TSOutput<S>`                      | the output once the state is done, `"error: ...\n"` if Lua raised, else `"(still running)"` |
 
 **ASCII only.** Lua strings are bytes, and the source goes to Lua one
 character per byte. For non-ASCII text, pass its UTF-8 bytes as the

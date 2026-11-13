@@ -72,6 +72,8 @@ export interface GateRow {
   wallSeconds: number;
   peakBytes: number;
   refOps: number;
+  /** Trampoline steps per chunk of this run. */
+  drive?: number;
   /** pass, or the class of the failure (see above), with a detail line. */
   kind: string;
   detail?: string;
@@ -236,7 +238,8 @@ async function main() {
         if (
           argv.includes("--resume") &&
           existsSync(rowPath) &&
-          statSync(rowPath).mtimeMs > imageTime
+          statSync(rowPath).mtimeMs > imageTime &&
+          (JSON.parse(readFileSync(rowPath, "utf8")) as GateRow).drive === drive
         )
           row = JSON.parse(readFileSync(rowPath, "utf8")) as GateRow;
         else {
@@ -283,6 +286,7 @@ const skipped = (input: string, lib: Lib["name"], refOps: number): GateRow => ({
   wallSeconds: 0,
   peakBytes: 0,
   refOps,
+  drive,
   kind: "skipped",
   detail: `the reference runs ${refOps} ops (over --max-ops ${maxOps})`,
 });
@@ -370,6 +374,7 @@ async function gateOne(w: Work, lib: Lib["name"]): Promise<GateRow> {
     wallSeconds: wall,
     peakBytes: peak,
     refOps: w.ref.ops,
+    drive,
     kind: "pass",
   };
   if (pass) return row;

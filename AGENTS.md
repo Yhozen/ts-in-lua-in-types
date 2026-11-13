@@ -79,7 +79,7 @@ tslua under real Lua 5.4 (wasmoon) is the ground truth.
 
 - `vp run build` (`scripts/build-image.ts`): emits tslua from
   `image/boot.<lib>.json` with lua-in-types' `emitFromSnapshot` (entry
-  `=check`, INPUT a type parameter, `drive: 25`, below the 50 lua-in-types suggests: see DRIVE). The program's code is
+  `=check`, INPUT a type parameter, `drive: 4`, below the 50 lua-in-types suggests: see DRIVE). The program's code is
   identical for both lib modes, so it is written once (`image/tslua.prog.d.ts`,
   ~256 MB) and each lib gets its heap and start state (`image/tslua.<lib>.d.ts`:
   `S0<INPUT>`, `Step<S>`). Git-ignored; rebuild after a submodule bump.
