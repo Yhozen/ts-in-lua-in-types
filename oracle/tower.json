@@ -1,0 +1,122 @@
+{
+ "generated": "by scripts/tower.ts (vp run tower); do not edit",
+ "engine": "vendor/lua-in-types/src/engine/*.ts (lua-in-types v1)",
+ "args": [
+  "--noLib",
+  "--noEmit",
+  "--skipLibCheck",
+  "--allowImportingTsExtensions",
+  "--module",
+  "esnext",
+  "--moduleResolution",
+  "bundler",
+  "--target",
+  "esnext",
+  "lib.es5.d.ts",
+  "engine/<files>"
+ ],
+ "counting": "coarse = count hook of 1000 (1000 per hook call; calibration compares it with the exact count hook of 1 on the oracle's extreme inputs); heap = collectgarbage('count') sampled at each hook call; ms = wall time of that run",
+ "calibration": [
+  {
+   "input": "extreme/add-20-22",
+   "lib": "mini",
+   "exact": 1362834,
+   "coarse": 1375000
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "es5",
+   "exact": 16116062,
+   "coarse": 16262000
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "mini",
+   "exact": 45794147,
+   "coarse": 46210000
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "es5",
+   "exact": 65408555,
+   "coarse": 66002000
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "mini",
+   "exact": 4118757,
+   "coarse": 4156000
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "es5",
+   "exact": 18142444,
+   "coarse": 18307000
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "mini",
+   "exact": 23259827,
+   "coarse": 23471000
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "es5",
+   "exact": 37279121,
+   "coarse": 37617000
+  }
+ ],
+ "single": {
+  "files": [
+   "int.ts"
+  ],
+  "bytes": 64606,
+  "plain": {
+   "ms": 59036,
+   "heapAfterLoadMB": 13.7,
+   "heapAfterCheckMB": 289.6,
+   "status": 0,
+   "output": ""
+  },
+  "coarse": {
+   "instructions": 8892571000,
+   "countEvery": 1000,
+   "peakHeapMB": 476.6,
+   "ms": 79984,
+   "heapAfterLoadMB": 13.7,
+   "heapAfterCheckMB": 289.6,
+   "status": 0,
+   "output": ""
+  },
+  "tsrs": {
+   "output": "",
+   "ms": 412.7915830000129
+  }
+ },
+ "whole": {
+  "files": [
+   "compile.ts",
+   "front-num.ts",
+   "fuel.ts",
+   "index.ts",
+   "int.ts",
+   "lex.ts",
+   "vm.ts"
+  ],
+  "bytes": 2852998,
+  "coarse": {
+   "instructions": 21009106000,
+   "countEvery": 1000,
+   "peakHeapMB": 1705,
+   "ms": 175719,
+   "heapAfterLoadMB": 13.7,
+   "heapAfterCheckMB": 921.8,
+   "status": -1,
+   "output": "error: not enough memory\n"
+  },
+  "tsrs": {
+   "output": "",
+   "ms": 1437.3436250000377
+  }
+ }
+}

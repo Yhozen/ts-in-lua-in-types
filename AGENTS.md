@@ -48,6 +48,6 @@ tslua under real Lua 5.4 (wasmoon) is the ground truth.
   `vp run oracle -- --verify` reruns and compares outputs and counts.
 - `vp run upstream` reselects `oracle/inputs/upstream/` (TypeScript cases);
   `vp run census` -> `docs/CENSUS.md`; `vp run profile` -> `docs/PROFILE.md`
-  and `oracle/profile.json`; `vp run tower` -> `oracle/tower.json`.
+  and `oracle/profile.json`; `vp run tower` -> `oracle/tower.json`; `vp run warmup` -> `oracle/warmup.json`.
 - `oracle/inputs/**` is `-text` in `.gitattributes`: upstream cases keep their
   CRLF line endings byte for byte.

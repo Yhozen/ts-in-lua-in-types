@@ -10,6 +10,7 @@
     "census": "node scripts/census.ts",
     "profile": "node scripts/profile.ts",
     "tower": "node scripts/tower.ts",
+    "warmup": "node scripts/warmup.ts",
     "upstream": "node scripts/upstream.ts",
     "test": "vp test",
     "typecheck": "tsrs --noEmit --fast",
