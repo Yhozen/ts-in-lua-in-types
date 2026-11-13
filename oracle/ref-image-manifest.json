@@ -64,10 +64,10 @@
    },
    "ms": {
     "n": 328,
-    "min": 6,
-    "median": 55,
-    "p90": 130,
-    "max": 6558
+    "min": 8,
+    "median": 100,
+    "p90": 243,
+    "max": 8063
    }
   },
   "es5": {
@@ -130,10 +130,10 @@
    },
    "ms": {
     "n": 328,
-    "min": 9,
-    "median": 97,
-    "p90": 226,
-    "max": 7378
+    "min": 19,
+    "median": 155,
+    "p90": 430,
+    "max": 10929
    }
   }
  },
@@ -189,8 +189,8 @@
    "metamethods": {
     "__index": 8769
    },
-   "ms": 48,
-   "setupMs": 284
+   "ms": 86,
+   "setupMs": 278
   },
   {
    "input": "assign-basic",
@@ -244,8 +244,8 @@
    "metamethods": {
     "__index": 5679
    },
-   "ms": 73,
-   "setupMs": 215
+   "ms": 28,
+   "setupMs": 241
   },
   {
    "input": "assign-callback-bivariance",
@@ -298,8 +298,8 @@
    "metamethods": {
     "__index": 16070
    },
-   "ms": 73,
-   "setupMs": 200
+   "ms": 118,
+   "setupMs": 366
   },
   {
    "input": "assign-enum-number",
@@ -355,8 +355,8 @@
    "metamethods": {
     "__index": 9035
    },
-   "ms": 28,
-   "setupMs": 215
+   "ms": 74,
+   "setupMs": 319
   },
   {
    "input": "assign-function-params",
@@ -409,8 +409,8 @@
    "metamethods": {
     "__index": 10637
    },
-   "ms": 60,
-   "setupMs": 180
+   "ms": 58,
+   "setupMs": 118
   },
   {
    "input": "assign-function-return",
@@ -465,8 +465,8 @@
    "metamethods": {
     "__index": 8235
    },
-   "ms": 54,
-   "setupMs": 183
+   "ms": 123,
+   "setupMs": 77
   },
   {
    "input": "assign-index-signature",
@@ -520,8 +520,8 @@
    "metamethods": {
     "__index": 11654
    },
-   "ms": 43,
-   "setupMs": 196
+   "ms": 54,
+   "setupMs": 62
   },
   {
    "input": "assign-never",
@@ -577,8 +577,8 @@
    "metamethods": {
     "__index": 8201
    },
-   "ms": 41,
-   "setupMs": 61
+   "ms": 93,
+   "setupMs": 103
   },
   {
    "input": "assign-null-undefined",
@@ -631,8 +631,8 @@
    "metamethods": {
     "__index": 8152
    },
-   "ms": 24,
-   "setupMs": 63
+   "ms": 98,
+   "setupMs": 222
   },
   {
    "input": "assign-object-excess",
@@ -687,8 +687,8 @@
    "metamethods": {
     "__index": 10588
    },
-   "ms": 44,
-   "setupMs": 103
+   "ms": 954,
+   "setupMs": 1459
   },
   {
    "input": "assign-object-literal-nested",
@@ -742,8 +742,8 @@
    "metamethods": {
     "__index": 19648
    },
-   "ms": 67,
-   "setupMs": 63
+   "ms": 73,
+   "setupMs": 66
   },
   {
    "input": "assign-object-missing",
@@ -797,8 +797,8 @@
    "metamethods": {
     "__index": 8925
    },
-   "ms": 78,
-   "setupMs": 291
+   "ms": 42,
+   "setupMs": 126
   },
   {
    "input": "assign-optional",
@@ -851,8 +851,8 @@
    "metamethods": {
     "__index": 13788
    },
-   "ms": 59,
-   "setupMs": 101
+   "ms": 1234,
+   "setupMs": 1655
   },
   {
    "input": "assign-readonly",
@@ -908,8 +908,8 @@
    "metamethods": {
     "__index": 15742
    },
-   "ms": 63,
-   "setupMs": 66
+   "ms": 243,
+   "setupMs": 844
   },
   {
    "input": "assign-structural-class",
@@ -964,8 +964,8 @@
    "metamethods": {
     "__index": 11923
    },
-   "ms": 35,
-   "setupMs": 61
+   "ms": 194,
+   "setupMs": 934
   },
   {
    "input": "assign-symbol-bigint-like",
@@ -1021,8 +1021,8 @@
    "metamethods": {
     "__index": 8371
    },
-   "ms": 31,
-   "setupMs": 85
+   "ms": 37,
+   "setupMs": 129
   },
   {
    "input": "assign-tuple-array",
@@ -1077,8 +1077,8 @@
    "metamethods": {
     "__index": 22657
    },
-   "ms": 62,
-   "setupMs": 68
+   "ms": 104,
+   "setupMs": 90
   },
   {
    "input": "assign-variance-arrays",
@@ -1131,8 +1131,8 @@
    "metamethods": {
     "__index": 15328
    },
-   "ms": 61,
-   "setupMs": 55
+   "ms": 287,
+   "setupMs": 96
   },
   {
    "input": "assign-void",
@@ -1186,8 +1186,8 @@
    "metamethods": {
     "__index": 8854
    },
-   "ms": 39,
-   "setupMs": 62
+   "ms": 107,
+   "setupMs": 193
   },
   {
    "input": "assign-weak-type",
@@ -1242,8 +1242,8 @@
    "metamethods": {
     "__index": 11218
    },
-   "ms": 50,
-   "setupMs": 55
+   "ms": 119,
+   "setupMs": 178
   },
   {
    "input": "class-abstract",
@@ -1296,8 +1296,8 @@
    "metamethods": {
     "__index": 8498
    },
-   "ms": 23,
-   "setupMs": 52
+   "ms": 95,
+   "setupMs": 755
   },
   {
    "input": "class-accessor",
@@ -1353,8 +1353,8 @@
    "metamethods": {
     "__index": 11676
    },
-   "ms": 53,
-   "setupMs": 75
+   "ms": 320,
+   "setupMs": 247
   },
   {
    "input": "class-basic",
@@ -1410,8 +1410,8 @@
    "metamethods": {
     "__index": 12087
    },
-   "ms": 106,
-   "setupMs": 360
+   "ms": 136,
+   "setupMs": 98
   },
   {
    "input": "class-generic-constraint-error",
@@ -1466,8 +1466,8 @@
    "metamethods": {
     "__index": 9295
    },
-   "ms": 55,
-   "setupMs": 63
+   "ms": 128,
+   "setupMs": 132
   },
   {
    "input": "class-implements",
@@ -1520,8 +1520,8 @@
    "metamethods": {
     "__index": 8198
    },
-   "ms": 52,
-   "setupMs": 124
+   "ms": 37,
+   "setupMs": 178
   },
   {
    "input": "class-index-signature",
@@ -1575,8 +1575,8 @@
    "metamethods": {
     "__index": 7372
    },
-   "ms": 28,
-   "setupMs": 57
+   "ms": 97,
+   "setupMs": 149
   },
   {
    "input": "class-override",
@@ -1630,8 +1630,8 @@
    "metamethods": {
     "__index": 14490
    },
-   "ms": 64,
-   "setupMs": 131
+   "ms": 131,
+   "setupMs": 252
   },
   {
    "input": "class-private-protected",
@@ -1686,8 +1686,8 @@
    "metamethods": {
     "__index": 13637
    },
-   "ms": 55,
-   "setupMs": 54
+   "ms": 46,
+   "setupMs": 211
   },
   {
    "input": "class-static",
@@ -1742,8 +1742,8 @@
    "metamethods": {
     "__index": 9891
    },
-   "ms": 47,
-   "setupMs": 59
+   "ms": 114,
+   "setupMs": 199
   },
   {
    "input": "class-strict-property-init",
@@ -1796,8 +1796,8 @@
    "metamethods": {
     "__index": 7486
    },
-   "ms": 35,
-   "setupMs": 55
+   "ms": 119,
+   "setupMs": 119
   },
   {
    "input": "class-super-call",
@@ -1853,8 +1853,8 @@
    "metamethods": {
     "__index": 10705
    },
-   "ms": 35,
-   "setupMs": 79
+   "ms": 115,
+   "setupMs": 413
   },
   {
    "input": "class-this-type",
@@ -1911,8 +1911,8 @@
    "metamethods": {
     "__index": 12981
    },
-   "ms": 54,
-   "setupMs": 63
+   "ms": 94,
+   "setupMs": 171
   },
   {
    "input": "clean-abstract-generic",
@@ -1970,8 +1970,8 @@
    "metamethods": {
     "__index": 26784
    },
-   "ms": 114,
-   "setupMs": 52
+   "ms": 164,
+   "setupMs": 190
   },
   {
    "input": "clean-basic",
@@ -2020,8 +2020,8 @@
    "metamethods": {
     "__index": 5564
    },
-   "ms": 18,
-   "setupMs": 53
+   "ms": 77,
+   "setupMs": 753
   },
   {
    "input": "clean-classes",
@@ -2074,8 +2074,8 @@
    "metamethods": {
     "__index": 20302
    },
-   "ms": 148,
-   "setupMs": 51
+   "ms": 92,
+   "setupMs": 137
   },
   {
    "input": "clean-comments-only",
@@ -2120,8 +2120,8 @@
    "metamethods": {
     "__index": 4646
    },
-   "ms": 13,
-   "setupMs": 57
+   "ms": 17,
+   "setupMs": 125
   },
   {
    "input": "clean-control-flow",
@@ -2177,8 +2177,8 @@
    "metamethods": {
     "__index": 18398
    },
-   "ms": 148,
-   "setupMs": 84
+   "ms": 236,
+   "setupMs": 148
   },
   {
    "input": "clean-declare",
@@ -2225,8 +2225,8 @@
    "metamethods": {
     "__index": 9256
    },
-   "ms": 54,
-   "setupMs": 78
+   "ms": 137,
+   "setupMs": 144
   },
   {
    "input": "clean-destructuring",
@@ -2283,8 +2283,8 @@
    "metamethods": {
     "__index": 34337
    },
-   "ms": 214,
-   "setupMs": 81
+   "ms": 356,
+   "setupMs": 188
   },
   {
    "input": "clean-empty",
@@ -2329,8 +2329,8 @@
    "metamethods": {
     "__index": 4518
    },
-   "ms": 30,
-   "setupMs": 78
+   "ms": 20,
+   "setupMs": 105
   },
   {
    "input": "clean-enums-namespaces",
@@ -2381,8 +2381,8 @@
    "metamethods": {
     "__index": 9680
    },
-   "ms": 61,
-   "setupMs": 70
+   "ms": 44,
+   "setupMs": 321
   },
   {
    "input": "clean-functions",
@@ -2432,8 +2432,8 @@
    "metamethods": {
     "__index": 10126
    },
-   "ms": 90,
-   "setupMs": 86
+   "ms": 135,
+   "setupMs": 165
   },
   {
    "input": "clean-generics",
@@ -2488,8 +2488,8 @@
    "metamethods": {
     "__index": 27292
    },
-   "ms": 149,
-   "setupMs": 116
+   "ms": 220,
+   "setupMs": 145
   },
   {
    "input": "clean-labeled-loops",
@@ -2539,8 +2539,8 @@
    "metamethods": {
     "__index": 9632
    },
-   "ms": 43,
-   "setupMs": 81
+   "ms": 123,
+   "setupMs": 230
   },
   {
    "input": "clean-mapped-conditional",
@@ -2589,8 +2589,8 @@
    "metamethods": {
     "__index": 14662
    },
-   "ms": 106,
-   "setupMs": 76
+   "ms": 100,
+   "setupMs": 140
   },
   {
    "input": "clean-object-methods",
@@ -2640,8 +2640,8 @@
    "metamethods": {
     "__index": 10059
    },
-   "ms": 68,
-   "setupMs": 108
+   "ms": 101,
+   "setupMs": 150
   },
   {
    "input": "clean-overloads-guards",
@@ -2698,8 +2698,8 @@
    "metamethods": {
     "__index": 12070
    },
-   "ms": 70,
-   "setupMs": 99
+   "ms": 39,
+   "setupMs": 124
   },
   {
    "input": "clean-type-level",
@@ -2750,8 +2750,8 @@
    "metamethods": {
     "__index": 45931
    },
-   "ms": 127,
-   "setupMs": 96
+   "ms": 174,
+   "setupMs": 74
   },
   {
    "input": "clean-unicode",
@@ -2807,8 +2807,8 @@
    "metamethods": {
     "__index": 7904
    },
-   "ms": 105,
-   "setupMs": 88
+   "ms": 49,
+   "setupMs": 169
   },
   {
    "input": "clean-unions",
@@ -2858,8 +2858,8 @@
    "metamethods": {
     "__index": 16996
    },
-   "ms": 60,
-   "setupMs": 145
+   "ms": 54,
+   "setupMs": 112
   },
   {
    "input": "conditional-basic",
@@ -2914,8 +2914,8 @@
    "metamethods": {
     "__index": 8155
    },
-   "ms": 54,
-   "setupMs": 79
+   "ms": 91,
+   "setupMs": 123
   },
   {
    "input": "conditional-builtin-utils",
@@ -2971,8 +2971,8 @@
    "metamethods": {
     "__index": 14245
    },
-   "ms": 44,
-   "setupMs": 101
+   "ms": 93,
+   "setupMs": 123
   },
   {
    "input": "conditional-deferred",
@@ -3026,8 +3026,8 @@
    "metamethods": {
     "__index": 7818
    },
-   "ms": 45,
-   "setupMs": 111
+   "ms": 87,
+   "setupMs": 75
   },
   {
    "input": "conditional-distributive",
@@ -3081,8 +3081,8 @@
    "metamethods": {
     "__index": 22934
    },
-   "ms": 72,
-   "setupMs": 59
+   "ms": 234,
+   "setupMs": 68
   },
   {
    "input": "conditional-infer",
@@ -3137,8 +3137,8 @@
    "metamethods": {
     "__index": 13487
    },
-   "ms": 71,
-   "setupMs": 61
+   "ms": 267,
+   "setupMs": 163
   },
   {
    "input": "conditional-infer-constraint",
@@ -3193,8 +3193,8 @@
    "metamethods": {
     "__index": 14478
    },
-   "ms": 48,
-   "setupMs": 91
+   "ms": 327,
+   "setupMs": 140
   },
   {
    "input": "enum-computed-error",
@@ -3252,8 +3252,8 @@
    "metamethods": {
     "__index": 7378
    },
-   "ms": 22,
-   "setupMs": 90
+   "ms": 74,
+   "setupMs": 109
   },
   {
    "input": "enum-const",
@@ -3309,8 +3309,8 @@
    "metamethods": {
     "__index": 8637
    },
-   "ms": 37,
-   "setupMs": 67
+   "ms": 70,
+   "setupMs": 193
   },
   {
    "input": "enum-declaration-merge",
@@ -3360,8 +3360,8 @@
    "metamethods": {
     "__index": 5889
    },
-   "ms": 27,
-   "setupMs": 74
+   "ms": 74,
+   "setupMs": 189
   },
   {
    "input": "enum-numeric",
@@ -3418,8 +3418,8 @@
    "metamethods": {
     "__index": 9322
    },
-   "ms": 36,
-   "setupMs": 87
+   "ms": 250,
+   "setupMs": 97
   },
   {
    "input": "enum-string",
@@ -3475,8 +3475,8 @@
    "metamethods": {
     "__index": 7650
    },
-   "ms": 27,
-   "setupMs": 89
+   "ms": 163,
+   "setupMs": 161
   },
   {
    "input": "error-abstract-instantiation",
@@ -3527,8 +3527,8 @@
    "metamethods": {
     "__index": 11077
    },
-   "ms": 49,
-   "setupMs": 82
+   "ms": 59,
+   "setupMs": 357
   },
   {
    "input": "error-arg-count",
@@ -3584,8 +3584,8 @@
    "metamethods": {
     "__index": 7277
    },
-   "ms": 25,
-   "setupMs": 82
+   "ms": 157,
+   "setupMs": 177
   },
   {
    "input": "error-await-outside-async",
@@ -3638,8 +3638,8 @@
    "metamethods": {
     "__index": 5473
    },
-   "ms": 36,
-   "setupMs": 65
+   "ms": 54,
+   "setupMs": 212
   },
   {
    "input": "error-cannot-find-name",
@@ -3695,8 +3695,8 @@
    "metamethods": {
     "__index": 6982
    },
-   "ms": 21,
-   "setupMs": 68
+   "ms": 47,
+   "setupMs": 170
   },
   {
    "input": "error-comparison-no-overlap",
@@ -3751,8 +3751,8 @@
    "metamethods": {
     "__index": 8275
    },
-   "ms": 62,
-   "setupMs": 102
+   "ms": 96,
+   "setupMs": 261
   },
   {
    "input": "error-const-assign",
@@ -3806,8 +3806,8 @@
    "metamethods": {
     "__index": 6238
    },
-   "ms": 25,
-   "setupMs": 79
+   "ms": 177,
+   "setupMs": 139
   },
   {
    "input": "error-delete-non-optional",
@@ -3857,8 +3857,8 @@
    "metamethods": {
     "__index": 7301
    },
-   "ms": 27,
-   "setupMs": 83
+   "ms": 69,
+   "setupMs": 141
   },
   {
    "input": "error-duplicate-property",
@@ -3912,8 +3912,8 @@
    "metamethods": {
     "__index": 8038
    },
-   "ms": 27,
-   "setupMs": 80
+   "ms": 79,
+   "setupMs": 90
   },
   {
    "input": "error-generic-arity",
@@ -3969,8 +3969,8 @@
    "metamethods": {
     "__index": 10028
    },
-   "ms": 47,
-   "setupMs": 71
+   "ms": 75,
+   "setupMs": 88
   },
   {
    "input": "error-implicit-any",
@@ -4024,8 +4024,8 @@
    "metamethods": {
     "__index": 9069
    },
-   "ms": 46,
-   "setupMs": 65
+   "ms": 79,
+   "setupMs": 199
   },
   {
    "input": "error-index-implicit-any",
@@ -4079,8 +4079,8 @@
    "metamethods": {
     "__index": 8337
    },
-   "ms": 26,
-   "setupMs": 54
+   "ms": 38,
+   "setupMs": 529
   },
   {
    "input": "error-label-break",
@@ -4130,8 +4130,8 @@
    "metamethods": {
     "__index": 6043
    },
-   "ms": 39,
-   "setupMs": 69
+   "ms": 66,
+   "setupMs": 158
   },
   {
    "input": "error-missing-return-type",
@@ -4181,8 +4181,8 @@
    "metamethods": {
     "__index": 6266
    },
-   "ms": 19,
-   "setupMs": 83
+   "ms": 71,
+   "setupMs": 175
   },
   {
    "input": "error-not-callable",
@@ -4236,8 +4236,8 @@
    "metamethods": {
     "__index": 8239
    },
-   "ms": 63,
-   "setupMs": 99
+   "ms": 70,
+   "setupMs": 149
   },
   {
    "input": "error-object-possibly-undefined",
@@ -4291,8 +4291,8 @@
    "metamethods": {
     "__index": 7710
    },
-   "ms": 40,
-   "setupMs": 90
+   "ms": 34,
+   "setupMs": 182
   },
   {
    "input": "error-operator-types",
@@ -4346,8 +4346,8 @@
    "metamethods": {
     "__index": 10829
    },
-   "ms": 59,
-   "setupMs": 84
+   "ms": 91,
+   "setupMs": 210
   },
   {
    "input": "error-property-not-exist",
@@ -4404,8 +4404,8 @@
    "metamethods": {
     "__index": 7826
    },
-   "ms": 39,
-   "setupMs": 78
+   "ms": 1197,
+   "setupMs": 1701
   },
   {
    "input": "error-redeclare",
@@ -4459,8 +4459,8 @@
    "metamethods": {
     "__index": 8667
    },
-   "ms": 61,
-   "setupMs": 74
+   "ms": 77,
+   "setupMs": 97
   },
   {
    "input": "error-satisfies",
@@ -4516,8 +4516,8 @@
    "metamethods": {
     "__index": 9965
    },
-   "ms": 63,
-   "setupMs": 68
+   "ms": 109,
+   "setupMs": 104
   },
   {
    "input": "error-spread-non-object",
@@ -4570,8 +4570,8 @@
    "metamethods": {
     "__index": 7213
    },
-   "ms": 26,
-   "setupMs": 61
+   "ms": 27,
+   "setupMs": 188
   },
   {
    "input": "error-switch-case-type",
@@ -4625,8 +4625,8 @@
    "metamethods": {
     "__index": 6917
    },
-   "ms": 41,
-   "setupMs": 114
+   "ms": 34,
+   "setupMs": 181
   },
   {
    "input": "error-this-implicit",
@@ -4680,8 +4680,8 @@
    "metamethods": {
     "__index": 8293
    },
-   "ms": 61,
-   "setupMs": 106
+   "ms": 49,
+   "setupMs": 191
   },
   {
    "input": "error-type-as-value",
@@ -4734,8 +4734,8 @@
    "metamethods": {
     "__index": 6737
    },
-   "ms": 36,
-   "setupMs": 99
+   "ms": 60,
+   "setupMs": 175
   },
   {
    "input": "error-unicode-position",
@@ -4790,8 +4790,8 @@
    "metamethods": {
     "__index": 8198
    },
-   "ms": 96,
-   "setupMs": 82
+   "ms": 143,
+   "setupMs": 104
   },
   {
    "input": "error-unique-symbol-and-readonly-array",
@@ -4846,8 +4846,8 @@
    "metamethods": {
     "__index": 8336
    },
-   "ms": 39,
-   "setupMs": 91
+   "ms": 50,
+   "setupMs": 110
   },
   {
    "input": "error-unreachable-like",
@@ -4900,8 +4900,8 @@
    "metamethods": {
     "__index": 6446
    },
-   "ms": 85,
-   "setupMs": 101
+   "ms": 31,
+   "setupMs": 230
   },
   {
    "input": "error-unused-ts-expect",
@@ -4955,8 +4955,8 @@
    "metamethods": {
     "__index": 7257
    },
-   "ms": 73,
-   "setupMs": 105
+   "ms": 52,
+   "setupMs": 111
   },
   {
    "input": "error-used-before-declared",
@@ -5010,8 +5010,8 @@
    "metamethods": {
     "__index": 8203
    },
-   "ms": 64,
-   "setupMs": 139
+   "ms": 61,
+   "setupMs": 154
   },
   {
    "input": "error-value-as-type",
@@ -5066,7 +5066,7 @@
     "__index": 7186
    },
    "ms": 60,
-   "setupMs": 146
+   "setupMs": 147
   },
   {
    "input": "extreme/add-20-22",
@@ -5122,8 +5122,8 @@
    "metamethods": {
     "__index": 98860
    },
-   "ms": 425,
-   "setupMs": 138
+   "ms": 361,
+   "setupMs": 3090
   },
   {
    "input": "extreme/deep-recursion",
@@ -5179,8 +5179,8 @@
    "metamethods": {
     "__index": 3942102
    },
-   "ms": 6558,
-   "setupMs": 155
+   "ms": 8063,
+   "setupMs": 532
   },
   {
    "input": "extreme/large-unions",
@@ -5237,8 +5237,8 @@
    "metamethods": {
     "__index": 241876
    },
-   "ms": 569,
-   "setupMs": 155
+   "ms": 1892,
+   "setupMs": 335
   },
   {
    "input": "extreme/template-cross-product",
@@ -5295,8 +5295,8 @@
    "metamethods": {
     "__index": 1788132
    },
-   "ms": 2537,
-   "setupMs": 169
+   "ms": 6284,
+   "setupMs": 295
   },
   {
    "input": "generic-class",
@@ -5355,8 +5355,8 @@
    "metamethods": {
     "__index": 17000
    },
-   "ms": 161,
-   "setupMs": 119
+   "ms": 128,
+   "setupMs": 92
   },
   {
    "input": "generic-const-type-param",
@@ -5412,8 +5412,8 @@
    "metamethods": {
     "__index": 16810
    },
-   "ms": 137,
-   "setupMs": 135
+   "ms": 246,
+   "setupMs": 130
   },
   {
    "input": "generic-constraint",
@@ -5469,8 +5469,8 @@
    "metamethods": {
     "__index": 15599
    },
-   "ms": 122,
-   "setupMs": 174
+   "ms": 300,
+   "setupMs": 270
   },
   {
    "input": "generic-default",
@@ -5524,8 +5524,8 @@
    "metamethods": {
     "__index": 10219
    },
-   "ms": 76,
-   "setupMs": 134
+   "ms": 66,
+   "setupMs": 275
   },
   {
    "input": "generic-higher-order",
@@ -5582,8 +5582,8 @@
    "metamethods": {
     "__index": 18323
    },
-   "ms": 87,
-   "setupMs": 174
+   "ms": 112,
+   "setupMs": 210
   },
   {
    "input": "generic-identity",
@@ -5638,8 +5638,8 @@
    "metamethods": {
     "__index": 10853
    },
-   "ms": 111,
-   "setupMs": 167
+   "ms": 227,
+   "setupMs": 156
   },
   {
    "input": "generic-infer-from-object",
@@ -5696,8 +5696,8 @@
    "metamethods": {
     "__index": 13667
    },
-   "ms": 131,
-   "setupMs": 161
+   "ms": 202,
+   "setupMs": 322
   },
   {
    "input": "generic-inference-callback",
@@ -5754,8 +5754,8 @@
    "metamethods": {
     "__index": 24871
    },
-   "ms": 132,
-   "setupMs": 124
+   "ms": 225,
+   "setupMs": 175
   },
   {
    "input": "generic-inference-multiple",
@@ -5812,8 +5812,8 @@
    "metamethods": {
     "__index": 19330
    },
-   "ms": 110,
-   "setupMs": 167
+   "ms": 196,
+   "setupMs": 166
   },
   {
    "input": "generic-keyof-constraint",
@@ -5869,8 +5869,8 @@
    "metamethods": {
     "__index": 17515
    },
-   "ms": 91,
-   "setupMs": 133
+   "ms": 139,
+   "setupMs": 87
   },
   {
    "input": "generic-return-inference",
@@ -5917,8 +5917,8 @@
    "metamethods": {
     "__index": 7368
    },
-   "ms": 55,
-   "setupMs": 136
+   "ms": 45,
+   "setupMs": 207
   },
   {
    "input": "generic-unresolved-error",
@@ -5972,8 +5972,8 @@
    "metamethods": {
     "__index": 9887
    },
-   "ms": 48,
-   "setupMs": 72
+   "ms": 130,
+   "setupMs": 163
   },
   {
    "input": "indexed-access",
@@ -6027,8 +6027,8 @@
    "metamethods": {
     "__index": 11107
    },
-   "ms": 44,
-   "setupMs": 68
+   "ms": 98,
+   "setupMs": 184
   },
   {
    "input": "indexed-union-key",
@@ -6081,8 +6081,8 @@
    "metamethods": {
     "__index": 8099
    },
-   "ms": 46,
-   "setupMs": 78
+   "ms": 128,
+   "setupMs": 170
   },
   {
    "input": "interface-call-construct",
@@ -6138,8 +6138,8 @@
    "metamethods": {
     "__index": 12118
    },
-   "ms": 62,
-   "setupMs": 74
+   "ms": 65,
+   "setupMs": 123
   },
   {
    "input": "interface-extends-conflict",
@@ -6192,8 +6192,8 @@
    "metamethods": {
     "__index": 7560
    },
-   "ms": 44,
-   "setupMs": 71
+   "ms": 81,
+   "setupMs": 86
   },
   {
    "input": "interface-merge",
@@ -6247,8 +6247,8 @@
    "metamethods": {
     "__index": 9194
    },
-   "ms": 52,
-   "setupMs": 78
+   "ms": 68,
+   "setupMs": 225
   },
   {
    "input": "intersection-basic",
@@ -6302,8 +6302,8 @@
    "metamethods": {
     "__index": 15015
    },
-   "ms": 53,
-   "setupMs": 58
+   "ms": 109,
+   "setupMs": 156
   },
   {
    "input": "keyof-basic",
@@ -6359,8 +6359,8 @@
    "metamethods": {
     "__index": 7593
    },
-   "ms": 26,
-   "setupMs": 69
+   "ms": 57,
+   "setupMs": 126
   },
   {
    "input": "keyof-typeof",
@@ -6416,8 +6416,8 @@
    "metamethods": {
     "__index": 9909
    },
-   "ms": 29,
-   "setupMs": 63
+   "ms": 36,
+   "setupMs": 148
   },
   {
    "input": "literal-as-const",
@@ -6473,8 +6473,8 @@
    "metamethods": {
     "__index": 16229
    },
-   "ms": 74,
-   "setupMs": 64
+   "ms": 115,
+   "setupMs": 116
   },
   {
    "input": "literal-boolean",
@@ -6527,8 +6527,8 @@
    "metamethods": {
     "__index": 7403
    },
-   "ms": 23,
-   "setupMs": 70
+   "ms": 62,
+   "setupMs": 143
   },
   {
    "input": "literal-const-let",
@@ -6582,8 +6582,8 @@
    "metamethods": {
     "__index": 8715
    },
-   "ms": 52,
-   "setupMs": 64
+   "ms": 26,
+   "setupMs": 130
   },
   {
    "input": "literal-enum-member",
@@ -6641,8 +6641,8 @@
    "metamethods": {
     "__index": 9081
    },
-   "ms": 69,
-   "setupMs": 56
+   "ms": 79,
+   "setupMs": 169
   },
   {
    "input": "literal-fresh-excess",
@@ -6697,8 +6697,8 @@
    "metamethods": {
     "__index": 11881
    },
-   "ms": 59,
-   "setupMs": 82
+   "ms": 144,
+   "setupMs": 99
   },
   {
    "input": "literal-numeric",
@@ -6752,8 +6752,8 @@
    "metamethods": {
     "__index": 10441
    },
-   "ms": 48,
-   "setupMs": 77
+   "ms": 87,
+   "setupMs": 119
   },
   {
    "input": "literal-template-widen",
@@ -6807,8 +6807,8 @@
    "metamethods": {
     "__index": 8643
    },
-   "ms": 41,
-   "setupMs": 83
+   "ms": 2034,
+   "setupMs": 2127
   },
   {
    "input": "literal-widening-object",
@@ -6864,8 +6864,8 @@
    "metamethods": {
     "__index": 16144
    },
-   "ms": 54,
-   "setupMs": 74
+   "ms": 63,
+   "setupMs": 64
   },
   {
    "input": "lookup-element-access",
@@ -6919,8 +6919,8 @@
    "metamethods": {
     "__index": 11161
    },
-   "ms": 42,
-   "setupMs": 93
+   "ms": 121,
+   "setupMs": 120
   },
   {
    "input": "mapped-custom-modifiers",
@@ -6974,8 +6974,8 @@
    "metamethods": {
     "__index": 18202
    },
-   "ms": 101,
-   "setupMs": 78
+   "ms": 163,
+   "setupMs": 164
   },
   {
    "input": "mapped-filter-keys",
@@ -7031,8 +7031,8 @@
    "metamethods": {
     "__index": 14551
    },
-   "ms": 94,
-   "setupMs": 73
+   "ms": 165,
+   "setupMs": 122
   },
   {
    "input": "mapped-key-remap",
@@ -7087,8 +7087,8 @@
    "metamethods": {
     "__index": 17651
    },
-   "ms": 71,
-   "setupMs": 67
+   "ms": 91,
+   "setupMs": 213
   },
   {
    "input": "mapped-partial-required",
@@ -7144,8 +7144,8 @@
    "metamethods": {
     "__index": 8940
    },
-   "ms": 62,
-   "setupMs": 68
+   "ms": 70,
+   "setupMs": 127
   },
   {
    "input": "mapped-pick-omit",
@@ -7201,8 +7201,8 @@
    "metamethods": {
     "__index": 11103
    },
-   "ms": 107,
-   "setupMs": 104
+   "ms": 72,
+   "setupMs": 110
   },
   {
    "input": "mapped-readonly-record",
@@ -7258,8 +7258,8 @@
    "metamethods": {
     "__index": 9711
    },
-   "ms": 79,
-   "setupMs": 61
+   "ms": 225,
+   "setupMs": 114
   },
   {
    "input": "namespace-basic",
@@ -7315,8 +7315,8 @@
    "metamethods": {
     "__index": 9285
    },
-   "ms": 75,
-   "setupMs": 79
+   "ms": 153,
+   "setupMs": 157
   },
   {
    "input": "namespace-merge-class",
@@ -7370,8 +7370,8 @@
    "metamethods": {
     "__index": 7421
    },
-   "ms": 34,
-   "setupMs": 68
+   "ms": 171,
+   "setupMs": 111
   },
   {
    "input": "namespace-merge-function",
@@ -7426,8 +7426,8 @@
    "metamethods": {
     "__index": 7514
    },
-   "ms": 87,
-   "setupMs": 71
+   "ms": 111,
+   "setupMs": 92
   },
   {
    "input": "namespace-nested",
@@ -7480,8 +7480,8 @@
    "metamethods": {
     "__index": 8448
    },
-   "ms": 33,
-   "setupMs": 99
+   "ms": 128,
+   "setupMs": 196
   },
   {
    "input": "narrow-assertion-fn",
@@ -7536,8 +7536,8 @@
    "metamethods": {
     "__index": 8856
    },
-   "ms": 29,
-   "setupMs": 710
+   "ms": 55,
+   "setupMs": 170
   },
   {
    "input": "narrow-closure-reset",
@@ -7592,8 +7592,8 @@
    "metamethods": {
     "__index": 10059
    },
-   "ms": 32,
-   "setupMs": 121
+   "ms": 159,
+   "setupMs": 98
   },
   {
    "input": "narrow-control-flow-assign",
@@ -7649,8 +7649,8 @@
    "metamethods": {
     "__index": 8369
    },
-   "ms": 28,
-   "setupMs": 94
+   "ms": 94,
+   "setupMs": 203
   },
   {
    "input": "narrow-discriminated",
@@ -7707,8 +7707,8 @@
    "metamethods": {
     "__index": 15789
    },
-   "ms": 85,
-   "setupMs": 1154
+   "ms": 141,
+   "setupMs": 307
   },
   {
    "input": "narrow-equality",
@@ -7757,8 +7757,8 @@
    "metamethods": {
     "__index": 10616
    },
-   "ms": 53,
-   "setupMs": 104
+   "ms": 137,
+   "setupMs": 122
   },
   {
    "input": "narrow-exhaustive-never",
@@ -7813,8 +7813,8 @@
    "metamethods": {
     "__index": 9053
    },
-   "ms": 54,
-   "setupMs": 112
+   "ms": 177,
+   "setupMs": 180
   },
   {
    "input": "narrow-in",
@@ -7870,8 +7870,8 @@
    "metamethods": {
     "__index": 10484
    },
-   "ms": 55,
-   "setupMs": 84
+   "ms": 190,
+   "setupMs": 101
   },
   {
    "input": "narrow-instanceof",
@@ -7926,8 +7926,8 @@
    "metamethods": {
     "__index": 11646
    },
-   "ms": 75,
-   "setupMs": 70
+   "ms": 171,
+   "setupMs": 3826
   },
   {
    "input": "narrow-optional-chain",
@@ -7982,8 +7982,8 @@
    "metamethods": {
     "__index": 10781
    },
-   "ms": 52,
-   "setupMs": 74
+   "ms": 130,
+   "setupMs": 128
   },
   {
    "input": "narrow-truthiness",
@@ -8036,8 +8036,8 @@
    "metamethods": {
     "__index": 8314
    },
-   "ms": 36,
-   "setupMs": 78
+   "ms": 96,
+   "setupMs": 239
   },
   {
    "input": "narrow-typeof",
@@ -8092,8 +8092,8 @@
    "metamethods": {
     "__index": 8071
    },
-   "ms": 30,
-   "setupMs": 98
+   "ms": 55,
+   "setupMs": 232
   },
   {
    "input": "narrow-user-guard",
@@ -8149,8 +8149,8 @@
    "metamethods": {
     "__index": 12849
    },
-   "ms": 142,
-   "setupMs": 73
+   "ms": 117,
+   "setupMs": 124
   },
   {
    "input": "overload-arity",
@@ -8206,8 +8206,8 @@
    "metamethods": {
     "__index": 8129
    },
-   "ms": 31,
-   "setupMs": 86
+   "ms": 26,
+   "setupMs": 122
   },
   {
    "input": "overload-basic",
@@ -8261,8 +8261,8 @@
    "metamethods": {
     "__index": 10407
    },
-   "ms": 167,
-   "setupMs": 78
+   "ms": 92,
+   "setupMs": 115
   },
   {
    "input": "overload-impl-incompatible",
@@ -8308,8 +8308,8 @@
    "metamethods": {
     "__index": 7611
    },
-   "ms": 27,
-   "setupMs": 76
+   "ms": 78,
+   "setupMs": 154
   },
   {
    "input": "overload-method",
@@ -8364,8 +8364,8 @@
    "metamethods": {
     "__index": 10954
    },
-   "ms": 144,
-   "setupMs": 82
+   "ms": 42,
+   "setupMs": 214
   },
   {
    "input": "recursive-alias-circular",
@@ -8418,8 +8418,8 @@
    "metamethods": {
     "__index": 7157
    },
-   "ms": 29,
-   "setupMs": 87
+   "ms": 73,
+   "setupMs": 113
   },
   {
    "input": "recursive-deep-readonly",
@@ -8473,8 +8473,8 @@
    "metamethods": {
     "__index": 13378
    },
-   "ms": 148,
-   "setupMs": 493
+   "ms": 125,
+   "setupMs": 158
   },
   {
    "input": "recursive-json",
@@ -8529,8 +8529,8 @@
    "metamethods": {
     "__index": 40804
    },
-   "ms": 121,
-   "setupMs": 104
+   "ms": 129,
+   "setupMs": 74
   },
   {
    "input": "recursive-linked-list",
@@ -8584,8 +8584,8 @@
    "metamethods": {
     "__index": 21544
    },
-   "ms": 99,
-   "setupMs": 222
+   "ms": 131,
+   "setupMs": 127
   },
   {
    "input": "recursive-tuple-reverse",
@@ -8639,8 +8639,8 @@
    "metamethods": {
     "__index": 27867
    },
-   "ms": 115,
-   "setupMs": 127
+   "ms": 145,
+   "setupMs": 117
   },
   {
    "input": "rest-params",
@@ -8697,8 +8697,8 @@
    "metamethods": {
     "__index": 10802
    },
-   "ms": 29,
-   "setupMs": 71
+   "ms": 74,
+   "setupMs": 177
   },
   {
    "input": "spread-call",
@@ -8752,8 +8752,8 @@
    "metamethods": {
     "__index": 12140
    },
-   "ms": 81,
-   "setupMs": 83
+   "ms": 114,
+   "setupMs": 86
   },
   {
    "input": "syntax-bad-token",
@@ -8805,8 +8805,8 @@
    "metamethods": {
     "__index": 2149
    },
-   "ms": 10,
-   "setupMs": 111
+   "ms": 11,
+   "setupMs": 103
   },
   {
    "input": "syntax-decl-modifiers",
@@ -8860,8 +8860,8 @@
    "metamethods": {
     "__index": 7088
    },
-   "ms": 52,
-   "setupMs": 83
+   "ms": 32,
+   "setupMs": 68
   },
   {
    "input": "syntax-invalid-type",
@@ -8911,8 +8911,8 @@
    "metamethods": {
     "__index": 1675
    },
-   "ms": 7,
-   "setupMs": 93
+   "ms": 9,
+   "setupMs": 139
   },
   {
    "input": "syntax-jsx-in-ts",
@@ -8960,8 +8960,8 @@
    "metamethods": {
     "__index": 1592
    },
-   "ms": 10,
-   "setupMs": 76
+   "ms": 13,
+   "setupMs": 89
   },
   {
    "input": "syntax-missing-brace",
@@ -9012,8 +9012,8 @@
    "metamethods": {
     "__index": 1247
    },
-   "ms": 10,
-   "setupMs": 92
+   "ms": 8,
+   "setupMs": 96
   },
   {
    "input": "syntax-missing-paren",
@@ -9063,8 +9063,8 @@
    "metamethods": {
     "__index": 1297
    },
-   "ms": 8,
-   "setupMs": 94
+   "ms": 11,
+   "setupMs": 116
   },
   {
    "input": "syntax-numeric-literal",
@@ -9115,8 +9115,8 @@
    "metamethods": {
     "__index": 2541
    },
-   "ms": 42,
-   "setupMs": 82
+   "ms": 21,
+   "setupMs": 114
   },
   {
    "input": "syntax-regex-errors",
@@ -9169,8 +9169,8 @@
    "metamethods": {
     "__index": 5941
    },
-   "ms": 51,
-   "setupMs": 88
+   "ms": 122,
+   "setupMs": 117
   },
   {
    "input": "syntax-reserved-word",
@@ -9222,8 +9222,8 @@
    "metamethods": {
     "__index": 2100
    },
-   "ms": 25,
-   "setupMs": 85
+   "ms": 13,
+   "setupMs": 118
   },
   {
    "input": "syntax-unexpected-keyword",
@@ -9273,8 +9273,8 @@
    "metamethods": {
     "__index": 1391
    },
-   "ms": 19,
-   "setupMs": 78
+   "ms": 24,
+   "setupMs": 178
   },
   {
    "input": "syntax-unterminated-string",
@@ -9324,8 +9324,8 @@
    "metamethods": {
     "__index": 1474
    },
-   "ms": 10,
-   "setupMs": 162
+   "ms": 15,
+   "setupMs": 173
   },
   {
    "input": "syntax-unterminated-template",
@@ -9376,8 +9376,8 @@
    "metamethods": {
     "__index": 1344
    },
-   "ms": 6,
-   "setupMs": 97
+   "ms": 66,
+   "setupMs": 601
   },
   {
    "input": "template-basic",
@@ -9432,8 +9432,8 @@
    "metamethods": {
     "__index": 10065
    },
-   "ms": 72,
-   "setupMs": 97
+   "ms": 168,
+   "setupMs": 202
   },
   {
    "input": "template-infer",
@@ -9488,8 +9488,8 @@
    "metamethods": {
     "__index": 18823
    },
-   "ms": 102,
-   "setupMs": 143
+   "ms": 213,
+   "setupMs": 171
   },
   {
    "input": "template-intrinsics",
@@ -9544,8 +9544,8 @@
    "metamethods": {
     "__index": 10687
    },
-   "ms": 47,
-   "setupMs": 103
+   "ms": 142,
+   "setupMs": 227
   },
   {
    "input": "template-union-expand",
@@ -9601,8 +9601,8 @@
    "metamethods": {
     "__index": 9293
    },
-   "ms": 71,
-   "setupMs": 117
+   "ms": 134,
+   "setupMs": 269
   },
   {
    "input": "tuple-labeled",
@@ -9658,8 +9658,8 @@
    "metamethods": {
     "__index": 12824
    },
-   "ms": 36,
-   "setupMs": 104
+   "ms": 197,
+   "setupMs": 255
   },
   {
    "input": "tuple-length-index",
@@ -9714,8 +9714,8 @@
    "metamethods": {
     "__index": 12335
    },
-   "ms": 70,
-   "setupMs": 100
+   "ms": 140,
+   "setupMs": 189
   },
   {
    "input": "tuple-optional-rest",
@@ -9770,8 +9770,8 @@
    "metamethods": {
     "__index": 18971
    },
-   "ms": 90,
-   "setupMs": 80
+   "ms": 141,
+   "setupMs": 198
   },
   {
    "input": "tuple-variadic",
@@ -9828,8 +9828,8 @@
    "metamethods": {
     "__index": 26717
    },
-   "ms": 124,
-   "setupMs": 71
+   "ms": 184,
+   "setupMs": 717
   },
   {
    "input": "union-call",
@@ -9884,8 +9884,8 @@
    "metamethods": {
     "__index": 8392
    },
-   "ms": 89,
-   "setupMs": 102
+   "ms": 122,
+   "setupMs": 205
   },
   {
    "input": "union-property-access",
@@ -9939,8 +9939,8 @@
    "metamethods": {
     "__index": 9809
    },
-   "ms": 48,
-   "setupMs": 77
+   "ms": 46,
+   "setupMs": 250
   },
   {
    "input": "upstream/ArrowFunctionExpression1",
@@ -9990,8 +9990,8 @@
    "metamethods": {
     "__index": 6106
    },
-   "ms": 32,
-   "setupMs": 86
+   "ms": 70,
+   "setupMs": 175
   },
   {
    "input": "upstream/ClassDeclaration10",
@@ -10044,8 +10044,8 @@
    "metamethods": {
     "__index": 6574
    },
-   "ms": 54,
-   "setupMs": 105
+   "ms": 107,
+   "setupMs": 135
   },
   {
    "input": "upstream/ClassDeclaration21",
@@ -10099,8 +10099,8 @@
    "metamethods": {
     "__index": 6577
    },
-   "ms": 84,
-   "setupMs": 190
+   "ms": 64,
+   "setupMs": 154
   },
   {
    "input": "upstream/ambientEnumElementInitializer3",
@@ -10152,8 +10152,8 @@
    "metamethods": {
     "__index": 5166
    },
-   "ms": 59,
-   "setupMs": 102
+   "ms": 30,
+   "setupMs": 148
   },
   {
    "input": "upstream/anyAndUnknownHaveFalsyComponents",
@@ -10202,8 +10202,8 @@
    "metamethods": {
     "__index": 12579
    },
-   "ms": 102,
-   "setupMs": 95
+   "ms": 122,
+   "setupMs": 160
   },
   {
    "input": "upstream/arguments",
@@ -10262,8 +10262,8 @@
    "metamethods": {
     "__index": 15104
    },
-   "ms": 151,
-   "setupMs": 98
+   "ms": 154,
+   "setupMs": 165
   },
   {
    "input": "upstream/arrayDestructuringInSwitch1",
@@ -10322,8 +10322,8 @@
    "metamethods": {
     "__index": 25182
    },
-   "ms": 223,
-   "setupMs": 89
+   "ms": 376,
+   "setupMs": 206
   },
   {
    "input": "upstream/arrayLiteral1",
@@ -10372,8 +10372,8 @@
    "metamethods": {
     "__index": 6082
    },
-   "ms": 75,
-   "setupMs": 112
+   "ms": 21,
+   "setupMs": 125
   },
   {
    "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
@@ -10429,8 +10429,8 @@
    "metamethods": {
     "__index": 31684
    },
-   "ms": 174,
-   "setupMs": 160
+   "ms": 264,
+   "setupMs": 137
   },
   {
    "input": "upstream/assignmentToParenthesizedExpression1",
@@ -10483,8 +10483,8 @@
    "metamethods": {
     "__index": 5969
    },
-   "ms": 82,
-   "setupMs": 124
+   "ms": 25,
+   "setupMs": 125
   },
   {
    "input": "upstream/baseClassImprovedMismatchErrors",
@@ -10539,8 +10539,8 @@
    "metamethods": {
     "__index": 34033
    },
-   "ms": 204,
-   "setupMs": 147
+   "ms": 295,
+   "setupMs": 3050
   },
   {
    "input": "upstream/breakInIterationOrSwitchStatement1",
@@ -10585,8 +10585,8 @@
    "metamethods": {
     "__index": 4975
    },
-   "ms": 84,
-   "setupMs": 170
+   "ms": 56,
+   "setupMs": 140
   },
   {
    "input": "upstream/callOverloads2",
@@ -10640,8 +10640,8 @@
    "metamethods": {
     "__index": 14548
    },
-   "ms": 219,
-   "setupMs": 114
+   "ms": 175,
+   "setupMs": 90
   },
   {
    "input": "upstream/capturedLetConstInLoop10_ES6",
@@ -10691,8 +10691,8 @@
    "metamethods": {
     "__index": 29194
    },
-   "ms": 297,
-   "setupMs": 150
+   "ms": 513,
+   "setupMs": 249
   },
   {
    "input": "upstream/classExpressionAssignment",
@@ -10745,8 +10745,8 @@
    "metamethods": {
     "__index": 10642
    },
-   "ms": 96,
-   "setupMs": 217
+   "ms": 148,
+   "setupMs": 308
   },
   {
    "input": "upstream/classExtendingQualifiedName",
@@ -10800,8 +10800,8 @@
    "metamethods": {
     "__index": 7380
    },
-   "ms": 123,
-   "setupMs": 154
+   "ms": 346,
+   "setupMs": 135
   },
   {
    "input": "upstream/classExtendsMultipleBaseClasses",
@@ -10851,8 +10851,8 @@
    "metamethods": {
     "__index": 7648
    },
-   "ms": 31,
-   "setupMs": 118
+   "ms": 192,
+   "setupMs": 328
   },
   {
    "input": "upstream/classOrder1",
@@ -10899,8 +10899,8 @@
    "metamethods": {
     "__index": 7433
    },
-   "ms": 36,
-   "setupMs": 122
+   "ms": 332,
+   "setupMs": 189
   },
   {
    "input": "upstream/classVarianceResolveCircularity1",
@@ -10947,8 +10947,8 @@
    "metamethods": {
     "__index": 14297
    },
-   "ms": 74,
-   "setupMs": 94
+   "ms": 798,
+   "setupMs": 2129
   },
   {
    "input": "upstream/collisionCodeGenModuleWithMethodChildren",
@@ -11002,8 +11002,8 @@
    "metamethods": {
     "__index": 13656
    },
-   "ms": 56,
-   "setupMs": 127
+   "ms": 116,
+   "setupMs": 389
   },
   {
    "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
@@ -11057,8 +11057,8 @@
    "metamethods": {
     "__index": 13575
    },
-   "ms": 85,
-   "setupMs": 139
+   "ms": 145,
+   "setupMs": 382
   },
   {
    "input": "upstream/commentOnArrayElement12",
@@ -11104,8 +11104,8 @@
    "metamethods": {
     "__index": 5882
    },
-   "ms": 58,
-   "setupMs": 151
+   "ms": 24,
+   "setupMs": 167
   },
   {
    "input": "upstream/commentOnClassAccessor1",
@@ -11154,8 +11154,8 @@
    "metamethods": {
     "__index": 6314
    },
-   "ms": 28,
-   "setupMs": 114
+   "ms": 32,
+   "setupMs": 253
   },
   {
    "input": "upstream/commentOnClassAccessor2",
@@ -11204,8 +11204,8 @@
    "metamethods": {
     "__index": 6992
    },
-   "ms": 56,
-   "setupMs": 112
+   "ms": 87,
+   "setupMs": 131
   },
   {
    "input": "upstream/conditionalEqualityTestingNullability",
@@ -11259,8 +11259,8 @@
    "metamethods": {
     "__index": 22616
    },
-   "ms": 91,
-   "setupMs": 71
+   "ms": 243,
+   "setupMs": 120
   },
   {
    "input": "upstream/conditionalExpressions2",
@@ -11310,8 +11310,8 @@
    "metamethods": {
     "__index": 16531
    },
-   "ms": 76,
-   "setupMs": 151
+   "ms": 88,
+   "setupMs": 148
   },
   {
    "input": "upstream/constructorArgsErrors3",
@@ -11361,8 +11361,8 @@
    "metamethods": {
     "__index": 6147
    },
-   "ms": 31,
-   "setupMs": 89
+   "ms": 78,
+   "setupMs": 129
   },
   {
    "input": "upstream/contextualSignatureInstatiationContravariance",
@@ -11415,8 +11415,8 @@
    "metamethods": {
     "__index": 20066
    },
-   "ms": 88,
-   "setupMs": 73
+   "ms": 196,
+   "setupMs": 129
   },
   {
    "input": "upstream/contextualTypeSelfReferencing",
@@ -11466,8 +11466,8 @@
    "metamethods": {
     "__index": 33535
    },
-   "ms": 111,
-   "setupMs": 97
+   "ms": 401,
+   "setupMs": 119
   },
   {
    "input": "upstream/contextualTyping19",
@@ -11518,8 +11518,8 @@
    "metamethods": {
     "__index": 11665
    },
-   "ms": 39,
-   "setupMs": 97
+   "ms": 65,
+   "setupMs": 243
   },
   {
    "input": "upstream/contextualTyping4",
@@ -11574,8 +11574,8 @@
    "metamethods": {
     "__index": 9748
    },
-   "ms": 45,
-   "setupMs": 72
+   "ms": 209,
+   "setupMs": 149
   },
   {
    "input": "upstream/contextualTyping41",
@@ -11628,8 +11628,8 @@
    "metamethods": {
     "__index": 9209
    },
-   "ms": 108,
-   "setupMs": 87
+   "ms": 152,
+   "setupMs": 1195
   },
   {
    "input": "upstream/contextualTypingOfArrayLiterals1",
@@ -11683,8 +11683,8 @@
    "metamethods": {
     "__index": 10295
    },
-   "ms": 62,
-   "setupMs": 66
+   "ms": 247,
+   "setupMs": 237
   },
   {
    "input": "upstream/contextualTypingOfConditionalExpression",
@@ -11739,8 +11739,8 @@
    "metamethods": {
     "__index": 20373
    },
-   "ms": 75,
-   "setupMs": 93
+   "ms": 171,
+   "setupMs": 97
   },
   {
    "input": "upstream/contextuallyTypingOrOperator",
@@ -11796,8 +11796,8 @@
    "metamethods": {
     "__index": 21834
    },
-   "ms": 72,
-   "setupMs": 66
+   "ms": 165,
+   "setupMs": 72
   },
   {
    "input": "upstream/declFileClassWithIndexSignature",
@@ -11843,8 +11843,8 @@
    "metamethods": {
     "__index": 5880
    },
-   "ms": 18,
-   "setupMs": 80
+   "ms": 152,
+   "setupMs": 149
   },
   {
    "input": "upstream/declFileOptionalInterfaceMethod",
@@ -11897,8 +11897,8 @@
    "metamethods": {
     "__index": 5810
    },
-   "ms": 21,
-   "setupMs": 83
+   "ms": 25,
+   "setupMs": 230
   },
   {
    "input": "upstream/declarationEmitDestructuringArrayPattern3",
@@ -11949,8 +11949,8 @@
    "metamethods": {
     "__index": 10013
    },
-   "ms": 35,
-   "setupMs": 57
+   "ms": 139,
+   "setupMs": 118
   },
   {
    "input": "upstream/declarationEmitExpandoWithGenericConstraint",
@@ -12000,8 +12000,8 @@
    "metamethods": {
     "__index": 18072
    },
-   "ms": 70,
-   "setupMs": 61
+   "ms": 175,
+   "setupMs": 88
   },
   {
    "input": "upstream/declarationEmitNameConflictsWithAlias",
@@ -12047,8 +12047,8 @@
    "metamethods": {
     "__index": 8043
    },
-   "ms": 38,
-   "setupMs": 59
+   "ms": 181,
+   "setupMs": 109
   },
   {
    "input": "upstream/declarationEmitOptionalMethod",
@@ -12094,8 +12094,8 @@
    "metamethods": {
     "__index": 8920
    },
-   "ms": 30,
-   "setupMs": 69
+   "ms": 98,
+   "setupMs": 148
   },
   {
    "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
@@ -12141,8 +12141,8 @@
    "metamethods": {
     "__index": 10062
    },
-   "ms": 29,
-   "setupMs": 73
+   "ms": 155,
+   "setupMs": 261
   },
   {
    "input": "upstream/defaultValueInFunctionTypes",
@@ -12196,8 +12196,8 @@
    "metamethods": {
     "__index": 9805
    },
-   "ms": 50,
-   "setupMs": 67
+   "ms": 43,
+   "setupMs": 285
   },
   {
    "input": "upstream/deleteOperatorInStrictMode",
@@ -12247,8 +12247,8 @@
    "metamethods": {
     "__index": 5699
    },
-   "ms": 27,
-   "setupMs": 83
+   "ms": 67,
+   "setupMs": 206
   },
   {
    "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
@@ -12295,8 +12295,8 @@
    "metamethods": {
     "__index": 13314
    },
-   "ms": 54,
-   "setupMs": 64
+   "ms": 182,
+   "setupMs": 214
   },
   {
    "input": "upstream/discriminantsAndPrimitives",
@@ -12352,8 +12352,8 @@
    "metamethods": {
     "__index": 38192
    },
-   "ms": 113,
-   "setupMs": 58
+   "ms": 290,
+   "setupMs": 258
   },
   {
    "input": "upstream/distributiveConditionalTypeNeverIntersection1",
@@ -12402,8 +12402,8 @@
    "metamethods": {
     "__index": 10095
    },
-   "ms": 39,
-   "setupMs": 56
+   "ms": 33,
+   "setupMs": 312
   },
   {
    "input": "upstream/duplicateErrorNameNotFound",
@@ -12458,8 +12458,8 @@
    "metamethods": {
     "__index": 5840
    },
-   "ms": 27,
-   "setupMs": 56
+   "ms": 82,
+   "setupMs": 243
   },
   {
    "input": "upstream/duplicateObjectLiteralProperty_computedName2",
@@ -12514,8 +12514,8 @@
    "metamethods": {
     "__index": 17062
    },
-   "ms": 74,
-   "setupMs": 65
+   "ms": 147,
+   "setupMs": 102
   },
   {
    "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
@@ -12561,8 +12561,8 @@
    "metamethods": {
     "__index": 11149
    },
-   "ms": 44,
-   "setupMs": 68
+   "ms": 103,
+   "setupMs": 157
   },
   {
    "input": "upstream/emitSkipsThisWithRestParameter",
@@ -12618,8 +12618,8 @@
    "metamethods": {
     "__index": 13067
    },
-   "ms": 66,
-   "setupMs": 58
+   "ms": 130,
+   "setupMs": 265
   },
   {
    "input": "upstream/emitThisInSuperMethodCall",
@@ -12669,8 +12669,8 @@
    "metamethods": {
     "__index": 13526
    },
-   "ms": 52,
-   "setupMs": 60
+   "ms": 203,
+   "setupMs": 624
   },
   {
    "input": "upstream/emptyFile",
@@ -12715,8 +12715,8 @@
    "metamethods": {
     "__index": 4655
    },
-   "ms": 15,
-   "setupMs": 66
+   "ms": 40,
+   "setupMs": 108
   },
   {
    "input": "upstream/enumMemberResolution",
@@ -12766,8 +12766,8 @@
    "metamethods": {
     "__index": 2013
    },
-   "ms": 24,
-   "setupMs": 71
+   "ms": 41,
+   "setupMs": 120
   },
   {
    "input": "upstream/errorForUsingPropertyOfTypeAsType02",
@@ -12820,8 +12820,8 @@
    "metamethods": {
     "__index": 7860
    },
-   "ms": 45,
-   "setupMs": 74
+   "ms": 107,
+   "setupMs": 88
   },
   {
    "input": "upstream/errorsForCallAndAssignmentAreSimilar",
@@ -12879,8 +12879,8 @@
    "metamethods": {
     "__index": 36919
    },
-   "ms": 129,
-   "setupMs": 57
+   "ms": 294,
+   "setupMs": 98
   },
   {
    "input": "upstream/errorsWithInvokablesInUnions01",
@@ -12933,8 +12933,8 @@
    "metamethods": {
     "__index": 25226
    },
-   "ms": 121,
-   "setupMs": 63
+   "ms": 137,
+   "setupMs": 127
   },
   {
    "input": "upstream/es6DeclOrdering",
@@ -12988,8 +12988,8 @@
    "metamethods": {
     "__index": 9298
    },
-   "ms": 41,
-   "setupMs": 59
+   "ms": 107,
+   "setupMs": 147
   },
   {
    "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
@@ -13038,8 +13038,8 @@
    "metamethods": {
     "__index": 6486
    },
-   "ms": 29,
-   "setupMs": 63
+   "ms": 78,
+   "setupMs": 147
   },
   {
    "input": "upstream/excessPropertyCheckWithSpread",
@@ -13094,8 +13094,8 @@
    "metamethods": {
     "__index": 13866
    },
-   "ms": 51,
-   "setupMs": 56
+   "ms": 47,
+   "setupMs": 133
   },
   {
    "input": "upstream/exportArrayBindingPattern",
@@ -13146,8 +13146,8 @@
    "metamethods": {
     "__index": 10940
    },
-   "ms": 41,
-   "setupMs": 75
+   "ms": 78,
+   "setupMs": 94
   },
   {
    "input": "upstream/exportDeclarationsInAmbientNamespaces2",
@@ -13197,8 +13197,8 @@
    "metamethods": {
     "__index": 6251
    },
-   "ms": 19,
-   "setupMs": 76
+   "ms": 49,
+   "setupMs": 83
   },
   {
    "input": "upstream/exportDefaultForNonInstantiatedModule",
@@ -13244,8 +13244,8 @@
    "metamethods": {
     "__index": 5877
    },
-   "ms": 32,
-   "setupMs": 98
+   "ms": 46,
+   "setupMs": 113
   },
   {
    "input": "upstream/exportedBlockScopedDeclarations",
@@ -13298,8 +13298,8 @@
    "metamethods": {
     "__index": 15689
    },
-   "ms": 90,
-   "setupMs": 69
+   "ms": 188,
+   "setupMs": 135
   },
   {
    "input": "upstream/externSemantics",
@@ -13353,8 +13353,8 @@
    "metamethods": {
     "__index": 6876
    },
-   "ms": 37,
-   "setupMs": 73
+   "ms": 23,
+   "setupMs": 64
   },
   {
    "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
@@ -13410,8 +13410,8 @@
    "metamethods": {
     "__index": 8271
    },
-   "ms": 50,
-   "setupMs": 79
+   "ms": 41,
+   "setupMs": 114
   },
   {
    "input": "upstream/functionAssignmentError",
@@ -13457,8 +13457,8 @@
    "metamethods": {
     "__index": 7283
    },
-   "ms": 52,
-   "setupMs": 61
+   "ms": 74,
+   "setupMs": 71
   },
   {
    "input": "upstream/functionOverloads43",
@@ -13513,8 +13513,8 @@
    "metamethods": {
     "__index": 19660
    },
-   "ms": 136,
-   "setupMs": 88
+   "ms": 127,
+   "setupMs": 82
   },
   {
    "input": "upstream/functionWithDefaultParameterWithNoStatements10",
@@ -13563,8 +13563,8 @@
    "metamethods": {
     "__index": 7179
    },
-   "ms": 61,
-   "setupMs": 73
+   "ms": 27,
+   "setupMs": 123
   },
   {
    "input": "upstream/functionsWithModifiersInBlocks1",
@@ -13614,8 +13614,8 @@
    "metamethods": {
     "__index": 7389
    },
-   "ms": 20,
-   "setupMs": 73
+   "ms": 196,
+   "setupMs": 1064
   },
   {
    "input": "upstream/genericClasses1",
@@ -13669,8 +13669,8 @@
    "metamethods": {
     "__index": 8090
    },
-   "ms": 36,
-   "setupMs": 104
+   "ms": 95,
+   "setupMs": 95
   },
   {
    "input": "upstream/genericConstraintDeclaration",
@@ -13723,8 +13723,8 @@
    "metamethods": {
     "__index": 8310
    },
-   "ms": 72,
-   "setupMs": 105
+   "ms": 143,
+   "setupMs": 96
   },
   {
    "input": "upstream/genericFunctions2",
@@ -13780,8 +13780,8 @@
    "metamethods": {
     "__index": 13827
    },
-   "ms": 109,
-   "setupMs": 81
+   "ms": 103,
+   "setupMs": 86
   },
   {
    "input": "upstream/genericTypeParameterEquivalence2",
@@ -13839,8 +13839,8 @@
    "metamethods": {
     "__index": 68320
    },
-   "ms": 260,
-   "setupMs": 98
+   "ms": 345,
+   "setupMs": 129
   },
   {
    "input": "upstream/generics5",
@@ -13893,8 +13893,8 @@
    "metamethods": {
     "__index": 11382
    },
-   "ms": 32,
-   "setupMs": 396
+   "ms": 48,
+   "setupMs": 122
   },
   {
    "input": "upstream/identicalTypesNoDifferByCheckOrder",
@@ -13951,8 +13951,8 @@
    "metamethods": {
     "__index": 50723
    },
-   "ms": 172,
-   "setupMs": 105
+   "ms": 206,
+   "setupMs": 236
   },
   {
    "input": "upstream/implicitAnyAmbients",
@@ -14005,8 +14005,8 @@
    "metamethods": {
     "__index": 15960
    },
-   "ms": 96,
-   "setupMs": 103
+   "ms": 123,
+   "setupMs": 128
   },
   {
    "input": "upstream/indexerA",
@@ -14060,8 +14060,8 @@
    "metamethods": {
     "__index": 13159
    },
-   "ms": 47,
-   "setupMs": 142
+   "ms": 113,
+   "setupMs": 100
   },
   {
    "input": "upstream/indirectSelfReferenceGeneric",
@@ -14114,8 +14114,8 @@
    "metamethods": {
     "__index": 8460
    },
-   "ms": 24,
-   "setupMs": 69
+   "ms": 29,
+   "setupMs": 147
   },
   {
    "input": "upstream/inferentialTypingObjectLiteralMethod1",
@@ -14171,8 +14171,8 @@
    "metamethods": {
     "__index": 27323
    },
-   "ms": 95,
-   "setupMs": 69
+   "ms": 127,
+   "setupMs": 119
   },
   {
    "input": "upstream/infinitelyExpandingBaseTypes2",
@@ -14225,8 +14225,8 @@
    "metamethods": {
     "__index": 12761
    },
-   "ms": 102,
-   "setupMs": 86
+   "ms": 71,
+   "setupMs": 99
   },
   {
    "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
@@ -14279,8 +14279,8 @@
    "metamethods": {
     "__index": 9157
    },
-   "ms": 25,
-   "setupMs": 97
+   "ms": 71,
+   "setupMs": 130
   },
   {
    "input": "upstream/inheritanceStaticFuncOverridingProperty",
@@ -14333,8 +14333,8 @@
    "metamethods": {
     "__index": 8991
    },
-   "ms": 66,
-   "setupMs": 90
+   "ms": 89,
+   "setupMs": 141
   },
   {
    "input": "upstream/innerExtern",
@@ -14387,8 +14387,8 @@
    "metamethods": {
     "__index": 7977
    },
-   "ms": 23,
-   "setupMs": 61
+   "ms": 43,
+   "setupMs": 86
   },
   {
    "input": "upstream/instanceSubtypeCheck1",
@@ -14435,7 +14435,7 @@
     "__index": 12973
    },
    "ms": 99,
-   "setupMs": 66
+   "setupMs": 75
   },
   {
    "input": "upstream/instanceofTypeAliasToGenericClass",
@@ -14481,8 +14481,8 @@
    "metamethods": {
     "__index": 16662
    },
-   "ms": 62,
-   "setupMs": 81
+   "ms": 155,
+   "setupMs": 130
   },
   {
    "input": "upstream/interfaceInReopenedModule",
@@ -14535,8 +14535,8 @@
    "metamethods": {
     "__index": 6972
    },
-   "ms": 70,
-   "setupMs": 62
+   "ms": 28,
+   "setupMs": 108
   },
   {
    "input": "upstream/intersectionApparentTypeCaching",
@@ -14583,8 +14583,8 @@
    "metamethods": {
     "__index": 9039
    },
-   "ms": 24,
-   "setupMs": 79
+   "ms": 132,
+   "setupMs": 102
   },
   {
    "input": "upstream/intersectionsAndOptionalProperties",
@@ -14640,8 +14640,8 @@
    "metamethods": {
     "__index": 27308
    },
-   "ms": 99,
-   "setupMs": 142
+   "ms": 156,
+   "setupMs": 158
   },
   {
    "input": "upstream/lambdaPropSelf",
@@ -14697,8 +14697,8 @@
    "metamethods": {
     "__index": 13744
    },
-   "ms": 45,
-   "setupMs": 75
+   "ms": 147,
+   "setupMs": 134
   },
   {
    "input": "upstream/letAndVarRedeclaration",
@@ -14751,8 +14751,8 @@
    "metamethods": {
     "__index": 19985
    },
-   "ms": 76,
-   "setupMs": 118
+   "ms": 152,
+   "setupMs": 110
   },
   {
    "input": "upstream/letAsIdentifierInStrictMode",
@@ -14806,8 +14806,8 @@
    "metamethods": {
     "__index": 7285
    },
-   "ms": 52,
-   "setupMs": 78
+   "ms": 96,
+   "setupMs": 102
   },
   {
    "input": "upstream/library_StringSlice",
@@ -14860,8 +14860,8 @@
    "metamethods": {
     "__index": 7085
    },
-   "ms": 29,
-   "setupMs": 86
+   "ms": 130,
+   "setupMs": 68
   },
   {
    "input": "upstream/localImportNameVsGlobalName",
@@ -14910,8 +14910,8 @@
    "metamethods": {
     "__index": 10912
    },
-   "ms": 34,
-   "setupMs": 266
+   "ms": 74,
+   "setupMs": 138
   },
   {
    "input": "upstream/memberAccessOnConstructorType",
@@ -14966,8 +14966,8 @@
    "metamethods": {
     "__index": 6942
    },
-   "ms": 22,
-   "setupMs": 90
+   "ms": 65,
+   "setupMs": 134
   },
   {
    "input": "upstream/moduleCodeGenTest5",
@@ -15017,8 +15017,8 @@
    "metamethods": {
     "__index": 12556
    },
-   "ms": 44,
-   "setupMs": 79
+   "ms": 93,
+   "setupMs": 87
   },
   {
    "input": "upstream/multiExtendsSplitInterfaces1",
@@ -15073,8 +15073,8 @@
    "metamethods": {
     "__index": 5389
    },
-   "ms": 35,
-   "setupMs": 109
+   "ms": 51,
+   "setupMs": 285
   },
   {
    "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
@@ -15127,8 +15127,8 @@
    "metamethods": {
     "__index": 8531
    },
-   "ms": 34,
-   "setupMs": 70
+   "ms": 63,
+   "setupMs": 112
   },
   {
    "input": "upstream/namespaces2",
@@ -15175,8 +15175,8 @@
    "metamethods": {
     "__index": 7381
    },
-   "ms": 31,
-   "setupMs": 70
+   "ms": 76,
+   "setupMs": 97
   },
   {
    "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
@@ -15222,8 +15222,8 @@
    "metamethods": {
     "__index": 14024
    },
-   "ms": 51,
-   "setupMs": 58
+   "ms": 92,
+   "setupMs": 83
   },
   {
    "input": "upstream/narrowingTypeofUndefined1",
@@ -15269,8 +15269,8 @@
    "metamethods": {
     "__index": 15274
    },
-   "ms": 47,
-   "setupMs": 60
+   "ms": 109,
+   "setupMs": 92
   },
   {
    "input": "upstream/nestedBlockScopedBindings15",
@@ -15320,8 +15320,8 @@
    "metamethods": {
     "__index": 10781
    },
-   "ms": 43,
-   "setupMs": 52
+   "ms": 41,
+   "setupMs": 141
   },
   {
    "input": "upstream/nestedBlockScopedBindings4",
@@ -15375,8 +15375,8 @@
    "metamethods": {
     "__index": 25223
    },
-   "ms": 103,
-   "setupMs": 57
+   "ms": 133,
+   "setupMs": 141
   },
   {
    "input": "upstream/nestedBlockScopedBindings8",
@@ -15426,8 +15426,8 @@
    "metamethods": {
     "__index": 7798
    },
-   "ms": 21,
-   "setupMs": 48
+   "ms": 32,
+   "setupMs": 116
   },
   {
    "input": "upstream/nestedTypeVariableInfersLiteral",
@@ -15484,8 +15484,8 @@
    "metamethods": {
     "__index": 36508
    },
-   "ms": 130,
-   "setupMs": 459
+   "ms": 179,
+   "setupMs": 136
   },
   {
    "input": "upstream/noCheckNoEmit",
@@ -15539,8 +15539,8 @@
    "metamethods": {
     "__index": 5864
    },
-   "ms": 18,
-   "setupMs": 50
+   "ms": 48,
+   "setupMs": 145
   },
   {
    "input": "upstream/noCrashOnMixin2",
@@ -15595,8 +15595,8 @@
    "metamethods": {
     "__index": 22541
    },
-   "ms": 56,
-   "setupMs": 50
+   "ms": 87,
+   "setupMs": 145
   },
   {
    "input": "upstream/noEmitHelpers",
@@ -15642,8 +15642,8 @@
    "metamethods": {
     "__index": 6880
    },
-   "ms": 16,
-   "setupMs": 51
+   "ms": 24,
+   "setupMs": 106
   },
   {
    "input": "upstream/noImplicitAnyForIn",
@@ -15699,8 +15699,8 @@
    "metamethods": {
     "__index": 29978
    },
-   "ms": 101,
-   "setupMs": 47
+   "ms": 287,
+   "setupMs": 107
   },
   {
    "input": "upstream/noImplicitAnyIndexing",
@@ -15758,8 +15758,8 @@
    "metamethods": {
     "__index": 26321
    },
-   "ms": 99,
-   "setupMs": 53
+   "ms": 103,
+   "setupMs": 128
   },
   {
    "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
@@ -15806,8 +15806,8 @@
    "metamethods": {
     "__index": 7703
    },
-   "ms": 37,
-   "setupMs": 57
+   "ms": 47,
+   "setupMs": 89
   },
   {
    "input": "upstream/nongenericConditionalNotPartiallyComputed",
@@ -15853,8 +15853,8 @@
    "metamethods": {
     "__index": 7049
    },
-   "ms": 41,
-   "setupMs": 58
+   "ms": 40,
+   "setupMs": 91
   },
   {
    "input": "upstream/objectLiteralArraySpecialization",
@@ -15910,8 +15910,8 @@
    "metamethods": {
     "__index": 23260
    },
-   "ms": 83,
-   "setupMs": 59
+   "ms": 207,
+   "setupMs": 76
   },
   {
    "input": "upstream/objectLiteralMemberWithModifiers1",
@@ -15964,8 +15964,8 @@
    "metamethods": {
     "__index": 6435
    },
-   "ms": 22,
-   "setupMs": 61
+   "ms": 56,
+   "setupMs": 78
   },
   {
    "input": "upstream/overloadAssignmentCompat",
@@ -16016,8 +16016,8 @@
    "metamethods": {
     "__index": 19874
    },
-   "ms": 85,
-   "setupMs": 55
+   "ms": 172,
+   "setupMs": 79
   },
   {
    "input": "upstream/overrideBaseIntersectionMethod",
@@ -16068,8 +16068,8 @@
    "metamethods": {
     "__index": 43827
    },
-   "ms": 170,
-   "setupMs": 65
+   "ms": 305,
+   "setupMs": 71
   },
   {
    "input": "upstream/parseEntityNameWithReservedWord",
@@ -16117,8 +16117,8 @@
    "metamethods": {
     "__index": 6004
    },
-   "ms": 30,
-   "setupMs": 87
+   "ms": 40,
+   "setupMs": 140
   },
   {
    "input": "upstream/prespecializedGenericMembers1",
@@ -16165,8 +16165,8 @@
    "metamethods": {
     "__index": 12643
    },
-   "ms": 79,
-   "setupMs": 63
+   "ms": 143,
+   "setupMs": 119
   },
   {
    "input": "upstream/rectype",
@@ -16220,8 +16220,8 @@
    "metamethods": {
     "__index": 11765
    },
-   "ms": 70,
-   "setupMs": 67
+   "ms": 125,
+   "setupMs": 100
   },
   {
    "input": "upstream/returnTypeTypeArguments",
@@ -16276,8 +16276,8 @@
    "metamethods": {
     "__index": 75252
    },
-   "ms": 320,
-   "setupMs": 69
+   "ms": 310,
+   "setupMs": 121
   },
   {
    "input": "upstream/scopeCheckClassProperty",
@@ -16324,8 +16324,8 @@
    "metamethods": {
     "__index": 8075
    },
-   "ms": 45,
-   "setupMs": 61
+   "ms": 40,
+   "setupMs": 1258
   },
   {
    "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
@@ -16380,8 +16380,8 @@
    "metamethods": {
     "__index": 11994
    },
-   "ms": 53,
-   "setupMs": 67
+   "ms": 92,
+   "setupMs": 78
   },
   {
    "input": "upstream/signatureInstantiationWithRecursiveConstraints",
@@ -16428,8 +16428,8 @@
    "metamethods": {
     "__index": 17055
    },
-   "ms": 68,
-   "setupMs": 63
+   "ms": 86,
+   "setupMs": 115
   },
   {
    "input": "upstream/singletonLabeledTuple",
@@ -16476,8 +16476,8 @@
    "metamethods": {
     "__index": 12726
    },
-   "ms": 60,
-   "setupMs": 78
+   "ms": 73,
+   "setupMs": 932
   },
   {
    "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
@@ -16530,8 +16530,8 @@
    "metamethods": {
     "__index": 5965
    },
-   "ms": 24,
-   "setupMs": 89
+   "ms": 20,
+   "setupMs": 116
   },
   {
    "input": "upstream/specializedLambdaTypeArguments",
@@ -16584,8 +16584,8 @@
    "metamethods": {
     "__index": 7508
    },
-   "ms": 45,
-   "setupMs": 103
+   "ms": 70,
+   "setupMs": 126
   },
   {
    "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
@@ -16631,8 +16631,8 @@
    "metamethods": {
     "__index": 8838
    },
-   "ms": 68,
-   "setupMs": 84
+   "ms": 26,
+   "setupMs": 186
   },
   {
    "input": "upstream/staticGetter1",
@@ -16678,8 +16678,8 @@
    "metamethods": {
     "__index": 6031
    },
-   "ms": 33,
-   "setupMs": 91
+   "ms": 21,
+   "setupMs": 168
   },
   {
    "input": "upstream/staticInstanceResolution4",
@@ -16733,8 +16733,8 @@
    "metamethods": {
     "__index": 6981
    },
-   "ms": 69,
-   "setupMs": 76
+   "ms": 41,
+   "setupMs": 210
   },
   {
    "input": "upstream/superCallAssignResult",
@@ -16789,8 +16789,8 @@
    "metamethods": {
     "__index": 10067
    },
-   "ms": 55,
-   "setupMs": 82
+   "ms": 30,
+   "setupMs": 138
   },
   {
    "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
@@ -16837,8 +16837,8 @@
    "metamethods": {
     "__index": 10002
    },
-   "ms": 55,
-   "setupMs": 88
+   "ms": 63,
+   "setupMs": 129
   },
   {
    "input": "upstream/superCallInStaticMethod",
@@ -16888,8 +16888,8 @@
    "metamethods": {
     "__index": 17842
    },
-   "ms": 103,
-   "setupMs": 104
+   "ms": 120,
+   "setupMs": 122
   },
   {
    "input": "upstream/superHasMethodsFromMergedInterface",
@@ -16936,8 +16936,8 @@
    "metamethods": {
     "__index": 10055
    },
-   "ms": 47,
-   "setupMs": 93
+   "ms": 36,
+   "setupMs": 1289
   },
   {
    "input": "upstream/superWithTypeArgument",
@@ -16984,8 +16984,8 @@
    "metamethods": {
     "__index": 1830
    },
-   "ms": 14,
-   "setupMs": 75
+   "ms": 45,
+   "setupMs": 81
   },
   {
    "input": "upstream/thisInModule",
@@ -17038,8 +17038,8 @@
    "metamethods": {
     "__index": 6004
    },
-   "ms": 29,
-   "setupMs": 85
+   "ms": 148,
+   "setupMs": 84
   },
   {
    "input": "upstream/thisInPropertyBoundDeclarations",
@@ -17094,8 +17094,8 @@
    "metamethods": {
     "__index": 34143
    },
-   "ms": 140,
-   "setupMs": 71
+   "ms": 328,
+   "setupMs": 128
   },
   {
    "input": "upstream/typeArgumentConstraintResolution1",
@@ -17149,8 +17149,8 @@
    "metamethods": {
     "__index": 16769
    },
-   "ms": 114,
-   "setupMs": 82
+   "ms": 167,
+   "setupMs": 271
   },
   {
    "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
@@ -17199,8 +17199,8 @@
    "metamethods": {
     "__index": 24094
    },
-   "ms": 197,
-   "setupMs": 83
+   "ms": 151,
+   "setupMs": 143
   },
   {
    "input": "upstream/typeInferenceFixEarly",
@@ -17250,8 +17250,8 @@
    "metamethods": {
     "__index": 9317
    },
-   "ms": 84,
-   "setupMs": 74
+   "ms": 77,
+   "setupMs": 211
   },
   {
    "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
@@ -17304,8 +17304,8 @@
    "metamethods": {
     "__index": 14896
    },
-   "ms": 79,
-   "setupMs": 59
+   "ms": 150,
+   "setupMs": 243
   },
   {
    "input": "upstream/typePredicateTopLevelTypeParameter",
@@ -17361,8 +17361,8 @@
    "metamethods": {
     "__index": 13683
    },
-   "ms": 124,
-   "setupMs": 87
+   "ms": 138,
+   "setupMs": 209
   },
   {
    "input": "upstream/typeofUsedBeforeBlockScoped",
@@ -17411,8 +17411,8 @@
    "metamethods": {
     "__index": 9614
    },
-   "ms": 56,
-   "setupMs": 67
+   "ms": 85,
+   "setupMs": 350
   },
   {
    "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
@@ -17461,8 +17461,8 @@
    "metamethods": {
     "__index": 9381
    },
-   "ms": 91,
-   "setupMs": 100
+   "ms": 155,
+   "setupMs": 196
   },
   {
    "input": "upstream/unusedModuleInModule",
@@ -17508,8 +17508,8 @@
    "metamethods": {
     "__index": 5243
    },
-   "ms": 41,
-   "setupMs": 115
+   "ms": 53,
+   "setupMs": 127
   },
   {
    "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
@@ -17558,8 +17558,8 @@
    "metamethods": {
     "__index": 6904
    },
-   "ms": 135,
-   "setupMs": 69
+   "ms": 42,
+   "setupMs": 126
   },
   {
    "input": "upstream/vardecl",
@@ -17616,8 +17616,8 @@
    "metamethods": {
     "__index": 53838
    },
-   "ms": 258,
-   "setupMs": 83
+   "ms": 210,
+   "setupMs": 113
   },
   {
    "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
@@ -17671,8 +17671,8 @@
    "metamethods": {
     "__index": 31815
    },
-   "ms": 92,
-   "setupMs": 193
+   "ms": 106,
+   "setupMs": 135
   },
   {
    "input": "upstream/varianceReferences",
@@ -17726,8 +17726,8 @@
    "metamethods": {
     "__index": 45214
    },
-   "ms": 201,
-   "setupMs": 110
+   "ms": 116,
+   "setupMs": 751
   },
   {
    "input": "upstream/voidAsOperator",
@@ -17779,8 +17779,8 @@
    "metamethods": {
     "__index": 6033
    },
-   "ms": 50,
-   "setupMs": 143
+   "ms": 32,
+   "setupMs": 115
   },
   {
    "input": "upstream/vueLikeDataAndPropsInference2",
@@ -17837,8 +17837,8 @@
    "metamethods": {
     "__index": 34193
    },
-   "ms": 143,
-   "setupMs": 112
+   "ms": 183,
+   "setupMs": 107
   },
   {
    "input": "assign-any-unknown",
@@ -17891,8 +17891,8 @@
    "metamethods": {
     "__index": 9533
    },
-   "ms": 96,
-   "setupMs": 1302
+   "ms": 291,
+   "setupMs": 2504
   },
   {
    "input": "assign-basic",
@@ -17946,8 +17946,8 @@
    "metamethods": {
     "__index": 7203
    },
-   "ms": 89,
-   "setupMs": 836
+   "ms": 134,
+   "setupMs": 2116
   },
   {
    "input": "assign-callback-bivariance",
@@ -18000,8 +18000,8 @@
    "metamethods": {
     "__index": 16985
    },
-   "ms": 111,
-   "setupMs": 890
+   "ms": 370,
+   "setupMs": 2866
   },
   {
    "input": "assign-enum-number",
@@ -18057,8 +18057,8 @@
    "metamethods": {
     "__index": 9955
    },
-   "ms": 76,
-   "setupMs": 782
+   "ms": 386,
+   "setupMs": 2903
   },
   {
    "input": "assign-function-params",
@@ -18111,8 +18111,8 @@
    "metamethods": {
     "__index": 11401
    },
-   "ms": 83,
-   "setupMs": 1321
+   "ms": 343,
+   "setupMs": 2006
   },
   {
    "input": "assign-function-return",
@@ -18167,8 +18167,8 @@
    "metamethods": {
     "__index": 10149
    },
-   "ms": 145,
-   "setupMs": 1453
+   "ms": 148,
+   "setupMs": 1401
   },
   {
    "input": "assign-index-signature",
@@ -18222,8 +18222,8 @@
    "metamethods": {
     "__index": 13294
    },
-   "ms": 108,
-   "setupMs": 725
+   "ms": 521,
+   "setupMs": 1793
   },
   {
    "input": "assign-never",
@@ -18279,8 +18279,8 @@
    "metamethods": {
     "__index": 9725
    },
-   "ms": 138,
-   "setupMs": 629
+   "ms": 159,
+   "setupMs": 2767
   },
   {
    "input": "assign-null-undefined",
@@ -18333,8 +18333,8 @@
    "metamethods": {
     "__index": 8916
    },
-   "ms": 58,
-   "setupMs": 214
+   "ms": 146,
+   "setupMs": 802
   },
   {
    "input": "assign-object-excess",
@@ -18389,8 +18389,8 @@
    "metamethods": {
     "__index": 11475
    },
-   "ms": 81,
-   "setupMs": 193
+   "ms": 371,
+   "setupMs": 561
   },
   {
    "input": "assign-object-literal-nested",
@@ -18444,8 +18444,8 @@
    "metamethods": {
     "__index": 24188
    },
-   "ms": 209,
-   "setupMs": 322
+   "ms": 386,
+   "setupMs": 456
   },
   {
    "input": "assign-object-missing",
@@ -18499,8 +18499,8 @@
    "metamethods": {
     "__index": 9840
    },
-   "ms": 127,
-   "setupMs": 268
+   "ms": 156,
+   "setupMs": 625
   },
   {
    "input": "assign-optional",
@@ -18553,8 +18553,8 @@
    "metamethods": {
     "__index": 15633
    },
-   "ms": 91,
-   "setupMs": 230
+   "ms": 252,
+   "setupMs": 226
   },
   {
    "input": "assign-readonly",
@@ -18608,8 +18608,8 @@
    "metamethods": {
     "__index": 18797
    },
-   "ms": 116,
-   "setupMs": 113
+   "ms": 311,
+   "setupMs": 254
   },
   {
    "input": "assign-structural-class",
@@ -18664,8 +18664,8 @@
    "metamethods": {
     "__index": 12687
    },
-   "ms": 137,
-   "setupMs": 271
+   "ms": 215,
+   "setupMs": 219
   },
   {
    "input": "assign-symbol-bigint-like",
@@ -18719,8 +18719,8 @@
    "metamethods": {
     "__index": 8417
    },
-   "ms": 77,
-   "setupMs": 301
+   "ms": 155,
+   "setupMs": 839
   },
   {
    "input": "assign-tuple-array",
@@ -18775,8 +18775,8 @@
    "metamethods": {
     "__index": 33432
    },
-   "ms": 206,
-   "setupMs": 156
+   "ms": 353,
+   "setupMs": 494
   },
   {
    "input": "assign-variance-arrays",
@@ -18829,8 +18829,8 @@
    "metamethods": {
     "__index": 18070
    },
-   "ms": 81,
-   "setupMs": 219
+   "ms": 240,
+   "setupMs": 422
   },
   {
    "input": "assign-void",
@@ -18884,8 +18884,8 @@
    "metamethods": {
     "__index": 9774
    },
-   "ms": 61,
-   "setupMs": 147
+   "ms": 148,
+   "setupMs": 511
   },
   {
    "input": "assign-weak-type",
@@ -18940,8 +18940,8 @@
    "metamethods": {
     "__index": 12105
    },
-   "ms": 49,
-   "setupMs": 111
+   "ms": 94,
+   "setupMs": 471
   },
   {
    "input": "class-abstract",
@@ -18994,8 +18994,8 @@
    "metamethods": {
     "__index": 9262
    },
-   "ms": 63,
-   "setupMs": 241
+   "ms": 122,
+   "setupMs": 387
   },
   {
    "input": "class-accessor",
@@ -19051,8 +19051,8 @@
    "metamethods": {
     "__index": 13200
    },
-   "ms": 71,
-   "setupMs": 121
+   "ms": 235,
+   "setupMs": 976
   },
   {
    "input": "class-basic",
@@ -19108,8 +19108,8 @@
    "metamethods": {
     "__index": 14660
    },
-   "ms": 134,
-   "setupMs": 253
+   "ms": 141,
+   "setupMs": 335
   },
   {
    "input": "class-generic-constraint-error",
@@ -19164,8 +19164,8 @@
    "metamethods": {
     "__index": 10277
    },
-   "ms": 72,
-   "setupMs": 173
+   "ms": 87,
+   "setupMs": 935
   },
   {
    "input": "class-implements",
@@ -19218,8 +19218,8 @@
    "metamethods": {
     "__index": 9127
    },
-   "ms": 60,
-   "setupMs": 188
+   "ms": 167,
+   "setupMs": 138
   },
   {
    "input": "class-index-signature",
@@ -19273,8 +19273,8 @@
    "metamethods": {
     "__index": 8136
    },
-   "ms": 101,
-   "setupMs": 140
+   "ms": 57,
+   "setupMs": 747
   },
   {
    "input": "class-override",
@@ -19328,8 +19328,8 @@
    "metamethods": {
     "__index": 15419
    },
-   "ms": 97,
-   "setupMs": 131
+   "ms": 138,
+   "setupMs": 634
   },
   {
    "input": "class-private-protected",
@@ -19384,8 +19384,8 @@
    "metamethods": {
     "__index": 14401
    },
-   "ms": 70,
-   "setupMs": 188
+   "ms": 202,
+   "setupMs": 175
   },
   {
    "input": "class-static",
@@ -19440,8 +19440,8 @@
    "metamethods": {
     "__index": 10813
    },
-   "ms": 94,
-   "setupMs": 132
+   "ms": 130,
+   "setupMs": 548
   },
   {
    "input": "class-strict-property-init",
@@ -19494,8 +19494,8 @@
    "metamethods": {
     "__index": 8250
    },
-   "ms": 51,
-   "setupMs": 198
+   "ms": 168,
+   "setupMs": 529
   },
   {
    "input": "class-super-call",
@@ -19551,8 +19551,8 @@
    "metamethods": {
     "__index": 12291
    },
-   "ms": 81,
-   "setupMs": 150
+   "ms": 128,
+   "setupMs": 557
   },
   {
    "input": "class-this-type",
@@ -19609,8 +19609,8 @@
    "metamethods": {
     "__index": 14616
    },
-   "ms": 172,
-   "setupMs": 173
+   "ms": 142,
+   "setupMs": 530
   },
   {
    "input": "clean-abstract-generic",
@@ -19660,8 +19660,8 @@
    "metamethods": {
     "__index": 29458
    },
-   "ms": 174,
-   "setupMs": 156
+   "ms": 306,
+   "setupMs": 345
   },
   {
    "input": "clean-basic",
@@ -19710,8 +19710,8 @@
    "metamethods": {
     "__index": 6328
    },
-   "ms": 104,
-   "setupMs": 162
+   "ms": 123,
+   "setupMs": 332
   },
   {
    "input": "clean-classes",
@@ -19764,8 +19764,8 @@
    "metamethods": {
     "__index": 22266
    },
-   "ms": 218,
-   "setupMs": 177
+   "ms": 316,
+   "setupMs": 286
   },
   {
    "input": "clean-comments-only",
@@ -19810,8 +19810,8 @@
    "metamethods": {
     "__index": 5410
    },
-   "ms": 43,
-   "setupMs": 111
+   "ms": 60,
+   "setupMs": 279
   },
   {
    "input": "clean-control-flow",
@@ -19861,8 +19861,8 @@
    "metamethods": {
     "__index": 20327
    },
-   "ms": 225,
-   "setupMs": 237
+   "ms": 342,
+   "setupMs": 204
   },
   {
    "input": "clean-declare",
@@ -19909,8 +19909,8 @@
    "metamethods": {
     "__index": 10020
    },
-   "ms": 98,
-   "setupMs": 239
+   "ms": 198,
+   "setupMs": 304
   },
   {
    "input": "clean-destructuring",
@@ -19961,8 +19961,8 @@
    "metamethods": {
     "__index": 40431
    },
-   "ms": 321,
-   "setupMs": 212
+   "ms": 271,
+   "setupMs": 342
   },
   {
    "input": "clean-empty",
@@ -20007,8 +20007,8 @@
    "metamethods": {
     "__index": 5282
    },
-   "ms": 33,
-   "setupMs": 230
+   "ms": 88,
+   "setupMs": 295
   },
   {
    "input": "clean-enums-namespaces",
@@ -20059,8 +20059,8 @@
    "metamethods": {
     "__index": 10498
    },
-   "ms": 84,
-   "setupMs": 275
+   "ms": 146,
+   "setupMs": 334
   },
   {
    "input": "clean-functions",
@@ -20110,8 +20110,8 @@
    "metamethods": {
     "__index": 10890
    },
-   "ms": 85,
-   "setupMs": 225
+   "ms": 79,
+   "setupMs": 361
   },
   {
    "input": "clean-generics",
@@ -20162,8 +20162,8 @@
    "metamethods": {
     "__index": 30448
    },
-   "ms": 257,
-   "setupMs": 629
+   "ms": 309,
+   "setupMs": 380
   },
   {
    "input": "clean-labeled-loops",
@@ -20213,8 +20213,8 @@
    "metamethods": {
     "__index": 10450
    },
-   "ms": 220,
-   "setupMs": 215
+   "ms": 107,
+   "setupMs": 263
   },
   {
    "input": "clean-mapped-conditional",
@@ -20263,8 +20263,8 @@
    "metamethods": {
     "__index": 15864
    },
-   "ms": 59,
-   "setupMs": 626
+   "ms": 199,
+   "setupMs": 365
   },
   {
    "input": "clean-object-methods",
@@ -20314,8 +20314,8 @@
    "metamethods": {
     "__index": 10823
    },
-   "ms": 70,
-   "setupMs": 346
+   "ms": 152,
+   "setupMs": 273
   },
   {
    "input": "clean-overloads-guards",
@@ -20365,8 +20365,8 @@
    "metamethods": {
     "__index": 13661
    },
-   "ms": 77,
-   "setupMs": 249
+   "ms": 133,
+   "setupMs": 287
   },
   {
    "input": "clean-type-level",
@@ -20417,8 +20417,8 @@
    "metamethods": {
     "__index": 70642
    },
-   "ms": 243,
-   "setupMs": 273
+   "ms": 394,
+   "setupMs": 215
   },
   {
    "input": "clean-unicode",
@@ -20464,8 +20464,8 @@
    "metamethods": {
     "__index": 8828
    },
-   "ms": 80,
-   "setupMs": 255
+   "ms": 68,
+   "setupMs": 265
   },
   {
    "input": "clean-unions",
@@ -20515,8 +20515,8 @@
    "metamethods": {
     "__index": 17944
    },
-   "ms": 109,
-   "setupMs": 213
+   "ms": 153,
+   "setupMs": 260
   },
   {
    "input": "conditional-basic",
@@ -20571,8 +20571,8 @@
    "metamethods": {
     "__index": 9679
    },
-   "ms": 55,
-   "setupMs": 194
+   "ms": 184,
+   "setupMs": 232
   },
   {
    "input": "conditional-builtin-utils",
@@ -20629,8 +20629,8 @@
    "metamethods": {
     "__index": 30606
    },
-   "ms": 170,
-   "setupMs": 182
+   "ms": 285,
+   "setupMs": 244
   },
   {
    "input": "conditional-deferred",
@@ -20684,8 +20684,8 @@
    "metamethods": {
     "__index": 8582
    },
-   "ms": 110,
-   "setupMs": 158
+   "ms": 74,
+   "setupMs": 256
   },
   {
    "input": "conditional-distributive",
@@ -20739,8 +20739,8 @@
    "metamethods": {
     "__index": 41094
    },
-   "ms": 277,
-   "setupMs": 183
+   "ms": 393,
+   "setupMs": 1103
   },
   {
    "input": "conditional-infer",
@@ -20795,8 +20795,8 @@
    "metamethods": {
     "__index": 17195
    },
-   "ms": 118,
-   "setupMs": 517
+   "ms": 165,
+   "setupMs": 215
   },
   {
    "input": "conditional-infer-constraint",
@@ -20851,8 +20851,8 @@
    "metamethods": {
     "__index": 20066
    },
-   "ms": 151,
-   "setupMs": 208
+   "ms": 186,
+   "setupMs": 170
   },
   {
    "input": "enum-computed-error",
@@ -20906,8 +20906,8 @@
    "metamethods": {
     "__index": 8434
    },
-   "ms": 47,
-   "setupMs": 190
+   "ms": 56,
+   "setupMs": 226
   },
   {
    "input": "enum-const",
@@ -20963,8 +20963,8 @@
    "metamethods": {
     "__index": 9557
    },
-   "ms": 36,
-   "setupMs": 195
+   "ms": 333,
+   "setupMs": 1228
   },
   {
    "input": "enum-declaration-merge",
@@ -21014,8 +21014,8 @@
    "metamethods": {
     "__index": 6653
    },
-   "ms": 49,
-   "setupMs": 155
+   "ms": 33,
+   "setupMs": 223
   },
   {
    "input": "enum-numeric",
@@ -21072,8 +21072,8 @@
    "metamethods": {
     "__index": 10292
    },
-   "ms": 84,
-   "setupMs": 119
+   "ms": 98,
+   "setupMs": 163
   },
   {
    "input": "enum-string",
@@ -21129,8 +21129,8 @@
    "metamethods": {
     "__index": 9174
    },
-   "ms": 77,
-   "setupMs": 163
+   "ms": 99,
+   "setupMs": 209
   },
   {
    "input": "error-abstract-instantiation",
@@ -21181,8 +21181,8 @@
    "metamethods": {
     "__index": 11841
    },
-   "ms": 86,
-   "setupMs": 140
+   "ms": 143,
+   "setupMs": 219
   },
   {
    "input": "error-arg-count",
@@ -21238,8 +21238,8 @@
    "metamethods": {
     "__index": 8041
    },
-   "ms": 68,
-   "setupMs": 149
+   "ms": 79,
+   "setupMs": 164
   },
   {
    "input": "error-await-outside-async",
@@ -21292,8 +21292,8 @@
    "metamethods": {
     "__index": 6299
    },
-   "ms": 37,
-   "setupMs": 145
+   "ms": 121,
+   "setupMs": 243
   },
   {
    "input": "error-cannot-find-name",
@@ -21349,8 +21349,8 @@
    "metamethods": {
     "__index": 7932
    },
-   "ms": 76,
-   "setupMs": 141
+   "ms": 189,
+   "setupMs": 184
   },
   {
    "input": "error-comparison-no-overlap",
@@ -21405,8 +21405,8 @@
    "metamethods": {
     "__index": 9093
    },
-   "ms": 67,
-   "setupMs": 126
+   "ms": 45,
+   "setupMs": 198
   },
   {
    "input": "error-const-assign",
@@ -21460,8 +21460,8 @@
    "metamethods": {
     "__index": 7002
    },
-   "ms": 60,
-   "setupMs": 1046
+   "ms": 79,
+   "setupMs": 292
   },
   {
    "input": "error-delete-non-optional",
@@ -21511,8 +21511,8 @@
    "metamethods": {
     "__index": 8065
    },
-   "ms": 48,
-   "setupMs": 143
+   "ms": 128,
+   "setupMs": 255
   },
   {
    "input": "error-duplicate-property",
@@ -21566,8 +21566,8 @@
    "metamethods": {
     "__index": 8802
    },
-   "ms": 48,
-   "setupMs": 103
+   "ms": 78,
+   "setupMs": 236
   },
   {
    "input": "error-generic-arity",
@@ -21623,8 +21623,8 @@
    "metamethods": {
     "__index": 10792
    },
-   "ms": 96,
-   "setupMs": 235
+   "ms": 149,
+   "setupMs": 190
   },
   {
    "input": "error-implicit-any",
@@ -21678,8 +21678,8 @@
    "metamethods": {
     "__index": 9833
    },
-   "ms": 83,
-   "setupMs": 188
+   "ms": 128,
+   "setupMs": 404
   },
   {
    "input": "error-index-implicit-any",
@@ -21733,8 +21733,8 @@
    "metamethods": {
     "__index": 9101
    },
-   "ms": 82,
-   "setupMs": 217
+   "ms": 203,
+   "setupMs": 219
   },
   {
    "input": "error-label-break",
@@ -21784,8 +21784,8 @@
    "metamethods": {
     "__index": 6807
    },
-   "ms": 64,
-   "setupMs": 1832
+   "ms": 118,
+   "setupMs": 482
   },
   {
    "input": "error-missing-return-type",
@@ -21835,8 +21835,8 @@
    "metamethods": {
     "__index": 7030
    },
-   "ms": 130,
-   "setupMs": 1553
+   "ms": 99,
+   "setupMs": 218
   },
   {
    "input": "error-not-callable",
@@ -21890,8 +21890,8 @@
    "metamethods": {
     "__index": 10280
    },
-   "ms": 79,
-   "setupMs": 159
+   "ms": 144,
+   "setupMs": 233
   },
   {
    "input": "error-object-possibly-undefined",
@@ -21945,8 +21945,8 @@
    "metamethods": {
     "__index": 8474
    },
-   "ms": 84,
-   "setupMs": 206
+   "ms": 122,
+   "setupMs": 229
   },
   {
    "input": "error-operator-types",
@@ -22000,8 +22000,8 @@
    "metamethods": {
     "__index": 12862
    },
-   "ms": 575,
-   "setupMs": 175
+   "ms": 62,
+   "setupMs": 291
   },
   {
    "input": "error-property-not-exist",
@@ -22059,8 +22059,8 @@
    "metamethods": {
     "__index": 9728
    },
-   "ms": 197,
-   "setupMs": 167
+   "ms": 122,
+   "setupMs": 256
   },
   {
    "input": "error-redeclare",
@@ -22114,8 +22114,8 @@
    "metamethods": {
     "__index": 9431
    },
-   "ms": 33,
-   "setupMs": 222
+   "ms": 85,
+   "setupMs": 174
   },
   {
    "input": "error-satisfies",
@@ -22172,8 +22172,8 @@
    "metamethods": {
     "__index": 27963
    },
-   "ms": 166,
-   "setupMs": 232
+   "ms": 298,
+   "setupMs": 494
   },
   {
    "input": "error-spread-non-object",
@@ -22227,8 +22227,8 @@
    "metamethods": {
     "__index": 10628
    },
-   "ms": 144,
-   "setupMs": 244
+   "ms": 174,
+   "setupMs": 799
   },
   {
    "input": "error-switch-case-type",
@@ -22282,8 +22282,8 @@
    "metamethods": {
     "__index": 7681
    },
-   "ms": 110,
-   "setupMs": 165
+   "ms": 109,
+   "setupMs": 225
   },
   {
    "input": "error-this-implicit",
@@ -22337,8 +22337,8 @@
    "metamethods": {
     "__index": 9277
    },
-   "ms": 166,
-   "setupMs": 178
+   "ms": 148,
+   "setupMs": 157
   },
   {
    "input": "error-type-as-value",
@@ -22391,8 +22391,8 @@
    "metamethods": {
     "__index": 7501
    },
-   "ms": 103,
-   "setupMs": 232
+   "ms": 32,
+   "setupMs": 212
   },
   {
    "input": "error-unicode-position",
@@ -22447,8 +22447,8 @@
    "metamethods": {
     "__index": 9878
    },
-   "ms": 51,
-   "setupMs": 339
+   "ms": 97,
+   "setupMs": 196
   },
   {
    "input": "error-unique-symbol-and-readonly-array",
@@ -22505,8 +22505,8 @@
    "metamethods": {
     "__index": 11290
    },
-   "ms": 79,
-   "setupMs": 269
+   "ms": 135,
+   "setupMs": 1616
   },
   {
    "input": "error-unreachable-like",
@@ -22559,8 +22559,8 @@
    "metamethods": {
     "__index": 7264
    },
-   "ms": 103,
-   "setupMs": 284
+   "ms": 64,
+   "setupMs": 223
   },
   {
    "input": "error-unused-ts-expect",
@@ -22614,8 +22614,8 @@
    "metamethods": {
     "__index": 8937
    },
-   "ms": 78,
-   "setupMs": 271
+   "ms": 86,
+   "setupMs": 1808
   },
   {
    "input": "error-used-before-declared",
@@ -22669,8 +22669,8 @@
    "metamethods": {
     "__index": 8967
    },
-   "ms": 75,
-   "setupMs": 1714
+   "ms": 640,
+   "setupMs": 1354
   },
   {
    "input": "error-value-as-type",
@@ -22724,8 +22724,8 @@
    "metamethods": {
     "__index": 7950
    },
-   "ms": 394,
-   "setupMs": 337
+   "ms": 75,
+   "setupMs": 141
   },
   {
    "input": "extreme/add-20-22",
@@ -22781,8 +22781,8 @@
    "metamethods": {
     "__index": 140110
    },
-   "ms": 465,
-   "setupMs": 546
+   "ms": 1483,
+   "setupMs": 3216
   },
   {
    "input": "extreme/deep-recursion",
@@ -22838,8 +22838,8 @@
    "metamethods": {
     "__index": 4256085
    },
-   "ms": 7378,
-   "setupMs": 638
+   "ms": 10929,
+   "setupMs": 1771
   },
   {
    "input": "extreme/large-unions",
@@ -22896,8 +22896,8 @@
    "metamethods": {
     "__index": 241520
    },
-   "ms": 1041,
-   "setupMs": 653
+   "ms": 2794,
+   "setupMs": 1324
   },
   {
    "input": "extreme/template-cross-product",
@@ -22954,8 +22954,8 @@
    "metamethods": {
     "__index": 1789656
    },
-   "ms": 2266,
-   "setupMs": 668
+   "ms": 5113,
+   "setupMs": 1594
   },
   {
    "input": "generic-class",
@@ -23011,8 +23011,8 @@
    "metamethods": {
     "__index": 19980
    },
-   "ms": 329,
-   "setupMs": 377
+   "ms": 781,
+   "setupMs": 205
   },
   {
    "input": "generic-const-type-param",
@@ -23068,8 +23068,8 @@
    "metamethods": {
     "__index": 23993
    },
-   "ms": 299,
-   "setupMs": 247
+   "ms": 246,
+   "setupMs": 150
   },
   {
    "input": "generic-constraint",
@@ -23124,8 +23124,8 @@
    "metamethods": {
     "__index": 18549
    },
-   "ms": 107,
-   "setupMs": 1673
+   "ms": 274,
+   "setupMs": 224
   },
   {
    "input": "generic-default",
@@ -23179,8 +23179,8 @@
    "metamethods": {
     "__index": 11139
    },
-   "ms": 119,
-   "setupMs": 254
+   "ms": 747,
+   "setupMs": 3162
   },
   {
    "input": "generic-higher-order",
@@ -23235,8 +23235,8 @@
    "metamethods": {
     "__index": 20276
    },
-   "ms": 272,
-   "setupMs": 173
+   "ms": 367,
+   "setupMs": 342
   },
   {
    "input": "generic-identity",
@@ -23291,8 +23291,8 @@
    "metamethods": {
     "__index": 12439
    },
-   "ms": 194,
-   "setupMs": 210
+   "ms": 419,
+   "setupMs": 319
   },
   {
    "input": "generic-infer-from-object",
@@ -23349,8 +23349,8 @@
    "metamethods": {
     "__index": 16409
    },
-   "ms": 187,
-   "setupMs": 279
+   "ms": 294,
+   "setupMs": 298
   },
   {
    "input": "generic-inference-callback",
@@ -23405,8 +23405,8 @@
    "metamethods": {
     "__index": 30444
    },
-   "ms": 234,
-   "setupMs": 214
+   "ms": 593,
+   "setupMs": 314
   },
   {
    "input": "generic-inference-multiple",
@@ -23463,8 +23463,8 @@
    "metamethods": {
     "__index": 25998
    },
-   "ms": 159,
-   "setupMs": 185
+   "ms": 246,
+   "setupMs": 356
   },
   {
    "input": "generic-keyof-constraint",
@@ -23520,8 +23520,8 @@
    "metamethods": {
     "__index": 19257
    },
-   "ms": 132,
-   "setupMs": 1598
+   "ms": 186,
+   "setupMs": 554
   },
   {
    "input": "generic-return-inference",
@@ -23568,8 +23568,8 @@
    "metamethods": {
     "__index": 8132
    },
-   "ms": 33,
-   "setupMs": 425
+   "ms": 228,
+   "setupMs": 420
   },
   {
    "input": "generic-unresolved-error",
@@ -23623,8 +23623,8 @@
    "metamethods": {
     "__index": 10713
    },
-   "ms": 89,
-   "setupMs": 165
+   "ms": 2028,
+   "setupMs": 1288
   },
   {
    "input": "indexed-access",
@@ -23678,8 +23678,8 @@
    "metamethods": {
     "__index": 13859
    },
-   "ms": 107,
-   "setupMs": 183
+   "ms": 68,
+   "setupMs": 208
   },
   {
    "input": "indexed-union-key",
@@ -23732,8 +23732,8 @@
    "metamethods": {
     "__index": 8855
    },
-   "ms": 62,
-   "setupMs": 174
+   "ms": 34,
+   "setupMs": 339
   },
   {
    "input": "interface-call-construct",
@@ -23789,8 +23789,8 @@
    "metamethods": {
     "__index": 13860
    },
-   "ms": 198,
-   "setupMs": 163
+   "ms": 156,
+   "setupMs": 189
   },
   {
    "input": "interface-extends-conflict",
@@ -23843,8 +23843,8 @@
    "metamethods": {
     "__index": 8324
    },
-   "ms": 150,
-   "setupMs": 128
+   "ms": 75,
+   "setupMs": 269
   },
   {
    "input": "interface-merge",
@@ -23898,8 +23898,8 @@
    "metamethods": {
     "__index": 10109
    },
-   "ms": 185,
-   "setupMs": 206
+   "ms": 104,
+   "setupMs": 245
   },
   {
    "input": "intersection-basic",
@@ -23953,8 +23953,8 @@
    "metamethods": {
     "__index": 15895
    },
-   "ms": 191,
-   "setupMs": 308
+   "ms": 86,
+   "setupMs": 241
   },
   {
    "input": "keyof-basic",
@@ -24010,8 +24010,8 @@
    "metamethods": {
     "__index": 9117
    },
-   "ms": 133,
-   "setupMs": 162
+   "ms": 87,
+   "setupMs": 308
   },
   {
    "input": "keyof-typeof",
@@ -24067,8 +24067,8 @@
    "metamethods": {
     "__index": 11495
    },
-   "ms": 106,
-   "setupMs": 235
+   "ms": 177,
+   "setupMs": 260
   },
   {
    "input": "literal-as-const",
@@ -24125,8 +24125,8 @@
    "metamethods": {
     "__index": 20727
    },
-   "ms": 205,
-   "setupMs": 219
+   "ms": 2503,
+   "setupMs": 1406
   },
   {
    "input": "literal-boolean",
@@ -24179,8 +24179,8 @@
    "metamethods": {
     "__index": 8159
    },
-   "ms": 31,
-   "setupMs": 504
+   "ms": 129,
+   "setupMs": 396
   },
   {
    "input": "literal-const-let",
@@ -24234,8 +24234,8 @@
    "metamethods": {
     "__index": 10239
    },
-   "ms": 112,
-   "setupMs": 167
+   "ms": 92,
+   "setupMs": 282
   },
   {
    "input": "literal-enum-member",
@@ -24293,8 +24293,8 @@
    "metamethods": {
     "__index": 10605
    },
-   "ms": 78,
-   "setupMs": 194
+   "ms": 96,
+   "setupMs": 391
   },
   {
    "input": "literal-fresh-excess",
@@ -24349,8 +24349,8 @@
    "metamethods": {
     "__index": 12768
    },
-   "ms": 84,
-   "setupMs": 188
+   "ms": 105,
+   "setupMs": 239
   },
   {
    "input": "literal-numeric",
@@ -24404,8 +24404,8 @@
    "metamethods": {
     "__index": 11361
    },
-   "ms": 67,
-   "setupMs": 189
+   "ms": 209,
+   "setupMs": 731
   },
   {
    "input": "literal-template-widen",
@@ -24459,8 +24459,8 @@
    "metamethods": {
     "__index": 10167
    },
-   "ms": 132,
-   "setupMs": 167
+   "ms": 35,
+   "setupMs": 358
   },
   {
    "input": "literal-widening-object",
@@ -24516,8 +24516,8 @@
    "metamethods": {
     "__index": 17066
    },
-   "ms": 130,
-   "setupMs": 316
+   "ms": 237,
+   "setupMs": 222
   },
   {
    "input": "lookup-element-access",
@@ -24571,8 +24571,8 @@
    "metamethods": {
     "__index": 13309
    },
-   "ms": 179,
-   "setupMs": 169
+   "ms": 211,
+   "setupMs": 482
   },
   {
    "input": "mapped-custom-modifiers",
@@ -24626,8 +24626,8 @@
    "metamethods": {
     "__index": 19404
    },
-   "ms": 174,
-   "setupMs": 197
+   "ms": 147,
+   "setupMs": 288
   },
   {
    "input": "mapped-filter-keys",
@@ -24682,8 +24682,8 @@
    "metamethods": {
     "__index": 15753
    },
-   "ms": 144,
-   "setupMs": 1307
+   "ms": 93,
+   "setupMs": 240
   },
   {
    "input": "mapped-key-remap",
@@ -24738,8 +24738,8 @@
    "metamethods": {
     "__index": 31167
    },
-   "ms": 196,
-   "setupMs": 206
+   "ms": 213,
+   "setupMs": 469
   },
   {
    "input": "mapped-partial-required",
@@ -24793,8 +24793,8 @@
    "metamethods": {
     "__index": 16522
    },
-   "ms": 152,
-   "setupMs": 200
+   "ms": 199,
+   "setupMs": 268
   },
   {
    "input": "mapped-pick-omit",
@@ -24851,8 +24851,8 @@
    "metamethods": {
     "__index": 19623
    },
-   "ms": 170,
-   "setupMs": 169
+   "ms": 300,
+   "setupMs": 580
   },
   {
    "input": "mapped-readonly-record",
@@ -24907,8 +24907,8 @@
    "metamethods": {
     "__index": 16025
    },
-   "ms": 189,
-   "setupMs": 262
+   "ms": 120,
+   "setupMs": 316
   },
   {
    "input": "namespace-basic",
@@ -24964,8 +24964,8 @@
    "metamethods": {
     "__index": 10262
    },
-   "ms": 84,
-   "setupMs": 362
+   "ms": 149,
+   "setupMs": 418
   },
   {
    "input": "namespace-merge-class",
@@ -25019,8 +25019,8 @@
    "metamethods": {
     "__index": 8341
    },
-   "ms": 129,
-   "setupMs": 152
+   "ms": 57,
+   "setupMs": 321
   },
   {
    "input": "namespace-merge-function",
@@ -25075,8 +25075,8 @@
    "metamethods": {
     "__index": 9038
    },
-   "ms": 69,
-   "setupMs": 272
+   "ms": 1043,
+   "setupMs": 369
   },
   {
    "input": "namespace-nested",
@@ -25129,8 +25129,8 @@
    "metamethods": {
     "__index": 9972
    },
-   "ms": 89,
-   "setupMs": 197
+   "ms": 451,
+   "setupMs": 1140
   },
   {
    "input": "narrow-assertion-fn",
@@ -25185,8 +25185,8 @@
    "metamethods": {
     "__index": 10434
    },
-   "ms": 74,
-   "setupMs": 260
+   "ms": 512,
+   "setupMs": 419
   },
   {
    "input": "narrow-closure-reset",
@@ -25243,8 +25243,8 @@
    "metamethods": {
     "__index": 15108
    },
-   "ms": 145,
-   "setupMs": 195
+   "ms": 325,
+   "setupMs": 1132
   },
   {
    "input": "narrow-control-flow-assign",
@@ -25300,8 +25300,8 @@
    "metamethods": {
     "__index": 9762
    },
-   "ms": 98,
-   "setupMs": 203
+   "ms": 341,
+   "setupMs": 1150
   },
   {
    "input": "narrow-discriminated",
@@ -25358,8 +25358,8 @@
    "metamethods": {
     "__index": 16773
    },
-   "ms": 100,
-   "setupMs": 225
+   "ms": 396,
+   "setupMs": 1027
   },
   {
    "input": "narrow-equality",
@@ -25408,8 +25408,8 @@
    "metamethods": {
     "__index": 11434
    },
-   "ms": 163,
-   "setupMs": 153
+   "ms": 226,
+   "setupMs": 1170
   },
   {
    "input": "narrow-exhaustive-never",
@@ -25464,8 +25464,8 @@
    "metamethods": {
     "__index": 10577
    },
-   "ms": 187,
-   "setupMs": 208
+   "ms": 279,
+   "setupMs": 1838
   },
   {
    "input": "narrow-in",
@@ -25521,8 +25521,8 @@
    "metamethods": {
     "__index": 11425
    },
-   "ms": 137,
-   "setupMs": 152
+   "ms": 227,
+   "setupMs": 1052
   },
   {
    "input": "narrow-instanceof",
@@ -25577,8 +25577,8 @@
    "metamethods": {
     "__index": 12811
    },
-   "ms": 102,
-   "setupMs": 310
+   "ms": 250,
+   "setupMs": 474
   },
   {
    "input": "narrow-optional-chain",
@@ -25633,8 +25633,8 @@
    "metamethods": {
     "__index": 11701
    },
-   "ms": 98,
-   "setupMs": 298
+   "ms": 118,
+   "setupMs": 1124
   },
   {
    "input": "narrow-truthiness",
@@ -25687,8 +25687,8 @@
    "metamethods": {
     "__index": 9900
    },
-   "ms": 180,
-   "setupMs": 175
+   "ms": 190,
+   "setupMs": 903
   },
   {
    "input": "narrow-typeof",
@@ -25743,8 +25743,8 @@
    "metamethods": {
     "__index": 9772
    },
-   "ms": 56,
-   "setupMs": 277
+   "ms": 184,
+   "setupMs": 1071
   },
   {
    "input": "narrow-user-guard",
@@ -25800,8 +25800,8 @@
    "metamethods": {
     "__index": 13790
    },
-   "ms": 191,
-   "setupMs": 258
+   "ms": 155,
+   "setupMs": 1211
   },
   {
    "input": "overload-arity",
@@ -25857,8 +25857,8 @@
    "metamethods": {
     "__index": 8893
    },
-   "ms": 55,
-   "setupMs": 220
+   "ms": 139,
+   "setupMs": 592
   },
   {
    "input": "overload-basic",
@@ -25912,8 +25912,8 @@
    "metamethods": {
     "__index": 12278
    },
-   "ms": 84,
-   "setupMs": 325
+   "ms": 96,
+   "setupMs": 588
   },
   {
    "input": "overload-impl-incompatible",
@@ -25959,8 +25959,8 @@
    "metamethods": {
     "__index": 8375
    },
-   "ms": 104,
-   "setupMs": 173
+   "ms": 172,
+   "setupMs": 2451
   },
   {
    "input": "overload-method",
@@ -26015,8 +26015,8 @@
    "metamethods": {
     "__index": 12167
    },
-   "ms": 110,
-   "setupMs": 224
+   "ms": 176,
+   "setupMs": 318
   },
   {
    "input": "recursive-alias-circular",
@@ -26069,8 +26069,8 @@
    "metamethods": {
     "__index": 7921
    },
-   "ms": 121,
-   "setupMs": 193
+   "ms": 61,
+   "setupMs": 236
   },
   {
    "input": "recursive-deep-readonly",
@@ -26124,8 +26124,8 @@
    "metamethods": {
     "__index": 14580
    },
-   "ms": 188,
-   "setupMs": 188
+   "ms": 78,
+   "setupMs": 280
   },
   {
    "input": "recursive-json",
@@ -26180,8 +26180,8 @@
    "metamethods": {
     "__index": 45071
    },
-   "ms": 287,
-   "setupMs": 124
+   "ms": 224,
+   "setupMs": 402
   },
   {
    "input": "recursive-linked-list",
@@ -26236,8 +26236,8 @@
    "metamethods": {
     "__index": 18860
    },
-   "ms": 173,
-   "setupMs": 138
+   "ms": 156,
+   "setupMs": 345
   },
   {
    "input": "recursive-tuple-reverse",
@@ -26291,8 +26291,8 @@
    "metamethods": {
     "__index": 49740
    },
-   "ms": 194,
-   "setupMs": 164
+   "ms": 393,
+   "setupMs": 155
   },
   {
    "input": "rest-params",
@@ -26349,8 +26349,8 @@
    "metamethods": {
     "__index": 14381
    },
-   "ms": 91,
-   "setupMs": 211
+   "ms": 123,
+   "setupMs": 194
   },
   {
    "input": "spread-call",
@@ -26404,8 +26404,8 @@
    "metamethods": {
     "__index": 16363
    },
-   "ms": 109,
-   "setupMs": 156
+   "ms": 235,
+   "setupMs": 225
   },
   {
    "input": "syntax-bad-token",
@@ -26457,8 +26457,8 @@
    "metamethods": {
     "__index": 2149
    },
-   "ms": 25,
-   "setupMs": 233
+   "ms": 19,
+   "setupMs": 199
   },
   {
    "input": "syntax-decl-modifiers",
@@ -26512,8 +26512,8 @@
    "metamethods": {
     "__index": 7852
    },
-   "ms": 108,
-   "setupMs": 158
+   "ms": 36,
+   "setupMs": 263
   },
   {
    "input": "syntax-invalid-type",
@@ -26563,8 +26563,8 @@
    "metamethods": {
     "__index": 1675
    },
-   "ms": 16,
-   "setupMs": 195
+   "ms": 70,
+   "setupMs": 510
   },
   {
    "input": "syntax-jsx-in-ts",
@@ -26612,8 +26612,8 @@
    "metamethods": {
     "__index": 1592
    },
-   "ms": 14,
-   "setupMs": 170
+   "ms": 50,
+   "setupMs": 252
   },
   {
    "input": "syntax-missing-brace",
@@ -26664,8 +26664,8 @@
    "metamethods": {
     "__index": 1247
    },
-   "ms": 12,
-   "setupMs": 105
+   "ms": 30,
+   "setupMs": 252
   },
   {
    "input": "syntax-missing-paren",
@@ -26715,8 +26715,8 @@
    "metamethods": {
     "__index": 1297
    },
-   "ms": 10,
-   "setupMs": 197
+   "ms": 22,
+   "setupMs": 200
   },
   {
    "input": "syntax-numeric-literal",
@@ -26767,8 +26767,8 @@
    "metamethods": {
     "__index": 2541
    },
-   "ms": 21,
-   "setupMs": 114
+   "ms": 26,
+   "setupMs": 166
   },
   {
    "input": "syntax-regex-errors",
@@ -26821,8 +26821,8 @@
    "metamethods": {
     "__index": 6705
    },
-   "ms": 60,
-   "setupMs": 126
+   "ms": 95,
+   "setupMs": 210
   },
   {
    "input": "syntax-reserved-word",
@@ -26874,8 +26874,8 @@
    "metamethods": {
     "__index": 2100
    },
-   "ms": 39,
-   "setupMs": 164
+   "ms": 44,
+   "setupMs": 412
   },
   {
    "input": "syntax-unexpected-keyword",
@@ -26925,8 +26925,8 @@
    "metamethods": {
     "__index": 1391
    },
-   "ms": 39,
-   "setupMs": 128
+   "ms": 19,
+   "setupMs": 205
   },
   {
    "input": "syntax-unterminated-string",
@@ -26976,8 +26976,8 @@
    "metamethods": {
     "__index": 1474
    },
-   "ms": 9,
-   "setupMs": 153
+   "ms": 48,
+   "setupMs": 175
   },
   {
    "input": "syntax-unterminated-template",
@@ -27028,8 +27028,8 @@
    "metamethods": {
     "__index": 1344
    },
-   "ms": 10,
-   "setupMs": 191
+   "ms": 38,
+   "setupMs": 240
   },
   {
    "input": "template-basic",
@@ -27084,8 +27084,8 @@
    "metamethods": {
     "__index": 11589
    },
-   "ms": 70,
-   "setupMs": 183
+   "ms": 66,
+   "setupMs": 216
   },
   {
    "input": "template-infer",
@@ -27140,8 +27140,8 @@
    "metamethods": {
     "__index": 26249
    },
-   "ms": 179,
-   "setupMs": 157
+   "ms": 128,
+   "setupMs": 150
   },
   {
    "input": "template-intrinsics",
@@ -27195,8 +27195,8 @@
    "metamethods": {
     "__index": 12584
    },
-   "ms": 65,
-   "setupMs": 191
+   "ms": 130,
+   "setupMs": 187
   },
   {
    "input": "template-union-expand",
@@ -27252,8 +27252,8 @@
    "metamethods": {
     "__index": 10817
    },
-   "ms": 52,
-   "setupMs": 167
+   "ms": 128,
+   "setupMs": 270
   },
   {
    "input": "tuple-labeled",
@@ -27309,8 +27309,8 @@
    "metamethods": {
     "__index": 18284
    },
-   "ms": 150,
-   "setupMs": 178
+   "ms": 430,
+   "setupMs": 341
   },
   {
    "input": "tuple-length-index",
@@ -27365,8 +27365,8 @@
    "metamethods": {
     "__index": 16866
    },
-   "ms": 86,
-   "setupMs": 139
+   "ms": 275,
+   "setupMs": 325
   },
   {
    "input": "tuple-optional-rest",
@@ -27421,8 +27421,8 @@
    "metamethods": {
     "__index": 26231
    },
-   "ms": 99,
-   "setupMs": 131
+   "ms": 216,
+   "setupMs": 305
   },
   {
    "input": "tuple-variadic",
@@ -27479,8 +27479,8 @@
    "metamethods": {
     "__index": 38297
    },
-   "ms": 128,
-   "setupMs": 126
+   "ms": 234,
+   "setupMs": 269
   },
   {
    "input": "union-call",
@@ -27535,8 +27535,8 @@
    "metamethods": {
     "__index": 9374
    },
-   "ms": 27,
-   "setupMs": 618
+   "ms": 897,
+   "setupMs": 278
   },
   {
    "input": "union-property-access",
@@ -27590,8 +27590,8 @@
    "metamethods": {
     "__index": 10779
    },
-   "ms": 86,
-   "setupMs": 146
+   "ms": 103,
+   "setupMs": 309
   },
   {
    "input": "upstream/ArrowFunctionExpression1",
@@ -27641,8 +27641,8 @@
    "metamethods": {
     "__index": 6870
    },
-   "ms": 52,
-   "setupMs": 122
+   "ms": 42,
+   "setupMs": 302
   },
   {
    "input": "upstream/ClassDeclaration10",
@@ -27695,8 +27695,8 @@
    "metamethods": {
     "__index": 7338
    },
-   "ms": 67,
-   "setupMs": 686
+   "ms": 125,
+   "setupMs": 3885
   },
   {
    "input": "upstream/ClassDeclaration21",
@@ -27750,8 +27750,8 @@
    "metamethods": {
     "__index": 7341
    },
-   "ms": 70,
-   "setupMs": 87
+   "ms": 38,
+   "setupMs": 314
   },
   {
    "input": "upstream/ambientEnumElementInitializer3",
@@ -27803,8 +27803,8 @@
    "metamethods": {
     "__index": 5930
    },
-   "ms": 103,
-   "setupMs": 212
+   "ms": 34,
+   "setupMs": 295
   },
   {
    "input": "upstream/anyAndUnknownHaveFalsyComponents",
@@ -27853,8 +27853,8 @@
    "metamethods": {
     "__index": 13405
    },
-   "ms": 47,
-   "setupMs": 245
+   "ms": 181,
+   "setupMs": 172
   },
   {
    "input": "upstream/arguments",
@@ -27911,8 +27911,8 @@
    "metamethods": {
     "__index": 15825
    },
-   "ms": 232,
-   "setupMs": 200
+   "ms": 351,
+   "setupMs": 164
   },
   {
    "input": "upstream/arrayDestructuringInSwitch1",
@@ -27964,8 +27964,8 @@
    "metamethods": {
     "__index": 50250
    },
-   "ms": 292,
-   "setupMs": 215
+   "ms": 503,
+   "setupMs": 177
   },
   {
    "input": "upstream/arrayLiteral1",
@@ -28014,8 +28014,8 @@
    "metamethods": {
     "__index": 7909
    },
-   "ms": 53,
-   "setupMs": 206
+   "ms": 134,
+   "setupMs": 171
   },
   {
    "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
@@ -28071,8 +28071,8 @@
    "metamethods": {
     "__index": 33675
    },
-   "ms": 172,
-   "setupMs": 218
+   "ms": 1242,
+   "setupMs": 1696
   },
   {
    "input": "upstream/assignmentToParenthesizedExpression1",
@@ -28125,8 +28125,8 @@
    "metamethods": {
     "__index": 6733
    },
-   "ms": 67,
-   "setupMs": 207
+   "ms": 95,
+   "setupMs": 261
   },
   {
    "input": "upstream/baseClassImprovedMismatchErrors",
@@ -28182,8 +28182,8 @@
    "metamethods": {
     "__index": 35729
    },
-   "ms": 131,
-   "setupMs": 192
+   "ms": 421,
+   "setupMs": 287
   },
   {
    "input": "upstream/breakInIterationOrSwitchStatement1",
@@ -28228,8 +28228,8 @@
    "metamethods": {
     "__index": 5739
    },
-   "ms": 41,
-   "setupMs": 127
+   "ms": 48,
+   "setupMs": 510
   },
   {
    "input": "upstream/callOverloads2",
@@ -28283,8 +28283,8 @@
    "metamethods": {
     "__index": 15314
    },
-   "ms": 122,
-   "setupMs": 156
+   "ms": 75,
+   "setupMs": 249
   },
   {
    "input": "upstream/capturedLetConstInLoop10_ES6",
@@ -28334,8 +28334,8 @@
    "metamethods": {
     "__index": 31021
    },
-   "ms": 120,
-   "setupMs": 117
+   "ms": 172,
+   "setupMs": 349
   },
   {
    "input": "upstream/classExpressionAssignment",
@@ -28388,8 +28388,8 @@
    "metamethods": {
     "__index": 11659
    },
-   "ms": 72,
-   "setupMs": 130
+   "ms": 96,
+   "setupMs": 329
   },
   {
    "input": "upstream/classExtendingQualifiedName",
@@ -28443,8 +28443,8 @@
    "metamethods": {
     "__index": 8357
    },
-   "ms": 75,
-   "setupMs": 114
+   "ms": 82,
+   "setupMs": 203
   },
   {
    "input": "upstream/classExtendsMultipleBaseClasses",
@@ -28494,8 +28494,8 @@
    "metamethods": {
     "__index": 8412
    },
-   "ms": 29,
-   "setupMs": 536
+   "ms": 69,
+   "setupMs": 242
   },
   {
    "input": "upstream/classOrder1",
@@ -28542,8 +28542,8 @@
    "metamethods": {
     "__index": 8197
    },
-   "ms": 55,
-   "setupMs": 797
+   "ms": 123,
+   "setupMs": 177
   },
   {
    "input": "upstream/classVarianceResolveCircularity1",
@@ -28590,8 +28590,8 @@
    "metamethods": {
     "__index": 15061
    },
-   "ms": 88,
-   "setupMs": 127
+   "ms": 159,
+   "setupMs": 313
   },
   {
    "input": "upstream/collisionCodeGenModuleWithMethodChildren",
@@ -28645,8 +28645,8 @@
    "metamethods": {
     "__index": 14420
    },
-   "ms": 68,
-   "setupMs": 118
+   "ms": 315,
+   "setupMs": 326
   },
   {
    "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
@@ -28700,8 +28700,8 @@
    "metamethods": {
     "__index": 14339
    },
-   "ms": 137,
-   "setupMs": 112
+   "ms": 157,
+   "setupMs": 3428
   },
   {
    "input": "upstream/commentOnArrayElement12",
@@ -28747,8 +28747,8 @@
    "metamethods": {
     "__index": 7709
    },
-   "ms": 59,
-   "setupMs": 109
+   "ms": 81,
+   "setupMs": 226
   },
   {
    "input": "upstream/commentOnClassAccessor1",
@@ -28797,8 +28797,8 @@
    "metamethods": {
     "__index": 7078
    },
-   "ms": 36,
-   "setupMs": 99
+   "ms": 177,
+   "setupMs": 361
   },
   {
    "input": "upstream/commentOnClassAccessor2",
@@ -28847,8 +28847,8 @@
    "metamethods": {
     "__index": 7756
    },
-   "ms": 25,
-   "setupMs": 159
+   "ms": 145,
+   "setupMs": 178
   },
   {
    "input": "upstream/conditionalEqualityTestingNullability",
@@ -28897,8 +28897,8 @@
    "metamethods": {
     "__index": 23008
    },
-   "ms": 90,
-   "setupMs": 105
+   "ms": 1434,
+   "setupMs": 2184
   },
   {
    "input": "upstream/conditionalExpressions2",
@@ -28948,8 +28948,8 @@
    "metamethods": {
     "__index": 18412
    },
-   "ms": 123,
-   "setupMs": 192
+   "ms": 210,
+   "setupMs": 188
   },
   {
    "input": "upstream/constructorArgsErrors3",
@@ -28999,8 +28999,8 @@
    "metamethods": {
     "__index": 6911
    },
-   "ms": 89,
-   "setupMs": 131
+   "ms": 109,
+   "setupMs": 197
   },
   {
    "input": "upstream/contextualSignatureInstatiationContravariance",
@@ -29053,8 +29053,8 @@
    "metamethods": {
     "__index": 20960
    },
-   "ms": 103,
-   "setupMs": 119
+   "ms": 477,
+   "setupMs": 338
   },
   {
    "input": "upstream/contextualTypeSelfReferencing",
@@ -29103,8 +29103,8 @@
    "metamethods": {
     "__index": 40457
    },
-   "ms": 241,
-   "setupMs": 152
+   "ms": 968,
+   "setupMs": 324
   },
   {
    "input": "upstream/contextualTyping19",
@@ -29155,8 +29155,8 @@
    "metamethods": {
     "__index": 13545
    },
-   "ms": 50,
-   "setupMs": 148
+   "ms": 179,
+   "setupMs": 404
   },
   {
    "input": "upstream/contextualTyping4",
@@ -29211,8 +29211,8 @@
    "metamethods": {
     "__index": 10635
    },
-   "ms": 65,
-   "setupMs": 133
+   "ms": 106,
+   "setupMs": 467
   },
   {
    "input": "upstream/contextualTyping41",
@@ -29265,8 +29265,8 @@
    "metamethods": {
     "__index": 9973
    },
-   "ms": 49,
-   "setupMs": 145
+   "ms": 202,
+   "setupMs": 262
   },
   {
    "input": "upstream/contextualTypingOfArrayLiterals1",
@@ -29321,8 +29321,8 @@
    "metamethods": {
     "__index": 19845
    },
-   "ms": 133,
-   "setupMs": 168
+   "ms": 184,
+   "setupMs": 323
   },
   {
    "input": "upstream/contextualTypingOfConditionalExpression",
@@ -29377,8 +29377,8 @@
    "metamethods": {
     "__index": 21116
    },
-   "ms": 183,
-   "setupMs": 148
+   "ms": 203,
+   "setupMs": 287
   },
   {
    "input": "upstream/contextuallyTypingOrOperator",
@@ -29432,8 +29432,8 @@
    "metamethods": {
     "__index": 22073
    },
-   "ms": 204,
-   "setupMs": 144
+   "ms": 830,
+   "setupMs": 413
   },
   {
    "input": "upstream/declFileClassWithIndexSignature",
@@ -29479,8 +29479,8 @@
    "metamethods": {
     "__index": 6644
    },
-   "ms": 51,
-   "setupMs": 136
+   "ms": 31,
+   "setupMs": 220
   },
   {
    "input": "upstream/declFileOptionalInterfaceMethod",
@@ -29533,8 +29533,8 @@
    "metamethods": {
     "__index": 6574
    },
-   "ms": 52,
-   "setupMs": 152
+   "ms": 196,
+   "setupMs": 323
   },
   {
    "input": "upstream/declarationEmitDestructuringArrayPattern3",
@@ -29585,8 +29585,8 @@
    "metamethods": {
     "__index": 14421
    },
-   "ms": 53,
-   "setupMs": 114
+   "ms": 505,
+   "setupMs": 2215
   },
   {
    "input": "upstream/declarationEmitExpandoWithGenericConstraint",
@@ -29636,8 +29636,8 @@
    "metamethods": {
     "__index": 18836
    },
-   "ms": 247,
-   "setupMs": 124
+   "ms": 390,
+   "setupMs": 546
   },
   {
    "input": "upstream/declarationEmitNameConflictsWithAlias",
@@ -29683,8 +29683,8 @@
    "metamethods": {
     "__index": 8807
    },
-   "ms": 42,
-   "setupMs": 108
+   "ms": 108,
+   "setupMs": 517
   },
   {
    "input": "upstream/declarationEmitOptionalMethod",
@@ -29730,8 +29730,8 @@
    "metamethods": {
     "__index": 9842
    },
-   "ms": 66,
-   "setupMs": 157
+   "ms": 91,
+   "setupMs": 371
   },
   {
    "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
@@ -29777,8 +29777,8 @@
    "metamethods": {
     "__index": 10826
    },
-   "ms": 79,
-   "setupMs": 156
+   "ms": 160,
+   "setupMs": 428
   },
   {
    "input": "upstream/defaultValueInFunctionTypes",
@@ -29832,8 +29832,8 @@
    "metamethods": {
     "__index": 10569
    },
-   "ms": 133,
-   "setupMs": 146
+   "ms": 153,
+   "setupMs": 214
   },
   {
    "input": "upstream/deleteOperatorInStrictMode",
@@ -29883,8 +29883,8 @@
    "metamethods": {
     "__index": 6463
    },
-   "ms": 84,
-   "setupMs": 121
+   "ms": 187,
+   "setupMs": 390
   },
   {
    "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
@@ -29931,8 +29931,8 @@
    "metamethods": {
     "__index": 14078
    },
-   "ms": 109,
-   "setupMs": 176
+   "ms": 327,
+   "setupMs": 3667
   },
   {
    "input": "upstream/discriminantsAndPrimitives",
@@ -29980,8 +29980,8 @@
    "metamethods": {
     "__index": 40464
    },
-   "ms": 258,
-   "setupMs": 175
+   "ms": 328,
+   "setupMs": 576
   },
   {
    "input": "upstream/distributiveConditionalTypeNeverIntersection1",
@@ -30030,8 +30030,8 @@
    "metamethods": {
     "__index": 10859
    },
-   "ms": 100,
-   "setupMs": 195
+   "ms": 120,
+   "setupMs": 239
   },
   {
    "input": "upstream/duplicateErrorNameNotFound",
@@ -30086,8 +30086,8 @@
    "metamethods": {
     "__index": 6604
    },
-   "ms": 33,
-   "setupMs": 175
+   "ms": 185,
+   "setupMs": 711
   },
   {
    "input": "upstream/duplicateObjectLiteralProperty_computedName2",
@@ -30142,8 +30142,8 @@
    "metamethods": {
     "__index": 17826
    },
-   "ms": 126,
-   "setupMs": 159
+   "ms": 182,
+   "setupMs": 238
   },
   {
    "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
@@ -30189,8 +30189,8 @@
    "metamethods": {
     "__index": 11913
    },
-   "ms": 35,
-   "setupMs": 196
+   "ms": 101,
+   "setupMs": 773
   },
   {
    "input": "upstream/emitSkipsThisWithRestParameter",
@@ -30246,8 +30246,8 @@
    "metamethods": {
     "__index": 32458
    },
-   "ms": 144,
-   "setupMs": 158
+   "ms": 166,
+   "setupMs": 185
   },
   {
    "input": "upstream/emitThisInSuperMethodCall",
@@ -30297,8 +30297,8 @@
    "metamethods": {
     "__index": 14290
    },
-   "ms": 134,
-   "setupMs": 590
+   "ms": 142,
+   "setupMs": 169
   },
   {
    "input": "upstream/emptyFile",
@@ -30343,8 +30343,8 @@
    "metamethods": {
     "__index": 5419
    },
-   "ms": 34,
-   "setupMs": 106
+   "ms": 107,
+   "setupMs": 943
   },
   {
    "input": "upstream/enumMemberResolution",
@@ -30394,8 +30394,8 @@
    "metamethods": {
     "__index": 2013
    },
-   "ms": 11,
-   "setupMs": 711
+   "ms": 21,
+   "setupMs": 168
   },
   {
    "input": "upstream/errorForUsingPropertyOfTypeAsType02",
@@ -30448,8 +30448,8 @@
    "metamethods": {
     "__index": 8624
    },
-   "ms": 25,
-   "setupMs": 230
+   "ms": 110,
+   "setupMs": 265
   },
   {
    "input": "upstream/errorsForCallAndAssignmentAreSimilar",
@@ -30507,8 +30507,8 @@
    "metamethods": {
     "__index": 43178
    },
-   "ms": 155,
-   "setupMs": 122
+   "ms": 308,
+   "setupMs": 297
   },
   {
    "input": "upstream/errorsWithInvokablesInUnions01",
@@ -30561,8 +30561,8 @@
    "metamethods": {
     "__index": 26824
    },
-   "ms": 125,
-   "setupMs": 121
+   "ms": 897,
+   "setupMs": 695
   },
   {
    "input": "upstream/es6DeclOrdering",
@@ -30616,8 +30616,8 @@
    "metamethods": {
     "__index": 10905
    },
-   "ms": 110,
-   "setupMs": 137
+   "ms": 192,
+   "setupMs": 398
   },
   {
    "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
@@ -30666,8 +30666,8 @@
    "metamethods": {
     "__index": 7250
    },
-   "ms": 61,
-   "setupMs": 127
+   "ms": 108,
+   "setupMs": 340
   },
   {
    "input": "upstream/excessPropertyCheckWithSpread",
@@ -30722,8 +30722,8 @@
    "metamethods": {
     "__index": 14630
    },
-   "ms": 81,
-   "setupMs": 111
+   "ms": 62,
+   "setupMs": 403
   },
   {
    "input": "upstream/exportArrayBindingPattern",
@@ -30774,8 +30774,8 @@
    "metamethods": {
     "__index": 15374
    },
-   "ms": 98,
-   "setupMs": 237
+   "ms": 120,
+   "setupMs": 252
   },
   {
    "input": "upstream/exportDeclarationsInAmbientNamespaces2",
@@ -30825,8 +30825,8 @@
    "metamethods": {
     "__index": 7015
    },
-   "ms": 140,
-   "setupMs": 157
+   "ms": 104,
+   "setupMs": 501
   },
   {
    "input": "upstream/exportDefaultForNonInstantiatedModule",
@@ -30872,8 +30872,8 @@
    "metamethods": {
     "__index": 6641
    },
-   "ms": 73,
-   "setupMs": 202
+   "ms": 97,
+   "setupMs": 259
   },
   {
    "input": "upstream/exportedBlockScopedDeclarations",
@@ -30926,8 +30926,8 @@
    "metamethods": {
     "__index": 16453
    },
-   "ms": 61,
-   "setupMs": 210
+   "ms": 284,
+   "setupMs": 259
   },
   {
    "input": "upstream/externSemantics",
@@ -30981,8 +30981,8 @@
    "metamethods": {
     "__index": 7640
    },
-   "ms": 31,
-   "setupMs": 214
+   "ms": 121,
+   "setupMs": 283
   },
   {
    "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
@@ -31038,8 +31038,8 @@
    "metamethods": {
     "__index": 9857
    },
-   "ms": 32,
-   "setupMs": 187
+   "ms": 159,
+   "setupMs": 212
   },
   {
    "input": "upstream/functionAssignmentError",
@@ -31085,8 +31085,8 @@
    "metamethods": {
     "__index": 8047
    },
-   "ms": 33,
-   "setupMs": 171
+   "ms": 268,
+   "setupMs": 366
   },
   {
    "input": "upstream/functionOverloads43",
@@ -31141,8 +31141,8 @@
    "metamethods": {
     "__index": 23127
    },
-   "ms": 123,
-   "setupMs": 177
+   "ms": 101,
+   "setupMs": 192
   },
   {
    "input": "upstream/functionWithDefaultParameterWithNoStatements10",
@@ -31191,8 +31191,8 @@
    "metamethods": {
     "__index": 9006
    },
-   "ms": 34,
-   "setupMs": 178
+   "ms": 70,
+   "setupMs": 189
   },
   {
    "input": "upstream/functionsWithModifiersInBlocks1",
@@ -31242,8 +31242,8 @@
    "metamethods": {
     "__index": 8153
    },
-   "ms": 65,
-   "setupMs": 167
+   "ms": 212,
+   "setupMs": 477
   },
   {
    "input": "upstream/genericClasses1",
@@ -31297,8 +31297,8 @@
    "metamethods": {
     "__index": 8854
    },
-   "ms": 44,
-   "setupMs": 97
+   "ms": 126,
+   "setupMs": 573
   },
   {
    "input": "upstream/genericConstraintDeclaration",
@@ -31352,7 +31352,7 @@
     "__index": 9074
    },
    "ms": 56,
-   "setupMs": 86
+   "setupMs": 378
   },
   {
    "input": "upstream/genericFunctions2",
@@ -31406,8 +31406,8 @@
    "metamethods": {
     "__index": 16019
    },
-   "ms": 66,
-   "setupMs": 101
+   "ms": 146,
+   "setupMs": 392
   },
   {
    "input": "upstream/genericTypeParameterEquivalence2",
@@ -31462,8 +31462,8 @@
    "metamethods": {
     "__index": 86793
    },
-   "ms": 266,
-   "setupMs": 116
+   "ms": 556,
+   "setupMs": 358
   },
   {
    "input": "upstream/generics5",
@@ -31516,8 +31516,8 @@
    "metamethods": {
     "__index": 12304
    },
-   "ms": 59,
-   "setupMs": 99
+   "ms": 77,
+   "setupMs": 400
   },
   {
    "input": "upstream/identicalTypesNoDifferByCheckOrder",
@@ -31573,8 +31573,8 @@
    "metamethods": {
     "__index": 102325
    },
-   "ms": 284,
-   "setupMs": 103
+   "ms": 582,
+   "setupMs": 327
   },
   {
    "input": "upstream/implicitAnyAmbients",
@@ -31627,8 +31627,8 @@
    "metamethods": {
     "__index": 16724
    },
-   "ms": 83,
-   "setupMs": 114
+   "ms": 433,
+   "setupMs": 1208
   },
   {
    "input": "upstream/indexerA",
@@ -31682,8 +31682,8 @@
    "metamethods": {
     "__index": 14004
    },
-   "ms": 71,
-   "setupMs": 100
+   "ms": 227,
+   "setupMs": 392
   },
   {
    "input": "upstream/indirectSelfReferenceGeneric",
@@ -31736,8 +31736,8 @@
    "metamethods": {
     "__index": 9224
    },
-   "ms": 92,
-   "setupMs": 119
+   "ms": 99,
+   "setupMs": 287
   },
   {
    "input": "upstream/inferentialTypingObjectLiteralMethod1",
@@ -31791,8 +31791,8 @@
    "metamethods": {
     "__index": 28761
    },
-   "ms": 91,
-   "setupMs": 125
+   "ms": 175,
+   "setupMs": 272
   },
   {
    "input": "upstream/infinitelyExpandingBaseTypes2",
@@ -31845,8 +31845,8 @@
    "metamethods": {
     "__index": 13525
    },
-   "ms": 102,
-   "setupMs": 147
+   "ms": 103,
+   "setupMs": 272
   },
   {
    "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
@@ -31899,8 +31899,8 @@
    "metamethods": {
     "__index": 9921
    },
-   "ms": 56,
-   "setupMs": 128
+   "ms": 38,
+   "setupMs": 425
   },
   {
    "input": "upstream/inheritanceStaticFuncOverridingProperty",
@@ -31953,8 +31953,8 @@
    "metamethods": {
     "__index": 9752
    },
-   "ms": 76,
-   "setupMs": 123
+   "ms": 214,
+   "setupMs": 3791
   },
   {
    "input": "upstream/innerExtern",
@@ -32007,8 +32007,8 @@
    "metamethods": {
     "__index": 8741
    },
-   "ms": 44,
-   "setupMs": 155
+   "ms": 73,
+   "setupMs": 736
   },
   {
    "input": "upstream/instanceSubtypeCheck1",
@@ -32054,8 +32054,8 @@
    "metamethods": {
     "__index": 13737
    },
-   "ms": 42,
-   "setupMs": 126
+   "ms": 582,
+   "setupMs": 2833
   },
   {
    "input": "upstream/instanceofTypeAliasToGenericClass",
@@ -32101,8 +32101,8 @@
    "metamethods": {
     "__index": 17742
    },
-   "ms": 124,
-   "setupMs": 1102
+   "ms": 141,
+   "setupMs": 1002
   },
   {
    "input": "upstream/interfaceInReopenedModule",
@@ -32155,8 +32155,8 @@
    "metamethods": {
     "__index": 7736
    },
-   "ms": 76,
-   "setupMs": 147
+   "ms": 102,
+   "setupMs": 368
   },
   {
    "input": "upstream/intersectionApparentTypeCaching",
@@ -32205,8 +32205,8 @@
    "metamethods": {
     "__index": 81859
    },
-   "ms": 450,
-   "setupMs": 914
+   "ms": 285,
+   "setupMs": 484
   },
   {
    "input": "upstream/intersectionsAndOptionalProperties",
@@ -32260,8 +32260,8 @@
    "metamethods": {
     "__index": 97660
    },
-   "ms": 397,
-   "setupMs": 104
+   "ms": 1638,
+   "setupMs": 384
   },
   {
    "input": "upstream/lambdaPropSelf",
@@ -32314,8 +32314,8 @@
    "metamethods": {
     "__index": 15808
    },
-   "ms": 105,
-   "setupMs": 123
+   "ms": 187,
+   "setupMs": 398
   },
   {
    "input": "upstream/letAndVarRedeclaration",
@@ -32368,8 +32368,8 @@
    "metamethods": {
     "__index": 20749
    },
-   "ms": 68,
-   "setupMs": 124
+   "ms": 223,
+   "setupMs": 407
   },
   {
    "input": "upstream/letAsIdentifierInStrictMode",
@@ -32423,8 +32423,8 @@
    "metamethods": {
     "__index": 8049
    },
-   "ms": 88,
-   "setupMs": 127
+   "ms": 59,
+   "setupMs": 327
   },
   {
    "input": "upstream/library_StringSlice",
@@ -32473,8 +32473,8 @@
    "metamethods": {
     "__index": 9657
    },
-   "ms": 101,
-   "setupMs": 140
+   "ms": 63,
+   "setupMs": 374
   },
   {
    "input": "upstream/localImportNameVsGlobalName",
@@ -32523,8 +32523,8 @@
    "metamethods": {
     "__index": 11676
    },
-   "ms": 293,
-   "setupMs": 167
+   "ms": 89,
+   "setupMs": 547
   },
   {
    "input": "upstream/memberAccessOnConstructorType",
@@ -32578,8 +32578,8 @@
    "metamethods": {
     "__index": 7619
    },
-   "ms": 110,
-   "setupMs": 301
+   "ms": 112,
+   "setupMs": 316
   },
   {
    "input": "upstream/moduleCodeGenTest5",
@@ -32629,8 +32629,8 @@
    "metamethods": {
     "__index": 13320
    },
-   "ms": 116,
-   "setupMs": 165
+   "ms": 162,
+   "setupMs": 275
   },
   {
    "input": "upstream/multiExtendsSplitInterfaces1",
@@ -32685,8 +32685,8 @@
    "metamethods": {
     "__index": 6215
    },
-   "ms": 158,
-   "setupMs": 203
+   "ms": 100,
+   "setupMs": 228
   },
   {
    "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
@@ -32739,8 +32739,8 @@
    "metamethods": {
     "__index": 9295
    },
-   "ms": 176,
-   "setupMs": 243
+   "ms": 96,
+   "setupMs": 274
   },
   {
    "input": "upstream/namespaces2",
@@ -32787,8 +32787,8 @@
    "metamethods": {
     "__index": 8145
    },
-   "ms": 81,
-   "setupMs": 250
+   "ms": 179,
+   "setupMs": 321
   },
   {
    "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
@@ -32834,8 +32834,8 @@
    "metamethods": {
     "__index": 14788
    },
-   "ms": 129,
-   "setupMs": 247
+   "ms": 76,
+   "setupMs": 204
   },
   {
    "input": "upstream/narrowingTypeofUndefined1",
@@ -32881,8 +32881,8 @@
    "metamethods": {
     "__index": 16092
    },
-   "ms": 158,
-   "setupMs": 310
+   "ms": 259,
+   "setupMs": 178
   },
   {
    "input": "upstream/nestedBlockScopedBindings15",
@@ -32932,8 +32932,8 @@
    "metamethods": {
     "__index": 11545
    },
-   "ms": 62,
-   "setupMs": 260
+   "ms": 265,
+   "setupMs": 822
   },
   {
    "input": "upstream/nestedBlockScopedBindings4",
@@ -32987,8 +32987,8 @@
    "metamethods": {
     "__index": 25987
    },
-   "ms": 178,
-   "setupMs": 253
+   "ms": 439,
+   "setupMs": 390
   },
   {
    "input": "upstream/nestedBlockScopedBindings8",
@@ -33038,8 +33038,8 @@
    "metamethods": {
     "__index": 8562
    },
-   "ms": 32,
-   "setupMs": 349
+   "ms": 240,
+   "setupMs": 293
   },
   {
    "input": "upstream/nestedTypeVariableInfersLiteral",
@@ -33090,8 +33090,8 @@
    "metamethods": {
     "__index": 45127
    },
-   "ms": 389,
-   "setupMs": 182
+   "ms": 319,
+   "setupMs": 433
   },
   {
    "input": "upstream/noCheckNoEmit",
@@ -33145,8 +33145,8 @@
    "metamethods": {
     "__index": 7388
    },
-   "ms": 79,
-   "setupMs": 197
+   "ms": 198,
+   "setupMs": 321
   },
   {
    "input": "upstream/noCrashOnMixin2",
@@ -33201,8 +33201,8 @@
    "metamethods": {
     "__index": 25332
    },
-   "ms": 176,
-   "setupMs": 306
+   "ms": 288,
+   "setupMs": 724
   },
   {
    "input": "upstream/noEmitHelpers",
@@ -33248,8 +33248,8 @@
    "metamethods": {
     "__index": 7644
    },
-   "ms": 94,
-   "setupMs": 162
+   "ms": 118,
+   "setupMs": 341
   },
   {
    "input": "upstream/noImplicitAnyForIn",
@@ -33303,8 +33303,8 @@
    "metamethods": {
     "__index": 52384
    },
-   "ms": 226,
-   "setupMs": 207
+   "ms": 328,
+   "setupMs": 614
   },
   {
    "input": "upstream/noImplicitAnyIndexing",
@@ -33361,8 +33361,8 @@
    "metamethods": {
     "__index": 26953
    },
-   "ms": 261,
-   "setupMs": 202
+   "ms": 1454,
+   "setupMs": 1978
   },
   {
    "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
@@ -33409,8 +33409,8 @@
    "metamethods": {
     "__index": 8467
    },
-   "ms": 226,
-   "setupMs": 170
+   "ms": 138,
+   "setupMs": 564
   },
   {
    "input": "upstream/nongenericConditionalNotPartiallyComputed",
@@ -33456,8 +33456,8 @@
    "metamethods": {
     "__index": 7813
    },
-   "ms": 97,
-   "setupMs": 188
+   "ms": 84,
+   "setupMs": 526
   },
   {
    "input": "upstream/objectLiteralArraySpecialization",
@@ -33513,8 +33513,8 @@
    "metamethods": {
     "__index": 26665
    },
-   "ms": 136,
-   "setupMs": 254
+   "ms": 232,
+   "setupMs": 362
   },
   {
    "input": "upstream/objectLiteralMemberWithModifiers1",
@@ -33567,8 +33567,8 @@
    "metamethods": {
     "__index": 7199
    },
-   "ms": 27,
-   "setupMs": 183
+   "ms": 31,
+   "setupMs": 413
   },
   {
    "input": "upstream/overloadAssignmentCompat",
@@ -33619,8 +33619,8 @@
    "metamethods": {
     "__index": 21613
    },
-   "ms": 109,
-   "setupMs": 165
+   "ms": 268,
+   "setupMs": 432
   },
   {
    "input": "upstream/overrideBaseIntersectionMethod",
@@ -33671,8 +33671,8 @@
    "metamethods": {
     "__index": 49255
    },
-   "ms": 226,
-   "setupMs": 161
+   "ms": 227,
+   "setupMs": 3050
   },
   {
    "input": "upstream/parseEntityNameWithReservedWord",
@@ -33720,8 +33720,8 @@
    "metamethods": {
     "__index": 6768
    },
-   "ms": 49,
-   "setupMs": 115
+   "ms": 264,
+   "setupMs": 223
   },
   {
    "input": "upstream/prespecializedGenericMembers1",
@@ -33768,8 +33768,8 @@
    "metamethods": {
     "__index": 13407
    },
-   "ms": 76,
-   "setupMs": 1189
+   "ms": 148,
+   "setupMs": 305
   },
   {
    "input": "upstream/rectype",
@@ -33823,8 +33823,8 @@
    "metamethods": {
     "__index": 12529
    },
-   "ms": 148,
-   "setupMs": 215
+   "ms": 110,
+   "setupMs": 241
   },
   {
    "input": "upstream/returnTypeTypeArguments",
@@ -33879,8 +33879,8 @@
    "metamethods": {
     "__index": 76016
    },
-   "ms": 605,
-   "setupMs": 174
+   "ms": 277,
+   "setupMs": 287
   },
   {
    "input": "upstream/scopeCheckClassProperty",
@@ -33927,8 +33927,8 @@
    "metamethods": {
     "__index": 8839
    },
-   "ms": 67,
-   "setupMs": 204
+   "ms": 256,
+   "setupMs": 265
   },
   {
    "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
@@ -33984,8 +33984,8 @@
    "metamethods": {
     "__index": 13663
    },
-   "ms": 131,
-   "setupMs": 178
+   "ms": 1178,
+   "setupMs": 1954
   },
   {
    "input": "upstream/signatureInstantiationWithRecursiveConstraints",
@@ -34032,8 +34032,8 @@
    "metamethods": {
     "__index": 17819
    },
-   "ms": 66,
-   "setupMs": 279
+   "ms": 173,
+   "setupMs": 276
   },
   {
    "input": "upstream/singletonLabeledTuple",
@@ -34080,8 +34080,8 @@
    "metamethods": {
     "__index": 13490
    },
-   "ms": 88,
-   "setupMs": 219
+   "ms": 153,
+   "setupMs": 244
   },
   {
    "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
@@ -34134,8 +34134,8 @@
    "metamethods": {
     "__index": 6729
    },
-   "ms": 110,
-   "setupMs": 287
+   "ms": 124,
+   "setupMs": 283
   },
   {
    "input": "upstream/specializedLambdaTypeArguments",
@@ -34188,8 +34188,8 @@
    "metamethods": {
     "__index": 8272
    },
-   "ms": 85,
-   "setupMs": 216
+   "ms": 259,
+   "setupMs": 2290
   },
   {
    "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
@@ -34235,8 +34235,8 @@
    "metamethods": {
     "__index": 9602
    },
-   "ms": 99,
-   "setupMs": 236
+   "ms": 109,
+   "setupMs": 366
   },
   {
    "input": "upstream/staticGetter1",
@@ -34282,8 +34282,8 @@
    "metamethods": {
     "__index": 6795
    },
-   "ms": 25,
-   "setupMs": 175
+   "ms": 90,
+   "setupMs": 185
   },
   {
    "input": "upstream/staticInstanceResolution4",
@@ -34337,8 +34337,8 @@
    "metamethods": {
     "__index": 8602
    },
-   "ms": 109,
-   "setupMs": 269
+   "ms": 110,
+   "setupMs": 290
   },
   {
    "input": "upstream/superCallAssignResult",
@@ -34393,8 +34393,8 @@
    "metamethods": {
     "__index": 10987
    },
-   "ms": 81,
-   "setupMs": 714
+   "ms": 125,
+   "setupMs": 288
   },
   {
    "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
@@ -34441,8 +34441,8 @@
    "metamethods": {
     "__index": 10766
    },
-   "ms": 34,
-   "setupMs": 224
+   "ms": 87,
+   "setupMs": 137
   },
   {
    "input": "upstream/superCallInStaticMethod",
@@ -34492,8 +34492,8 @@
    "metamethods": {
     "__index": 18606
    },
-   "ms": 129,
-   "setupMs": 240
+   "ms": 134,
+   "setupMs": 182
   },
   {
    "input": "upstream/superHasMethodsFromMergedInterface",
@@ -34540,8 +34540,8 @@
    "metamethods": {
     "__index": 10819
    },
-   "ms": 81,
-   "setupMs": 237
+   "ms": 96,
+   "setupMs": 150
   },
   {
    "input": "upstream/superWithTypeArgument",
@@ -34588,7 +34588,7 @@
    "metamethods": {
     "__index": 1830
    },
-   "ms": 16,
+   "ms": 26,
    "setupMs": 212
   },
   {
@@ -34642,8 +34642,8 @@
    "metamethods": {
     "__index": 6768
    },
-   "ms": 37,
-   "setupMs": 1082
+   "ms": 101,
+   "setupMs": 203
   },
   {
    "input": "upstream/thisInPropertyBoundDeclarations",
@@ -34698,8 +34698,8 @@
    "metamethods": {
     "__index": 47215
    },
-   "ms": 228,
-   "setupMs": 199
+   "ms": 414,
+   "setupMs": 1120
   },
   {
    "input": "upstream/typeArgumentConstraintResolution1",
@@ -34754,8 +34754,8 @@
    "metamethods": {
     "__index": 23679
    },
-   "ms": 205,
-   "setupMs": 238
+   "ms": 959,
+   "setupMs": 193
   },
   {
    "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
@@ -34804,8 +34804,8 @@
    "metamethods": {
     "__index": 26269
    },
-   "ms": 118,
-   "setupMs": 200
+   "ms": 240,
+   "setupMs": 201
   },
   {
    "input": "upstream/typeInferenceFixEarly",
@@ -34855,8 +34855,8 @@
    "metamethods": {
     "__index": 10081
    },
-   "ms": 36,
-   "setupMs": 186
+   "ms": 40,
+   "setupMs": 295
   },
   {
    "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
@@ -34909,8 +34909,8 @@
    "metamethods": {
     "__index": 19020
    },
-   "ms": 116,
-   "setupMs": 175
+   "ms": 234,
+   "setupMs": 251
   },
   {
    "input": "upstream/typePredicateTopLevelTypeParameter",
@@ -34957,8 +34957,8 @@
    "metamethods": {
     "__index": 24506
    },
-   "ms": 149,
-   "setupMs": 218
+   "ms": 297,
+   "setupMs": 296
   },
   {
    "input": "upstream/typeofUsedBeforeBlockScoped",
@@ -35007,8 +35007,8 @@
    "metamethods": {
     "__index": 10378
    },
-   "ms": 87,
-   "setupMs": 136
+   "ms": 59,
+   "setupMs": 457
   },
   {
    "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
@@ -35058,8 +35058,8 @@
    "metamethods": {
     "__index": 12663
    },
-   "ms": 72,
-   "setupMs": 153
+   "ms": 225,
+   "setupMs": 374
   },
   {
    "input": "upstream/unusedModuleInModule",
@@ -35105,8 +35105,8 @@
    "metamethods": {
     "__index": 6007
    },
-   "ms": 42,
-   "setupMs": 266
+   "ms": 36,
+   "setupMs": 691
   },
   {
    "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
@@ -35155,8 +35155,8 @@
    "metamethods": {
     "__index": 7668
    },
-   "ms": 31,
-   "setupMs": 135
+   "ms": 121,
+   "setupMs": 322
   },
   {
    "input": "upstream/vardecl",
@@ -35211,8 +35211,8 @@
    "metamethods": {
     "__index": 56586
    },
-   "ms": 232,
-   "setupMs": 127
+   "ms": 225,
+   "setupMs": 416
   },
   {
    "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
@@ -35266,8 +35266,8 @@
    "metamethods": {
     "__index": 32579
    },
-   "ms": 147,
-   "setupMs": 116
+   "ms": 160,
+   "setupMs": 320
   },
   {
    "input": "upstream/varianceReferences",
@@ -35321,8 +35321,8 @@
    "metamethods": {
     "__index": 46134
    },
-   "ms": 381,
-   "setupMs": 121
+   "ms": 226,
+   "setupMs": 226
   },
   {
    "input": "upstream/voidAsOperator",
@@ -35374,8 +35374,8 @@
    "metamethods": {
     "__index": 6851
    },
-   "ms": 100,
-   "setupMs": 120
+   "ms": 67,
+   "setupMs": 268
   },
   {
    "input": "upstream/vueLikeDataAndPropsInference2",
@@ -35423,8 +35423,8 @@
    "metamethods": {
     "__index": 80322
    },
-   "ms": 297,
-   "setupMs": 136
+   "ms": 659,
+   "setupMs": 267
   }
  ]
 }
