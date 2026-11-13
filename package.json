@@ -7,6 +7,8 @@
   "type": "module",
   "scripts": {
     "oracle": "node scripts/oracle.ts",
+    "ref": "node scripts/ref.ts",
+    "boot": "node scripts/boot.ts",
     "census": "node scripts/census.ts",
     "profile": "node scripts/profile.ts",
     "tower": "node scripts/tower.ts",

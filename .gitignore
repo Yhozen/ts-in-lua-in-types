@@ -6,3 +6,6 @@ dist
 coverage
 *.tsbuildinfo
 .run
+
+# Boot images (vp run boot)
+image/

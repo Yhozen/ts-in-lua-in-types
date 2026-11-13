@@ -51,3 +51,17 @@ tslua under real Lua 5.4 (wasmoon) is the ground truth.
   and `oracle/profile.json`; `vp run tower` -> `oracle/tower.json`; `vp run warmup` -> `oracle/warmup.json`.
 - `oracle/inputs/**` is `-text` in `.gitattributes`: upstream cases keep their
   CRLF line endings byte for byte.
+
+## tslua on the reference (P1 gate) and the boot image
+
+- `scripts/luaref.ts`: the program (prelude + `oracle/modules.json`, the
+  modules real Lua loads, + `lua/tsc.lua`) and the entry chunks `=boot`
+  (`require("tsc")`) and `=check` (one check; INPUT and LIB are globals).
+- `vp run ref` runs every input in both lib modes on the lua-in-types
+  reference, compares with `oracle/expected/` byte for byte and writes
+  `oracle/ref-manifest.json` (reference counters next to real Lua's
+  instruction counts); `-- --image` restores each check from the boot image
+  (`oracle/ref-image-manifest.json`); `-- --modules` rewrites
+  `oracle/modules.json`.
+- `vp run boot` writes `image/boot.<lib>.json` (git-ignored snapshots, see
+  lua-in-types `docs/AOT.md`, "Snapshots") and `oracle/boot.json` (sizes).
