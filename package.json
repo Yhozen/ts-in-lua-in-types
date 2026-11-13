@@ -1,0 +1,41 @@
+{
+  "name": "ts-in-types",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The TypeScript 7 compiler (tslua) running inside the TypeScript type checker.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "oracle": "node scripts/oracle.ts",
+    "census": "node scripts/census.ts",
+    "profile": "node scripts/profile.ts",
+    "tower": "node scripts/tower.ts",
+    "upstream": "node scripts/upstream.ts",
+    "test": "vp test",
+    "typecheck": "tsrs --noEmit --fast",
+    "check": "vp check && tsrs --noEmit --fast",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsrs": "0.23.0-ts7.1.0-beta",
+    "typescript": "^7.0.2",
+    "vite-plus": "catalog:",
+    "wasmoon": "^1.16.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=26",
+      "onFail": "error"
+    }
+  },
+  "engines": {
+    "node": ">=26"
+  }
+}
