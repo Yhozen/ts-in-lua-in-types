@@ -1,0 +1,1 @@
+main.ts(7,29): error TS1003: Identifier expected.

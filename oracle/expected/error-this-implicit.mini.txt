@@ -1,0 +1,2 @@
+main.ts(1,23): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+main.ts(2,31): error TS2339: Property 'nope' does not exist on type '{ m(): any; }'.

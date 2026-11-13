@@ -1,5 +1,9 @@
 * text=auto eol=lf
 pnpm-lock.yaml linguist-generated=true -diff
-oracle/** linguist-generated=true -diff
+oracle/inputs/** -text
+oracle/expected/** linguist-generated=true -text
+oracle/manifest.json linguist-generated=true -diff
+oracle/profile.json linguist-generated=true -diff
+lua/lib.mini.d.ts linguist-generated=true
 docs/CENSUS.md linguist-generated=true
 docs/PROFILE.md linguist-generated=true

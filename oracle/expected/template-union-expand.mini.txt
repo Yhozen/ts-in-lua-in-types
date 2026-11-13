@@ -1,0 +1,1 @@
+main.ts(4,7): error TS2322: Type '"top-middle"' is not assignable to type '"bottom-left" | "bottom-right" | "top-left" | "top-right"'.

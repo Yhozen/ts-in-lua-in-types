@@ -1,0 +1,1 @@
+main.ts(5,6): error TS2345: Argument of type '"user"' is not assignable to parameter of type '"host" | "port"'.

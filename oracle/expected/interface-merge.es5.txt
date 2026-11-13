@@ -1,0 +1,1 @@
+main.ts(3,7): error TS2741: Property 'y' is missing in type '{ x: number; }' but required in type 'A'.

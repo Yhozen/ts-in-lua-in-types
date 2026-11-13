@@ -1,0 +1,2 @@
+main.ts(1,11): error TS2304: Cannot find name 'Readonly'.
+main.ts(4,12): error TS2304: Cannot find name 'Record'.

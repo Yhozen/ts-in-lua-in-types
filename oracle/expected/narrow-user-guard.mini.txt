@@ -1,0 +1,1 @@
+main.ts(6,10): error TS2339: Property 'meow' does not exist on type 'Dog'.

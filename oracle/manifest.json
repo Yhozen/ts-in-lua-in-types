@@ -1,0 +1,9200 @@
+{
+ "generated": "by scripts/oracle.ts (vp run oracle); do not edit",
+ "tslua": "vendor/tslua (github.com/Yhozen/tslua), see git submodule status",
+ "lua": "Lua 5.4 via wasmoon 1.16.0",
+ "counting": "instructions = Lua VM instructions inside tsc.check, counted with debug.sethook(f, '', 1) (a count hook every instruction, exact). Loading (require 'tsc') is not included; see load.",
+ "timing": "ms = wall time of an unhooked tsc.check in a fresh Lua state (worker threads in parallel, so noisy); msHooked = the same under the count hook.",
+ "harness": "lua/tsc.lua; files /p/<lib file> and /p/main.ts, cwd /p",
+ "args": {
+  "mini": [
+   "--noLib",
+   "--noEmit",
+   "--skipLibCheck",
+   "lib.mini.d.ts",
+   "main.ts"
+  ],
+  "es5": [
+   "--noLib",
+   "--noEmit",
+   "--skipLibCheck",
+   "lib.es5.d.ts",
+   "main.ts"
+  ]
+ },
+ "libFiles": {
+  "mini": "lua/lib.mini.d.ts",
+  "es5": "vendor/tslua/src/tslua/bundled/libs/lib.es5.d.ts"
+ },
+ "load": {
+  "instructions": 1619754,
+  "ms": 115,
+  "heapKB": 14002
+ },
+ "reference": {
+  "emptyFileMini": 235955,
+  "oneLinerMini": 253614,
+  "oneLinerEs5": 14272908,
+  "oneLinerOutput": "main.ts(1,7): error TS2322: Type 'string' is not assignable to type 'number'.\n"
+ },
+ "summary": {
+  "mini": {
+   "instructions": {
+    "n": 328,
+    "min": 165336,
+    "p10": 270671,
+    "median": 323811,
+    "p90": 533855,
+    "max": 45794147
+   },
+   "ms": {
+    "n": 328,
+    "min": 4.1,
+    "p10": 5.8,
+    "median": 6.8,
+    "p90": 9.9,
+    "max": 426.6
+   },
+   "outputBytes": {
+    "n": 328,
+    "min": 0,
+    "p10": 0,
+    "median": 119,
+    "p90": 396,
+    "max": 4745
+   },
+   "clean": 74,
+   "crashed": []
+  },
+  "es5": {
+   "instructions": {
+    "n": 328,
+    "min": 11345255,
+    "p10": 14276806,
+    "median": 14339186,
+    "p90": 14638615,
+    "max": 65408555
+   },
+   "ms": {
+    "n": 328,
+    "min": 71.4,
+    "p10": 98.9,
+    "median": 104.2,
+    "p90": 118.4,
+    "max": 585.1
+   },
+   "outputBytes": {
+    "n": 328,
+    "min": 0,
+    "p10": 0,
+    "median": 111,
+    "p90": 364,
+    "max": 4745
+   },
+   "clean": 87,
+   "crashed": []
+  }
+ },
+ "entries": [
+  {
+   "input": "assign-any-unknown",
+   "lib": "mini",
+   "inputBytes": 135,
+   "instructions": 313743,
+   "ms": 7.6,
+   "msHooked": 44.8,
+   "heapAfterCheckKB": 15367,
+   "outputBytes": 134,
+   "status": 2,
+   "codes": [
+    "TS18046",
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-any-unknown",
+   "lib": "es5",
+   "inputBytes": 135,
+   "instructions": 14319144,
+   "ms": 428.4,
+   "msHooked": 1431.4,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 134,
+   "status": 2,
+   "codes": [
+    "TS18046",
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-basic",
+   "lib": "mini",
+   "inputBytes": 27,
+   "instructions": 253614,
+   "ms": 7.6,
+   "msHooked": 33.9,
+   "heapAfterCheckKB": 15340,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-basic",
+   "lib": "es5",
+   "inputBytes": 27,
+   "instructions": 14272908,
+   "ms": 422.4,
+   "msHooked": 1428.6,
+   "heapAfterCheckKB": 19793,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-callback-bivariance",
+   "lib": "mini",
+   "inputBytes": 182,
+   "instructions": 404663,
+   "ms": 10,
+   "msHooked": 56.3,
+   "heapAfterCheckKB": 15474,
+   "outputBytes": 222,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-callback-bivariance",
+   "lib": "es5",
+   "inputBytes": 182,
+   "instructions": 14413227,
+   "ms": 430.9,
+   "msHooked": 1460,
+   "heapAfterCheckKB": 19906,
+   "outputBytes": 222,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-enum-number",
+   "lib": "mini",
+   "inputBytes": 70,
+   "instructions": 312907,
+   "ms": 8.9,
+   "msHooked": 44.5,
+   "heapAfterCheckKB": 15382,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-enum-number",
+   "lib": "es5",
+   "inputBytes": 70,
+   "instructions": 14320880,
+   "ms": 451.7,
+   "msHooked": 1473.6,
+   "heapAfterCheckKB": 19832,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-function-params",
+   "lib": "mini",
+   "inputBytes": 105,
+   "instructions": 328125,
+   "ms": 9.7,
+   "msHooked": 49.8,
+   "heapAfterCheckKB": 15403,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-function-params",
+   "lib": "es5",
+   "inputBytes": 105,
+   "instructions": 14333526,
+   "ms": 438.6,
+   "msHooked": 1450.8,
+   "heapAfterCheckKB": 19845,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-function-return",
+   "lib": "mini",
+   "inputBytes": 73,
+   "instructions": 296102,
+   "ms": 8.8,
+   "msHooked": 44.3,
+   "heapAfterCheckKB": 15407,
+   "outputBytes": 206,
+   "status": 2,
+   "codes": [
+    "TS2318",
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-function-return",
+   "lib": "es5",
+   "inputBytes": 73,
+   "instructions": 14317978,
+   "ms": 446.3,
+   "msHooked": 1455.9,
+   "heapAfterCheckKB": 19829,
+   "outputBytes": 157,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-index-signature",
+   "lib": "mini",
+   "inputBytes": 161,
+   "instructions": 341360,
+   "ms": 8.3,
+   "msHooked": 37.6,
+   "heapAfterCheckKB": 15416,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2411"
+   ]
+  },
+  {
+   "input": "assign-index-signature",
+   "lib": "es5",
+   "inputBytes": 161,
+   "instructions": 14363827,
+   "ms": 121.8,
+   "msHooked": 1422.7,
+   "heapAfterCheckKB": 19850,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2411"
+   ]
+  },
+  {
+   "input": "assign-never",
+   "lib": "mini",
+   "inputBytes": 129,
+   "instructions": 298763,
+   "ms": 7.7,
+   "msHooked": 34.6,
+   "heapAfterCheckKB": 15361,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-never",
+   "lib": "es5",
+   "inputBytes": 129,
+   "instructions": 14318057,
+   "ms": 118,
+   "msHooked": 1395.2,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "mini",
+   "inputBytes": 110,
+   "instructions": 300352,
+   "ms": 8,
+   "msHooked": 34.5,
+   "heapAfterCheckKB": 15394,
+   "outputBytes": 233,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "es5",
+   "inputBytes": 110,
+   "instructions": 14305753,
+   "ms": 114.1,
+   "msHooked": 1412.8,
+   "heapAfterCheckKB": 19838,
+   "outputBytes": 233,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-object-excess",
+   "lib": "mini",
+   "inputBytes": 80,
+   "instructions": 324303,
+   "ms": 6.7,
+   "msHooked": 38.9,
+   "heapAfterCheckKB": 15396,
+   "outputBytes": 119,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "assign-object-excess",
+   "lib": "es5",
+   "inputBytes": 80,
+   "instructions": 14332875,
+   "ms": 109.4,
+   "msHooked": 1377.5,
+   "heapAfterCheckKB": 19835,
+   "outputBytes": 119,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "assign-object-literal-nested",
+   "lib": "mini",
+   "inputBytes": 149,
+   "instructions": 442904,
+   "ms": 8.2,
+   "msHooked": 50.4,
+   "heapAfterCheckKB": 15482,
+   "outputBytes": 159,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-object-literal-nested",
+   "lib": "es5",
+   "inputBytes": 149,
+   "instructions": 14520360,
+   "ms": 109,
+   "msHooked": 1401.1,
+   "heapAfterCheckKB": 19959,
+   "outputBytes": 159,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-object-missing",
+   "lib": "mini",
+   "inputBytes": 68,
+   "instructions": 301133,
+   "ms": 6.2,
+   "msHooked": 39.2,
+   "heapAfterCheckKB": 15390,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "assign-object-missing",
+   "lib": "es5",
+   "inputBytes": 68,
+   "instructions": 14309697,
+   "ms": 104.5,
+   "msHooked": 1376.2,
+   "heapAfterCheckKB": 19833,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "assign-optional",
+   "lib": "mini",
+   "inputBytes": 162,
+   "instructions": 380284,
+   "ms": 7.5,
+   "msHooked": 41.2,
+   "heapAfterCheckKB": 15449,
+   "outputBytes": 224,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-optional",
+   "lib": "es5",
+   "inputBytes": 162,
+   "instructions": 14405309,
+   "ms": 106.3,
+   "msHooked": 1386.1,
+   "heapAfterCheckKB": 19880,
+   "outputBytes": 224,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-readonly",
+   "lib": "mini",
+   "inputBytes": 169,
+   "instructions": 405001,
+   "ms": 8.1,
+   "msHooked": 44.5,
+   "heapAfterCheckKB": 15473,
+   "outputBytes": 507,
+   "status": 2,
+   "codes": [
+    "TS2540",
+    "TS4104",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "assign-readonly",
+   "lib": "es5",
+   "inputBytes": 169,
+   "instructions": 14454596,
+   "ms": 108.1,
+   "msHooked": 1381.3,
+   "heapAfterCheckKB": 19912,
+   "outputBytes": 305,
+   "status": 2,
+   "codes": [
+    "TS2540",
+    "TS2542",
+    "TS4104"
+   ]
+  },
+  {
+   "input": "assign-structural-class",
+   "lib": "mini",
+   "inputBytes": 109,
+   "instructions": 334433,
+   "ms": 7.6,
+   "msHooked": 36.6,
+   "heapAfterCheckKB": 15407,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-structural-class",
+   "lib": "es5",
+   "inputBytes": 109,
+   "instructions": 14339834,
+   "ms": 110.5,
+   "msHooked": 1373.5,
+   "heapAfterCheckKB": 19849,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-symbol-bigint-like",
+   "lib": "mini",
+   "inputBytes": 77,
+   "instructions": 307397,
+   "ms": 7,
+   "msHooked": 34.3,
+   "heapAfterCheckKB": 15392,
+   "outputBytes": 160,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "assign-symbol-bigint-like",
+   "lib": "es5",
+   "inputBytes": 77,
+   "instructions": 14297872,
+   "ms": 101.7,
+   "msHooked": 1362.9,
+   "heapAfterCheckKB": 19799,
+   "outputBytes": 276,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2585"
+   ]
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "mini",
+   "inputBytes": 133,
+   "instructions": 439938,
+   "ms": 7.8,
+   "msHooked": 47.7,
+   "heapAfterCheckKB": 15531,
+   "outputBytes": 520,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "es5",
+   "inputBytes": 133,
+   "instructions": 14634311,
+   "ms": 109.5,
+   "msHooked": 1423.5,
+   "heapAfterCheckKB": 20087,
+   "outputBytes": 520,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-variance-arrays",
+   "lib": "mini",
+   "inputBytes": 152,
+   "instructions": 371353,
+   "ms": 7.6,
+   "msHooked": 40.6,
+   "heapAfterCheckKB": 15442,
+   "outputBytes": 153,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-variance-arrays",
+   "lib": "es5",
+   "inputBytes": 152,
+   "instructions": 14411664,
+   "ms": 106.9,
+   "msHooked": 1386.1,
+   "heapAfterCheckKB": 19914,
+   "outputBytes": 153,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-void",
+   "lib": "mini",
+   "inputBytes": 115,
+   "instructions": 309273,
+   "ms": 7,
+   "msHooked": 33.6,
+   "heapAfterCheckKB": 15380,
+   "outputBytes": 156,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-void",
+   "lib": "es5",
+   "inputBytes": 115,
+   "instructions": 14317246,
+   "ms": 107.2,
+   "msHooked": 1391.9,
+   "heapAfterCheckKB": 19827,
+   "outputBytes": 156,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "assign-weak-type",
+   "lib": "mini",
+   "inputBytes": 120,
+   "instructions": 336184,
+   "ms": 7.5,
+   "msHooked": 36.9,
+   "heapAfterCheckKB": 15420,
+   "outputBytes": 214,
+   "status": 2,
+   "codes": [
+    "TS2353",
+    "TS2559"
+   ]
+  },
+  {
+   "input": "assign-weak-type",
+   "lib": "es5",
+   "inputBytes": 120,
+   "instructions": 14344756,
+   "ms": 109.9,
+   "msHooked": 1369.1,
+   "heapAfterCheckKB": 19855,
+   "outputBytes": 214,
+   "status": 2,
+   "codes": [
+    "TS2353",
+    "TS2559"
+   ]
+  },
+  {
+   "input": "class-abstract",
+   "lib": "mini",
+   "inputBytes": 91,
+   "instructions": 289755,
+   "ms": 6.3,
+   "msHooked": 31.8,
+   "heapAfterCheckKB": 15370,
+   "outputBytes": 198,
+   "status": 2,
+   "codes": [
+    "TS2511",
+    "TS2515"
+   ]
+  },
+  {
+   "input": "class-abstract",
+   "lib": "es5",
+   "inputBytes": 91,
+   "instructions": 14295156,
+   "ms": 102.9,
+   "msHooked": 1354.6,
+   "heapAfterCheckKB": 19818,
+   "outputBytes": 198,
+   "status": 2,
+   "codes": [
+    "TS2511",
+    "TS2515"
+   ]
+  },
+  {
+   "input": "class-accessor",
+   "lib": "mini",
+   "inputBytes": 169,
+   "instructions": 353666,
+   "ms": 7.4,
+   "msHooked": 37.8,
+   "heapAfterCheckKB": 15397,
+   "outputBytes": 164,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2540"
+   ]
+  },
+  {
+   "input": "class-accessor",
+   "lib": "es5",
+   "inputBytes": 169,
+   "instructions": 14372960,
+   "ms": 103,
+   "msHooked": 1801.1,
+   "heapAfterCheckKB": 19837,
+   "outputBytes": 164,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2540"
+   ]
+  },
+  {
+   "input": "class-basic",
+   "lib": "mini",
+   "inputBytes": 175,
+   "instructions": 358985,
+   "ms": 7.4,
+   "msHooked": 39.2,
+   "heapAfterCheckKB": 15414,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "class-basic",
+   "lib": "es5",
+   "inputBytes": 175,
+   "instructions": 14396702,
+   "ms": 104.4,
+   "msHooked": 1792.3,
+   "heapAfterCheckKB": 19859,
+   "outputBytes": 73,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "class-generic-constraint-error",
+   "lib": "mini",
+   "inputBytes": 120,
+   "instructions": 311260,
+   "ms": 7,
+   "msHooked": 34.7,
+   "heapAfterCheckKB": 15392,
+   "outputBytes": 189,
+   "status": 2,
+   "codes": [
+    "TS2344",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "class-generic-constraint-error",
+   "lib": "es5",
+   "inputBytes": 120,
+   "instructions": 14319895,
+   "ms": 109,
+   "msHooked": 1981.2,
+   "heapAfterCheckKB": 19840,
+   "outputBytes": 189,
+   "status": 2,
+   "codes": [
+    "TS2344",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "class-implements",
+   "lib": "mini",
+   "inputBytes": 75,
+   "instructions": 285045,
+   "ms": 6,
+   "msHooked": 32.1,
+   "heapAfterCheckKB": 15378,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2416"
+   ]
+  },
+  {
+   "input": "class-implements",
+   "lib": "es5",
+   "inputBytes": 75,
+   "instructions": 14293605,
+   "ms": 110.1,
+   "msHooked": 1732.6,
+   "heapAfterCheckKB": 19821,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2416"
+   ]
+  },
+  {
+   "input": "class-index-signature",
+   "lib": "mini",
+   "inputBytes": 63,
+   "instructions": 276897,
+   "ms": 6.5,
+   "msHooked": 31,
+   "heapAfterCheckKB": 15358,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2411"
+   ]
+  },
+  {
+   "input": "class-index-signature",
+   "lib": "es5",
+   "inputBytes": 63,
+   "instructions": 14282298,
+   "ms": 104.2,
+   "msHooked": 1961.5,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2411"
+   ]
+  },
+  {
+   "input": "class-override",
+   "lib": "mini",
+   "inputBytes": 116,
+   "instructions": 359135,
+   "ms": 7.2,
+   "msHooked": 39.2,
+   "heapAfterCheckKB": 15459,
+   "outputBytes": 425,
+   "status": 2,
+   "codes": [
+    "TS2416",
+    "TS4113"
+   ]
+  },
+  {
+   "input": "class-override",
+   "lib": "es5",
+   "inputBytes": 116,
+   "instructions": 14367695,
+   "ms": 117.5,
+   "msHooked": 1736.1,
+   "heapAfterCheckKB": 19901,
+   "outputBytes": 425,
+   "status": 2,
+   "codes": [
+    "TS2416",
+    "TS4113"
+   ]
+  },
+  {
+   "input": "class-private-protected",
+   "lib": "mini",
+   "inputBytes": 143,
+   "instructions": 368535,
+   "ms": 8.1,
+   "msHooked": 39.6,
+   "heapAfterCheckKB": 15429,
+   "outputBytes": 294,
+   "status": 2,
+   "codes": [
+    "TS2341",
+    "TS2445"
+   ]
+  },
+  {
+   "input": "class-private-protected",
+   "lib": "es5",
+   "inputBytes": 143,
+   "instructions": 14373936,
+   "ms": 101.7,
+   "msHooked": 1719.6,
+   "heapAfterCheckKB": 19869,
+   "outputBytes": 294,
+   "status": 2,
+   "codes": [
+    "TS2341",
+    "TS2445"
+   ]
+  },
+  {
+   "input": "class-static",
+   "lib": "mini",
+   "inputBytes": 125,
+   "instructions": 318029,
+   "ms": 7,
+   "msHooked": 43.6,
+   "heapAfterCheckKB": 15375,
+   "outputBytes": 263,
+   "status": 2,
+   "codes": [
+    "TS2576"
+   ]
+  },
+  {
+   "input": "class-static",
+   "lib": "es5",
+   "inputBytes": 125,
+   "instructions": 14326591,
+   "ms": 103.7,
+   "msHooked": 1744.4,
+   "heapAfterCheckKB": 19818,
+   "outputBytes": 263,
+   "status": 2,
+   "codes": [
+    "TS2576"
+   ]
+  },
+  {
+   "input": "class-strict-property-init",
+   "lib": "mini",
+   "inputBytes": 91,
+   "instructions": 278218,
+   "ms": 6.1,
+   "msHooked": 32.5,
+   "heapAfterCheckKB": 15343,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "class-strict-property-init",
+   "lib": "es5",
+   "inputBytes": 91,
+   "instructions": 14283619,
+   "ms": 105.4,
+   "msHooked": 1514.9,
+   "heapAfterCheckKB": 19786,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "class-super-call",
+   "lib": "mini",
+   "inputBytes": 123,
+   "instructions": 319230,
+   "ms": 8.5,
+   "msHooked": 39,
+   "heapAfterCheckKB": 15390,
+   "outputBytes": 219,
+   "status": 2,
+   "codes": [
+    "TS17009",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "class-super-call",
+   "lib": "es5",
+   "inputBytes": 123,
+   "instructions": 14339186,
+   "ms": 126.6,
+   "msHooked": 1427.5,
+   "heapAfterCheckKB": 19837,
+   "outputBytes": 219,
+   "status": 2,
+   "codes": [
+    "TS17009",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "class-this-type",
+   "lib": "mini",
+   "inputBytes": 157,
+   "instructions": 355759,
+   "ms": 10.1,
+   "msHooked": 42.4,
+   "heapAfterCheckKB": 15420,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "class-this-type",
+   "lib": "es5",
+   "inputBytes": 157,
+   "instructions": 14375652,
+   "ms": 110.4,
+   "msHooked": 1438.6,
+   "heapAfterCheckKB": 19870,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "mini",
+   "inputBytes": 462,
+   "instructions": 580921,
+   "ms": 10.7,
+   "msHooked": 62.1,
+   "heapAfterCheckKB": 15587,
+   "outputBytes": 155,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "es5",
+   "inputBytes": 462,
+   "instructions": 14608052,
+   "ms": 110,
+   "msHooked": 1458.7,
+   "heapAfterCheckKB": 19948,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-basic",
+   "lib": "mini",
+   "inputBytes": 18,
+   "instructions": 253088,
+   "ms": 6.1,
+   "msHooked": 30,
+   "heapAfterCheckKB": 15310,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-basic",
+   "lib": "es5",
+   "inputBytes": 18,
+   "instructions": 14258489,
+   "ms": 103.5,
+   "msHooked": 1417.7,
+   "heapAfterCheckKB": 19764,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-classes",
+   "lib": "mini",
+   "inputBytes": 370,
+   "instructions": 464969,
+   "ms": 8.9,
+   "msHooked": 62.6,
+   "heapAfterCheckKB": 15449,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-classes",
+   "lib": "es5",
+   "inputBytes": 370,
+   "instructions": 14491603,
+   "ms": 110.4,
+   "msHooked": 1447.3,
+   "heapAfterCheckKB": 19894,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-comments-only",
+   "lib": "mini",
+   "inputBytes": 36,
+   "instructions": 237963,
+   "ms": 5.9,
+   "msHooked": 26.9,
+   "heapAfterCheckKB": 15302,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-comments-only",
+   "lib": "es5",
+   "inputBytes": 36,
+   "instructions": 14243364,
+   "ms": 103.5,
+   "msHooked": 1428,
+   "heapAfterCheckKB": 19762,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-control-flow",
+   "lib": "mini",
+   "inputBytes": 412,
+   "instructions": 528143,
+   "ms": 11,
+   "msHooked": 65.1,
+   "heapAfterCheckKB": 15471,
+   "outputBytes": 316,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339",
+    "TS2693"
+   ]
+  },
+  {
+   "input": "clean-control-flow",
+   "lib": "es5",
+   "inputBytes": 412,
+   "instructions": 14545492,
+   "ms": 122.2,
+   "msHooked": 1423.5,
+   "heapAfterCheckKB": 19878,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-declare",
+   "lib": "mini",
+   "inputBytes": 197,
+   "instructions": 313582,
+   "ms": 7.1,
+   "msHooked": 37.2,
+   "heapAfterCheckKB": 15361,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-declare",
+   "lib": "es5",
+   "inputBytes": 197,
+   "instructions": 14318983,
+   "ms": 147.9,
+   "msHooked": 1401.7,
+   "heapAfterCheckKB": 19796,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-destructuring",
+   "lib": "mini",
+   "inputBytes": 262,
+   "instructions": 668618,
+   "ms": 12,
+   "msHooked": 72.6,
+   "heapAfterCheckKB": 15629,
+   "outputBytes": 80,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "clean-destructuring",
+   "lib": "es5",
+   "inputBytes": 262,
+   "instructions": 14766629,
+   "ms": 113.5,
+   "msHooked": 1539.1,
+   "heapAfterCheckKB": 20079,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-empty",
+   "lib": "mini",
+   "inputBytes": 0,
+   "instructions": 235955,
+   "ms": 5.6,
+   "msHooked": 28.8,
+   "heapAfterCheckKB": 15302,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-empty",
+   "lib": "es5",
+   "inputBytes": 0,
+   "instructions": 14241356,
+   "ms": 110.2,
+   "msHooked": 1538.1,
+   "heapAfterCheckKB": 19762,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "mini",
+   "inputBytes": 199,
+   "instructions": 322029,
+   "ms": 7.2,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15361,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "es5",
+   "inputBytes": 199,
+   "instructions": 14328408,
+   "ms": 107.2,
+   "msHooked": 1391.4,
+   "heapAfterCheckKB": 19806,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-functions",
+   "lib": "mini",
+   "inputBytes": 145,
+   "instructions": 327426,
+   "ms": 6.5,
+   "msHooked": 36.3,
+   "heapAfterCheckKB": 15356,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-functions",
+   "lib": "es5",
+   "inputBytes": 145,
+   "instructions": 14332827,
+   "ms": 105.7,
+   "msHooked": 1499.1,
+   "heapAfterCheckKB": 19797,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-generics",
+   "lib": "mini",
+   "inputBytes": 282,
+   "instructions": 551842,
+   "ms": 10,
+   "msHooked": 60.3,
+   "heapAfterCheckKB": 15559,
+   "outputBytes": 96,
+   "status": 2,
+   "codes": [
+    "TS2693"
+   ]
+  },
+  {
+   "input": "clean-generics",
+   "lib": "es5",
+   "inputBytes": 282,
+   "instructions": 14600656,
+   "ms": 122,
+   "msHooked": 1601.9,
+   "heapAfterCheckKB": 20028,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-labeled-loops",
+   "lib": "mini",
+   "inputBytes": 145,
+   "instructions": 337287,
+   "ms": 6.2,
+   "msHooked": 37.5,
+   "heapAfterCheckKB": 15353,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-labeled-loops",
+   "lib": "es5",
+   "inputBytes": 145,
+   "instructions": 14343666,
+   "ms": 117.7,
+   "msHooked": 1435.1,
+   "heapAfterCheckKB": 19801,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-mapped-conditional",
+   "lib": "mini",
+   "inputBytes": 211,
+   "instructions": 382604,
+   "ms": 7.1,
+   "msHooked": 41.5,
+   "heapAfterCheckKB": 15419,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-mapped-conditional",
+   "lib": "es5",
+   "inputBytes": 211,
+   "instructions": 14395547,
+   "ms": 103.3,
+   "msHooked": 1535.6,
+   "heapAfterCheckKB": 19846,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-object-methods",
+   "lib": "mini",
+   "inputBytes": 159,
+   "instructions": 328001,
+   "ms": 6.8,
+   "msHooked": 35.9,
+   "heapAfterCheckKB": 15357,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-object-methods",
+   "lib": "es5",
+   "inputBytes": 159,
+   "instructions": 14333402,
+   "ms": 104,
+   "msHooked": 1393.5,
+   "heapAfterCheckKB": 19800,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-overloads-guards",
+   "lib": "mini",
+   "inputBytes": 241,
+   "instructions": 365155,
+   "ms": 7.3,
+   "msHooked": 41.6,
+   "heapAfterCheckKB": 15414,
+   "outputBytes": 176,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2693"
+   ]
+  },
+  {
+   "input": "clean-overloads-guards",
+   "lib": "es5",
+   "inputBytes": 241,
+   "instructions": 14381453,
+   "ms": 103.3,
+   "msHooked": 1935.2,
+   "heapAfterCheckKB": 19817,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-type-level",
+   "lib": "mini",
+   "inputBytes": 207,
+   "instructions": 755636,
+   "ms": 11.4,
+   "msHooked": 81.1,
+   "heapAfterCheckKB": 15993,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-type-level",
+   "lib": "es5",
+   "inputBytes": 207,
+   "instructions": 15196660,
+   "ms": 115.1,
+   "msHooked": 2260.8,
+   "heapAfterCheckKB": 20724,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "mini",
+   "inputBytes": 122,
+   "instructions": 299516,
+   "ms": 7.1,
+   "msHooked": 33.2,
+   "heapAfterCheckKB": 15386,
+   "outputBytes": 165,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "es5",
+   "inputBytes": 122,
+   "instructions": 14302910,
+   "ms": 104.3,
+   "msHooked": 1968.4,
+   "heapAfterCheckKB": 19781,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-unions",
+   "lib": "mini",
+   "inputBytes": 203,
+   "instructions": 420862,
+   "ms": 8.2,
+   "msHooked": 44.6,
+   "heapAfterCheckKB": 15437,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "clean-unions",
+   "lib": "es5",
+   "inputBytes": 203,
+   "instructions": 14430410,
+   "ms": 105.3,
+   "msHooked": 2188.5,
+   "heapAfterCheckKB": 19870,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "conditional-basic",
+   "lib": "mini",
+   "inputBytes": 112,
+   "instructions": 297153,
+   "ms": 6.3,
+   "msHooked": 40.4,
+   "heapAfterCheckKB": 15362,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-basic",
+   "lib": "es5",
+   "inputBytes": 112,
+   "instructions": 14316447,
+   "ms": 102.2,
+   "msHooked": 1963.5,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-builtin-utils",
+   "lib": "mini",
+   "inputBytes": 306,
+   "instructions": 471277,
+   "ms": 8,
+   "msHooked": 51.2,
+   "heapAfterCheckKB": 15477,
+   "outputBytes": 295,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "conditional-builtin-utils",
+   "lib": "es5",
+   "inputBytes": 306,
+   "instructions": 14628092,
+   "ms": 109.3,
+   "msHooked": 1976.9,
+   "heapAfterCheckKB": 20074,
+   "outputBytes": 304,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-deferred",
+   "lib": "mini",
+   "inputBytes": 73,
+   "instructions": 286879,
+   "ms": 6.1,
+   "msHooked": 32.9,
+   "heapAfterCheckKB": 15359,
+   "outputBytes": 102,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-deferred",
+   "lib": "es5",
+   "inputBytes": 73,
+   "instructions": 14292280,
+   "ms": 106.7,
+   "msHooked": 1938.6,
+   "heapAfterCheckKB": 19808,
+   "outputBytes": 102,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-distributive",
+   "lib": "mini",
+   "inputBytes": 200,
+   "instructions": 472786,
+   "ms": 8.6,
+   "msHooked": 63.2,
+   "heapAfterCheckKB": 15516,
+   "outputBytes": 272,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-distributive",
+   "lib": "es5",
+   "inputBytes": 200,
+   "instructions": 14758848,
+   "ms": 108.5,
+   "msHooked": 1451.8,
+   "heapAfterCheckKB": 20184,
+   "outputBytes": 272,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-infer-constraint",
+   "lib": "mini",
+   "inputBytes": 144,
+   "instructions": 364799,
+   "ms": 7.2,
+   "msHooked": 52.1,
+   "heapAfterCheckKB": 15443,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-infer-constraint",
+   "lib": "es5",
+   "inputBytes": 144,
+   "instructions": 14460198,
+   "ms": 161.5,
+   "msHooked": 1389.2,
+   "heapAfterCheckKB": 19932,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-infer",
+   "lib": "mini",
+   "inputBytes": 178,
+   "instructions": 372171,
+   "ms": 9.6,
+   "msHooked": 43.6,
+   "heapAfterCheckKB": 15448,
+   "outputBytes": 156,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "conditional-infer",
+   "lib": "es5",
+   "inputBytes": 178,
+   "instructions": 14429744,
+   "ms": 106.1,
+   "msHooked": 1385.7,
+   "heapAfterCheckKB": 19914,
+   "outputBytes": 156,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "mini",
+   "inputBytes": 64,
+   "instructions": 283181,
+   "ms": 5.9,
+   "msHooked": 31.5,
+   "heapAfterCheckKB": 15374,
+   "outputBytes": 205,
+   "status": 2,
+   "codes": [
+    "TS1061",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "es5",
+   "inputBytes": 64,
+   "instructions": 14293031,
+   "ms": 105.3,
+   "msHooked": 1378.7,
+   "heapAfterCheckKB": 19784,
+   "outputBytes": 128,
+   "status": 2,
+   "codes": [
+    "TS1061"
+   ]
+  },
+  {
+   "input": "enum-const",
+   "lib": "mini",
+   "inputBytes": 81,
+   "instructions": 309083,
+   "ms": 6.4,
+   "msHooked": 33.3,
+   "heapAfterCheckKB": 15365,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "enum-const",
+   "lib": "es5",
+   "inputBytes": 81,
+   "instructions": 14317056,
+   "ms": 105.2,
+   "msHooked": 1372.7,
+   "heapAfterCheckKB": 19813,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "enum-declaration-merge",
+   "lib": "mini",
+   "inputBytes": 47,
+   "instructions": 257833,
+   "ms": 6.1,
+   "msHooked": 28.3,
+   "heapAfterCheckKB": 15317,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "enum-declaration-merge",
+   "lib": "es5",
+   "inputBytes": 47,
+   "instructions": 14263234,
+   "ms": 101.1,
+   "msHooked": 1463.8,
+   "heapAfterCheckKB": 19772,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "enum-numeric",
+   "lib": "mini",
+   "inputBytes": 134,
+   "instructions": 324951,
+   "ms": 6.7,
+   "msHooked": 40.1,
+   "heapAfterCheckKB": 15389,
+   "outputBytes": 85,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "enum-numeric",
+   "lib": "es5",
+   "inputBytes": 134,
+   "instructions": 14334179,
+   "ms": 102.3,
+   "msHooked": 1394.2,
+   "heapAfterCheckKB": 19842,
+   "outputBytes": 85,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "enum-string",
+   "lib": "mini",
+   "inputBytes": 64,
+   "instructions": 286910,
+   "ms": 6.2,
+   "msHooked": 37.9,
+   "heapAfterCheckKB": 15355,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "enum-string",
+   "lib": "es5",
+   "inputBytes": 64,
+   "instructions": 14306204,
+   "ms": 103.8,
+   "msHooked": 1386.9,
+   "heapAfterCheckKB": 19806,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "error-abstract-instantiation",
+   "lib": "mini",
+   "inputBytes": 100,
+   "instructions": 320280,
+   "ms": 6.9,
+   "msHooked": 35.7,
+   "heapAfterCheckKB": 15369,
+   "outputBytes": 76,
+   "status": 2,
+   "codes": [
+    "TS2511"
+   ]
+  },
+  {
+   "input": "error-abstract-instantiation",
+   "lib": "es5",
+   "inputBytes": 100,
+   "instructions": 14325681,
+   "ms": 108.2,
+   "msHooked": 1393.7,
+   "heapAfterCheckKB": 19813,
+   "outputBytes": 76,
+   "status": 2,
+   "codes": [
+    "TS2511"
+   ]
+  },
+  {
+   "input": "error-arg-count",
+   "lib": "mini",
+   "inputBytes": 56,
+   "instructions": 277843,
+   "ms": 5.7,
+   "msHooked": 31.3,
+   "heapAfterCheckKB": 15330,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS2554"
+   ]
+  },
+  {
+   "input": "error-arg-count",
+   "lib": "es5",
+   "inputBytes": 56,
+   "instructions": 14283244,
+   "ms": 101.3,
+   "msHooked": 1403.2,
+   "heapAfterCheckKB": 19786,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS2554"
+   ]
+  },
+  {
+   "input": "error-await-outside-async",
+   "lib": "mini",
+   "inputBytes": 28,
+   "instructions": 250828,
+   "ms": 5.8,
+   "msHooked": 28.7,
+   "heapAfterCheckKB": 15316,
+   "outputBytes": 122,
+   "status": 2,
+   "codes": [
+    "TS1308"
+   ]
+  },
+  {
+   "input": "error-await-outside-async",
+   "lib": "es5",
+   "inputBytes": 28,
+   "instructions": 14256891,
+   "ms": 101.2,
+   "msHooked": 1450.7,
+   "heapAfterCheckKB": 19772,
+   "outputBytes": 122,
+   "status": 2,
+   "codes": [
+    "TS1308"
+   ]
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "mini",
+   "inputBytes": 50,
+   "instructions": 300457,
+   "ms": 7.3,
+   "msHooked": 33.7,
+   "heapAfterCheckKB": 15373,
+   "outputBytes": 161,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "es5",
+   "inputBytes": 50,
+   "instructions": 14351507,
+   "ms": 103.4,
+   "msHooked": 1388.6,
+   "heapAfterCheckKB": 19849,
+   "outputBytes": 161,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "error-comparison-no-overlap",
+   "lib": "mini",
+   "inputBytes": 75,
+   "instructions": 298925,
+   "ms": 6.7,
+   "msHooked": 33.6,
+   "heapAfterCheckKB": 15366,
+   "outputBytes": 252,
+   "status": 2,
+   "codes": [
+    "TS2367"
+   ]
+  },
+  {
+   "input": "error-comparison-no-overlap",
+   "lib": "es5",
+   "inputBytes": 75,
+   "instructions": 14305304,
+   "ms": 106.2,
+   "msHooked": 1393,
+   "heapAfterCheckKB": 19822,
+   "outputBytes": 252,
+   "status": 2,
+   "codes": [
+    "TS2367"
+   ]
+  },
+  {
+   "input": "error-const-assign",
+   "lib": "mini",
+   "inputBytes": 25,
+   "instructions": 265356,
+   "ms": 6.4,
+   "msHooked": 30.2,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 150,
+   "status": 2,
+   "codes": [
+    "TS2588"
+   ]
+  },
+  {
+   "input": "error-const-assign",
+   "lib": "es5",
+   "inputBytes": 25,
+   "instructions": 14270757,
+   "ms": 103.6,
+   "msHooked": 1390.6,
+   "heapAfterCheckKB": 19787,
+   "outputBytes": 150,
+   "status": 2,
+   "codes": [
+    "TS2588"
+   ]
+  },
+  {
+   "input": "error-delete-non-optional",
+   "lib": "mini",
+   "inputBytes": 82,
+   "instructions": 283101,
+   "ms": 7,
+   "msHooked": 33.2,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 81,
+   "status": 2,
+   "codes": [
+    "TS2790"
+   ]
+  },
+  {
+   "input": "error-delete-non-optional",
+   "lib": "es5",
+   "inputBytes": 82,
+   "instructions": 14288502,
+   "ms": 102.1,
+   "msHooked": 1377.5,
+   "heapAfterCheckKB": 19779,
+   "outputBytes": 81,
+   "status": 2,
+   "codes": [
+    "TS2790"
+   ]
+  },
+  {
+   "input": "error-duplicate-property",
+   "lib": "mini",
+   "inputBytes": 63,
+   "instructions": 289442,
+   "ms": 7.5,
+   "msHooked": 33,
+   "heapAfterCheckKB": 15380,
+   "outputBytes": 364,
+   "status": 2,
+   "codes": [
+    "TS1117",
+    "TS2300",
+    "TS2717"
+   ]
+  },
+  {
+   "input": "error-duplicate-property",
+   "lib": "es5",
+   "inputBytes": 63,
+   "instructions": 14294843,
+   "ms": 116.1,
+   "msHooked": 1374.6,
+   "heapAfterCheckKB": 19821,
+   "outputBytes": 364,
+   "status": 2,
+   "codes": [
+    "TS1117",
+    "TS2300",
+    "TS2717"
+   ]
+  },
+  {
+   "input": "error-generic-arity",
+   "lib": "mini",
+   "inputBytes": 130,
+   "instructions": 324448,
+   "ms": 6.9,
+   "msHooked": 36.1,
+   "heapAfterCheckKB": 15385,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS2314",
+    "TS2558"
+   ]
+  },
+  {
+   "input": "error-generic-arity",
+   "lib": "es5",
+   "inputBytes": 130,
+   "instructions": 14329849,
+   "ms": 107.1,
+   "msHooked": 1382.9,
+   "heapAfterCheckKB": 19823,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS2314",
+    "TS2558"
+   ]
+  },
+  {
+   "input": "error-implicit-any",
+   "lib": "mini",
+   "inputBytes": 87,
+   "instructions": 305195,
+   "ms": 6.1,
+   "msHooked": 33.6,
+   "heapAfterCheckKB": 15367,
+   "outputBytes": 219,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "error-implicit-any",
+   "lib": "es5",
+   "inputBytes": 87,
+   "instructions": 14310596,
+   "ms": 103,
+   "msHooked": 1547.8,
+   "heapAfterCheckKB": 19815,
+   "outputBytes": 219,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "error-index-implicit-any",
+   "lib": "mini",
+   "inputBytes": 61,
+   "instructions": 298848,
+   "ms": 6.5,
+   "msHooked": 32.9,
+   "heapAfterCheckKB": 15377,
+   "outputBytes": 239,
+   "status": 2,
+   "codes": [
+    "TS7053"
+   ]
+  },
+  {
+   "input": "error-index-implicit-any",
+   "lib": "es5",
+   "inputBytes": 61,
+   "instructions": 14304249,
+   "ms": 103.5,
+   "msHooked": 1705,
+   "heapAfterCheckKB": 19822,
+   "outputBytes": 239,
+   "status": 2,
+   "codes": [
+    "TS7053"
+   ]
+  },
+  {
+   "input": "error-label-break",
+   "lib": "mini",
+   "inputBytes": 73,
+   "instructions": 260242,
+   "ms": 5.6,
+   "msHooked": 29.8,
+   "heapAfterCheckKB": 15323,
+   "outputBytes": 217,
+   "status": 2,
+   "codes": [
+    "TS1107"
+   ]
+  },
+  {
+   "input": "error-label-break",
+   "lib": "es5",
+   "inputBytes": 73,
+   "instructions": 14265643,
+   "ms": 101.4,
+   "msHooked": 1704.5,
+   "heapAfterCheckKB": 19777,
+   "outputBytes": 217,
+   "status": 2,
+   "codes": [
+    "TS1107"
+   ]
+  },
+  {
+   "input": "error-missing-return-type",
+   "lib": "mini",
+   "inputBytes": 52,
+   "instructions": 262475,
+   "ms": 6.2,
+   "msHooked": 30.6,
+   "heapAfterCheckKB": 15330,
+   "outputBytes": 246,
+   "status": 2,
+   "codes": [
+    "TS2355"
+   ]
+  },
+  {
+   "input": "error-missing-return-type",
+   "lib": "es5",
+   "inputBytes": 52,
+   "instructions": 14267876,
+   "ms": 104.4,
+   "msHooked": 1714.7,
+   "heapAfterCheckKB": 19778,
+   "outputBytes": 246,
+   "status": 2,
+   "codes": [
+    "TS2355"
+   ]
+  },
+  {
+   "input": "error-not-callable",
+   "lib": "mini",
+   "inputBytes": 41,
+   "instructions": 291809,
+   "ms": 6.4,
+   "msHooked": 32.4,
+   "heapAfterCheckKB": 15351,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS2351"
+   ]
+  },
+  {
+   "input": "error-not-callable",
+   "lib": "es5",
+   "inputBytes": 41,
+   "instructions": 14319530,
+   "ms": 105.5,
+   "msHooked": 1756.6,
+   "heapAfterCheckKB": 19819,
+   "outputBytes": 208,
+   "status": 2,
+   "codes": [
+    "TS2349",
+    "TS2351"
+   ]
+  },
+  {
+   "input": "error-object-possibly-undefined",
+   "lib": "mini",
+   "inputBytes": 92,
+   "instructions": 293573,
+   "ms": 7.2,
+   "msHooked": 33.4,
+   "heapAfterCheckKB": 15342,
+   "outputBytes": 136,
+   "status": 2,
+   "codes": [
+    "TS18048",
+    "TS2721"
+   ]
+  },
+  {
+   "input": "error-object-possibly-undefined",
+   "lib": "es5",
+   "inputBytes": 92,
+   "instructions": 14298974,
+   "ms": 113.5,
+   "msHooked": 1858.4,
+   "heapAfterCheckKB": 19791,
+   "outputBytes": 136,
+   "status": 2,
+   "codes": [
+    "TS18048",
+    "TS2721"
+   ]
+  },
+  {
+   "input": "error-operator-types",
+   "lib": "mini",
+   "inputBytes": 75,
+   "instructions": 333689,
+   "ms": 6.6,
+   "msHooked": 44.8,
+   "heapAfterCheckKB": 15387,
+   "outputBytes": 600,
+   "status": 2,
+   "codes": [
+    "TS2356",
+    "TS2362",
+    "TS2363",
+    "TS2365"
+   ]
+  },
+  {
+   "input": "error-operator-types",
+   "lib": "es5",
+   "inputBytes": 75,
+   "instructions": 14360983,
+   "ms": 101.5,
+   "msHooked": 1734.3,
+   "heapAfterCheckKB": 19852,
+   "outputBytes": 600,
+   "status": 2,
+   "codes": [
+    "TS2356",
+    "TS2362",
+    "TS2363",
+    "TS2365"
+   ]
+  },
+  {
+   "input": "error-property-not-exist",
+   "lib": "mini",
+   "inputBytes": 37,
+   "instructions": 289549,
+   "ms": 7,
+   "msHooked": 33,
+   "heapAfterCheckKB": 15388,
+   "outputBytes": 158,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "error-property-not-exist",
+   "lib": "es5",
+   "inputBytes": 37,
+   "instructions": 14321553,
+   "ms": 101.7,
+   "msHooked": 1724.9,
+   "heapAfterCheckKB": 19843,
+   "outputBytes": 158,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "error-redeclare",
+   "lib": "mini",
+   "inputBytes": 73,
+   "instructions": 303180,
+   "ms": 9.9,
+   "msHooked": 35.4,
+   "heapAfterCheckKB": 15347,
+   "outputBytes": 397,
+   "status": 2,
+   "codes": [
+    "TS2300",
+    "TS2451"
+   ]
+  },
+  {
+   "input": "error-redeclare",
+   "lib": "es5",
+   "inputBytes": 73,
+   "instructions": 14308581,
+   "ms": 116.4,
+   "msHooked": 1417.5,
+   "heapAfterCheckKB": 19794,
+   "outputBytes": 397,
+   "status": 2,
+   "codes": [
+    "TS2300",
+    "TS2451"
+   ]
+  },
+  {
+   "input": "error-satisfies",
+   "lib": "mini",
+   "inputBytes": 188,
+   "instructions": 351743,
+   "ms": 7.2,
+   "msHooked": 40.1,
+   "heapAfterCheckKB": 15416,
+   "outputBytes": 56,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "error-satisfies",
+   "lib": "es5",
+   "inputBytes": 188,
+   "instructions": 14555975,
+   "ms": 417.2,
+   "msHooked": 1406.9,
+   "heapAfterCheckKB": 20014,
+   "outputBytes": 238,
+   "status": 2,
+   "codes": [
+    "TS2353",
+    "TS2741"
+   ]
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "mini",
+   "inputBytes": 38,
+   "instructions": 271874,
+   "ms": 8.9,
+   "msHooked": 31.1,
+   "heapAfterCheckKB": 15334,
+   "outputBytes": 81,
+   "status": 2,
+   "codes": [
+    "TS2698"
+   ]
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "es5",
+   "inputBytes": 38,
+   "instructions": 14321752,
+   "ms": 136.8,
+   "msHooked": 1382,
+   "heapAfterCheckKB": 19830,
+   "outputBytes": 141,
+   "status": 2,
+   "codes": [
+    "TS2461",
+    "TS2698"
+   ]
+  },
+  {
+   "input": "error-switch-case-type",
+   "lib": "mini",
+   "inputBytes": 81,
+   "instructions": 277441,
+   "ms": 6.1,
+   "msHooked": 43.3,
+   "heapAfterCheckKB": 15348,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2678"
+   ]
+  },
+  {
+   "input": "error-switch-case-type",
+   "lib": "es5",
+   "inputBytes": 81,
+   "instructions": 14282842,
+   "ms": 120.8,
+   "msHooked": 1371.5,
+   "heapAfterCheckKB": 19799,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2678"
+   ]
+  },
+  {
+   "input": "error-this-implicit",
+   "lib": "mini",
+   "inputBytes": 73,
+   "instructions": 293803,
+   "ms": 7.1,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15387,
+   "outputBytes": 191,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "error-this-implicit",
+   "lib": "es5",
+   "inputBytes": 73,
+   "instructions": 14303027,
+   "ms": 110.1,
+   "msHooked": 1361.7,
+   "heapAfterCheckKB": 19839,
+   "outputBytes": 191,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "error-type-as-value",
+   "lib": "mini",
+   "inputBytes": 58,
+   "instructions": 271405,
+   "ms": 6.3,
+   "msHooked": 29.9,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 182,
+   "status": 2,
+   "codes": [
+    "TS2693"
+   ]
+  },
+  {
+   "input": "error-type-as-value",
+   "lib": "es5",
+   "inputBytes": 58,
+   "instructions": 14276806,
+   "ms": 100.7,
+   "msHooked": 1358.5,
+   "heapAfterCheckKB": 19780,
+   "outputBytes": 182,
+   "status": 2,
+   "codes": [
+    "TS2693"
+   ]
+  },
+  {
+   "input": "error-unicode-position",
+   "lib": "mini",
+   "inputBytes": 88,
+   "instructions": 300285,
+   "ms": 6.7,
+   "msHooked": 32.8,
+   "heapAfterCheckKB": 15381,
+   "outputBytes": 158,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "error-unicode-position",
+   "lib": "es5",
+   "inputBytes": 88,
+   "instructions": 14322151,
+   "ms": 102.7,
+   "msHooked": 1493.3,
+   "heapAfterCheckKB": 19823,
+   "outputBytes": 158,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "error-unique-symbol-and-readonly-array",
+   "lib": "mini",
+   "inputBytes": 87,
+   "instructions": 297543,
+   "ms": 6.9,
+   "msHooked": 40.1,
+   "heapAfterCheckKB": 15381,
+   "outputBytes": 88,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "error-unique-symbol-and-readonly-array",
+   "lib": "es5",
+   "inputBytes": 87,
+   "instructions": 14348017,
+   "ms": 106.5,
+   "msHooked": 1378.5,
+   "heapAfterCheckKB": 19865,
+   "outputBytes": 88,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "error-unreachable-like",
+   "lib": "mini",
+   "inputBytes": 61,
+   "instructions": 265253,
+   "ms": 6.5,
+   "msHooked": 29.4,
+   "heapAfterCheckKB": 15322,
+   "outputBytes": 114,
+   "status": 2,
+   "codes": [
+    "TS2366"
+   ]
+  },
+  {
+   "input": "error-unreachable-like",
+   "lib": "es5",
+   "inputBytes": 61,
+   "instructions": 14271632,
+   "ms": 103.6,
+   "msHooked": 1371.2,
+   "heapAfterCheckKB": 19780,
+   "outputBytes": 114,
+   "status": 2,
+   "codes": [
+    "TS2366"
+   ]
+  },
+  {
+   "input": "error-unused-ts-expect",
+   "lib": "mini",
+   "inputBytes": 128,
+   "instructions": 284462,
+   "ms": 6.1,
+   "msHooked": 31.8,
+   "heapAfterCheckKB": 15373,
+   "outputBytes": 65,
+   "status": 2,
+   "codes": [
+    "TS2578"
+   ]
+  },
+  {
+   "input": "error-unused-ts-expect",
+   "lib": "es5",
+   "inputBytes": 128,
+   "instructions": 14306328,
+   "ms": 104.1,
+   "msHooked": 1364.1,
+   "heapAfterCheckKB": 19821,
+   "outputBytes": 65,
+   "status": 2,
+   "codes": [
+    "TS2578"
+   ]
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "mini",
+   "inputBytes": 46,
+   "instructions": 285475,
+   "ms": 6.3,
+   "msHooked": 31.6,
+   "heapAfterCheckKB": 15357,
+   "outputBytes": 223,
+   "status": 2,
+   "codes": [
+    "TS2448",
+    "TS2449",
+    "TS2454"
+   ]
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "es5",
+   "inputBytes": 46,
+   "instructions": 14290876,
+   "ms": 105.8,
+   "msHooked": 1373,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 223,
+   "status": 2,
+   "codes": [
+    "TS2448",
+    "TS2449",
+    "TS2454"
+   ]
+  },
+  {
+   "input": "error-value-as-type",
+   "lib": "mini",
+   "inputBytes": 51,
+   "instructions": 282300,
+   "ms": 6.7,
+   "msHooked": 31.9,
+   "heapAfterCheckKB": 15335,
+   "outputBytes": 222,
+   "status": 2,
+   "codes": [
+    "TS2749"
+   ]
+  },
+  {
+   "input": "error-value-as-type",
+   "lib": "es5",
+   "inputBytes": 51,
+   "instructions": 14287701,
+   "ms": 102.4,
+   "msHooked": 1503.1,
+   "heapAfterCheckKB": 19785,
+   "outputBytes": 222,
+   "status": 2,
+   "codes": [
+    "TS2749"
+   ]
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "mini",
+   "inputBytes": 345,
+   "instructions": 1362834,
+   "ms": 17.4,
+   "msHooked": 139.5,
+   "heapAfterCheckKB": 16624,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "es5",
+   "inputBytes": 345,
+   "instructions": 16116062,
+   "ms": 118.4,
+   "msHooked": 1531.1,
+   "heapAfterCheckKB": 21527,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "mini",
+   "inputBytes": 635,
+   "instructions": 45794147,
+   "ms": 426.6,
+   "msHooked": 4964.6,
+   "heapAfterCheckKB": 53202,
+   "outputBytes": 245,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2589"
+   ]
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "es5",
+   "inputBytes": 635,
+   "instructions": 65408555,
+   "ms": 540.3,
+   "msHooked": 6824.8,
+   "heapAfterCheckKB": 65943,
+   "outputBytes": 245,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2589"
+   ]
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "mini",
+   "inputBytes": 6103,
+   "instructions": 4118757,
+   "ms": 32.4,
+   "msHooked": 408.2,
+   "heapAfterCheckKB": 17669,
+   "outputBytes": 627,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339",
+    "TS2353"
+   ]
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "es5",
+   "inputBytes": 6103,
+   "instructions": 18142444,
+   "ms": 138.4,
+   "msHooked": 1702.4,
+   "heapAfterCheckKB": 21475,
+   "outputBytes": 627,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339",
+    "TS2353"
+   ]
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "mini",
+   "inputBytes": 251,
+   "instructions": 23259827,
+   "ms": 164,
+   "msHooked": 2694.4,
+   "heapAfterCheckKB": 23267,
+   "outputBytes": 288,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "es5",
+   "inputBytes": 251,
+   "instructions": 37279121,
+   "ms": 295.2,
+   "msHooked": 4019,
+   "heapAfterCheckKB": 35274,
+   "outputBytes": 288,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-class",
+   "lib": "mini",
+   "inputBytes": 229,
+   "instructions": 433951,
+   "ms": 8,
+   "msHooked": 46.9,
+   "heapAfterCheckKB": 15510,
+   "outputBytes": 323,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-class",
+   "lib": "es5",
+   "inputBytes": 229,
+   "instructions": 14472687,
+   "ms": 103,
+   "msHooked": 1378.1,
+   "heapAfterCheckKB": 19932,
+   "outputBytes": 248,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-const-type-param",
+   "lib": "mini",
+   "inputBytes": 132,
+   "instructions": 377328,
+   "ms": 6.9,
+   "msHooked": 41,
+   "heapAfterCheckKB": 15455,
+   "outputBytes": 134,
+   "status": 2,
+   "codes": [
+    "TS4104"
+   ]
+  },
+  {
+   "input": "generic-const-type-param",
+   "lib": "es5",
+   "inputBytes": 132,
+   "instructions": 14504956,
+   "ms": 102.8,
+   "msHooked": 1908.8,
+   "heapAfterCheckKB": 19987,
+   "outputBytes": 134,
+   "status": 2,
+   "codes": [
+    "TS4104"
+   ]
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "mini",
+   "inputBytes": 112,
+   "instructions": 392609,
+   "ms": 7.7,
+   "msHooked": 41.3,
+   "heapAfterCheckKB": 15450,
+   "outputBytes": 232,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "es5",
+   "inputBytes": 112,
+   "instructions": 14443761,
+   "ms": 103,
+   "msHooked": 1924.6,
+   "heapAfterCheckKB": 19909,
+   "outputBytes": 116,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-default",
+   "lib": "mini",
+   "inputBytes": 93,
+   "instructions": 319724,
+   "ms": 6.4,
+   "msHooked": 33.4,
+   "heapAfterCheckKB": 15389,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-default",
+   "lib": "es5",
+   "inputBytes": 93,
+   "instructions": 14327697,
+   "ms": 113.3,
+   "msHooked": 1890.9,
+   "heapAfterCheckKB": 19830,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-higher-order",
+   "lib": "mini",
+   "inputBytes": 194,
+   "instructions": 442874,
+   "ms": 7.5,
+   "msHooked": 55.2,
+   "heapAfterCheckKB": 15472,
+   "outputBytes": 176,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2693"
+   ]
+  },
+  {
+   "input": "generic-higher-order",
+   "lib": "es5",
+   "inputBytes": 194,
+   "instructions": 14466937,
+   "ms": 113.9,
+   "msHooked": 1891.6,
+   "heapAfterCheckKB": 19886,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-identity",
+   "lib": "mini",
+   "inputBytes": 119,
+   "instructions": 334855,
+   "ms": 6.7,
+   "msHooked": 35.7,
+   "heapAfterCheckKB": 15410,
+   "outputBytes": 182,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-identity",
+   "lib": "es5",
+   "inputBytes": 119,
+   "instructions": 14354811,
+   "ms": 116.2,
+   "msHooked": 1894.8,
+   "heapAfterCheckKB": 19857,
+   "outputBytes": 182,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-infer-from-object",
+   "lib": "mini",
+   "inputBytes": 120,
+   "instructions": 373158,
+   "ms": 6.8,
+   "msHooked": 41.8,
+   "heapAfterCheckKB": 15451,
+   "outputBytes": 204,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-infer-from-object",
+   "lib": "es5",
+   "inputBytes": 120,
+   "instructions": 14413469,
+   "ms": 105.6,
+   "msHooked": 1464.2,
+   "heapAfterCheckKB": 19920,
+   "outputBytes": 204,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-inference-callback",
+   "lib": "mini",
+   "inputBytes": 160,
+   "instructions": 505481,
+   "ms": 8.5,
+   "msHooked": 55,
+   "heapAfterCheckKB": 15548,
+   "outputBytes": 214,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "generic-inference-callback",
+   "lib": "es5",
+   "inputBytes": 160,
+   "instructions": 14601412,
+   "ms": 104.1,
+   "msHooked": 1437.6,
+   "heapAfterCheckKB": 20025,
+   "outputBytes": 134,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "generic-inference-multiple",
+   "lib": "mini",
+   "inputBytes": 161,
+   "instructions": 425312,
+   "ms": 10,
+   "msHooked": 45.9,
+   "heapAfterCheckKB": 15489,
+   "outputBytes": 331,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-inference-multiple",
+   "lib": "es5",
+   "inputBytes": 161,
+   "instructions": 14541773,
+   "ms": 105.4,
+   "msHooked": 1604.5,
+   "heapAfterCheckKB": 19996,
+   "outputBytes": 331,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-keyof-constraint",
+   "lib": "mini",
+   "inputBytes": 173,
+   "instructions": 439446,
+   "ms": 8.2,
+   "msHooked": 53.7,
+   "heapAfterCheckKB": 15462,
+   "outputBytes": 181,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-keyof-constraint",
+   "lib": "es5",
+   "inputBytes": 173,
+   "instructions": 14461974,
+   "ms": 108.3,
+   "msHooked": 1591,
+   "heapAfterCheckKB": 19905,
+   "outputBytes": 181,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "mini",
+   "inputBytes": 75,
+   "instructions": 279613,
+   "ms": 6,
+   "msHooked": 31.3,
+   "heapAfterCheckKB": 15340,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "es5",
+   "inputBytes": 75,
+   "instructions": 14285014,
+   "ms": 103.3,
+   "msHooked": 1382.3,
+   "heapAfterCheckKB": 19786,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "generic-unresolved-error",
+   "lib": "mini",
+   "inputBytes": 95,
+   "instructions": 321734,
+   "ms": 6.4,
+   "msHooked": 36.6,
+   "heapAfterCheckKB": 15389,
+   "outputBytes": 272,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "generic-unresolved-error",
+   "lib": "es5",
+   "inputBytes": 95,
+   "instructions": 14327797,
+   "ms": 108.7,
+   "msHooked": 1423.9,
+   "heapAfterCheckKB": 19841,
+   "outputBytes": 272,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "indexed-access",
+   "lib": "mini",
+   "inputBytes": 189,
+   "instructions": 341784,
+   "ms": 8.4,
+   "msHooked": 38.2,
+   "heapAfterCheckKB": 15406,
+   "outputBytes": 151,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "indexed-access",
+   "lib": "es5",
+   "inputBytes": 189,
+   "instructions": 14382303,
+   "ms": 109.8,
+   "msHooked": 1472.6,
+   "heapAfterCheckKB": 19855,
+   "outputBytes": 151,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "indexed-union-key",
+   "lib": "mini",
+   "inputBytes": 89,
+   "instructions": 293932,
+   "ms": 6.6,
+   "msHooked": 32.5,
+   "heapAfterCheckKB": 15370,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "indexed-union-key",
+   "lib": "es5",
+   "inputBytes": 89,
+   "instructions": 14299649,
+   "ms": 102.6,
+   "msHooked": 1358.6,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "interface-call-construct",
+   "lib": "mini",
+   "inputBytes": 205,
+   "instructions": 361506,
+   "ms": 7.3,
+   "msHooked": 39.7,
+   "heapAfterCheckKB": 15432,
+   "outputBytes": 259,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "interface-call-construct",
+   "lib": "es5",
+   "inputBytes": 205,
+   "instructions": 14384034,
+   "ms": 103.6,
+   "msHooked": 1365.2,
+   "heapAfterCheckKB": 19868,
+   "outputBytes": 259,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345"
+   ]
+  },
+  {
+   "input": "interface-extends-conflict",
+   "lib": "mini",
+   "inputBytes": 80,
+   "instructions": 281287,
+   "ms": 6.3,
+   "msHooked": 30.4,
+   "heapAfterCheckKB": 15362,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2320"
+   ]
+  },
+  {
+   "input": "interface-extends-conflict",
+   "lib": "es5",
+   "inputBytes": 80,
+   "instructions": 14286688,
+   "ms": 100.9,
+   "msHooked": 1353.9,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2320"
+   ]
+  },
+  {
+   "input": "interface-merge",
+   "lib": "mini",
+   "inputBytes": 75,
+   "instructions": 304927,
+   "ms": 6.6,
+   "msHooked": 34.4,
+   "heapAfterCheckKB": 15393,
+   "outputBytes": 103,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "interface-merge",
+   "lib": "es5",
+   "inputBytes": 75,
+   "instructions": 14313491,
+   "ms": 105.3,
+   "msHooked": 1472.1,
+   "heapAfterCheckKB": 19834,
+   "outputBytes": 103,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "intersection-basic",
+   "lib": "mini",
+   "inputBytes": 212,
+   "instructions": 403010,
+   "ms": 7.7,
+   "msHooked": 44.4,
+   "heapAfterCheckKB": 15475,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "intersection-basic",
+   "lib": "es5",
+   "inputBytes": 212,
+   "instructions": 14411584,
+   "ms": 105.9,
+   "msHooked": 1357.3,
+   "heapAfterCheckKB": 19897,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "mini",
+   "inputBytes": 81,
+   "instructions": 284088,
+   "ms": 6.4,
+   "msHooked": 31.9,
+   "heapAfterCheckKB": 15358,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "es5",
+   "inputBytes": 81,
+   "instructions": 14303382,
+   "ms": 101.9,
+   "msHooked": 1345.2,
+   "heapAfterCheckKB": 19799,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "keyof-typeof",
+   "lib": "mini",
+   "inputBytes": 127,
+   "instructions": 318743,
+   "ms": 6.5,
+   "msHooked": 35.3,
+   "heapAfterCheckKB": 15374,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "keyof-typeof",
+   "lib": "es5",
+   "inputBytes": 127,
+   "instructions": 14338699,
+   "ms": 102,
+   "msHooked": 1370.6,
+   "heapAfterCheckKB": 19823,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "literal-as-const",
+   "lib": "mini",
+   "inputBytes": 108,
+   "instructions": 392906,
+   "ms": 7.4,
+   "msHooked": 51.2,
+   "heapAfterCheckKB": 15431,
+   "outputBytes": 174,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2540"
+   ]
+  },
+  {
+   "input": "literal-as-const",
+   "lib": "es5",
+   "inputBytes": 108,
+   "instructions": 14474724,
+   "ms": 103.9,
+   "msHooked": 1417.2,
+   "heapAfterCheckKB": 19929,
+   "outputBytes": 174,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2540"
+   ]
+  },
+  {
+   "input": "literal-boolean",
+   "lib": "mini",
+   "inputBytes": 57,
+   "instructions": 281488,
+   "ms": 6.3,
+   "msHooked": 30.8,
+   "heapAfterCheckKB": 15360,
+   "outputBytes": 150,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-boolean",
+   "lib": "es5",
+   "inputBytes": 57,
+   "instructions": 14287205,
+   "ms": 103.3,
+   "msHooked": 1366.4,
+   "heapAfterCheckKB": 19809,
+   "outputBytes": 150,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-const-let",
+   "lib": "mini",
+   "inputBytes": 84,
+   "instructions": 306812,
+   "ms": 6.2,
+   "msHooked": 33,
+   "heapAfterCheckKB": 15360,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-const-let",
+   "lib": "es5",
+   "inputBytes": 84,
+   "instructions": 14326106,
+   "ms": 105.4,
+   "msHooked": 1881.7,
+   "heapAfterCheckKB": 19809,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-enum-member",
+   "lib": "mini",
+   "inputBytes": 111,
+   "instructions": 311616,
+   "ms": 6.3,
+   "msHooked": 33.6,
+   "heapAfterCheckKB": 15382,
+   "outputBytes": 153,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-enum-member",
+   "lib": "es5",
+   "inputBytes": 111,
+   "instructions": 14330910,
+   "ms": 103.4,
+   "msHooked": 1888.4,
+   "heapAfterCheckKB": 19831,
+   "outputBytes": 153,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-fresh-excess",
+   "lib": "mini",
+   "inputBytes": 110,
+   "instructions": 345660,
+   "ms": 7,
+   "msHooked": 37.8,
+   "heapAfterCheckKB": 15408,
+   "outputBytes": 115,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "literal-fresh-excess",
+   "lib": "es5",
+   "inputBytes": 110,
+   "instructions": 14354232,
+   "ms": 102.8,
+   "msHooked": 1889.4,
+   "heapAfterCheckKB": 19844,
+   "outputBytes": 115,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "literal-numeric",
+   "lib": "mini",
+   "inputBytes": 107,
+   "instructions": 338509,
+   "ms": 6.6,
+   "msHooked": 36.5,
+   "heapAfterCheckKB": 15403,
+   "outputBytes": 217,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-numeric",
+   "lib": "es5",
+   "inputBytes": 107,
+   "instructions": 14346482,
+   "ms": 103.5,
+   "msHooked": 1866.5,
+   "heapAfterCheckKB": 19846,
+   "outputBytes": 217,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "mini",
+   "inputBytes": 122,
+   "instructions": 307980,
+   "ms": 6.1,
+   "msHooked": 37.6,
+   "heapAfterCheckKB": 15363,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "es5",
+   "inputBytes": 122,
+   "instructions": 14327274,
+   "ms": 111.7,
+   "msHooked": 1982.9,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-widening-object",
+   "lib": "mini",
+   "inputBytes": 176,
+   "instructions": 411682,
+   "ms": 8.5,
+   "msHooked": 44.3,
+   "heapAfterCheckKB": 15484,
+   "outputBytes": 302,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "literal-widening-object",
+   "lib": "es5",
+   "inputBytes": 176,
+   "instructions": 14420244,
+   "ms": 116.9,
+   "msHooked": 1859.6,
+   "heapAfterCheckKB": 19911,
+   "outputBytes": 302,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "lookup-element-access",
+   "lib": "mini",
+   "inputBytes": 95,
+   "instructions": 342210,
+   "ms": 7.1,
+   "msHooked": 36.8,
+   "heapAfterCheckKB": 15412,
+   "outputBytes": 316,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "lookup-element-access",
+   "lib": "es5",
+   "inputBytes": 95,
+   "instructions": 14371408,
+   "ms": 103.8,
+   "msHooked": 1879.7,
+   "heapAfterCheckKB": 19870,
+   "outputBytes": 316,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "mapped-custom-modifiers",
+   "lib": "mini",
+   "inputBytes": 212,
+   "instructions": 437582,
+   "ms": 7.6,
+   "msHooked": 47.4,
+   "heapAfterCheckKB": 15469,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "mapped-custom-modifiers",
+   "lib": "es5",
+   "inputBytes": 212,
+   "instructions": 14450503,
+   "ms": 117.7,
+   "msHooked": 1880.7,
+   "heapAfterCheckKB": 19898,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "mapped-filter-keys",
+   "lib": "mini",
+   "inputBytes": 165,
+   "instructions": 383374,
+   "ms": 6.8,
+   "msHooked": 42.2,
+   "heapAfterCheckKB": 15422,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "mapped-filter-keys",
+   "lib": "es5",
+   "inputBytes": 165,
+   "instructions": 14396295,
+   "ms": 108.7,
+   "msHooked": 1488.3,
+   "heapAfterCheckKB": 19854,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "mapped-key-remap",
+   "lib": "mini",
+   "inputBytes": 189,
+   "instructions": 447524,
+   "ms": 8,
+   "msHooked": 50.3,
+   "heapAfterCheckKB": 15496,
+   "outputBytes": 60,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "mapped-key-remap",
+   "lib": "es5",
+   "inputBytes": 189,
+   "instructions": 14596233,
+   "ms": 107.8,
+   "msHooked": 1399.9,
+   "heapAfterCheckKB": 20041,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "mapped-partial-required",
+   "lib": "mini",
+   "inputBytes": 106,
+   "instructions": 347415,
+   "ms": 9.6,
+   "msHooked": 36.4,
+   "heapAfterCheckKB": 15408,
+   "outputBytes": 115,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "mapped-partial-required",
+   "lib": "es5",
+   "inputBytes": 106,
+   "instructions": 14396315,
+   "ms": 116.5,
+   "msHooked": 1377.2,
+   "heapAfterCheckKB": 19908,
+   "outputBytes": 146,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "mapped-pick-omit",
+   "lib": "mini",
+   "inputBytes": 191,
+   "instructions": 370978,
+   "ms": 7.2,
+   "msHooked": 39.7,
+   "heapAfterCheckKB": 15436,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "mapped-pick-omit",
+   "lib": "es5",
+   "inputBytes": 191,
+   "instructions": 14447446,
+   "ms": 107.4,
+   "msHooked": 1451,
+   "heapAfterCheckKB": 19926,
+   "outputBytes": 205,
+   "status": 2,
+   "codes": [
+    "TS2344",
+    "TS2353"
+   ]
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "mini",
+   "inputBytes": 135,
+   "instructions": 363187,
+   "ms": 7.4,
+   "msHooked": 41,
+   "heapAfterCheckKB": 15416,
+   "outputBytes": 114,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "es5",
+   "inputBytes": 135,
+   "instructions": 14393917,
+   "ms": 105.8,
+   "msHooked": 1369.3,
+   "heapAfterCheckKB": 19889,
+   "outputBytes": 190,
+   "status": 2,
+   "codes": [
+    "TS2540",
+    "TS2741"
+   ]
+  },
+  {
+   "input": "namespace-basic",
+   "lib": "mini",
+   "inputBytes": 143,
+   "instructions": 323501,
+   "ms": 6.7,
+   "msHooked": 35.6,
+   "heapAfterCheckKB": 15394,
+   "outputBytes": 82,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "namespace-basic",
+   "lib": "es5",
+   "inputBytes": 143,
+   "instructions": 14332727,
+   "ms": 104.3,
+   "msHooked": 1373.5,
+   "heapAfterCheckKB": 19839,
+   "outputBytes": 82,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "namespace-merge-class",
+   "lib": "mini",
+   "inputBytes": 74,
+   "instructions": 283038,
+   "ms": 5.6,
+   "msHooked": 38.7,
+   "heapAfterCheckKB": 15358,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "namespace-merge-class",
+   "lib": "es5",
+   "inputBytes": 74,
+   "instructions": 14291011,
+   "ms": 117.7,
+   "msHooked": 1362.6,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "namespace-merge-function",
+   "lib": "mini",
+   "inputBytes": 96,
+   "instructions": 285802,
+   "ms": 6.8,
+   "msHooked": 32.4,
+   "heapAfterCheckKB": 15359,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "namespace-merge-function",
+   "lib": "es5",
+   "inputBytes": 96,
+   "instructions": 14305096,
+   "ms": 102.1,
+   "msHooked": 1401.6,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "namespace-nested",
+   "lib": "mini",
+   "inputBytes": 86,
+   "instructions": 300006,
+   "ms": 6.9,
+   "msHooked": 33.1,
+   "heapAfterCheckKB": 15376,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "namespace-nested",
+   "lib": "es5",
+   "inputBytes": 86,
+   "instructions": 14319300,
+   "ms": 104.4,
+   "msHooked": 1351.4,
+   "heapAfterCheckKB": 19819,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-assertion-fn",
+   "lib": "mini",
+   "inputBytes": 170,
+   "instructions": 307565,
+   "ms": 6.7,
+   "msHooked": 32.5,
+   "heapAfterCheckKB": 15361,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-assertion-fn",
+   "lib": "es5",
+   "inputBytes": 170,
+   "instructions": 14327837,
+   "ms": 121.5,
+   "msHooked": 1383.8,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-closure-reset",
+   "lib": "mini",
+   "inputBytes": 125,
+   "instructions": 321017,
+   "ms": 6.7,
+   "msHooked": 34.8,
+   "heapAfterCheckKB": 15370,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-closure-reset",
+   "lib": "es5",
+   "inputBytes": 125,
+   "instructions": 14387419,
+   "ms": 102.2,
+   "msHooked": 1359.2,
+   "heapAfterCheckKB": 19869,
+   "outputBytes": 142,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-control-flow-assign",
+   "lib": "mini",
+   "inputBytes": 68,
+   "instructions": 305228,
+   "ms": 5.9,
+   "msHooked": 34.1,
+   "heapAfterCheckKB": 15385,
+   "outputBytes": 238,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-control-flow-assign",
+   "lib": "es5",
+   "inputBytes": 68,
+   "instructions": 14326731,
+   "ms": 101.4,
+   "msHooked": 1350.6,
+   "heapAfterCheckKB": 19825,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "mini",
+   "inputBytes": 310,
+   "instructions": 433131,
+   "ms": 7.6,
+   "msHooked": 46.6,
+   "heapAfterCheckKB": 15454,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "es5",
+   "inputBytes": 310,
+   "instructions": 14442355,
+   "ms": 103,
+   "msHooked": 1368.7,
+   "heapAfterCheckKB": 19884,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-equality",
+   "lib": "mini",
+   "inputBytes": 135,
+   "instructions": 344636,
+   "ms": 6.5,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15356,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "narrow-equality",
+   "lib": "es5",
+   "inputBytes": 135,
+   "instructions": 14351015,
+   "ms": 112.9,
+   "msHooked": 1368.4,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "narrow-exhaustive-never",
+   "lib": "mini",
+   "inputBytes": 177,
+   "instructions": 315296,
+   "ms": 7.2,
+   "msHooked": 33.4,
+   "heapAfterCheckKB": 15365,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-exhaustive-never",
+   "lib": "es5",
+   "inputBytes": 177,
+   "instructions": 14334590,
+   "ms": 102.3,
+   "msHooked": 1370.9,
+   "heapAfterCheckKB": 19813,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-in",
+   "lib": "mini",
+   "inputBytes": 146,
+   "instructions": 333373,
+   "ms": 6.5,
+   "msHooked": 36.6,
+   "heapAfterCheckKB": 15401,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-in",
+   "lib": "es5",
+   "inputBytes": 146,
+   "instructions": 14342923,
+   "ms": 116.1,
+   "msHooked": 1367.6,
+   "heapAfterCheckKB": 19847,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-instanceof",
+   "lib": "mini",
+   "inputBytes": 111,
+   "instructions": 340810,
+   "ms": 7,
+   "msHooked": 37.6,
+   "heapAfterCheckKB": 15405,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-instanceof",
+   "lib": "es5",
+   "inputBytes": 111,
+   "instructions": 14356050,
+   "ms": 101.7,
+   "msHooked": 1388.1,
+   "heapAfterCheckKB": 19854,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-optional-chain",
+   "lib": "mini",
+   "inputBytes": 139,
+   "instructions": 345535,
+   "ms": 6.5,
+   "msHooked": 38.8,
+   "heapAfterCheckKB": 15409,
+   "outputBytes": 145,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-optional-chain",
+   "lib": "es5",
+   "inputBytes": 139,
+   "instructions": 14353508,
+   "ms": 100.8,
+   "msHooked": 1385.7,
+   "heapAfterCheckKB": 19841,
+   "outputBytes": 145,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-truthiness",
+   "lib": "mini",
+   "inputBytes": 108,
+   "instructions": 300765,
+   "ms": 6.7,
+   "msHooked": 31.8,
+   "heapAfterCheckKB": 15377,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-truthiness",
+   "lib": "es5",
+   "inputBytes": 108,
+   "instructions": 14320721,
+   "ms": 102,
+   "msHooked": 1385.7,
+   "heapAfterCheckKB": 19829,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "narrow-typeof",
+   "lib": "mini",
+   "inputBytes": 110,
+   "instructions": 298047,
+   "ms": 6,
+   "msHooked": 33.5,
+   "heapAfterCheckKB": 15383,
+   "outputBytes": 160,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-typeof",
+   "lib": "es5",
+   "inputBytes": 110,
+   "instructions": 14324379,
+   "ms": 112.9,
+   "msHooked": 1719.2,
+   "heapAfterCheckKB": 19831,
+   "outputBytes": 80,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "mini",
+   "inputBytes": 197,
+   "instructions": 368241,
+   "ms": 9.1,
+   "msHooked": 40.8,
+   "heapAfterCheckKB": 15417,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "es5",
+   "inputBytes": 197,
+   "instructions": 14377791,
+   "ms": 117.3,
+   "msHooked": 1745.6,
+   "heapAfterCheckKB": 19863,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "overload-arity",
+   "lib": "mini",
+   "inputBytes": 125,
+   "instructions": 294813,
+   "ms": 6.2,
+   "msHooked": 32.3,
+   "heapAfterCheckKB": 15340,
+   "outputBytes": 63,
+   "status": 2,
+   "codes": [
+    "TS2554"
+   ]
+  },
+  {
+   "input": "overload-arity",
+   "lib": "es5",
+   "inputBytes": 125,
+   "instructions": 14300214,
+   "ms": 100,
+   "msHooked": 1722.2,
+   "heapAfterCheckKB": 19788,
+   "outputBytes": 63,
+   "status": 2,
+   "codes": [
+    "TS2554"
+   ]
+  },
+  {
+   "input": "overload-basic",
+   "lib": "mini",
+   "inputBytes": 135,
+   "instructions": 324826,
+   "ms": 7,
+   "msHooked": 35.2,
+   "heapAfterCheckKB": 15394,
+   "outputBytes": 263,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2769"
+   ]
+  },
+  {
+   "input": "overload-basic",
+   "lib": "es5",
+   "inputBytes": 135,
+   "instructions": 14349818,
+   "ms": 114,
+   "msHooked": 1725.9,
+   "heapAfterCheckKB": 19846,
+   "outputBytes": 263,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2769"
+   ]
+  },
+  {
+   "input": "overload-impl-incompatible",
+   "lib": "mini",
+   "inputBytes": 109,
+   "instructions": 279796,
+   "ms": 5.9,
+   "msHooked": 31.3,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "overload-impl-incompatible",
+   "lib": "es5",
+   "inputBytes": 109,
+   "instructions": 14285197,
+   "ms": 103,
+   "msHooked": 1758.7,
+   "heapAfterCheckKB": 19781,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "overload-method",
+   "lib": "mini",
+   "inputBytes": 131,
+   "instructions": 331385,
+   "ms": 6.7,
+   "msHooked": 36.9,
+   "heapAfterCheckKB": 15386,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "overload-method",
+   "lib": "es5",
+   "inputBytes": 131,
+   "instructions": 14344078,
+   "ms": 105.3,
+   "msHooked": 1836.3,
+   "heapAfterCheckKB": 19827,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-alias-circular",
+   "lib": "mini",
+   "inputBytes": 57,
+   "instructions": 277250,
+   "ms": 6.3,
+   "msHooked": 31.5,
+   "heapAfterCheckKB": 15347,
+   "outputBytes": 146,
+   "status": 2,
+   "codes": [
+    "TS2456"
+   ]
+  },
+  {
+   "input": "recursive-alias-circular",
+   "lib": "es5",
+   "inputBytes": 57,
+   "instructions": 14282651,
+   "ms": 103.8,
+   "msHooked": 1725.8,
+   "heapAfterCheckKB": 19798,
+   "outputBytes": 146,
+   "status": 2,
+   "codes": [
+    "TS2456"
+   ]
+  },
+  {
+   "input": "recursive-deep-readonly",
+   "lib": "mini",
+   "inputBytes": 145,
+   "instructions": 366269,
+   "ms": 7.3,
+   "msHooked": 76.1,
+   "heapAfterCheckKB": 15405,
+   "outputBytes": 85,
+   "status": 2,
+   "codes": [
+    "TS2540"
+   ]
+  },
+  {
+   "input": "recursive-deep-readonly",
+   "lib": "es5",
+   "inputBytes": 145,
+   "instructions": 14379190,
+   "ms": 106.4,
+   "msHooked": 1434.3,
+   "heapAfterCheckKB": 19842,
+   "outputBytes": 85,
+   "status": 2,
+   "codes": [
+    "TS2540"
+   ]
+  },
+  {
+   "input": "recursive-json",
+   "lib": "mini",
+   "inputBytes": 139,
+   "instructions": 633817,
+   "ms": 23.3,
+   "msHooked": 77.5,
+   "heapAfterCheckKB": 15566,
+   "outputBytes": 226,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-json",
+   "lib": "es5",
+   "inputBytes": 139,
+   "instructions": 14763467,
+   "ms": 435,
+   "msHooked": 1390.1,
+   "heapAfterCheckKB": 20055,
+   "outputBytes": 226,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "mini",
+   "inputBytes": 145,
+   "instructions": 475807,
+   "ms": 24.3,
+   "msHooked": 52.5,
+   "heapAfterCheckKB": 15516,
+   "outputBytes": 255,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "es5",
+   "inputBytes": 145,
+   "instructions": 14433782,
+   "ms": 118.8,
+   "msHooked": 1402.1,
+   "heapAfterCheckKB": 19872,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-tuple-reverse",
+   "lib": "mini",
+   "inputBytes": 136,
+   "instructions": 496849,
+   "ms": 10.8,
+   "msHooked": 52.5,
+   "heapAfterCheckKB": 15576,
+   "outputBytes": 138,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "recursive-tuple-reverse",
+   "lib": "es5",
+   "inputBytes": 136,
+   "instructions": 14872903,
+   "ms": 107.1,
+   "msHooked": 1404.6,
+   "heapAfterCheckKB": 20282,
+   "outputBytes": 138,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "rest-params",
+   "lib": "mini",
+   "inputBytes": 109,
+   "instructions": 323405,
+   "ms": 6.9,
+   "msHooked": 35,
+   "heapAfterCheckKB": 15377,
+   "outputBytes": 174,
+   "status": 2,
+   "codes": [
+    "TS2345",
+    "TS2555"
+   ]
+  },
+  {
+   "input": "rest-params",
+   "lib": "es5",
+   "inputBytes": 109,
+   "instructions": 14379078,
+   "ms": 103.2,
+   "msHooked": 1459.9,
+   "heapAfterCheckKB": 19858,
+   "outputBytes": 174,
+   "status": 2,
+   "codes": [
+    "TS2345",
+    "TS2555"
+   ]
+  },
+  {
+   "input": "spread-call",
+   "lib": "mini",
+   "inputBytes": 112,
+   "instructions": 342371,
+   "ms": 7.8,
+   "msHooked": 37,
+   "heapAfterCheckKB": 15382,
+   "outputBytes": 110,
+   "status": 2,
+   "codes": [
+    "TS2556"
+   ]
+  },
+  {
+   "input": "spread-call",
+   "lib": "es5",
+   "inputBytes": 112,
+   "instructions": 14411842,
+   "ms": 104.2,
+   "msHooked": 1361.7,
+   "heapAfterCheckKB": 19873,
+   "outputBytes": 110,
+   "status": 2,
+   "codes": [
+    "TS2556"
+   ]
+  },
+  {
+   "input": "syntax-bad-token",
+   "lib": "mini",
+   "inputBytes": 28,
+   "instructions": 177816,
+   "ms": 5,
+   "msHooked": 20,
+   "heapAfterCheckKB": 15152,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1127",
+    "TS1146",
+    "TS1440"
+   ]
+  },
+  {
+   "input": "syntax-bad-token",
+   "lib": "es5",
+   "inputBytes": 28,
+   "instructions": 11357735,
+   "ms": 75.2,
+   "msHooked": 1058.2,
+   "heapAfterCheckKB": 24068,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1127",
+    "TS1146",
+    "TS1440"
+   ]
+  },
+  {
+   "input": "syntax-decl-modifiers",
+   "lib": "mini",
+   "inputBytes": 80,
+   "instructions": 273632,
+   "ms": 6.7,
+   "msHooked": 32,
+   "heapAfterCheckKB": 15340,
+   "outputBytes": 269,
+   "status": 2,
+   "codes": [
+    "TS1028",
+    "TS1044",
+    "TS1242"
+   ]
+  },
+  {
+   "input": "syntax-decl-modifiers",
+   "lib": "es5",
+   "inputBytes": 80,
+   "instructions": 14279033,
+   "ms": 105.5,
+   "msHooked": 1338.1,
+   "heapAfterCheckKB": 19790,
+   "outputBytes": 269,
+   "status": 2,
+   "codes": [
+    "TS1028",
+    "TS1044",
+    "TS1242"
+   ]
+  },
+  {
+   "input": "syntax-invalid-type",
+   "lib": "mini",
+   "inputBytes": 33,
+   "instructions": 171296,
+   "ms": 4.4,
+   "msHooked": 24,
+   "heapAfterCheckKB": 15146,
+   "outputBytes": 87,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1110"
+   ]
+  },
+  {
+   "input": "syntax-invalid-type",
+   "lib": "es5",
+   "inputBytes": 33,
+   "instructions": 11351215,
+   "ms": 73.5,
+   "msHooked": 1050.1,
+   "heapAfterCheckKB": 24062,
+   "outputBytes": 87,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1110"
+   ]
+  },
+  {
+   "input": "syntax-jsx-in-ts",
+   "lib": "mini",
+   "inputBytes": 29,
+   "instructions": 170571,
+   "ms": 4.8,
+   "msHooked": 19.9,
+   "heapAfterCheckKB": 15144,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS1161"
+   ]
+  },
+  {
+   "input": "syntax-jsx-in-ts",
+   "lib": "es5",
+   "inputBytes": 29,
+   "instructions": 11350490,
+   "ms": 74.7,
+   "msHooked": 1049.9,
+   "heapAfterCheckKB": 24060,
+   "outputBytes": 70,
+   "status": 2,
+   "codes": [
+    "TS1161"
+   ]
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "mini",
+   "inputBytes": 27,
+   "instructions": 165336,
+   "ms": 4.8,
+   "msHooked": 17.8,
+   "heapAfterCheckKB": 15136,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "es5",
+   "inputBytes": 27,
+   "instructions": 11345255,
+   "ms": 74.8,
+   "msHooked": 1048.7,
+   "heapAfterCheckKB": 24052,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "syntax-missing-paren",
+   "lib": "mini",
+   "inputBytes": 17,
+   "instructions": 165483,
+   "ms": 4.1,
+   "msHooked": 18.7,
+   "heapAfterCheckKB": 15136,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "syntax-missing-paren",
+   "lib": "es5",
+   "inputBytes": 17,
+   "instructions": 11345402,
+   "ms": 73.4,
+   "msHooked": 1043.8,
+   "heapAfterCheckKB": 24052,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "syntax-numeric-literal",
+   "lib": "mini",
+   "inputBytes": 59,
+   "instructions": 184765,
+   "ms": 4.7,
+   "msHooked": 20.8,
+   "heapAfterCheckKB": 15158,
+   "outputBytes": 259,
+   "status": 2,
+   "codes": [
+    "TS1124",
+    "TS1177",
+    "TS1489",
+    "TS6189"
+   ]
+  },
+  {
+   "input": "syntax-numeric-literal",
+   "lib": "es5",
+   "inputBytes": 59,
+   "instructions": 11364684,
+   "ms": 81.9,
+   "msHooked": 1036.9,
+   "heapAfterCheckKB": 24074,
+   "outputBytes": 259,
+   "status": 2,
+   "codes": [
+    "TS1124",
+    "TS1177",
+    "TS1489",
+    "TS6189"
+   ]
+  },
+  {
+   "input": "syntax-regex-errors",
+   "lib": "mini",
+   "inputBytes": 32,
+   "instructions": 257522,
+   "ms": 5.9,
+   "msHooked": 27.6,
+   "heapAfterCheckKB": 15327,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1500"
+   ]
+  },
+  {
+   "input": "syntax-regex-errors",
+   "lib": "es5",
+   "inputBytes": 32,
+   "instructions": 14262923,
+   "ms": 103.9,
+   "msHooked": 1343.7,
+   "heapAfterCheckKB": 19777,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS1005",
+    "TS1500"
+   ]
+  },
+  {
+   "input": "syntax-reserved-word",
+   "lib": "mini",
+   "inputBytes": 35,
+   "instructions": 178084,
+   "ms": 4.7,
+   "msHooked": 20,
+   "heapAfterCheckKB": 15151,
+   "outputBytes": 255,
+   "status": 2,
+   "codes": [
+    "TS1003",
+    "TS1005",
+    "TS1389",
+    "TS1440"
+   ]
+  },
+  {
+   "input": "syntax-reserved-word",
+   "lib": "es5",
+   "inputBytes": 35,
+   "instructions": 11358003,
+   "ms": 71.4,
+   "msHooked": 1052.1,
+   "heapAfterCheckKB": 24067,
+   "outputBytes": 255,
+   "status": 2,
+   "codes": [
+    "TS1003",
+    "TS1005",
+    "TS1389",
+    "TS1440"
+   ]
+  },
+  {
+   "input": "syntax-unexpected-keyword",
+   "lib": "mini",
+   "inputBytes": 27,
+   "instructions": 167356,
+   "ms": 4.3,
+   "msHooked": 19.4,
+   "heapAfterCheckKB": 15138,
+   "outputBytes": 49,
+   "status": 2,
+   "codes": [
+    "TS1109"
+   ]
+  },
+  {
+   "input": "syntax-unexpected-keyword",
+   "lib": "es5",
+   "inputBytes": 27,
+   "instructions": 11347275,
+   "ms": 74.9,
+   "msHooked": 1047.3,
+   "heapAfterCheckKB": 24054,
+   "outputBytes": 49,
+   "status": 2,
+   "codes": [
+    "TS1109"
+   ]
+  },
+  {
+   "input": "syntax-unterminated-string",
+   "lib": "mini",
+   "inputBytes": 29,
+   "instructions": 168481,
+   "ms": 4.5,
+   "msHooked": 19.2,
+   "heapAfterCheckKB": 15140,
+   "outputBytes": 58,
+   "status": 2,
+   "codes": [
+    "TS1002"
+   ]
+  },
+  {
+   "input": "syntax-unterminated-string",
+   "lib": "es5",
+   "inputBytes": 29,
+   "instructions": 11348400,
+   "ms": 80.6,
+   "msHooked": 1055,
+   "heapAfterCheckKB": 24056,
+   "outputBytes": 58,
+   "status": 2,
+   "codes": [
+    "TS1002"
+   ]
+  },
+  {
+   "input": "syntax-unterminated-template",
+   "lib": "mini",
+   "inputBytes": 19,
+   "instructions": 166037,
+   "ms": 4.2,
+   "msHooked": 18.3,
+   "heapAfterCheckKB": 15138,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "syntax-unterminated-template",
+   "lib": "es5",
+   "inputBytes": 19,
+   "instructions": 11345956,
+   "ms": 73.3,
+   "msHooked": 1077.7,
+   "heapAfterCheckKB": 24054,
+   "outputBytes": 42,
+   "status": 2,
+   "codes": [
+    "TS1005"
+   ]
+  },
+  {
+   "input": "template-basic",
+   "lib": "mini",
+   "inputBytes": 173,
+   "instructions": 330629,
+   "ms": 6.5,
+   "msHooked": 34,
+   "heapAfterCheckKB": 15405,
+   "outputBytes": 179,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-basic",
+   "lib": "es5",
+   "inputBytes": 173,
+   "instructions": 14349923,
+   "ms": 104.1,
+   "msHooked": 1348,
+   "heapAfterCheckKB": 19848,
+   "outputBytes": 179,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-infer",
+   "lib": "mini",
+   "inputBytes": 134,
+   "instructions": 429034,
+   "ms": 7.5,
+   "msHooked": 49.2,
+   "heapAfterCheckKB": 15501,
+   "outputBytes": 73,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-infer",
+   "lib": "es5",
+   "inputBytes": 134,
+   "instructions": 14558930,
+   "ms": 102.9,
+   "msHooked": 1372.1,
+   "heapAfterCheckKB": 20023,
+   "outputBytes": 73,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-intrinsics",
+   "lib": "mini",
+   "inputBytes": 192,
+   "instructions": 410898,
+   "ms": 6.6,
+   "msHooked": 40.9,
+   "heapAfterCheckKB": 15431,
+   "outputBytes": 240,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "template-intrinsics",
+   "lib": "es5",
+   "inputBytes": 192,
+   "instructions": 14362725,
+   "ms": 99,
+   "msHooked": 2071.4,
+   "heapAfterCheckKB": 19846,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-union-expand",
+   "lib": "mini",
+   "inputBytes": 107,
+   "instructions": 325517,
+   "ms": 6.2,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15387,
+   "outputBytes": 135,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "template-union-expand",
+   "lib": "es5",
+   "inputBytes": 107,
+   "instructions": 14344811,
+   "ms": 104.3,
+   "msHooked": 2004.7,
+   "heapAfterCheckKB": 19839,
+   "outputBytes": 135,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "tuple-labeled",
+   "lib": "mini",
+   "inputBytes": 107,
+   "instructions": 334942,
+   "ms": 8.2,
+   "msHooked": 38.4,
+   "heapAfterCheckKB": 15404,
+   "outputBytes": 189,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2554"
+   ]
+  },
+  {
+   "input": "tuple-labeled",
+   "lib": "es5",
+   "inputBytes": 107,
+   "instructions": 14428343,
+   "ms": 133.4,
+   "msHooked": 2006.3,
+   "heapAfterCheckKB": 19911,
+   "outputBytes": 189,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2554"
+   ]
+  },
+  {
+   "input": "tuple-length-index",
+   "lib": "mini",
+   "inputBytes": 91,
+   "instructions": 345956,
+   "ms": 14.6,
+   "msHooked": 46,
+   "heapAfterCheckKB": 15415,
+   "outputBytes": 247,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2493"
+   ]
+  },
+  {
+   "input": "tuple-length-index",
+   "lib": "es5",
+   "inputBytes": 91,
+   "instructions": 14421482,
+   "ms": 105.7,
+   "msHooked": 2017.3,
+   "heapAfterCheckKB": 19893,
+   "outputBytes": 247,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2493"
+   ]
+  },
+  {
+   "input": "tuple-optional-rest",
+   "lib": "mini",
+   "inputBytes": 126,
+   "instructions": 395443,
+   "ms": 7.7,
+   "msHooked": 41.6,
+   "heapAfterCheckKB": 15471,
+   "outputBytes": 230,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "tuple-optional-rest",
+   "lib": "es5",
+   "inputBytes": 126,
+   "instructions": 14523152,
+   "ms": 119.2,
+   "msHooked": 2011.6,
+   "heapAfterCheckKB": 19989,
+   "outputBytes": 230,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "tuple-variadic",
+   "lib": "mini",
+   "inputBytes": 249,
+   "instructions": 502238,
+   "ms": 12.6,
+   "msHooked": 61.4,
+   "heapAfterCheckKB": 15550,
+   "outputBytes": 144,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "tuple-variadic",
+   "lib": "es5",
+   "inputBytes": 249,
+   "instructions": 14709558,
+   "ms": 101.8,
+   "msHooked": 2050,
+   "heapAfterCheckKB": 20129,
+   "outputBytes": 144,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "union-call",
+   "lib": "mini",
+   "inputBytes": 82,
+   "instructions": 299278,
+   "ms": 6.2,
+   "msHooked": 33.8,
+   "heapAfterCheckKB": 15362,
+   "outputBytes": 97,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "union-call",
+   "lib": "es5",
+   "inputBytes": 82,
+   "instructions": 14307913,
+   "ms": 100.3,
+   "msHooked": 2134.2,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 97,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "union-property-access",
+   "lib": "mini",
+   "inputBytes": 119,
+   "instructions": 321446,
+   "ms": 6.3,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15381,
+   "outputBytes": 116,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "union-property-access",
+   "lib": "es5",
+   "inputBytes": 119,
+   "instructions": 14330674,
+   "ms": 99,
+   "msHooked": 2172.2,
+   "heapAfterCheckKB": 19824,
+   "outputBytes": 116,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/ArrowFunctionExpression1",
+   "lib": "mini",
+   "inputBytes": 233,
+   "instructions": 272273,
+   "ms": 5.6,
+   "msHooked": 31.4,
+   "heapAfterCheckKB": 15325,
+   "outputBytes": 99,
+   "status": 2,
+   "codes": [
+    "TS2369"
+   ]
+  },
+  {
+   "input": "upstream/ArrowFunctionExpression1",
+   "lib": "es5",
+   "inputBytes": 233,
+   "instructions": 14277674,
+   "ms": 104.2,
+   "msHooked": 1510.1,
+   "heapAfterCheckKB": 19776,
+   "outputBytes": 99,
+   "status": 2,
+   "codes": [
+    "TS2369"
+   ]
+  },
+  {
+   "input": "upstream/ClassDeclaration10",
+   "lib": "mini",
+   "inputBytes": 257,
+   "instructions": 277327,
+   "ms": 5.9,
+   "msHooked": 33.4,
+   "heapAfterCheckKB": 15341,
+   "outputBytes": 284,
+   "status": 2,
+   "codes": [
+    "TS2390",
+    "TS2391",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/ClassDeclaration10",
+   "lib": "es5",
+   "inputBytes": 257,
+   "instructions": 14282728,
+   "ms": 137.9,
+   "msHooked": 1331.6,
+   "heapAfterCheckKB": 19793,
+   "outputBytes": 284,
+   "status": 2,
+   "codes": [
+    "TS2390",
+    "TS2391",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/ClassDeclaration21",
+   "lib": "mini",
+   "inputBytes": 250,
+   "instructions": 277740,
+   "ms": 6.1,
+   "msHooked": 31.4,
+   "heapAfterCheckKB": 15338,
+   "outputBytes": 176,
+   "status": 2,
+   "codes": [
+    "TS2389",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/ClassDeclaration21",
+   "lib": "es5",
+   "inputBytes": 250,
+   "instructions": 14283141,
+   "ms": 117.6,
+   "msHooked": 1471.7,
+   "heapAfterCheckKB": 19791,
+   "outputBytes": 176,
+   "status": 2,
+   "codes": [
+    "TS2389",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/ambientEnumElementInitializer3",
+   "lib": "mini",
+   "inputBytes": 248,
+   "instructions": 258020,
+   "ms": 6.1,
+   "msHooked": 28.2,
+   "heapAfterCheckKB": 15311,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/ambientEnumElementInitializer3",
+   "lib": "es5",
+   "inputBytes": 248,
+   "instructions": 14263421,
+   "ms": 115,
+   "msHooked": 1377.8,
+   "heapAfterCheckKB": 19767,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/anyAndUnknownHaveFalsyComponents",
+   "lib": "mini",
+   "inputBytes": 642,
+   "instructions": 386482,
+   "ms": 6.8,
+   "msHooked": 41.2,
+   "heapAfterCheckKB": 15394,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/anyAndUnknownHaveFalsyComponents",
+   "lib": "es5",
+   "inputBytes": 642,
+   "instructions": 14392545,
+   "ms": 100.8,
+   "msHooked": 1341.8,
+   "heapAfterCheckKB": 19823,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/arguments",
+   "lib": "mini",
+   "inputBytes": 515,
+   "instructions": 473772,
+   "ms": 7.5,
+   "msHooked": 48.4,
+   "heapAfterCheckKB": 15489,
+   "outputBytes": 551,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "upstream/arguments",
+   "lib": "es5",
+   "inputBytes": 515,
+   "instructions": 14760148,
+   "ms": 102.6,
+   "msHooked": 1384,
+   "heapAfterCheckKB": 20026,
+   "outputBytes": 358,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "mini",
+   "inputBytes": 849,
+   "instructions": 593245,
+   "ms": 9.6,
+   "msHooked": 65.8,
+   "heapAfterCheckKB": 15558,
+   "outputBytes": 386,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339",
+    "TS2693",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "es5",
+   "inputBytes": 849,
+   "instructions": 14924989,
+   "ms": 105.6,
+   "msHooked": 1402.9,
+   "heapAfterCheckKB": 20195,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/arrayLiteral1",
+   "lib": "mini",
+   "inputBytes": 205,
+   "instructions": 267616,
+   "ms": 5.4,
+   "msHooked": 29.8,
+   "heapAfterCheckKB": 15321,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/arrayLiteral1",
+   "lib": "es5",
+   "inputBytes": 205,
+   "instructions": 14291083,
+   "ms": 98.4,
+   "msHooked": 1341.3,
+   "heapAfterCheckKB": 19786,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
+   "lib": "mini",
+   "inputBytes": 628,
+   "instructions": 637909,
+   "ms": 10.5,
+   "msHooked": 65,
+   "heapAfterCheckKB": 15747,
+   "outputBytes": 1202,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345",
+    "TS2741",
+    "TS7006",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
+   "lib": "es5",
+   "inputBytes": 628,
+   "instructions": 14684908,
+   "ms": 108.1,
+   "msHooked": 1392.8,
+   "heapAfterCheckKB": 20186,
+   "outputBytes": 997,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2345",
+    "TS2741",
+    "TS7006",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/assignmentToParenthesizedExpression1",
+   "lib": "mini",
+   "inputBytes": 231,
+   "instructions": 273891,
+   "ms": 5.9,
+   "msHooked": 29.7,
+   "heapAfterCheckKB": 15318,
+   "outputBytes": 207,
+   "status": 2,
+   "codes": [
+    "TS2364",
+    "TS2695"
+   ]
+  },
+  {
+   "input": "upstream/assignmentToParenthesizedExpression1",
+   "lib": "es5",
+   "inputBytes": 231,
+   "instructions": 14279292,
+   "ms": 99.8,
+   "msHooked": 1366.7,
+   "heapAfterCheckKB": 19776,
+   "outputBytes": 207,
+   "status": 2,
+   "codes": [
+    "TS2364",
+    "TS2695"
+   ]
+  },
+  {
+   "input": "upstream/baseClassImprovedMismatchErrors",
+   "lib": "mini",
+   "inputBytes": 541,
+   "instructions": 644078,
+   "ms": 9.5,
+   "msHooked": 66.7,
+   "heapAfterCheckKB": 15944,
+   "outputBytes": 2233,
+   "status": 2,
+   "codes": [
+    "TS2416",
+    "TS2564",
+    "TS2612"
+   ]
+  },
+  {
+   "input": "upstream/baseClassImprovedMismatchErrors",
+   "lib": "es5",
+   "inputBytes": 541,
+   "instructions": 14667275,
+   "ms": 107.8,
+   "msHooked": 1391.9,
+   "heapAfterCheckKB": 20379,
+   "outputBytes": 2233,
+   "status": 2,
+   "codes": [
+    "TS2416",
+    "TS2564",
+    "TS2612"
+   ]
+  },
+  {
+   "input": "upstream/breakInIterationOrSwitchStatement1",
+   "lib": "mini",
+   "inputBytes": 239,
+   "instructions": 253422,
+   "ms": 6.1,
+   "msHooked": 28.1,
+   "heapAfterCheckKB": 15306,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/breakInIterationOrSwitchStatement1",
+   "lib": "es5",
+   "inputBytes": 239,
+   "instructions": 14258823,
+   "ms": 106.6,
+   "msHooked": 1337.4,
+   "heapAfterCheckKB": 19760,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/callOverloads2",
+   "lib": "mini",
+   "inputBytes": 659,
+   "instructions": 405809,
+   "ms": 6.8,
+   "msHooked": 41.9,
+   "heapAfterCheckKB": 15433,
+   "outputBytes": 830,
+   "status": 2,
+   "codes": [
+    "TS2389",
+    "TS2391",
+    "TS2393",
+    "TS2813",
+    "TS2814",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/callOverloads2",
+   "lib": "es5",
+   "inputBytes": 659,
+   "instructions": 14411293,
+   "ms": 105.4,
+   "msHooked": 1350,
+   "heapAfterCheckKB": 19871,
+   "outputBytes": 830,
+   "status": 2,
+   "codes": [
+    "TS2389",
+    "TS2391",
+    "TS2393",
+    "TS2813",
+    "TS2814",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/capturedLetConstInLoop10_ES6",
+   "lib": "mini",
+   "inputBytes": 1141,
+   "instructions": 663242,
+   "ms": 10.4,
+   "msHooked": 68.9,
+   "heapAfterCheckKB": 15520,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/capturedLetConstInLoop10_ES6",
+   "lib": "es5",
+   "inputBytes": 1141,
+   "instructions": 14686709,
+   "ms": 106,
+   "msHooked": 1463,
+   "heapAfterCheckKB": 19961,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "mini",
+   "inputBytes": 283,
+   "instructions": 333873,
+   "ms": 6.5,
+   "msHooked": 35.5,
+   "heapAfterCheckKB": 15448,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "es5",
+   "inputBytes": 283,
+   "instructions": 14345191,
+   "ms": 102.3,
+   "msHooked": 1371.5,
+   "heapAfterCheckKB": 19897,
+   "outputBytes": 152,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/classExtendingQualifiedName",
+   "lib": "mini",
+   "inputBytes": 279,
+   "instructions": 292523,
+   "ms": 6.3,
+   "msHooked": 41,
+   "heapAfterCheckKB": 15375,
+   "outputBytes": 77,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/classExtendingQualifiedName",
+   "lib": "es5",
+   "inputBytes": 279,
+   "instructions": 14301749,
+   "ms": 99.4,
+   "msHooked": 1338.8,
+   "heapAfterCheckKB": 19825,
+   "outputBytes": 77,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/classExtendsMultipleBaseClasses",
+   "lib": "mini",
+   "inputBytes": 258,
+   "instructions": 285167,
+   "ms": 7.1,
+   "msHooked": 31.6,
+   "heapAfterCheckKB": 15340,
+   "outputBytes": 69,
+   "status": 2,
+   "codes": [
+    "TS1174"
+   ]
+  },
+  {
+   "input": "upstream/classExtendsMultipleBaseClasses",
+   "lib": "es5",
+   "inputBytes": 258,
+   "instructions": 14290568,
+   "ms": 104.7,
+   "msHooked": 1333.6,
+   "heapAfterCheckKB": 19793,
+   "outputBytes": 69,
+   "status": 2,
+   "codes": [
+    "TS1174"
+   ]
+  },
+  {
+   "input": "upstream/classOrder1",
+   "lib": "mini",
+   "inputBytes": 300,
+   "instructions": 289311,
+   "ms": 8.4,
+   "msHooked": 30.5,
+   "heapAfterCheckKB": 15336,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/classOrder1",
+   "lib": "es5",
+   "inputBytes": 300,
+   "instructions": 14294712,
+   "ms": 106.7,
+   "msHooked": 1332.1,
+   "heapAfterCheckKB": 19785,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/classVarianceResolveCircularity1",
+   "lib": "mini",
+   "inputBytes": 449,
+   "instructions": 370542,
+   "ms": 7.3,
+   "msHooked": 38.4,
+   "heapAfterCheckKB": 15408,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/classVarianceResolveCircularity1",
+   "lib": "es5",
+   "inputBytes": 449,
+   "instructions": 14375943,
+   "ms": 102.4,
+   "msHooked": 1739,
+   "heapAfterCheckKB": 19842,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/collisionCodeGenModuleWithMethodChildren",
+   "lib": "mini",
+   "inputBytes": 665,
+   "instructions": 395522,
+   "ms": 7.3,
+   "msHooked": 43.1,
+   "heapAfterCheckKB": 15415,
+   "outputBytes": 73,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/collisionCodeGenModuleWithMethodChildren",
+   "lib": "es5",
+   "inputBytes": 665,
+   "instructions": 14400923,
+   "ms": 102.4,
+   "msHooked": 1677.5,
+   "heapAfterCheckKB": 19847,
+   "outputBytes": 73,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
+   "lib": "mini",
+   "inputBytes": 591,
+   "instructions": 393514,
+   "ms": 6.7,
+   "msHooked": 45.2,
+   "heapAfterCheckKB": 15416,
+   "outputBytes": 161,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
+   "lib": "es5",
+   "inputBytes": 591,
+   "instructions": 14398915,
+   "ms": 102.3,
+   "msHooked": 1684,
+   "heapAfterCheckKB": 19850,
+   "outputBytes": 161,
+   "status": 2,
+   "codes": [
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/commentOnArrayElement12",
+   "lib": "mini",
+   "inputBytes": 244,
+   "instructions": 265480,
+   "ms": 6,
+   "msHooked": 29.1,
+   "heapAfterCheckKB": 15322,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/commentOnArrayElement12",
+   "lib": "es5",
+   "inputBytes": 244,
+   "instructions": 14288947,
+   "ms": 100.5,
+   "msHooked": 1671.7,
+   "heapAfterCheckKB": 19789,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "mini",
+   "inputBytes": 282,
+   "instructions": 272466,
+   "ms": 6.2,
+   "msHooked": 29.7,
+   "heapAfterCheckKB": 15331,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "es5",
+   "inputBytes": 282,
+   "instructions": 14277867,
+   "ms": 102,
+   "msHooked": 1835,
+   "heapAfterCheckKB": 19781,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/commentOnClassAccessor2",
+   "lib": "mini",
+   "inputBytes": 323,
+   "instructions": 283624,
+   "ms": 5.8,
+   "msHooked": 31.1,
+   "heapAfterCheckKB": 15335,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/commentOnClassAccessor2",
+   "lib": "es5",
+   "inputBytes": 323,
+   "instructions": 14289025,
+   "ms": 101.6,
+   "msHooked": 1697.4,
+   "heapAfterCheckKB": 19782,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/conditionalEqualityTestingNullability",
+   "lib": "mini",
+   "inputBytes": 561,
+   "instructions": 533855,
+   "ms": 8.8,
+   "msHooked": 64.2,
+   "heapAfterCheckKB": 15563,
+   "outputBytes": 110,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/conditionalEqualityTestingNullability",
+   "lib": "es5",
+   "inputBytes": 561,
+   "instructions": 14514970,
+   "ms": 107.7,
+   "msHooked": 1678.7,
+   "heapAfterCheckKB": 19958,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/conditionalExpressions2",
+   "lib": "mini",
+   "inputBytes": 558,
+   "instructions": 435278,
+   "ms": 7.5,
+   "msHooked": 45.5,
+   "heapAfterCheckKB": 15417,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/conditionalExpressions2",
+   "lib": "es5",
+   "inputBytes": 558,
+   "instructions": 14459723,
+   "ms": 101.7,
+   "msHooked": 1810.3,
+   "heapAfterCheckKB": 19878,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/constructorArgsErrors3",
+   "lib": "mini",
+   "inputBytes": 268,
+   "instructions": 272307,
+   "ms": 6.2,
+   "msHooked": 29.4,
+   "heapAfterCheckKB": 15326,
+   "outputBytes": 66,
+   "status": 2,
+   "codes": [
+    "TS1028"
+   ]
+  },
+  {
+   "input": "upstream/constructorArgsErrors3",
+   "lib": "es5",
+   "inputBytes": 268,
+   "instructions": 14277708,
+   "ms": 424.6,
+   "msHooked": 1591.5,
+   "heapAfterCheckKB": 19778,
+   "outputBytes": 66,
+   "status": 2,
+   "codes": [
+    "TS1028"
+   ]
+  },
+  {
+   "input": "upstream/contextualSignatureInstatiationContravariance",
+   "lib": "mini",
+   "inputBytes": 681,
+   "instructions": 492556,
+   "ms": 14.1,
+   "msHooked": 86.9,
+   "heapAfterCheckKB": 15537,
+   "outputBytes": 480,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7008"
+   ]
+  },
+  {
+   "input": "upstream/contextualSignatureInstatiationContravariance",
+   "lib": "es5",
+   "inputBytes": 681,
+   "instructions": 14501126,
+   "ms": 118.8,
+   "msHooked": 1343.7,
+   "heapAfterCheckKB": 19969,
+   "outputBytes": 480,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7008"
+   ]
+  },
+  {
+   "input": "upstream/contextualTypeSelfReferencing",
+   "lib": "mini",
+   "inputBytes": 546,
+   "instructions": 597681,
+   "ms": 13.1,
+   "msHooked": 68.5,
+   "heapAfterCheckKB": 15589,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/contextualTypeSelfReferencing",
+   "lib": "es5",
+   "inputBytes": 546,
+   "instructions": 14724032,
+   "ms": 113.8,
+   "msHooked": 1588,
+   "heapAfterCheckKB": 20100,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/contextualTyping19",
+   "lib": "mini",
+   "inputBytes": 251,
+   "instructions": 341850,
+   "ms": 7.4,
+   "msHooked": 36.4,
+   "heapAfterCheckKB": 15369,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/contextualTyping19",
+   "lib": "es5",
+   "inputBytes": 251,
+   "instructions": 14368508,
+   "ms": 102.2,
+   "msHooked": 1333.8,
+   "heapAfterCheckKB": 19829,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "mini",
+   "inputBytes": 251,
+   "instructions": 320543,
+   "ms": 6.9,
+   "msHooked": 40.4,
+   "heapAfterCheckKB": 15396,
+   "outputBytes": 132,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "es5",
+   "inputBytes": 251,
+   "instructions": 14329115,
+   "ms": 104,
+   "msHooked": 1300.8,
+   "heapAfterCheckKB": 19839,
+   "outputBytes": 132,
+   "status": 2,
+   "codes": [
+    "TS2353"
+   ]
+  },
+  {
+   "input": "upstream/contextualTyping41",
+   "lib": "mini",
+   "inputBytes": 266,
+   "instructions": 320596,
+   "ms": 5.8,
+   "msHooked": 35.7,
+   "heapAfterCheckKB": 15404,
+   "outputBytes": 306,
+   "status": 2,
+   "codes": [
+    "TS2352"
+   ]
+  },
+  {
+   "input": "upstream/contextualTyping41",
+   "lib": "es5",
+   "inputBytes": 266,
+   "instructions": 14325997,
+   "ms": 103.2,
+   "msHooked": 1304.8,
+   "heapAfterCheckKB": 19849,
+   "outputBytes": 306,
+   "status": 2,
+   "codes": [
+    "TS2352"
+   ]
+  },
+  {
+   "input": "upstream/contextualTypingOfArrayLiterals1",
+   "lib": "mini",
+   "inputBytes": 337,
+   "instructions": 344864,
+   "ms": 7,
+   "msHooked": 35.6,
+   "heapAfterCheckKB": 15386,
+   "outputBytes": 108,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/contextualTypingOfArrayLiterals1",
+   "lib": "es5",
+   "inputBytes": 337,
+   "instructions": 14486776,
+   "ms": 99.5,
+   "msHooked": 1318.9,
+   "heapAfterCheckKB": 19907,
+   "outputBytes": 77,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/contextualTypingOfConditionalExpression",
+   "lib": "mini",
+   "inputBytes": 502,
+   "instructions": 472040,
+   "ms": 7.8,
+   "msHooked": 48.1,
+   "heapAfterCheckKB": 15489,
+   "outputBytes": 422,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/contextualTypingOfConditionalExpression",
+   "lib": "es5",
+   "inputBytes": 502,
+   "instructions": 14475457,
+   "ms": 101.4,
+   "msHooked": 1311.2,
+   "heapAfterCheckKB": 19883,
+   "outputBytes": 341,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/contextuallyTypingOrOperator",
+   "lib": "mini",
+   "inputBytes": 513,
+   "instructions": 513300,
+   "ms": 8.1,
+   "msHooked": 52.7,
+   "heapAfterCheckKB": 15520,
+   "outputBytes": 465,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2872",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/contextuallyTypingOrOperator",
+   "lib": "es5",
+   "inputBytes": 513,
+   "instructions": 14517016,
+   "ms": 100,
+   "msHooked": 1320.7,
+   "heapAfterCheckKB": 19885,
+   "outputBytes": 144,
+   "status": 2,
+   "codes": [
+    "TS2872",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/declFileClassWithIndexSignature",
+   "lib": "mini",
+   "inputBytes": 286,
+   "instructions": 265796,
+   "ms": 5.4,
+   "msHooked": 28.5,
+   "heapAfterCheckKB": 15319,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declFileClassWithIndexSignature",
+   "lib": "es5",
+   "inputBytes": 286,
+   "instructions": 14271197,
+   "ms": 100.5,
+   "msHooked": 1313.8,
+   "heapAfterCheckKB": 19769,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declFileOptionalInterfaceMethod",
+   "lib": "mini",
+   "inputBytes": 284,
+   "instructions": 270671,
+   "ms": 5.5,
+   "msHooked": 28.2,
+   "heapAfterCheckKB": 15328,
+   "outputBytes": 106,
+   "status": 2,
+   "codes": [
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/declFileOptionalInterfaceMethod",
+   "lib": "es5",
+   "inputBytes": 284,
+   "instructions": 14276072,
+   "ms": 98,
+   "msHooked": 1312,
+   "heapAfterCheckKB": 19778,
+   "outputBytes": 106,
+   "status": 2,
+   "codes": [
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/declarationEmitDestructuringArrayPattern3",
+   "lib": "mini",
+   "inputBytes": 291,
+   "instructions": 311358,
+   "ms": 6,
+   "msHooked": 32,
+   "heapAfterCheckKB": 15358,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitDestructuringArrayPattern3",
+   "lib": "es5",
+   "inputBytes": 291,
+   "instructions": 14384903,
+   "ms": 98.6,
+   "msHooked": 1320.8,
+   "heapAfterCheckKB": 19851,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "mini",
+   "inputBytes": 615,
+   "instructions": 470514,
+   "ms": 7.7,
+   "msHooked": 52.5,
+   "heapAfterCheckKB": 15450,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "es5",
+   "inputBytes": 615,
+   "instructions": 14475915,
+   "ms": 98.8,
+   "msHooked": 1336.9,
+   "heapAfterCheckKB": 19853,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitNameConflictsWithAlias",
+   "lib": "mini",
+   "inputBytes": 470,
+   "instructions": 315350,
+   "ms": 5.8,
+   "msHooked": 32.1,
+   "heapAfterCheckKB": 15357,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitNameConflictsWithAlias",
+   "lib": "es5",
+   "inputBytes": 470,
+   "instructions": 14320751,
+   "ms": 98.6,
+   "msHooked": 1324.7,
+   "heapAfterCheckKB": 19792,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitOptionalMethod",
+   "lib": "mini",
+   "inputBytes": 403,
+   "instructions": 319202,
+   "ms": 6.1,
+   "msHooked": 32.8,
+   "heapAfterCheckKB": 15363,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitOptionalMethod",
+   "lib": "es5",
+   "inputBytes": 403,
+   "instructions": 14327764,
+   "ms": 96.8,
+   "msHooked": 1312.1,
+   "heapAfterCheckKB": 19796,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
+   "lib": "mini",
+   "inputBytes": 418,
+   "instructions": 335176,
+   "ms": 6.9,
+   "msHooked": 34.9,
+   "heapAfterCheckKB": 15372,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
+   "lib": "es5",
+   "inputBytes": 418,
+   "instructions": 14340577,
+   "ms": 112.2,
+   "msHooked": 1352.7,
+   "heapAfterCheckKB": 19812,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/defaultValueInFunctionTypes",
+   "lib": "mini",
+   "inputBytes": 349,
+   "instructions": 334205,
+   "ms": 6.6,
+   "msHooked": 36.5,
+   "heapAfterCheckKB": 15398,
+   "outputBytes": 574,
+   "status": 2,
+   "codes": [
+    "TS2352",
+    "TS2371"
+   ]
+  },
+  {
+   "input": "upstream/defaultValueInFunctionTypes",
+   "lib": "es5",
+   "inputBytes": 349,
+   "instructions": 14339606,
+   "ms": 97.5,
+   "msHooked": 1343.4,
+   "heapAfterCheckKB": 19834,
+   "outputBytes": 574,
+   "status": 2,
+   "codes": [
+    "TS2352",
+    "TS2371"
+   ]
+  },
+  {
+   "input": "upstream/deleteOperatorInStrictMode",
+   "lib": "mini",
+   "inputBytes": 235,
+   "instructions": 267626,
+   "ms": 5.5,
+   "msHooked": 31.2,
+   "heapAfterCheckKB": 15316,
+   "outputBytes": 180,
+   "status": 2,
+   "codes": [
+    "TS1102",
+    "TS2703"
+   ]
+  },
+  {
+   "input": "upstream/deleteOperatorInStrictMode",
+   "lib": "es5",
+   "inputBytes": 235,
+   "instructions": 14273027,
+   "ms": 110.8,
+   "msHooked": 1297.9,
+   "heapAfterCheckKB": 19774,
+   "outputBytes": 180,
+   "status": 2,
+   "codes": [
+    "TS1102",
+    "TS2703"
+   ]
+  },
+  {
+   "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
+   "lib": "mini",
+   "inputBytes": 520,
+   "instructions": 384710,
+   "ms": 7.5,
+   "msHooked": 39.8,
+   "heapAfterCheckKB": 15406,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
+   "lib": "es5",
+   "inputBytes": 520,
+   "instructions": 14390111,
+   "ms": 102.7,
+   "msHooked": 1355.8,
+   "heapAfterCheckKB": 19831,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/discriminantsAndPrimitives",
+   "lib": "mini",
+   "inputBytes": 1692,
+   "instructions": 831775,
+   "ms": 10.6,
+   "msHooked": 96,
+   "heapAfterCheckKB": 15645,
+   "outputBytes": 164,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/discriminantsAndPrimitives",
+   "lib": "es5",
+   "inputBytes": 1692,
+   "instructions": 14836440,
+   "ms": 106.5,
+   "msHooked": 1860.5,
+   "heapAfterCheckKB": 20022,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "mini",
+   "inputBytes": 550,
+   "instructions": 344914,
+   "ms": 6.1,
+   "msHooked": 35.9,
+   "heapAfterCheckKB": 15373,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "es5",
+   "inputBytes": 550,
+   "instructions": 14350315,
+   "ms": 100.6,
+   "msHooked": 1831.2,
+   "heapAfterCheckKB": 19811,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/duplicateErrorNameNotFound",
+   "lib": "mini",
+   "inputBytes": 298,
+   "instructions": 287553,
+   "ms": 5.8,
+   "msHooked": 30.7,
+   "heapAfterCheckKB": 15357,
+   "outputBytes": 92,
+   "status": 2,
+   "codes": [
+    "TS2552"
+   ]
+  },
+  {
+   "input": "upstream/duplicateErrorNameNotFound",
+   "lib": "es5",
+   "inputBytes": 298,
+   "instructions": 14292954,
+   "ms": 98,
+   "msHooked": 1828.5,
+   "heapAfterCheckKB": 19807,
+   "outputBytes": 92,
+   "status": 2,
+   "codes": [
+    "TS2552"
+   ]
+  },
+  {
+   "input": "upstream/duplicateObjectLiteralProperty_computedName2",
+   "lib": "mini",
+   "inputBytes": 512,
+   "instructions": 475204,
+   "ms": 8.4,
+   "msHooked": 59,
+   "heapAfterCheckKB": 15441,
+   "outputBytes": 396,
+   "status": 2,
+   "codes": [
+    "TS1117"
+   ]
+  },
+  {
+   "input": "upstream/duplicateObjectLiteralProperty_computedName2",
+   "lib": "es5",
+   "inputBytes": 512,
+   "instructions": 14480605,
+   "ms": 97,
+   "msHooked": 1836.9,
+   "heapAfterCheckKB": 19861,
+   "outputBytes": 396,
+   "status": 2,
+   "codes": [
+    "TS1117"
+   ]
+  },
+  {
+   "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
+   "lib": "mini",
+   "inputBytes": 539,
+   "instructions": 363184,
+   "ms": 6.2,
+   "msHooked": 37.2,
+   "heapAfterCheckKB": 15370,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
+   "lib": "es5",
+   "inputBytes": 539,
+   "instructions": 14368585,
+   "ms": 98.7,
+   "msHooked": 1837.2,
+   "heapAfterCheckKB": 19810,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/emitSkipsThisWithRestParameter",
+   "lib": "mini",
+   "inputBytes": 400,
+   "instructions": 379663,
+   "ms": 7.5,
+   "msHooked": 38.6,
+   "heapAfterCheckKB": 15440,
+   "outputBytes": 186,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/emitSkipsThisWithRestParameter",
+   "lib": "es5",
+   "inputBytes": 400,
+   "instructions": 14631477,
+   "ms": 101.6,
+   "msHooked": 1853.4,
+   "heapAfterCheckKB": 20048,
+   "outputBytes": 197,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "upstream/emitThisInSuperMethodCall",
+   "lib": "mini",
+   "inputBytes": 632,
+   "instructions": 382891,
+   "ms": 6.6,
+   "msHooked": 39.3,
+   "heapAfterCheckKB": 15402,
+   "outputBytes": 366,
+   "status": 2,
+   "codes": [
+    "TS2660"
+   ]
+  },
+  {
+   "input": "upstream/emitThisInSuperMethodCall",
+   "lib": "es5",
+   "inputBytes": 632,
+   "instructions": 14388292,
+   "ms": 98.1,
+   "msHooked": 1948.5,
+   "heapAfterCheckKB": 19843,
+   "outputBytes": 366,
+   "status": 2,
+   "codes": [
+    "TS2660"
+   ]
+  },
+  {
+   "input": "upstream/emptyFile",
+   "lib": "mini",
+   "inputBytes": 184,
+   "instructions": 246071,
+   "ms": 5.2,
+   "msHooked": 25.5,
+   "heapAfterCheckKB": 15303,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/emptyFile",
+   "lib": "es5",
+   "inputBytes": 184,
+   "instructions": 14251472,
+   "ms": 109.3,
+   "msHooked": 1307,
+   "heapAfterCheckKB": 19758,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/enumMemberResolution",
+   "lib": "mini",
+   "inputBytes": 351,
+   "instructions": 193024,
+   "ms": 4.2,
+   "msHooked": 528.1,
+   "heapAfterCheckKB": 15144,
+   "outputBytes": 50,
+   "status": 2,
+   "codes": [
+    "TS1003"
+   ]
+  },
+  {
+   "input": "upstream/enumMemberResolution",
+   "lib": "es5",
+   "inputBytes": 351,
+   "instructions": 11372943,
+   "ms": 585.1,
+   "msHooked": 1042,
+   "heapAfterCheckKB": 24061,
+   "outputBytes": 50,
+   "status": 2,
+   "codes": [
+    "TS1003"
+   ]
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "mini",
+   "inputBytes": 324,
+   "instructions": 307916,
+   "ms": 7.4,
+   "msHooked": 32.6,
+   "heapAfterCheckKB": 15343,
+   "outputBytes": 175,
+   "status": 2,
+   "codes": [
+    "TS2713"
+   ]
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "es5",
+   "inputBytes": 324,
+   "instructions": 14313317,
+   "ms": 116.8,
+   "msHooked": 1313.8,
+   "heapAfterCheckKB": 19789,
+   "outputBytes": 175,
+   "status": 2,
+   "codes": [
+    "TS2713"
+   ]
+  },
+  {
+   "input": "upstream/errorsForCallAndAssignmentAreSimilar",
+   "lib": "mini",
+   "inputBytes": 535,
+   "instructions": 684723,
+   "ms": 13.9,
+   "msHooked": 70.2,
+   "heapAfterCheckKB": 15629,
+   "outputBytes": 234,
+   "status": 2,
+   "codes": [
+    "TS2820"
+   ]
+  },
+  {
+   "input": "upstream/errorsForCallAndAssignmentAreSimilar",
+   "lib": "es5",
+   "inputBytes": 535,
+   "instructions": 14799188,
+   "ms": 113.2,
+   "msHooked": 1468.8,
+   "heapAfterCheckKB": 20139,
+   "outputBytes": 234,
+   "status": 2,
+   "codes": [
+    "TS2820"
+   ]
+  },
+  {
+   "input": "upstream/errorsWithInvokablesInUnions01",
+   "lib": "mini",
+   "inputBytes": 682,
+   "instructions": 551069,
+   "ms": 9,
+   "msHooked": 55.9,
+   "heapAfterCheckKB": 15632,
+   "outputBytes": 661,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/errorsWithInvokablesInUnions01",
+   "lib": "es5",
+   "inputBytes": 682,
+   "instructions": 14577739,
+   "ms": 101.2,
+   "msHooked": 1341.9,
+   "heapAfterCheckKB": 20066,
+   "outputBytes": 661,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/es6DeclOrdering",
+   "lib": "mini",
+   "inputBytes": 436,
+   "instructions": 323811,
+   "ms": 6.4,
+   "msHooked": 34.6,
+   "heapAfterCheckKB": 15399,
+   "outputBytes": 155,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/es6DeclOrdering",
+   "lib": "es5",
+   "inputBytes": 436,
+   "instructions": 14343712,
+   "ms": 98.5,
+   "msHooked": 1315.2,
+   "heapAfterCheckKB": 19849,
+   "outputBytes": 155,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
+   "lib": "mini",
+   "inputBytes": 339,
+   "instructions": 277965,
+   "ms": 5.6,
+   "msHooked": 29.8,
+   "heapAfterCheckKB": 15330,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
+   "lib": "es5",
+   "inputBytes": 339,
+   "instructions": 14283366,
+   "ms": 97.9,
+   "msHooked": 1318.1,
+   "heapAfterCheckKB": 19776,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/excessPropertyCheckWithSpread",
+   "lib": "mini",
+   "inputBytes": 466,
+   "instructions": 402091,
+   "ms": 7.2,
+   "msHooked": 42.1,
+   "heapAfterCheckKB": 15420,
+   "outputBytes": 199,
+   "status": 2,
+   "codes": [
+    "TS2842",
+    "TS7031"
+   ]
+  },
+  {
+   "input": "upstream/excessPropertyCheckWithSpread",
+   "lib": "es5",
+   "inputBytes": 466,
+   "instructions": 14407492,
+   "ms": 97.1,
+   "msHooked": 1323.9,
+   "heapAfterCheckKB": 19847,
+   "outputBytes": 199,
+   "status": 2,
+   "codes": [
+    "TS2842",
+    "TS7031"
+   ]
+  },
+  {
+   "input": "upstream/exportArrayBindingPattern",
+   "lib": "mini",
+   "inputBytes": 334,
+   "instructions": 331455,
+   "ms": 6.7,
+   "msHooked": 35.1,
+   "heapAfterCheckKB": 15364,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/exportArrayBindingPattern",
+   "lib": "es5",
+   "inputBytes": 334,
+   "instructions": 14404608,
+   "ms": 100,
+   "msHooked": 1323.7,
+   "heapAfterCheckKB": 19860,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/exportDeclarationsInAmbientNamespaces2",
+   "lib": "mini",
+   "inputBytes": 341,
+   "instructions": 284712,
+   "ms": 6.5,
+   "msHooked": 29.8,
+   "heapAfterCheckKB": 15329,
+   "outputBytes": 84,
+   "status": 2,
+   "codes": [
+    "TS1194"
+   ]
+  },
+  {
+   "input": "upstream/exportDeclarationsInAmbientNamespaces2",
+   "lib": "es5",
+   "inputBytes": 341,
+   "instructions": 14290113,
+   "ms": 97.9,
+   "msHooked": 1317.5,
+   "heapAfterCheckKB": 19778,
+   "outputBytes": 84,
+   "status": 2,
+   "codes": [
+    "TS1194"
+   ]
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "mini",
+   "inputBytes": 310,
+   "instructions": 270411,
+   "ms": 5.6,
+   "msHooked": 28.4,
+   "heapAfterCheckKB": 15318,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "es5",
+   "inputBytes": 310,
+   "instructions": 14275812,
+   "ms": 100.4,
+   "msHooked": 1568.3,
+   "heapAfterCheckKB": 19771,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/exportedBlockScopedDeclarations",
+   "lib": "mini",
+   "inputBytes": 682,
+   "instructions": 455280,
+   "ms": 8.7,
+   "msHooked": 46.3,
+   "heapAfterCheckKB": 15543,
+   "outputBytes": 2054,
+   "status": 2,
+   "codes": [
+    "TS2448",
+    "TS7022"
+   ]
+  },
+  {
+   "input": "upstream/exportedBlockScopedDeclarations",
+   "lib": "es5",
+   "inputBytes": 682,
+   "instructions": 14460681,
+   "ms": 101.9,
+   "msHooked": 1563.4,
+   "heapAfterCheckKB": 19973,
+   "outputBytes": 2054,
+   "status": 2,
+   "codes": [
+    "TS2448",
+    "TS7022"
+   ]
+  },
+  {
+   "input": "upstream/externSemantics",
+   "lib": "mini",
+   "inputBytes": 272,
+   "instructions": 291274,
+   "ms": 5.9,
+   "msHooked": 31.1,
+   "heapAfterCheckKB": 15346,
+   "outputBytes": 230,
+   "status": 2,
+   "codes": [
+    "TS1039",
+    "TS7005"
+   ]
+  },
+  {
+   "input": "upstream/externSemantics",
+   "lib": "es5",
+   "inputBytes": 272,
+   "instructions": 14296675,
+   "ms": 100.1,
+   "msHooked": 1313.8,
+   "heapAfterCheckKB": 19792,
+   "outputBytes": 230,
+   "status": 2,
+   "codes": [
+    "TS1039",
+    "TS7005"
+   ]
+  },
+  {
+   "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
+   "lib": "mini",
+   "inputBytes": 291,
+   "instructions": 306253,
+   "ms": 6.8,
+   "msHooked": 32.8,
+   "heapAfterCheckKB": 15365,
+   "outputBytes": 103,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
+   "lib": "es5",
+   "inputBytes": 291,
+   "instructions": 14326209,
+   "ms": 110.9,
+   "msHooked": 1318.9,
+   "heapAfterCheckKB": 19819,
+   "outputBytes": 103,
+   "status": 2,
+   "codes": [
+    "TS2345"
+   ]
+  },
+  {
+   "input": "upstream/functionAssignmentError",
+   "lib": "mini",
+   "inputBytes": 294,
+   "instructions": 286953,
+   "ms": 6.1,
+   "msHooked": 30.2,
+   "heapAfterCheckKB": 15328,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/functionAssignmentError",
+   "lib": "es5",
+   "inputBytes": 294,
+   "instructions": 14292354,
+   "ms": 103.4,
+   "msHooked": 1375.1,
+   "heapAfterCheckKB": 19779,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/functionOverloads43",
+   "lib": "mini",
+   "inputBytes": 476,
+   "instructions": 468551,
+   "ms": 8.1,
+   "msHooked": 48.9,
+   "heapAfterCheckKB": 15460,
+   "outputBytes": 91,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/functionOverloads43",
+   "lib": "es5",
+   "inputBytes": 476,
+   "instructions": 14523015,
+   "ms": 105.6,
+   "msHooked": 1381.3,
+   "heapAfterCheckKB": 19935,
+   "outputBytes": 91,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/functionWithDefaultParameterWithNoStatements10",
+   "lib": "mini",
+   "inputBytes": 279,
+   "instructions": 282936,
+   "ms": 6.1,
+   "msHooked": 33.9,
+   "heapAfterCheckKB": 15330,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/functionWithDefaultParameterWithNoStatements10",
+   "lib": "es5",
+   "inputBytes": 279,
+   "instructions": 14306403,
+   "ms": 99.2,
+   "msHooked": 1340.5,
+   "heapAfterCheckKB": 19797,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/functionsWithModifiersInBlocks1",
+   "lib": "mini",
+   "inputBytes": 306,
+   "instructions": 295427,
+   "ms": 6.1,
+   "msHooked": 30.9,
+   "heapAfterCheckKB": 15348,
+   "outputBytes": 540,
+   "status": 2,
+   "codes": [
+    "TS1183",
+    "TS1184",
+    "TS2393"
+   ]
+  },
+  {
+   "input": "upstream/functionsWithModifiersInBlocks1",
+   "lib": "es5",
+   "inputBytes": 306,
+   "instructions": 14300828,
+   "ms": 100.7,
+   "msHooked": 1376.3,
+   "heapAfterCheckKB": 19799,
+   "outputBytes": 540,
+   "status": 2,
+   "codes": [
+    "TS1183",
+    "TS1184",
+    "TS2393"
+   ]
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "mini",
+   "inputBytes": 304,
+   "instructions": 305580,
+   "ms": 6.7,
+   "msHooked": 38.1,
+   "heapAfterCheckKB": 15346,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "es5",
+   "inputBytes": 304,
+   "instructions": 14310981,
+   "ms": 98.6,
+   "msHooked": 1440.5,
+   "heapAfterCheckKB": 19794,
+   "outputBytes": 111,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/genericConstraintDeclaration",
+   "lib": "mini",
+   "inputBytes": 323,
+   "instructions": 305386,
+   "ms": 5.7,
+   "msHooked": 32.3,
+   "heapAfterCheckKB": 15371,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/genericConstraintDeclaration",
+   "lib": "es5",
+   "inputBytes": 323,
+   "instructions": 14310787,
+   "ms": 97.9,
+   "msHooked": 1411.5,
+   "heapAfterCheckKB": 19819,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/genericFunctions2",
+   "lib": "mini",
+   "inputBytes": 346,
+   "instructions": 391577,
+   "ms": 6.9,
+   "msHooked": 40.6,
+   "heapAfterCheckKB": 15460,
+   "outputBytes": 159,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/genericFunctions2",
+   "lib": "es5",
+   "inputBytes": 346,
+   "instructions": 14420870,
+   "ms": 98.9,
+   "msHooked": 1433.8,
+   "heapAfterCheckKB": 19882,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/genericTypeParameterEquivalence2",
+   "lib": "mini",
+   "inputBytes": 1708,
+   "instructions": 1229125,
+   "ms": 16.1,
+   "msHooked": 176.1,
+   "heapAfterCheckKB": 16012,
+   "outputBytes": 614,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2345",
+    "TS7005",
+    "TS7034"
+   ]
+  },
+  {
+   "input": "upstream/genericTypeParameterEquivalence2",
+   "lib": "es5",
+   "inputBytes": 1708,
+   "instructions": 15498553,
+   "ms": 128.1,
+   "msHooked": 1528,
+   "heapAfterCheckKB": 20596,
+   "outputBytes": 551,
+   "status": 2,
+   "codes": [
+    "TS2345",
+    "TS7005",
+    "TS7034"
+   ]
+  },
+  {
+   "input": "upstream/generics5",
+   "lib": "mini",
+   "inputBytes": 399,
+   "instructions": 349839,
+   "ms": 14.9,
+   "msHooked": 37.4,
+   "heapAfterCheckKB": 15407,
+   "outputBytes": 92,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "upstream/generics5",
+   "lib": "es5",
+   "inputBytes": 399,
+   "instructions": 14358401,
+   "ms": 138.2,
+   "msHooked": 1390.4,
+   "heapAfterCheckKB": 19844,
+   "outputBytes": 92,
+   "status": 2,
+   "codes": [
+    "TS2741"
+   ]
+  },
+  {
+   "input": "upstream/identicalTypesNoDifferByCheckOrder",
+   "lib": "mini",
+   "inputBytes": 1413,
+   "instructions": 1057280,
+   "ms": 14.4,
+   "msHooked": 107.8,
+   "heapAfterCheckKB": 15917,
+   "outputBytes": 338,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/identicalTypesNoDifferByCheckOrder",
+   "lib": "es5",
+   "inputBytes": 1413,
+   "instructions": 15647069,
+   "ms": 116.4,
+   "msHooked": 1542.5,
+   "heapAfterCheckKB": 20983,
+   "outputBytes": 1294,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/implicitAnyAmbients",
+   "lib": "mini",
+   "inputBytes": 681,
+   "instructions": 433317,
+   "ms": 7.8,
+   "msHooked": 54.1,
+   "heapAfterCheckKB": 15495,
+   "outputBytes": 873,
+   "status": 2,
+   "codes": [
+    "TS7005",
+    "TS7006",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/implicitAnyAmbients",
+   "lib": "es5",
+   "inputBytes": 681,
+   "instructions": 14438718,
+   "ms": 107.6,
+   "msHooked": 1416,
+   "heapAfterCheckKB": 19912,
+   "outputBytes": 873,
+   "status": 2,
+   "codes": [
+    "TS7005",
+    "TS7006",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/indexerA",
+   "lib": "mini",
+   "inputBytes": 343,
+   "instructions": 361514,
+   "ms": 7.9,
+   "msHooked": 45.6,
+   "heapAfterCheckKB": 15383,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/indexerA",
+   "lib": "es5",
+   "inputBytes": 343,
+   "instructions": 14370098,
+   "ms": 112.7,
+   "msHooked": 1397.5,
+   "heapAfterCheckKB": 19822,
+   "outputBytes": 112,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "mini",
+   "inputBytes": 262,
+   "instructions": 304151,
+   "ms": 6.5,
+   "msHooked": 34.8,
+   "heapAfterCheckKB": 15363,
+   "outputBytes": 262,
+   "status": 2,
+   "codes": [
+    "TS2449",
+    "TS2506"
+   ]
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "es5",
+   "inputBytes": 262,
+   "instructions": 14309552,
+   "ms": 104.1,
+   "msHooked": 1381.8,
+   "heapAfterCheckKB": 19814,
+   "outputBytes": 262,
+   "status": 2,
+   "codes": [
+    "TS2449",
+    "TS2506"
+   ]
+  },
+  {
+   "input": "upstream/inferentialTypingObjectLiteralMethod1",
+   "lib": "mini",
+   "inputBytes": 430,
+   "instructions": 552953,
+   "ms": 9.1,
+   "msHooked": 66.6,
+   "heapAfterCheckKB": 15615,
+   "outputBytes": 242,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/inferentialTypingObjectLiteralMethod1",
+   "lib": "es5",
+   "inputBytes": 430,
+   "instructions": 14568844,
+   "ms": 119.1,
+   "msHooked": 1398.6,
+   "heapAfterCheckKB": 20015,
+   "outputBytes": 168,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/infinitelyExpandingBaseTypes2",
+   "lib": "mini",
+   "inputBytes": 331,
+   "instructions": 357560,
+   "ms": 6.7,
+   "msHooked": 39.1,
+   "heapAfterCheckKB": 15407,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/infinitelyExpandingBaseTypes2",
+   "lib": "es5",
+   "inputBytes": 331,
+   "instructions": 14362961,
+   "ms": 104,
+   "msHooked": 1385,
+   "heapAfterCheckKB": 19846,
+   "outputBytes": 74,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
+   "lib": "mini",
+   "inputBytes": 353,
+   "instructions": 316420,
+   "ms": 6.6,
+   "msHooked": 34.1,
+   "heapAfterCheckKB": 15387,
+   "outputBytes": 379,
+   "status": 2,
+   "codes": [
+    "TS2320",
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
+   "lib": "es5",
+   "inputBytes": 353,
+   "instructions": 14321821,
+   "ms": 101.7,
+   "msHooked": 1365.7,
+   "heapAfterCheckKB": 19830,
+   "outputBytes": 379,
+   "status": 2,
+   "codes": [
+    "TS2320",
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/inheritanceStaticFuncOverridingProperty",
+   "lib": "mini",
+   "inputBytes": 344,
+   "instructions": 313344,
+   "ms": 7.5,
+   "msHooked": 34.6,
+   "heapAfterCheckKB": 15393,
+   "outputBytes": 214,
+   "status": 2,
+   "codes": [
+    "TS2417"
+   ]
+  },
+  {
+   "input": "upstream/inheritanceStaticFuncOverridingProperty",
+   "lib": "es5",
+   "inputBytes": 344,
+   "instructions": 14318659,
+   "ms": 103.5,
+   "msHooked": 1374.7,
+   "heapAfterCheckKB": 19840,
+   "outputBytes": 214,
+   "status": 2,
+   "codes": [
+    "TS2417"
+   ]
+  },
+  {
+   "input": "upstream/innerExtern",
+   "lib": "mini",
+   "inputBytes": 404,
+   "instructions": 315276,
+   "ms": 6.8,
+   "msHooked": 33,
+   "heapAfterCheckKB": 15366,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS7005"
+   ]
+  },
+  {
+   "input": "upstream/innerExtern",
+   "lib": "es5",
+   "inputBytes": 404,
+   "instructions": 14320677,
+   "ms": 109.6,
+   "msHooked": 1332.4,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 79,
+   "status": 2,
+   "codes": [
+    "TS7005"
+   ]
+  },
+  {
+   "input": "upstream/instanceSubtypeCheck1",
+   "lib": "mini",
+   "inputBytes": 287,
+   "instructions": 344005,
+   "ms": 7.3,
+   "msHooked": 37.7,
+   "heapAfterCheckKB": 15391,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/instanceSubtypeCheck1",
+   "lib": "es5",
+   "inputBytes": 287,
+   "instructions": 14349406,
+   "ms": 114.8,
+   "msHooked": 1375.7,
+   "heapAfterCheckKB": 19835,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/instanceofTypeAliasToGenericClass",
+   "lib": "mini",
+   "inputBytes": 521,
+   "instructions": 430615,
+   "ms": 9.2,
+   "msHooked": 47.7,
+   "heapAfterCheckKB": 15436,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/instanceofTypeAliasToGenericClass",
+   "lib": "es5",
+   "inputBytes": 521,
+   "instructions": 14444636,
+   "ms": 105.4,
+   "msHooked": 1348.5,
+   "heapAfterCheckKB": 19875,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "mini",
+   "inputBytes": 387,
+   "instructions": 290084,
+   "ms": 6.3,
+   "msHooked": 36.8,
+   "heapAfterCheckKB": 15341,
+   "outputBytes": 113,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "es5",
+   "inputBytes": 387,
+   "instructions": 14295485,
+   "ms": 101.9,
+   "msHooked": 1326.6,
+   "heapAfterCheckKB": 19785,
+   "outputBytes": 113,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/intersectionApparentTypeCaching",
+   "lib": "mini",
+   "inputBytes": 421,
+   "instructions": 317612,
+   "ms": 6.3,
+   "msHooked": 34,
+   "heapAfterCheckKB": 15360,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/intersectionApparentTypeCaching",
+   "lib": "es5",
+   "inputBytes": 421,
+   "instructions": 15312408,
+   "ms": 108.5,
+   "msHooked": 1470.6,
+   "heapAfterCheckKB": 20652,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/intersectionsAndOptionalProperties",
+   "lib": "mini",
+   "inputBytes": 761,
+   "instructions": 616651,
+   "ms": 9.1,
+   "msHooked": 63.5,
+   "heapAfterCheckKB": 15660,
+   "outputBytes": 529,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/intersectionsAndOptionalProperties",
+   "lib": "es5",
+   "inputBytes": 761,
+   "instructions": 15591411,
+   "ms": 110.8,
+   "msHooked": 1460.1,
+   "heapAfterCheckKB": 20906,
+   "outputBytes": 746,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/lambdaPropSelf",
+   "lib": "mini",
+   "inputBytes": 561,
+   "instructions": 398955,
+   "ms": 7,
+   "msHooked": 43,
+   "heapAfterCheckKB": 15443,
+   "outputBytes": 277,
+   "status": 2,
+   "codes": [
+    "TS2331",
+    "TS2339",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/lambdaPropSelf",
+   "lib": "es5",
+   "inputBytes": 561,
+   "instructions": 14421046,
+   "ms": 107.4,
+   "msHooked": 1345,
+   "heapAfterCheckKB": 19850,
+   "outputBytes": 196,
+   "status": 2,
+   "codes": [
+    "TS2331",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/letAndVarRedeclaration",
+   "lib": "mini",
+   "inputBytes": 786,
+   "instructions": 492818,
+   "ms": 7.7,
+   "msHooked": 50.4,
+   "heapAfterCheckKB": 15473,
+   "outputBytes": 1253,
+   "status": 2,
+   "codes": [
+    "TS2300",
+    "TS2451"
+   ]
+  },
+  {
+   "input": "upstream/letAndVarRedeclaration",
+   "lib": "es5",
+   "inputBytes": 786,
+   "instructions": 14498219,
+   "ms": 99.8,
+   "msHooked": 1352.2,
+   "heapAfterCheckKB": 19898,
+   "outputBytes": 1253,
+   "status": 2,
+   "codes": [
+    "TS2300",
+    "TS2451"
+   ]
+  },
+  {
+   "input": "upstream/letAsIdentifierInStrictMode",
+   "lib": "mini",
+   "inputBytes": 266,
+   "instructions": 295565,
+   "ms": 7.3,
+   "msHooked": 37.4,
+   "heapAfterCheckKB": 15332,
+   "outputBytes": 288,
+   "status": 2,
+   "codes": [
+    "TS1212",
+    "TS2300"
+   ]
+  },
+  {
+   "input": "upstream/letAsIdentifierInStrictMode",
+   "lib": "es5",
+   "inputBytes": 266,
+   "instructions": 14300966,
+   "ms": 98.7,
+   "msHooked": 1332.7,
+   "heapAfterCheckKB": 19786,
+   "outputBytes": 288,
+   "status": 2,
+   "codes": [
+    "TS1212",
+    "TS2300"
+   ]
+  },
+  {
+   "input": "upstream/library_StringSlice",
+   "lib": "mini",
+   "inputBytes": 346,
+   "instructions": 307971,
+   "ms": 6,
+   "msHooked": 31,
+   "heapAfterCheckKB": 15330,
+   "outputBytes": 285,
+   "status": 2,
+   "codes": [
+    "TS2693"
+   ]
+  },
+  {
+   "input": "upstream/library_StringSlice",
+   "lib": "es5",
+   "inputBytes": 346,
+   "instructions": 14331572,
+   "ms": 100.1,
+   "msHooked": 1345,
+   "heapAfterCheckKB": 19787,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/localImportNameVsGlobalName",
+   "lib": "mini",
+   "inputBytes": 423,
+   "instructions": 362283,
+   "ms": 6.4,
+   "msHooked": 44.2,
+   "heapAfterCheckKB": 15371,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/localImportNameVsGlobalName",
+   "lib": "es5",
+   "inputBytes": 423,
+   "instructions": 14367684,
+   "ms": 100.4,
+   "msHooked": 1329.3,
+   "heapAfterCheckKB": 19813,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "mini",
+   "inputBytes": 244,
+   "instructions": 291651,
+   "ms": 6,
+   "msHooked": 31.5,
+   "heapAfterCheckKB": 15373,
+   "outputBytes": 162,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "es5",
+   "inputBytes": 244,
+   "instructions": 14293239,
+   "ms": 99.8,
+   "msHooked": 1321,
+   "heapAfterCheckKB": 19783,
+   "outputBytes": 72,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/moduleCodeGenTest5",
+   "lib": "mini",
+   "inputBytes": 471,
+   "instructions": 378562,
+   "ms": 6.7,
+   "msHooked": 40.4,
+   "heapAfterCheckKB": 15400,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/moduleCodeGenTest5",
+   "lib": "es5",
+   "inputBytes": 471,
+   "instructions": 14383963,
+   "ms": 117.9,
+   "msHooked": 1323.3,
+   "heapAfterCheckKB": 19828,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/multiExtendsSplitInterfaces1",
+   "lib": "mini",
+   "inputBytes": 232,
+   "instructions": 282573,
+   "ms": 6,
+   "msHooked": 30.2,
+   "heapAfterCheckKB": 15348,
+   "outputBytes": 53,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/multiExtendsSplitInterfaces1",
+   "lib": "es5",
+   "inputBytes": 232,
+   "instructions": 14300927,
+   "ms": 100,
+   "msHooked": 1317.2,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 53,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
+   "lib": "mini",
+   "inputBytes": 305,
+   "instructions": 307660,
+   "ms": 6.4,
+   "msHooked": 33.5,
+   "heapAfterCheckKB": 15383,
+   "outputBytes": 184,
+   "status": 2,
+   "codes": [
+    "TS2320"
+   ]
+  },
+  {
+   "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
+   "lib": "es5",
+   "inputBytes": 305,
+   "instructions": 14313061,
+   "ms": 97.7,
+   "msHooked": 1318.6,
+   "heapAfterCheckKB": 19825,
+   "outputBytes": 184,
+   "status": 2,
+   "codes": [
+    "TS2320"
+   ]
+  },
+  {
+   "input": "upstream/namespaces2",
+   "lib": "mini",
+   "inputBytes": 297,
+   "instructions": 294383,
+   "ms": 6.1,
+   "msHooked": 30.5,
+   "heapAfterCheckKB": 15341,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/namespaces2",
+   "lib": "es5",
+   "inputBytes": 297,
+   "instructions": 14299784,
+   "ms": 98.5,
+   "msHooked": 1356.6,
+   "heapAfterCheckKB": 19787,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
+   "lib": "mini",
+   "inputBytes": 571,
+   "instructions": 414158,
+   "ms": 6.8,
+   "msHooked": 42,
+   "heapAfterCheckKB": 15371,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
+   "lib": "es5",
+   "inputBytes": 571,
+   "instructions": 14419559,
+   "ms": 100.9,
+   "msHooked": 1332.9,
+   "heapAfterCheckKB": 19820,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/narrowingTypeofUndefined1",
+   "lib": "mini",
+   "inputBytes": 527,
+   "instructions": 435114,
+   "ms": 6.7,
+   "msHooked": 43.8,
+   "heapAfterCheckKB": 15411,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/narrowingTypeofUndefined1",
+   "lib": "es5",
+   "inputBytes": 527,
+   "instructions": 14441493,
+   "ms": 101.2,
+   "msHooked": 1342.5,
+   "heapAfterCheckKB": 19843,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings15",
+   "lib": "mini",
+   "inputBytes": 593,
+   "instructions": 362575,
+   "ms": 6.5,
+   "msHooked": 45.7,
+   "heapAfterCheckKB": 15359,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings15",
+   "lib": "es5",
+   "inputBytes": 593,
+   "instructions": 14367976,
+   "ms": 106.3,
+   "msHooked": 1343.8,
+   "heapAfterCheckKB": 19802,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "mini",
+   "inputBytes": 789,
+   "instructions": 660711,
+   "ms": 9,
+   "msHooked": 67.3,
+   "heapAfterCheckKB": 15487,
+   "outputBytes": 479,
+   "status": 2,
+   "codes": [
+    "TS18048"
+   ]
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "es5",
+   "inputBytes": 789,
+   "instructions": 14666112,
+   "ms": 112.3,
+   "msHooked": 1359,
+   "heapAfterCheckKB": 19921,
+   "outputBytes": 479,
+   "status": 2,
+   "codes": [
+    "TS18048"
+   ]
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings8",
+   "lib": "mini",
+   "inputBytes": 300,
+   "instructions": 301163,
+   "ms": 5.6,
+   "msHooked": 33.9,
+   "heapAfterCheckKB": 15329,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings8",
+   "lib": "es5",
+   "inputBytes": 300,
+   "instructions": 14306564,
+   "ms": 112,
+   "msHooked": 1319.9,
+   "heapAfterCheckKB": 19785,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nestedTypeVariableInfersLiteral",
+   "lib": "mini",
+   "inputBytes": 986,
+   "instructions": 764008,
+   "ms": 12.8,
+   "msHooked": 78.7,
+   "heapAfterCheckKB": 15653,
+   "outputBytes": 168,
+   "status": 2,
+   "codes": [
+    "TS2304"
+   ]
+  },
+  {
+   "input": "upstream/nestedTypeVariableInfersLiteral",
+   "lib": "es5",
+   "inputBytes": 986,
+   "instructions": 14836580,
+   "ms": 109.3,
+   "msHooked": 1367.8,
+   "heapAfterCheckKB": 20117,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/noCheckNoEmit",
+   "lib": "mini",
+   "inputBytes": 338,
+   "instructions": 279607,
+   "ms": 5.8,
+   "msHooked": 29.7,
+   "heapAfterCheckKB": 15344,
+   "outputBytes": 80,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/noCheckNoEmit",
+   "lib": "es5",
+   "inputBytes": 338,
+   "instructions": 14298901,
+   "ms": 97.6,
+   "msHooked": 1317.2,
+   "heapAfterCheckKB": 19796,
+   "outputBytes": 80,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/noCrashOnMixin2",
+   "lib": "mini",
+   "inputBytes": 675,
+   "instructions": 485334,
+   "ms": 7.6,
+   "msHooked": 51.2,
+   "heapAfterCheckKB": 15490,
+   "outputBytes": 378,
+   "status": 2,
+   "codes": [
+    "TS1047",
+    "TS2370",
+    "TS2545",
+    "TS2674"
+   ]
+  },
+  {
+   "input": "upstream/noCrashOnMixin2",
+   "lib": "es5",
+   "inputBytes": 675,
+   "instructions": 14526445,
+   "ms": 102.4,
+   "msHooked": 1340.7,
+   "heapAfterCheckKB": 19957,
+   "outputBytes": 378,
+   "status": 2,
+   "codes": [
+    "TS1047",
+    "TS2370",
+    "TS2545",
+    "TS2674"
+   ]
+  },
+  {
+   "input": "upstream/noEmitHelpers",
+   "lib": "mini",
+   "inputBytes": 247,
+   "instructions": 272762,
+   "ms": 5.9,
+   "msHooked": 29.1,
+   "heapAfterCheckKB": 15329,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/noEmitHelpers",
+   "lib": "es5",
+   "inputBytes": 247,
+   "instructions": 14278163,
+   "ms": 101.1,
+   "msHooked": 1309.3,
+   "heapAfterCheckKB": 19783,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/noImplicitAnyForIn",
+   "lib": "mini",
+   "inputBytes": 765,
+   "instructions": 691953,
+   "ms": 9.8,
+   "msHooked": 69.7,
+   "heapAfterCheckKB": 15591,
+   "outputBytes": 661,
+   "status": 2,
+   "codes": [
+    "TS2318",
+    "TS2405",
+    "TS2872",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "upstream/noImplicitAnyForIn",
+   "lib": "es5",
+   "inputBytes": 765,
+   "instructions": 15015833,
+   "ms": 104.1,
+   "msHooked": 1522.4,
+   "heapAfterCheckKB": 20251,
+   "outputBytes": 612,
+   "status": 2,
+   "codes": [
+    "TS2405",
+    "TS2872",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "upstream/noImplicitAnyIndexing",
+   "lib": "mini",
+   "inputBytes": 1175,
+   "instructions": 649409,
+   "ms": 9.2,
+   "msHooked": 65.6,
+   "heapAfterCheckKB": 15537,
+   "outputBytes": 449,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339",
+    "TS7015",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "upstream/noImplicitAnyIndexing",
+   "lib": "es5",
+   "inputBytes": 1175,
+   "instructions": 14646925,
+   "ms": 103,
+   "msHooked": 1348.9,
+   "heapAfterCheckKB": 19937,
+   "outputBytes": 395,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS7015",
+    "TS7053"
+   ]
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "mini",
+   "inputBytes": 440,
+   "instructions": 299861,
+   "ms": 5.8,
+   "msHooked": 31.6,
+   "heapAfterCheckKB": 15338,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "es5",
+   "inputBytes": 440,
+   "instructions": 14305262,
+   "ms": 98.9,
+   "msHooked": 1360.7,
+   "heapAfterCheckKB": 19782,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nongenericConditionalNotPartiallyComputed",
+   "lib": "mini",
+   "inputBytes": 408,
+   "instructions": 295835,
+   "ms": 5.8,
+   "msHooked": 30.8,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/nongenericConditionalNotPartiallyComputed",
+   "lib": "es5",
+   "inputBytes": 408,
+   "instructions": 14301324,
+   "ms": 98.9,
+   "msHooked": 1329.1,
+   "heapAfterCheckKB": 19780,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/objectLiteralArraySpecialization",
+   "lib": "mini",
+   "inputBytes": 588,
+   "instructions": 514551,
+   "ms": 9.6,
+   "msHooked": 52.9,
+   "heapAfterCheckKB": 15493,
+   "outputBytes": 116,
+   "status": 2,
+   "codes": [
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/objectLiteralArraySpecialization",
+   "lib": "es5",
+   "inputBytes": 588,
+   "instructions": 14568353,
+   "ms": 102.4,
+   "msHooked": 1348.4,
+   "heapAfterCheckKB": 19963,
+   "outputBytes": 116,
+   "status": 2,
+   "codes": [
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/objectLiteralMemberWithModifiers1",
+   "lib": "mini",
+   "inputBytes": 236,
+   "instructions": 277110,
+   "ms": 6,
+   "msHooked": 30.2,
+   "heapAfterCheckKB": 15333,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS1042",
+    "TS1184"
+   ]
+  },
+  {
+   "input": "upstream/objectLiteralMemberWithModifiers1",
+   "lib": "es5",
+   "inputBytes": 236,
+   "instructions": 14282511,
+   "ms": 109.7,
+   "msHooked": 1428.6,
+   "heapAfterCheckKB": 19783,
+   "outputBytes": 127,
+   "status": 2,
+   "codes": [
+    "TS1042",
+    "TS1184"
+   ]
+  },
+  {
+   "input": "upstream/overloadAssignmentCompat",
+   "lib": "mini",
+   "inputBytes": 1229,
+   "instructions": 502341,
+   "ms": 7.9,
+   "msHooked": 50.9,
+   "heapAfterCheckKB": 15438,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS2394"
+   ]
+  },
+  {
+   "input": "upstream/overloadAssignmentCompat",
+   "lib": "es5",
+   "inputBytes": 1229,
+   "instructions": 14527165,
+   "ms": 101.7,
+   "msHooked": 1365.4,
+   "heapAfterCheckKB": 19870,
+   "outputBytes": 107,
+   "status": 2,
+   "codes": [
+    "TS2394"
+   ]
+  },
+  {
+   "input": "upstream/overrideBaseIntersectionMethod",
+   "lib": "mini",
+   "inputBytes": 821,
+   "instructions": 767647,
+   "ms": 10.7,
+   "msHooked": 76.9,
+   "heapAfterCheckKB": 15644,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/overrideBaseIntersectionMethod",
+   "lib": "es5",
+   "inputBytes": 821,
+   "instructions": 14859481,
+   "ms": 121.1,
+   "msHooked": 1373.8,
+   "heapAfterCheckKB": 20124,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/parseEntityNameWithReservedWord",
+   "lib": "mini",
+   "inputBytes": 260,
+   "instructions": 270836,
+   "ms": 5.6,
+   "msHooked": 29.6,
+   "heapAfterCheckKB": 15318,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/parseEntityNameWithReservedWord",
+   "lib": "es5",
+   "inputBytes": 260,
+   "instructions": 14276237,
+   "ms": 99,
+   "msHooked": 1316.7,
+   "heapAfterCheckKB": 19770,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/prespecializedGenericMembers1",
+   "lib": "mini",
+   "inputBytes": 544,
+   "instructions": 378907,
+   "ms": 6.4,
+   "msHooked": 46,
+   "heapAfterCheckKB": 15398,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/prespecializedGenericMembers1",
+   "lib": "es5",
+   "inputBytes": 544,
+   "instructions": 14384308,
+   "ms": 99,
+   "msHooked": 1350,
+   "heapAfterCheckKB": 19830,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "mini",
+   "inputBytes": 342,
+   "instructions": 372768,
+   "ms": 6.8,
+   "msHooked": 38.9,
+   "heapAfterCheckKB": 15393,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "es5",
+   "inputBytes": 342,
+   "instructions": 14378169,
+   "ms": 101.3,
+   "msHooked": 1324.1,
+   "heapAfterCheckKB": 19837,
+   "outputBytes": 220,
+   "status": 2,
+   "codes": [
+    "TS2454"
+   ]
+  },
+  {
+   "input": "upstream/returnTypeTypeArguments",
+   "lib": "mini",
+   "inputBytes": 1532,
+   "instructions": 1274827,
+   "ms": 14.6,
+   "msHooked": 128.1,
+   "heapAfterCheckKB": 16354,
+   "outputBytes": 4745,
+   "status": 2,
+   "codes": [
+    "TS2314",
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/returnTypeTypeArguments",
+   "lib": "es5",
+   "inputBytes": 1532,
+   "instructions": 15280198,
+   "ms": 109.8,
+   "msHooked": 1418.5,
+   "heapAfterCheckKB": 20654,
+   "outputBytes": 4745,
+   "status": 2,
+   "codes": [
+    "TS2314",
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/scopeCheckClassProperty",
+   "lib": "mini",
+   "inputBytes": 327,
+   "instructions": 298745,
+   "ms": 6.2,
+   "msHooked": 31.9,
+   "heapAfterCheckKB": 15347,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/scopeCheckClassProperty",
+   "lib": "es5",
+   "inputBytes": 327,
+   "instructions": 14304146,
+   "ms": 112.4,
+   "msHooked": 1333,
+   "heapAfterCheckKB": 19791,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
+   "lib": "mini",
+   "inputBytes": 375,
+   "instructions": 368099,
+   "ms": 6.7,
+   "msHooked": 39.5,
+   "heapAfterCheckKB": 15451,
+   "outputBytes": 426,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339",
+    "TS2662",
+    "TS7008"
+   ]
+  },
+  {
+   "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
+   "lib": "es5",
+   "inputBytes": 375,
+   "instructions": 14394556,
+   "ms": 100.5,
+   "msHooked": 1334.5,
+   "heapAfterCheckKB": 19896,
+   "outputBytes": 426,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339",
+    "TS2662",
+    "TS7008"
+   ]
+  },
+  {
+   "input": "upstream/signatureInstantiationWithRecursiveConstraints",
+   "lib": "mini",
+   "inputBytes": 407,
+   "instructions": 397170,
+   "ms": 7.2,
+   "msHooked": 41.1,
+   "heapAfterCheckKB": 15467,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/signatureInstantiationWithRecursiveConstraints",
+   "lib": "es5",
+   "inputBytes": 407,
+   "instructions": 14402571,
+   "ms": 101.2,
+   "msHooked": 1327.9,
+   "heapAfterCheckKB": 19909,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/singletonLabeledTuple",
+   "lib": "mini",
+   "inputBytes": 1046,
+   "instructions": 407282,
+   "ms": 6.5,
+   "msHooked": 41.4,
+   "heapAfterCheckKB": 15416,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/singletonLabeledTuple",
+   "lib": "es5",
+   "inputBytes": 1046,
+   "instructions": 14412683,
+   "ms": 99.7,
+   "msHooked": 1629.6,
+   "heapAfterCheckKB": 19840,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
+   "lib": "mini",
+   "inputBytes": 254,
+   "instructions": 272062,
+   "ms": 5.6,
+   "msHooked": 29.2,
+   "heapAfterCheckKB": 15326,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS1162"
+   ]
+  },
+  {
+   "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
+   "lib": "es5",
+   "inputBytes": 254,
+   "instructions": 14277463,
+   "ms": 103.1,
+   "msHooked": 1598.7,
+   "heapAfterCheckKB": 19777,
+   "outputBytes": 75,
+   "status": 2,
+   "codes": [
+    "TS1162"
+   ]
+  },
+  {
+   "input": "upstream/specializedLambdaTypeArguments",
+   "lib": "mini",
+   "inputBytes": 279,
+   "instructions": 292875,
+   "ms": 6.1,
+   "msHooked": 31.8,
+   "heapAfterCheckKB": 15343,
+   "outputBytes": 114,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/specializedLambdaTypeArguments",
+   "lib": "es5",
+   "inputBytes": 279,
+   "instructions": 14298276,
+   "ms": 106.4,
+   "msHooked": 1316.5,
+   "heapAfterCheckKB": 19791,
+   "outputBytes": 114,
+   "status": 2,
+   "codes": [
+    "TS2564"
+   ]
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "mini",
+   "inputBytes": 352,
+   "instructions": 317544,
+   "ms": 6.3,
+   "msHooked": 33.9,
+   "heapAfterCheckKB": 15357,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "es5",
+   "inputBytes": 352,
+   "instructions": 14322945,
+   "ms": 100.1,
+   "msHooked": 1322.4,
+   "heapAfterCheckKB": 19789,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/staticGetter1",
+   "lib": "mini",
+   "inputBytes": 287,
+   "instructions": 267599,
+   "ms": 6.4,
+   "msHooked": 29.3,
+   "heapAfterCheckKB": 15319,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/staticGetter1",
+   "lib": "es5",
+   "inputBytes": 287,
+   "instructions": 14273000,
+   "ms": 99.5,
+   "msHooked": 1354.8,
+   "heapAfterCheckKB": 19774,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/staticInstanceResolution4",
+   "lib": "mini",
+   "inputBytes": 247,
+   "instructions": 287554,
+   "ms": 6.2,
+   "msHooked": 38.5,
+   "heapAfterCheckKB": 15367,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/staticInstanceResolution4",
+   "lib": "es5",
+   "inputBytes": 247,
+   "instructions": 14307451,
+   "ms": 101.1,
+   "msHooked": 1323.7,
+   "heapAfterCheckKB": 19822,
+   "outputBytes": 78,
+   "status": 2,
+   "codes": [
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/superCallAssignResult",
+   "lib": "mini",
+   "inputBytes": 373,
+   "instructions": 327855,
+   "ms": 7.2,
+   "msHooked": 34.9,
+   "heapAfterCheckKB": 15381,
+   "outputBytes": 77,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/superCallAssignResult",
+   "lib": "es5",
+   "inputBytes": 373,
+   "instructions": 14335828,
+   "ms": 106.8,
+   "msHooked": 1341.8,
+   "heapAfterCheckKB": 19826,
+   "outputBytes": 77,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
+   "lib": "mini",
+   "inputBytes": 344,
+   "instructions": 316914,
+   "ms": 5.8,
+   "msHooked": 33.8,
+   "heapAfterCheckKB": 15370,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
+   "lib": "es5",
+   "inputBytes": 344,
+   "instructions": 14322315,
+   "ms": 98.5,
+   "msHooked": 1342,
+   "heapAfterCheckKB": 19809,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superCallInStaticMethod",
+   "lib": "mini",
+   "inputBytes": 1195,
+   "instructions": 463394,
+   "ms": 8,
+   "msHooked": 46.2,
+   "heapAfterCheckKB": 15441,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superCallInStaticMethod",
+   "lib": "es5",
+   "inputBytes": 1195,
+   "instructions": 14468795,
+   "ms": 101.9,
+   "msHooked": 1357.2,
+   "heapAfterCheckKB": 19858,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superHasMethodsFromMergedInterface",
+   "lib": "mini",
+   "inputBytes": 318,
+   "instructions": 314576,
+   "ms": 6.3,
+   "msHooked": 33.7,
+   "heapAfterCheckKB": 15361,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superHasMethodsFromMergedInterface",
+   "lib": "es5",
+   "inputBytes": 318,
+   "instructions": 14319977,
+   "ms": 98.9,
+   "msHooked": 1341.2,
+   "heapAfterCheckKB": 19805,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/superWithTypeArgument",
+   "lib": "mini",
+   "inputBytes": 295,
+   "instructions": 188627,
+   "ms": 4.4,
+   "msHooked": 19.6,
+   "heapAfterCheckKB": 15146,
+   "outputBytes": 66,
+   "status": 2,
+   "codes": [
+    "TS2754"
+   ]
+  },
+  {
+   "input": "upstream/superWithTypeArgument",
+   "lib": "es5",
+   "inputBytes": 295,
+   "instructions": 11368546,
+   "ms": 74.6,
+   "msHooked": 1071,
+   "heapAfterCheckKB": 24062,
+   "outputBytes": 66,
+   "status": 2,
+   "codes": [
+    "TS2754"
+   ]
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "mini",
+   "inputBytes": 239,
+   "instructions": 273270,
+   "ms": 5.7,
+   "msHooked": 37.4,
+   "heapAfterCheckKB": 15320,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2331",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "es5",
+   "inputBytes": 239,
+   "instructions": 14278671,
+   "ms": 100.3,
+   "msHooked": 1361.2,
+   "heapAfterCheckKB": 19777,
+   "outputBytes": 192,
+   "status": 2,
+   "codes": [
+    "TS2331",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/thisInPropertyBoundDeclarations",
+   "lib": "mini",
+   "inputBytes": 1287,
+   "instructions": 684039,
+   "ms": 9.5,
+   "msHooked": 70.3,
+   "heapAfterCheckKB": 15605,
+   "outputBytes": 542,
+   "status": 2,
+   "codes": [
+    "TS2564",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/thisInPropertyBoundDeclarations",
+   "lib": "es5",
+   "inputBytes": 1287,
+   "instructions": 14869671,
+   "ms": 119.1,
+   "msHooked": 1592.6,
+   "heapAfterCheckKB": 20132,
+   "outputBytes": 542,
+   "status": 2,
+   "codes": [
+    "TS2564",
+    "TS2683"
+   ]
+  },
+  {
+   "input": "upstream/typeArgumentConstraintResolution1",
+   "lib": "mini",
+   "inputBytes": 677,
+   "instructions": 445104,
+   "ms": 9,
+   "msHooked": 48.4,
+   "heapAfterCheckKB": 15468,
+   "outputBytes": 436,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/typeArgumentConstraintResolution1",
+   "lib": "es5",
+   "inputBytes": 677,
+   "instructions": 14537215,
+   "ms": 106.3,
+   "msHooked": 1387.6,
+   "heapAfterCheckKB": 19942,
+   "outputBytes": 425,
+   "status": 2,
+   "codes": [
+    "TS2345",
+    "TS7010"
+   ]
+  },
+  {
+   "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
+   "lib": "mini",
+   "inputBytes": 631,
+   "instructions": 618071,
+   "ms": 9.2,
+   "msHooked": 64.3,
+   "heapAfterCheckKB": 15474,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
+   "lib": "es5",
+   "inputBytes": 631,
+   "instructions": 14647941,
+   "ms": 104.7,
+   "msHooked": 1399.7,
+   "heapAfterCheckKB": 19908,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeInferenceFixEarly",
+   "lib": "mini",
+   "inputBytes": 254,
+   "instructions": 311196,
+   "ms": 6.3,
+   "msHooked": 34.3,
+   "heapAfterCheckKB": 15354,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeInferenceFixEarly",
+   "lib": "es5",
+   "inputBytes": 254,
+   "instructions": 14316597,
+   "ms": 103.2,
+   "msHooked": 1363.8,
+   "heapAfterCheckKB": 19800,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
+   "lib": "mini",
+   "inputBytes": 454,
+   "instructions": 393353,
+   "ms": 7.4,
+   "msHooked": 48.8,
+   "heapAfterCheckKB": 15461,
+   "outputBytes": 481,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7020"
+   ]
+  },
+  {
+   "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
+   "lib": "es5",
+   "inputBytes": 454,
+   "instructions": 14453992,
+   "ms": 101.6,
+   "msHooked": 1557.6,
+   "heapAfterCheckKB": 19938,
+   "outputBytes": 481,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS7020"
+   ]
+  },
+  {
+   "input": "upstream/typePredicateTopLevelTypeParameter",
+   "lib": "mini",
+   "inputBytes": 576,
+   "instructions": 405249,
+   "ms": 7,
+   "msHooked": 41.8,
+   "heapAfterCheckKB": 15430,
+   "outputBytes": 154,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/typePredicateTopLevelTypeParameter",
+   "lib": "es5",
+   "inputBytes": 576,
+   "instructions": 14540903,
+   "ms": 110.3,
+   "msHooked": 1415.4,
+   "heapAfterCheckKB": 19975,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeofUsedBeforeBlockScoped",
+   "lib": "mini",
+   "inputBytes": 346,
+   "instructions": 330553,
+   "ms": 6.1,
+   "msHooked": 38.1,
+   "heapAfterCheckKB": 15360,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/typeofUsedBeforeBlockScoped",
+   "lib": "es5",
+   "inputBytes": 346,
+   "instructions": 14335954,
+   "ms": 104.4,
+   "msHooked": 1367.6,
+   "heapAfterCheckKB": 19799,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "mini",
+   "inputBytes": 322,
+   "instructions": 312106,
+   "ms": 6.2,
+   "msHooked": 37,
+   "heapAfterCheckKB": 15354,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "es5",
+   "inputBytes": 322,
+   "instructions": 14352157,
+   "ms": 112,
+   "msHooked": 1377.6,
+   "heapAfterCheckKB": 19809,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unusedModuleInModule",
+   "lib": "mini",
+   "inputBytes": 288,
+   "instructions": 260601,
+   "ms": 7.2,
+   "msHooked": 27.9,
+   "heapAfterCheckKB": 15312,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unusedModuleInModule",
+   "lib": "es5",
+   "inputBytes": 288,
+   "instructions": 14266002,
+   "ms": 107.5,
+   "msHooked": 1337.8,
+   "heapAfterCheckKB": 19766,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
+   "lib": "mini",
+   "inputBytes": 401,
+   "instructions": 287036,
+   "ms": 7.9,
+   "msHooked": 31,
+   "heapAfterCheckKB": 15328,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
+   "lib": "es5",
+   "inputBytes": 401,
+   "instructions": 14292437,
+   "ms": 107.8,
+   "msHooked": 1331.3,
+   "heapAfterCheckKB": 19777,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  },
+  {
+   "input": "upstream/vardecl",
+   "lib": "mini",
+   "inputBytes": 1895,
+   "instructions": 1091511,
+   "ms": 14,
+   "msHooked": 109.7,
+   "heapAfterCheckKB": 15984,
+   "outputBytes": 1632,
+   "status": 2,
+   "codes": [
+    "TS2339",
+    "TS2454",
+    "TS7005",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/vardecl",
+   "lib": "es5",
+   "inputBytes": 1895,
+   "instructions": 15127690,
+   "ms": 111.4,
+   "msHooked": 1383.9,
+   "heapAfterCheckKB": 20298,
+   "outputBytes": 1532,
+   "status": 2,
+   "codes": [
+    "TS2454",
+    "TS7005",
+    "TS7006"
+   ]
+  },
+  {
+   "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
+   "lib": "mini",
+   "inputBytes": 630,
+   "instructions": 633214,
+   "ms": 10.3,
+   "msHooked": 66.8,
+   "heapAfterCheckKB": 15718,
+   "outputBytes": 910,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
+   "lib": "es5",
+   "inputBytes": 630,
+   "instructions": 14638615,
+   "ms": 107.7,
+   "msHooked": 1333.3,
+   "heapAfterCheckKB": 20149,
+   "outputBytes": 910,
+   "status": 2,
+   "codes": [
+    "TS2322"
+   ]
+  },
+  {
+   "input": "upstream/varianceReferences",
+   "lib": "mini",
+   "inputBytes": 1645,
+   "instructions": 931195,
+   "ms": 12.2,
+   "msHooked": 102.2,
+   "heapAfterCheckKB": 15864,
+   "outputBytes": 1433,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2637"
+   ]
+  },
+  {
+   "input": "upstream/varianceReferences",
+   "lib": "es5",
+   "inputBytes": 1645,
+   "instructions": 14939168,
+   "ms": 119.6,
+   "msHooked": 1322.9,
+   "heapAfterCheckKB": 20260,
+   "outputBytes": 1433,
+   "status": 2,
+   "codes": [
+    "TS2322",
+    "TS2637"
+   ]
+  },
+  {
+   "input": "upstream/voidAsOperator",
+   "lib": "mini",
+   "inputBytes": 265,
+   "instructions": 274184,
+   "ms": 5.9,
+   "msHooked": 32.1,
+   "heapAfterCheckKB": 15318,
+   "outputBytes": 138,
+   "status": 2,
+   "codes": [
+    "TS2873"
+   ]
+  },
+  {
+   "input": "upstream/voidAsOperator",
+   "lib": "es5",
+   "inputBytes": 265,
+   "instructions": 14280563,
+   "ms": 105.2,
+   "msHooked": 1240.1,
+   "heapAfterCheckKB": 19774,
+   "outputBytes": 138,
+   "status": 2,
+   "codes": [
+    "TS2873"
+   ]
+  },
+  {
+   "input": "upstream/vueLikeDataAndPropsInference2",
+   "lib": "mini",
+   "inputBytes": 1221,
+   "instructions": 855340,
+   "ms": 10.7,
+   "msHooked": 79.9,
+   "heapAfterCheckKB": 15728,
+   "outputBytes": 407,
+   "status": 2,
+   "codes": [
+    "TS2304",
+    "TS2339"
+   ]
+  },
+  {
+   "input": "upstream/vueLikeDataAndPropsInference2",
+   "lib": "es5",
+   "inputBytes": 1221,
+   "instructions": 15211428,
+   "ms": 105.7,
+   "msHooked": 1286,
+   "heapAfterCheckKB": 20392,
+   "outputBytes": 0,
+   "status": 0,
+   "codes": []
+  }
+ ]
+}

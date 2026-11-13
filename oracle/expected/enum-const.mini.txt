@@ -1,0 +1,1 @@
+main.ts(3,7): error TS2322: Type 'K.C' is not assignable to type '4'.

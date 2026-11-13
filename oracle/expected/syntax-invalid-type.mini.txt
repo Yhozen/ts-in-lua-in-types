@@ -1,0 +1,2 @@
+main.ts(1,15): error TS1005: ']' expected.
+main.ts(2,15): error TS1110: Type expected.

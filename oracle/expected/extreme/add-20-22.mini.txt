@@ -1,0 +1,1 @@
+main.ts(5,7): error TS2322: Type '"forty-two"' is not assignable to type '42'.

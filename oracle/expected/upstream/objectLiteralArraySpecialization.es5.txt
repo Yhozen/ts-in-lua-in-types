@@ -1,0 +1,1 @@
+main.ts(7,2): error TS7010: 'constructor', which lacks return-type annotation, implicitly has an 'any' return type.
