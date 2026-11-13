@@ -113,11 +113,21 @@ Key ideas, tested or not:
 | P1 front end + IR | lua-in-types `src/aot/front`, `src/aot/ir` | done: all 725 tslua files, 0 failures, <1 s |
 | P1 numbers, strings | lua-in-types `src/aot/ref` | done: ~10M random cases, 0 mismatches |
 | P1 interpreter | lua-in-types `src/aot/ref` | done: 238 + 103 corpus programs, 10,500 fuzz programs |
-| P1 tslua on ref | ts-in-types | met in a scratch run (348/348 byte-identical); to be committed as a gate |
-| P2 type runtime | lua-in-types `src/aot/types` | int64 done (11,835 assertions); tables + heap done (4,724); strings in progress |
-| P3 emitter | lua-in-types `src/aot/emit` | corpus + fuzz: types ≡ ref (output, block count); slice in progress |
-| P4 image + `TS<>` | ts-in-types | one-liner hover shows TS2322 in seconds |
-| P5 extremes | ts-in-types | real lib.es5 (cached parse in the image, or staged builds); inner `Add<20, 22>` |
+| P1 tslua on ref | ts-in-types | done: `vp run ref`, 328/328 per lib mode, fresh and from the boot image |
+| P2 type runtime | lua-in-types `src/aot/types` | done: int64 (11,835 assertions), tables + heap (4,724), strings + compiled patterns (15,382) |
+| P3 emitter | lua-in-types `src/aot/emit` | slice done (234/238 v1 corpus in types); full coverage + start from a snapshot in progress |
+| P4 image + `TS<>` | ts-in-types | one-liner hover shows TS2322 from the boot image, with the real `lib.es5.d.ts` |
+| P5 extremes | ts-in-types | inner `Add<20, 22>`; the image produced by the type checker itself through `tsrs -b` stages |
+
+**Boot image (P1, `vp run boot`)**: the state after loading, enabling
+`lua/sourcecache.lua` (a compiler host that reuses parsed and bound source
+files, like tsgo's parse cache) and one warm-up check. It cuts the es5
+one-liner from 14.27M to 125,934 real-Lua instructions with every output
+unchanged, so the real lib costs about what the stand-in lib does. From the
+image, the es5 one-liner is 167k IR ops, 43k blocks, 10.9k Lua calls, 8.3k
+table writes, 1.5k table allocations (median input ~250k ops). The es5 image:
+42,787 tables, 293,911 entries, 11,660 closures, ~35k distinct strings
+(10.1 MB of JSON).
 
 ## Risks
 
@@ -128,9 +138,11 @@ Key ideas, tested or not:
 - The gains of compiled code were measured on toy loops only.
 - `pairs` order: tslua is written not to depend on it; if it does somewhere,
   the oracle gate finds it.
-- tslua does not reuse the parsed `lib.es5.d.ts` between checks in one Lua
-  state (a warm-up saves 34k instructions, not 14M); the real lib needs its
-  parsed and bound source file cached in the image some other way.
+- Table writes into a hash part grow superlinearly in time in the emitter
+  slice (1,000 writes 0.24 s, 4,000 writes 1.76 s); a check does ~8,300.
+  Being fixed.
+- A Lua call + return costs ~740 instantiations through the trampoline;
+  ~11k per check.
 
 ## Appendix: experiment shapes
 
