@@ -98,6 +98,14 @@ export interface CheckOptions {
   count?: boolean;
   /** Also sample collectgarbage("count") every 65,536 instructions (needs count). */
   peak?: boolean;
+  /**
+   * Hook granularity (default 1, exact). With N > 1 the count is N per hook
+   * call, which can be off by a lot on short tight loops (the hook resonates
+   * with loop length) but is close on long runs; used for the tower.
+   */
+  countEvery?: number;
+  /** Print progress every this many instructions (needs count). */
+  progressEvery?: number;
   /** Lua code run after loading and before the check (e.g. profiling wrappers). */
   prelude?: string;
   /**
@@ -106,6 +114,8 @@ export interface CheckOptions {
    * define global functions __BEFORE and __AFTER, called around the check.
    */
   preload?: string;
+  /** More files for the project, by path relative to /p (the command line must name them). */
+  extraFiles?: Record<string, string>;
   /** Lua code run after the check; its return value comes back as `extra`. */
   epilogue?: string;
 }
@@ -129,11 +139,25 @@ export interface CheckResult {
 
 const CHECK = `
 local files = { [__MAIN_PATH] = __MAIN, [__LIB_PATH] = __LIB }
+for i = 1, __EXTRA_N do files[_G["__EXTRA_PATH_" .. i]] = _G["__EXTRA_" .. i] end
 local args = {}
 for a in string.gmatch(__ARGS, "[^\\n]+") do args[#args + 1] = a end
 local n, peak = 0, 0
 local hook
-if __PEAK then
+local every, progress, nextReport = __COUNT_EVERY, __PROGRESS, __PROGRESS
+if every > 1 or progress > 0 then
+  hook = function()
+    n = n + every
+    if __PEAK and (every > 1 or n & 65535 == 0) then
+      local m = collectgarbage("count")
+      if m > peak then peak = m end
+    end
+    if progress > 0 and n >= nextReport then
+      print(string.format("  ... %d M instructions, heap %d MB", n // 1000000, collectgarbage("count") // 1024))
+      nextReport = nextReport + progress
+    end
+  end
+elseif __PEAK then
   hook = function()
     n = n + 1
     if n & 65535 == 0 then
@@ -146,7 +170,7 @@ else
 end
 local before, after = rawget(_G, "__BEFORE"), rawget(_G, "__AFTER")
 if before then before() end
-if __COUNT then debug.sethook(hook, "", 1) end
+if __COUNT then debug.sethook(hook, "", every) end
 local ok, out, status = pcall(__TSC.check, files, args)
 if __COUNT then debug.sethook() end
 if after then after() end
@@ -196,11 +220,19 @@ async function checkIn(
     if (options.prelude) await lua.doString(options.prelude);
     lua.global.set("__MAIN_PATH", "/p/main.ts");
     lua.global.set("__MAIN", source);
+    const extra = Object.entries(options.extraFiles ?? {});
+    lua.global.set("__EXTRA_N", extra.length);
+    extra.forEach(([path, text], i) => {
+      lua.global.set(`__EXTRA_PATH_${i + 1}`, `/p/${path}`);
+      lua.global.set(`__EXTRA_${i + 1}`, text);
+    });
     lua.global.set("__LIB_PATH", `/p/${lib.file}`);
     lua.global.set("__LIB", libSource);
     lua.global.set("__ARGS", args.join("\n"));
     lua.global.set("__COUNT", !!options.count);
     lua.global.set("__PEAK", !!options.peak);
+    lua.global.set("__COUNT_EVERY", options.countEvery ?? 1);
+    lua.global.set("__PROGRESS", options.progressEvery ?? 0);
     const t0 = performance.now();
     const [output, status, n, peak, after] = (await lua.doString(CHECK)) as [
       string,
@@ -210,7 +242,7 @@ async function checkIn(
       number,
     ];
     const ms = performance.now() - t0;
-    const extra = options.epilogue ? String(await lua.doString(options.epilogue)) : undefined;
+    const tail = options.epilogue ? String(await lua.doString(options.epilogue)) : undefined;
     return {
       output,
       status,
@@ -219,7 +251,7 @@ async function checkIn(
       heapAfterCheckKB: after,
       ...(options.count ? { instructions: n } : {}),
       ...(options.peak ? { peakKB: peak } : {}),
-      ...(extra !== undefined ? { extra } : {}),
+      ...(tail !== undefined ? { extra: tail } : {}),
     };
   } finally {
     lua.global.close();

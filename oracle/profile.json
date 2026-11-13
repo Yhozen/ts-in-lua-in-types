@@ -1,0 +1,397 @@
+{
+ "generated": "by scripts/profile.ts (vp run profile); do not edit",
+ "mini": {
+  "runs": 328,
+  "calls": {
+   "assert": 12004,
+   "getmetatable": 316130,
+   "ipairs": 216809,
+   "math.max": 14921,
+   "math.min": 86599,
+   "math.sqrt": 2528,
+   "math.tointeger": 1967,
+   "next": 6744,
+   "pairs": 315793,
+   "pcall": 656,
+   "rawget": 6545,
+   "require": 656,
+   "select": 129788,
+   "setmetatable": 501901,
+   "string.byte": 1147454,
+   "string.char": 126086,
+   "string.find": 161876,
+   "string.gmatch": 1640,
+   "string.gsub": 36783,
+   "string.lower": 1559,
+   "string.match": 993,
+   "string.pack": 159262,
+   "string.sub": 152504,
+   "table.concat": 56215,
+   "table.pack": 1374,
+   "table.sort": 8441,
+   "table.unpack": 1014,
+   "tonumber": 2999,
+   "tostring": 23671,
+   "type": 28781,
+   "utf8.len": 1207,
+   "utf8.char": 260,
+   "string.format": 951,
+   "string.unpack": 106,
+   "table.insert": 208,
+   "math.floor": 6000,
+   "math.type": 107,
+   "math.ceil": 5708,
+   "math.abs": 5,
+   "table.remove": 37,
+   "string.rep": 2
+  },
+  "callRuns": {
+   "assert": 320,
+   "getmetatable": 328,
+   "ipairs": 328,
+   "math.max": 328,
+   "math.min": 328,
+   "math.sqrt": 316,
+   "math.tointeger": 275,
+   "next": 328,
+   "pairs": 328,
+   "pcall": 328,
+   "rawget": 254,
+   "require": 328,
+   "select": 328,
+   "setmetatable": 328,
+   "string.byte": 328,
+   "string.char": 328,
+   "string.find": 328,
+   "string.gmatch": 328,
+   "string.gsub": 328,
+   "string.lower": 328,
+   "string.match": 328,
+   "string.pack": 316,
+   "string.sub": 328,
+   "table.concat": 328,
+   "table.pack": 257,
+   "table.sort": 328,
+   "table.unpack": 254,
+   "tonumber": 275,
+   "tostring": 262,
+   "type": 328,
+   "utf8.len": 227,
+   "utf8.char": 48,
+   "string.format": 197,
+   "string.unpack": 29,
+   "table.insert": 90,
+   "math.floor": 75,
+   "math.type": 17,
+   "math.ceil": 49,
+   "math.abs": 2,
+   "table.remove": 12,
+   "string.rep": 2
+  },
+  "strArgs": {
+   "string.byte": {
+    "calls": 1147454,
+    "avgLen": 500.1,
+    "maxLen": 6103
+   },
+   "string.char": {
+    "calls": 126086,
+    "avgLen": 1,
+    "maxLen": 1
+   },
+   "string.find": {
+    "calls": 161876,
+    "avgLen": 27.8,
+    "maxLen": 6103
+   },
+   "string.gmatch": {
+    "calls": 1640,
+    "avgLen": 8043,
+    "maxLen": 35746
+   },
+   "string.gsub": {
+    "calls": 36783,
+    "avgLen": 16.6,
+    "maxLen": 182
+   },
+   "string.lower": {
+    "calls": 1559,
+    "avgLen": 7.4,
+    "maxLen": 20
+   },
+   "string.match": {
+    "calls": 993,
+    "avgLen": 8.3,
+    "maxLen": 15
+   },
+   "string.sub": {
+    "calls": 152504,
+    "avgLen": 225,
+    "maxLen": 6103
+   },
+   "string.rep": {
+    "calls": 2,
+    "avgLen": 1,
+    "maxLen": 1
+   }
+  },
+  "patterns": {
+   "find\u0000/[^/]*$": 1312,
+   "find\u0000[A-Z]": 44936,
+   "find\u0000[-ÿ]": 45588,
+   "find\u0000^%a%a$": 328,
+   "find\u0000^%a%a%a%a$": 328,
+   "find\u0000^%a%a%a?$": 328,
+   "find\u0000^%a+$": 328,
+   "find\u0000^%d%d%d$": 328,
+   "find\u0000^%d%w%w%w$": 328,
+   "gmatch\u0000%S+": 1312,
+   "gmatch\u0000([^-]*)-": 328,
+   "gsub\u0000[A-Z]": 34768,
+   "gsub\u0000^0+": 1017,
+   "gsub\u0000_": 328,
+   "gsub\u0000{(%d+)}": 662,
+   "match\u0000[^/]*$": 328,
+   "match\u0000^(.*/)": 656,
+   "find\u0000[^0-9]": 1901,
+   "gsub\u0000%.": 4,
+   "gsub\u00000+$": 4,
+   "match\u0000^(.-)e(%-?)(%d+)$": 5,
+   "match\u0000^([%d%.]+)e([-+]%d+)$": 2,
+   "find\u0000[^01]": 1,
+   "match\u0000^(-?)([%d%.]+)e([-+]%d+)$": 2
+  },
+  "formats": {
+   "%.17g": 20,
+   "%d": 921,
+   "%.0e": 4,
+   "%.1e": 3,
+   "%.2e": 1,
+   "... %d more ...": 2
+  },
+  "packFormats": {
+   "pack\u0000<I4": 144178,
+   "pack\u0000<i8": 15084,
+   "unpack\u0000<d": 106
+  },
+  "gsubRepl": {
+   "function": 35430,
+   "string": 1353
+  },
+  "plainFind": 66170,
+  "metamethods": {
+   "index Lua": 14215
+  },
+  "metatableFields": {
+   "__eq function": 64522,
+   "__index function": 762,
+   "__index table": 501139,
+   "__name string": 361931,
+   "__tostring function": 65202
+  },
+  "pcallFailed": 0,
+  "maxDepth": {
+   "max": 541,
+   "input": "extreme/deep-recursion"
+  },
+  "maxLuaDepth": {
+   "max": 540,
+   "input": "extreme/deep-recursion"
+  },
+  "floatsFormatted": 28,
+  "floatsFromTonumber": 13,
+  "lazyRequires": {
+   "tslua.locale.language_generated": 328
+  },
+  "touched": {},
+  "perturbed": []
+ },
+ "es5": {
+  "runs": 45,
+  "calls": {
+   "assert": 125997,
+   "getmetatable": 262007,
+   "ipairs": 103205,
+   "math.max": 6749,
+   "math.min": 54099,
+   "math.sqrt": 352,
+   "math.tointeger": 233,
+   "next": 2190,
+   "pairs": 166376,
+   "pcall": 90,
+   "rawget": 648,
+   "require": 90,
+   "select": 343639,
+   "setmetatable": 1458161,
+   "string.byte": 12499760,
+   "string.char": 62188,
+   "string.find": 107857,
+   "string.format": 142,
+   "string.gmatch": 225,
+   "string.gsub": 5041,
+   "string.lower": 297,
+   "string.match": 135,
+   "string.pack": 119125,
+   "string.sub": 537271,
+   "table.concat": 40441,
+   "table.pack": 135,
+   "table.sort": 2685,
+   "table.unpack": 100,
+   "tonumber": 364,
+   "tostring": 20770,
+   "type": 21196,
+   "utf8.len": 100,
+   "math.type": 4,
+   "table.insert": 29,
+   "string.unpack": 25,
+   "math.ceil": 4193,
+   "math.floor": 4215,
+   "utf8.char": 92,
+   "table.remove": 1
+  },
+  "callRuns": {
+   "assert": 45,
+   "getmetatable": 45,
+   "ipairs": 45,
+   "math.max": 45,
+   "math.min": 45,
+   "math.sqrt": 44,
+   "math.tointeger": 45,
+   "next": 45,
+   "pairs": 45,
+   "pcall": 45,
+   "rawget": 33,
+   "require": 45,
+   "select": 45,
+   "setmetatable": 45,
+   "string.byte": 45,
+   "string.char": 45,
+   "string.find": 45,
+   "string.format": 45,
+   "string.gmatch": 45,
+   "string.gsub": 45,
+   "string.lower": 45,
+   "string.match": 45,
+   "string.pack": 44,
+   "string.sub": 45,
+   "table.concat": 45,
+   "table.pack": 33,
+   "table.sort": 45,
+   "table.unpack": 33,
+   "tonumber": 45,
+   "tostring": 34,
+   "type": 45,
+   "utf8.len": 30,
+   "math.type": 1,
+   "table.insert": 11,
+   "string.unpack": 8,
+   "math.ceil": 6,
+   "math.floor": 7,
+   "utf8.char": 8,
+   "table.remove": 1
+  },
+  "strArgs": {
+   "string.byte": {
+    "calls": 12499760,
+    "avgLen": 210734.2,
+    "maxLen": 218947
+   },
+   "string.char": {
+    "calls": 62188,
+    "avgLen": 1,
+    "maxLen": 1
+   },
+   "string.find": {
+    "calls": 107857,
+    "avgLen": 8099.2,
+    "maxLen": 218947
+   },
+   "string.gmatch": {
+    "calls": 225,
+    "avgLen": 8043,
+    "maxLen": 35746
+   },
+   "string.gsub": {
+    "calls": 5041,
+    "avgLen": 16.2,
+    "maxLen": 153
+   },
+   "string.lower": {
+    "calls": 297,
+    "avgLen": 5.3,
+    "maxLen": 17
+   },
+   "string.match": {
+    "calls": 135,
+    "avgLen": 8,
+    "maxLen": 14
+   },
+   "string.sub": {
+    "calls": 537271,
+    "avgLen": 131089.7,
+    "maxLen": 218947
+   }
+  },
+  "patterns": {
+   "find\u0000/[^/]*$": 180,
+   "find\u0000[A-Z]": 6165,
+   "find\u0000[^0-9]": 269,
+   "find\u0000[-ÿ]": 6231,
+   "find\u0000^%a%a$": 45,
+   "find\u0000^%a%a%a%a$": 45,
+   "find\u0000^%a%a%a?$": 45,
+   "find\u0000^%a+$": 45,
+   "find\u0000^%d%d%d$": 45,
+   "find\u0000^%d%w%w%w$": 45,
+   "gmatch\u0000%S+": 180,
+   "gmatch\u0000([^-]*)-": 45,
+   "gsub\u0000[A-Z]": 4770,
+   "gsub\u0000^0+": 164,
+   "gsub\u0000_": 45,
+   "gsub\u0000{(%d+)}": 62,
+   "match\u0000[^/]*$": 45,
+   "match\u0000^(.*/)": 90
+  },
+  "formats": {
+   "%d": 137,
+   "%.17g": 3,
+   "... %d more ...": 2
+  },
+  "packFormats": {
+   "pack\u0000<I4": 115180,
+   "pack\u0000<i8": 3945,
+   "unpack\u0000<d": 25
+  },
+  "gsubRepl": {
+   "function": 4832,
+   "string": 209
+  },
+  "plainFind": 94742,
+  "metamethods": {
+   "index Lua": 1594
+  },
+  "metatableFields": {
+   "__eq function": 571162,
+   "__index function": 71,
+   "__index table": 1458090,
+   "__name string": 877043,
+   "__tostring function": 571254
+  },
+  "pcallFailed": 0,
+  "maxDepth": {
+   "max": 541,
+   "input": "extreme/deep-recursion"
+  },
+  "maxLuaDepth": {
+   "max": 540,
+   "input": "extreme/deep-recursion"
+  },
+  "floatsFormatted": 3,
+  "floatsFromTonumber": 0,
+  "lazyRequires": {
+   "tslua.locale.language_generated": 45
+  },
+  "touched": {},
+  "perturbed": []
+ }
+}
