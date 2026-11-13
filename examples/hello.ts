@@ -1,7 +1,7 @@
 // TypeScript 7 (tslua) running inside the type checker. Hover a name to run
 // tsc on the source in quotes, with the real lib.es5.d.ts; the hover shows
 // what tsc prints. Needs the image: `vp run build` (once, ~10 s). Each hover
-// takes tens of seconds and ~5 GB; `node scripts/hover.ts examples/hello.ts Out`
+// takes 5-20 s and 8-10 GB; `node scripts/hover.ts examples/hello.ts Out`
 // does the same from a terminal.
 import type { TS, TSMini } from "../src/index.ts";
 

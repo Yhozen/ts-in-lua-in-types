@@ -6,7 +6,7 @@ The TypeScript 7 compiler, running inside the TypeScript type checker.
 import type { TS } from "./src/index.ts";
 
 type Out = TS<"const x: number = 'hello';">;
-// goal: "main.ts(1,7): error TS2322: Type 'string' is not assignable to type 'number'.\n"
+// hover: "main.ts(1,7): error TS2322: Type 'string' is not assignable to type 'number'.\n"
 ```
 
 `TS<Source>` runs the real TypeScript 7 checker on a `main.ts` that holds
@@ -14,27 +14,26 @@ type Out = TS<"const x: number = 'hello';">;
 runs at check time. The checker is [tslua](https://github.com/Yhozen/tslua), a
 Lua 5.4 port of typescript-go that matches tsgo's diagnostics byte for byte.
 [lua-in-types](vendor/lua-in-types) v2 compiles tslua's Lua ahead of time
-to type aliases (one per basic-block segment, 390k of them), and tsrs, a
+to type aliases (one per basic-block segment, ~400k of them), and tsrs, a
 TypeScript 7 type checker, evaluates them. It is an experiment in how far the
 type system goes, not a tool. `docs/PLAN.md` has the plan and the
 measurements behind it.
 
 ## Where it stands
 
-- **The compiler runs in types.** All 13,279 compiled functions of tslua
-  load from a boot image (tslua loaded, the lib parsed and bound, one warm-up
-  check), and each check runs from there in the type checker.
-- **One input checks end to end today:** `const el = <div>hello</div>;`
-  (a parse error) prints exactly what real Lua prints, in 154 budget chunks
-  (102M instantiations, 4.3 s of checking, 4 GB).
-- **Every other input stops** with an error that names what the type-level
-  runtime does not do yet. Mostly floating-point arithmetic (`floating-point
-  t.arith is not supported in types`: the float prelude is being written), plus
-  `t.utf8`, `t.tonumber_base` and `t.str2number`. The one-liner gets through
-  87% of its reference run (279 chunks, 283M instantiations, 10 s, 4.2 GB),
-  then stops at `checkerpool.lua:103`.
-- The gate (`vp run gate:types`) compares each check with `oracle/expected/`
-  and shows how far it got.
+- **It works.** `TS<"const x: number = 'hello';">` hovers as TS2322 with the
+  real `lib.es5.d.ts`, computed by tslua in the type checker: 20 s in a
+  fresh editor session.
+- All 13,508 compiled functions of tslua (the compiler plus lua-in-types'
+  Lua prelude for floats and other slow paths) load from a boot image:
+  tslua loaded, the lib parsed and bound, one warm-up check. Each check runs
+  from there.
+- The gate (`vp run gate:types`) checks oracle inputs through the CLI and
+  compares the output with `oracle/expected/` byte for byte. The 20 inputs
+  cheapest on the reference pass in both lib modes. That covers syntax
+  errors, clean programs, TS2322, upstream TypeScript cases and the
+  one-liner. The other ~300 inputs have not been run in types yet
+  (`-- --all`).
 
 ## Use it
 
@@ -75,11 +74,12 @@ the output comes back as bytes too.
 
 | step                 | cost                                                                                                                    |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `vp run build`       | 8.6 s: `tslua.prog.d.ts` 256 MB (the code, shared), `tslua.es5.d.ts` 23 MB and `tslua.mini.d.ts` 11 MB (the boot heaps) |
+| `vp run build`       | ~10 s: `tslua.prog.d.ts` 263 MB (the code, shared), `tslua.es5.d.ts` 23 MB and `tslua.mini.d.ts` 11 MB (the boot heaps) |
 | loading the image    | ~2 s to parse; only what runs is resolved (declaration files, `skipLibCheck`)                                           |
-| the one-liner, CLI   | 279 chunks to the float stop: 283M instantiations, 10 s, 4.2 GB peak (mini lib)                                         |
-| the one-liner, hover | 15 s to the float stop (es5), 10 s (mini); ~8 GB peak with several hovers in one session                                |
-| per IR op            | ~2.4k instantiations, ~90 µs (the reference runs 133k-167k ops for the one-liner)                                       |
+| the one-liner, CLI   | es5: 862 chunks, 435M instantiations, 26 s of checking, 3.9 GB peak; mini: 661 chunks, 351M, 16 s                       |
+| the one-liner, hover | 20 s (es5), 14 s (mini); 8-10 GB peak with five hovers in one session                                                   |
+| a syntax error, CLI  | ~280 chunks, 13-50M instantiations, 2-3 s                                                                               |
+| per IR op            | ~2.6k instantiations, ~150 µs (the reference runs 133k-167k ops for the one-liner)                                      |
 
 A hover refuels the checker's 5M-instantiation budget before every chunk
 from a pool of literal type nodes (lua-in-types' `Fuel`, 4,200 x 64). Each
