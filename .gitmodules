@@ -1,0 +1,6 @@
+[submodule "vendor/lua-in-types"]
+	path = vendor/lua-in-types
+	url = ../lua-in-types
+[submodule "vendor/tslua"]
+	path = vendor/tslua
+	url = https://github.com/Yhozen/tslua.git
