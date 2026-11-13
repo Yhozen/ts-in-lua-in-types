@@ -51,8 +51,9 @@ Type-checker experiments in tsrs (Apple M5 Pro):
 | One 5.7 MB inferred declaration | TS7056 (too long to serialize); 60 declarations of ~85 KB are fine |
 | 150k block aliases + 150k interfaces + a 150k-member lookup interface (61 MB `.d.ts`) | parses in 0.52 s, checks in 3.5 s, 1.39 GB (CLI only) |
 
-Experiment generators: `vendor/lua-in-types/.run/tslua-plan/` is git-ignored
-there; copies of the shapes are in this file's appendix.
+The generators for these experiments are in `experiments/` (`gen-floor.mjs`,
+`gen-threaded.mjs`, `scale/gen.mjs`, `stages/gen.mjs`); the core shapes are in
+this file's appendix.
 
 ## Architecture
 
