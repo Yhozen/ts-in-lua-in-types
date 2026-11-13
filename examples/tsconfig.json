@@ -1,0 +1,9 @@
+{
+  // The examples and src/index.ts load the image (image/, `vp run build`):
+  // ~270 MB of declarations, ~4 GB in tsrs. Kept out of the root project
+  // (`vp run check`); VS Code picks this project for files under examples/.
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "noUnusedLocals": false },
+  "include": ["*.ts", "../src"],
+  "exclude": []
+}
