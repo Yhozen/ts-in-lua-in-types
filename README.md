@@ -43,13 +43,46 @@ vp run boot     # image/boot.<lib>.json: tslua booted on the reference (once, ~1
 vp run build    # image/tslua.*.d.ts: the compiled program (~10 s, 290 MB)
 ```
 
-Open `examples/hello.ts` in VS Code. `.vscode/settings.json` points the
-TypeScript 7 extension at `tsdk/`, which starts tsrs with `TSRS_FAST=1`.
-Hover `Out`, `Clean`, `TwoErrors`, `Jsx` or `OutMini`. From a terminal:
+### In VS Code
+
+1. Install the recommended extension, **TypeScript (Native Preview)**
+   (`TypeScriptTeam.native-preview`, listed in `.vscode/extensions.json`).
+2. Open the repository folder and trust the workspace. Workspace settings
+   only apply to a trusted workspace.
+3. `.vscode/settings.json` already sets `"js/ts.experimental.useTsgo": true`
+   and `"js/ts.tsdk.path": "./tsdk"`. `tsdk/tsgo` is a two-line wrapper that
+   starts tsrs's language server (`node_modules/tsrs/tsdk/tsgo`) with
+   `TSRS_FAST=1`, as in gpt2-in-types. If VS Code asks which TypeScript to
+   use, or the status bar shows another version, run **TypeScript: Select
+   TypeScript Version** and choose **Use Workspace Version**. That step is
+   untested here: the server was driven from a terminal (below), not
+   clicked through in VS Code.
+4. Open `examples/demo.ts` (or `examples/hello.ts`). On open, the server
+   computes the file's diagnostics, which evaluates every `TS<...>` in it
+   (~1.5 minutes for `hello.ts`). Hovers wait behind that and then take
+   5-30 s each.
+5. Hover a type name. The comment above each one is the expected output.
+
+Expect the language server to use 8-10 GB. `examples/` has its own
+`tsconfig.json`; the image is excluded from search and from `vp check`.
+
+From a terminal, `scripts/hover.ts` drives `tsrs --lsp` the same way, one
+session for all the names:
 
 ```sh
-node scripts/hover.ts examples/hello.ts Out Jsx   # tsrs --lsp, like an editor
+node scripts/hover.ts examples/demo.ts TypeError Inference ImplicitAny
+HOVER_DIAGNOSTICS=1 node scripts/hover.ts examples/hello.ts Out   # diagnostics first, as an editor does
 ```
+
+| file       | hover               | time | output                                                                                                   |
+| ---------- | ------------------- | ---: | -------------------------------------------------------------------------------------------------------- |
+| `hello.ts` | `Out`               | 20 s | `main.ts(1,7): error TS2322: Type 'string' is not assignable to type 'number'.`                          |
+| `hello.ts` | `OutMini`           | 13 s | the same, with the stand-in lib                                                                          |
+| `demo.ts`  | `TypeError`         | 14 s | `main.ts(1,5): error TS2322: ...`                                                                        |
+| `demo.ts`  | `UnusedExpectError` | 16 s | `main.ts(1,1): error TS2578: Unused '@ts-expect-error' directive.`                                       |
+| `demo.ts`  | `Inference`         | 30 s | `main.ts(2,9): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.` |
+| `demo.ts`  | `PossiblyUndefined` | 13 s | `main.ts(1,46): error TS18048: 's' is possibly 'undefined'.`                                             |
+| `demo.ts`  | `ImplicitAny`       |  6 s | `main.ts(1,12): error TS7006: Parameter 'x' implicitly has an 'any' type.`                               |
 
 `examples/add.ts` is the extreme case, `tsc` evaluating a type-level
 `Add<20, 22>`. It is ~16x the one-liner's work, and it does not finish yet.
@@ -77,9 +110,8 @@ the output comes back as bytes too.
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `vp run build`       | ~10 s: `tslua.prog.d.ts` 263 MB (the code, shared), `tslua.es5.d.ts` 23 MB and `tslua.mini.d.ts` 11 MB (the boot heaps) |
 | loading the image    | ~2 s to parse; only what runs is resolved (declaration files, `skipLibCheck`)                                           |
-| the one-liner, CLI   | es5: 862 chunks, 435M instantiations, 26 s of checking, 3.9 GB peak; mini: 661 chunks, 351M, 16 s                       |
+| the one-liner, CLI   | es5: 5,383 chunks, 439M instantiations, 19 s of checking, 7.2 GB peak; mini: 4,129 chunks, 354M, 15 s                   |
 | the one-liner, hover | 20 s (es5), 14 s (mini); 8-10 GB peak with five hovers in one session                                                   |
-| a syntax error, CLI  | ~280 chunks, 13-50M instantiations, 2-3 s                                                                               |
 | per IR op            | ~2.6k instantiations, ~150 µs (the reference runs 133k-167k ops for the one-liner)                                      |
 
 A hover refuels the checker's 5M-instantiation budget before every chunk
