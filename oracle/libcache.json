@@ -1,0 +1,5282 @@
+{
+ "generated": "by scripts/libcache.ts (vp run libcache); do not edit",
+ "counting": "cached = real Lua instructions of tsc.check after require('sourcecache').enable() and a warm-up check of an empty main.ts in the same state; cold = oracle/manifest.json (fresh state, no cache)",
+ "summary": {
+  "mini": {
+   "inputs": 328,
+   "outputsChanged": [],
+   "chainOutputsChanged": [],
+   "oneLiner": {
+    "cold": 253614,
+    "cached": 100308
+   },
+   "coldMedian": 323811,
+   "cachedMedian": 170505,
+   "cachedMin": 39473,
+   "cachedMax": 45640841
+  },
+  "es5": {
+   "inputs": 328,
+   "outputsChanged": [],
+   "chainOutputsChanged": [],
+   "oneLiner": {
+    "cold": 14272908,
+    "cached": 125934
+   },
+   "coldMedian": 14339186,
+   "cachedMedian": 192212,
+   "cachedMin": 39370,
+   "cachedMax": 51261581
+  }
+ },
+ "rows": [
+  {
+   "input": "assign-any-unknown",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313743,
+   "cached": 160437
+  },
+  {
+   "input": "assign-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253614,
+   "cached": 100308
+  },
+  {
+   "input": "assign-callback-bivariance",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 404663,
+   "cached": 251357
+  },
+  {
+   "input": "assign-enum-number",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 312907,
+   "cached": 159601
+  },
+  {
+   "input": "assign-function-params",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 328125,
+   "cached": 174819
+  },
+  {
+   "input": "assign-function-return",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 296102,
+   "cached": 142796
+  },
+  {
+   "input": "assign-index-signature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341360,
+   "cached": 188054
+  },
+  {
+   "input": "assign-never",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298763,
+   "cached": 145457
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300352,
+   "cached": 147046
+  },
+  {
+   "input": "assign-object-excess",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324303,
+   "cached": 170997
+  },
+  {
+   "input": "assign-object-literal-nested",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 442904,
+   "cached": 289598
+  },
+  {
+   "input": "assign-object-missing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 301133,
+   "cached": 147827
+  },
+  {
+   "input": "assign-optional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 380284,
+   "cached": 226978
+  },
+  {
+   "input": "assign-readonly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405001,
+   "cached": 251695
+  },
+  {
+   "input": "assign-structural-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334433,
+   "cached": 181127
+  },
+  {
+   "input": "assign-symbol-bigint-like",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307397,
+   "cached": 154091
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 439938,
+   "cached": 286632
+  },
+  {
+   "input": "assign-variance-arrays",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 371353,
+   "cached": 218047
+  },
+  {
+   "input": "assign-void",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 309273,
+   "cached": 155967
+  },
+  {
+   "input": "assign-weak-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 336184,
+   "cached": 182878
+  },
+  {
+   "input": "class-abstract",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289755,
+   "cached": 136449
+  },
+  {
+   "input": "class-accessor",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 353666,
+   "cached": 200360
+  },
+  {
+   "input": "class-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 358985,
+   "cached": 205679
+  },
+  {
+   "input": "class-generic-constraint-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311260,
+   "cached": 157954
+  },
+  {
+   "input": "class-implements",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285045,
+   "cached": 131739
+  },
+  {
+   "input": "class-index-signature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 276897,
+   "cached": 123591
+  },
+  {
+   "input": "class-override",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 359135,
+   "cached": 205829
+  },
+  {
+   "input": "class-private-protected",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368535,
+   "cached": 215229
+  },
+  {
+   "input": "class-static",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 318029,
+   "cached": 164723
+  },
+  {
+   "input": "class-strict-property-init",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 278218,
+   "cached": 124912
+  },
+  {
+   "input": "class-super-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319230,
+   "cached": 165924
+  },
+  {
+   "input": "class-this-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 355759,
+   "cached": 202453
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 580921,
+   "cached": 427615
+  },
+  {
+   "input": "clean-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253088,
+   "cached": 99782
+  },
+  {
+   "input": "clean-classes",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 464969,
+   "cached": 311663
+  },
+  {
+   "input": "clean-comments-only",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 237963,
+   "cached": 84657
+  },
+  {
+   "input": "clean-control-flow",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 528143,
+   "cached": 374837
+  },
+  {
+   "input": "clean-declare",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313582,
+   "cached": 160276
+  },
+  {
+   "input": "clean-destructuring",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 668618,
+   "cached": 515312
+  },
+  {
+   "input": "clean-empty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 235955,
+   "cached": 80306
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 322029,
+   "cached": 168723
+  },
+  {
+   "input": "clean-functions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 327426,
+   "cached": 174120
+  },
+  {
+   "input": "clean-generics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 551842,
+   "cached": 398536
+  },
+  {
+   "input": "clean-labeled-loops",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 337287,
+   "cached": 183981
+  },
+  {
+   "input": "clean-mapped-conditional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 382604,
+   "cached": 229298
+  },
+  {
+   "input": "clean-object-methods",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 328001,
+   "cached": 174695
+  },
+  {
+   "input": "clean-overloads-guards",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 365155,
+   "cached": 211849
+  },
+  {
+   "input": "clean-type-level",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 755636,
+   "cached": 602330
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299516,
+   "cached": 146210
+  },
+  {
+   "input": "clean-unions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 420862,
+   "cached": 267556
+  },
+  {
+   "input": "conditional-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 297153,
+   "cached": 143847
+  },
+  {
+   "input": "conditional-builtin-utils",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 471277,
+   "cached": 317971
+  },
+  {
+   "input": "conditional-deferred",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286879,
+   "cached": 133573
+  },
+  {
+   "input": "conditional-distributive",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 472786,
+   "cached": 319480
+  },
+  {
+   "input": "conditional-infer-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 364799,
+   "cached": 211493
+  },
+  {
+   "input": "conditional-infer",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 372171,
+   "cached": 218865
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283181,
+   "cached": 129875
+  },
+  {
+   "input": "enum-const",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 309083,
+   "cached": 155777
+  },
+  {
+   "input": "enum-declaration-merge",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 257833,
+   "cached": 104527
+  },
+  {
+   "input": "enum-numeric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324951,
+   "cached": 171645
+  },
+  {
+   "input": "enum-string",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286910,
+   "cached": 133604
+  },
+  {
+   "input": "error-abstract-instantiation",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320280,
+   "cached": 166974
+  },
+  {
+   "input": "error-arg-count",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277843,
+   "cached": 124537
+  },
+  {
+   "input": "error-await-outside-async",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 250828,
+   "cached": 97522
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300457,
+   "cached": 147151
+  },
+  {
+   "input": "error-comparison-no-overlap",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298925,
+   "cached": 145619
+  },
+  {
+   "input": "error-const-assign",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265356,
+   "cached": 112050
+  },
+  {
+   "input": "error-delete-non-optional",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283101,
+   "cached": 129795
+  },
+  {
+   "input": "error-duplicate-property",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289442,
+   "cached": 136136
+  },
+  {
+   "input": "error-generic-arity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324448,
+   "cached": 171142
+  },
+  {
+   "input": "error-implicit-any",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305195,
+   "cached": 151889
+  },
+  {
+   "input": "error-index-implicit-any",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298848,
+   "cached": 145542
+  },
+  {
+   "input": "error-label-break",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 260242,
+   "cached": 106936
+  },
+  {
+   "input": "error-missing-return-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 262475,
+   "cached": 109169
+  },
+  {
+   "input": "error-not-callable",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291809,
+   "cached": 138503
+  },
+  {
+   "input": "error-object-possibly-undefined",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293573,
+   "cached": 140267
+  },
+  {
+   "input": "error-operator-types",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333689,
+   "cached": 180383
+  },
+  {
+   "input": "error-property-not-exist",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289549,
+   "cached": 136243
+  },
+  {
+   "input": "error-redeclare",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 303180,
+   "cached": 149874
+  },
+  {
+   "input": "error-satisfies",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 351743,
+   "cached": 198437
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 271874,
+   "cached": 118568
+  },
+  {
+   "input": "error-switch-case-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277441,
+   "cached": 124135
+  },
+  {
+   "input": "error-this-implicit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293803,
+   "cached": 140497
+  },
+  {
+   "input": "error-type-as-value",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 271405,
+   "cached": 118099
+  },
+  {
+   "input": "error-unicode-position",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300285,
+   "cached": 146979
+  },
+  {
+   "input": "error-unique-symbol-and-readonly-array",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 297543,
+   "cached": 144237
+  },
+  {
+   "input": "error-unreachable-like",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265253,
+   "cached": 111947
+  },
+  {
+   "input": "error-unused-ts-expect",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284462,
+   "cached": 131156
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285475,
+   "cached": 132169
+  },
+  {
+   "input": "error-value-as-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282300,
+   "cached": 128994
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1362834,
+   "cached": 1209528
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 45794147,
+   "cached": 45640841
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 4118757,
+   "cached": 3965451
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 23259827,
+   "cached": 23106521
+  },
+  {
+   "input": "generic-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433951,
+   "cached": 280645
+  },
+  {
+   "input": "generic-const-type-param",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 377328,
+   "cached": 224022
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 392609,
+   "cached": 239303
+  },
+  {
+   "input": "generic-default",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319724,
+   "cached": 166418
+  },
+  {
+   "input": "generic-higher-order",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 442874,
+   "cached": 289568
+  },
+  {
+   "input": "generic-identity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334855,
+   "cached": 181549
+  },
+  {
+   "input": "generic-infer-from-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 373158,
+   "cached": 219852
+  },
+  {
+   "input": "generic-inference-callback",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 505481,
+   "cached": 352175
+  },
+  {
+   "input": "generic-inference-multiple",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 425312,
+   "cached": 272006
+  },
+  {
+   "input": "generic-keyof-constraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 439446,
+   "cached": 286140
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279613,
+   "cached": 126307
+  },
+  {
+   "input": "generic-unresolved-error",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321734,
+   "cached": 168428
+  },
+  {
+   "input": "indexed-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341784,
+   "cached": 188478
+  },
+  {
+   "input": "indexed-union-key",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 293932,
+   "cached": 140626
+  },
+  {
+   "input": "interface-call-construct",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 361506,
+   "cached": 208200
+  },
+  {
+   "input": "interface-extends-conflict",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 281287,
+   "cached": 127981
+  },
+  {
+   "input": "interface-merge",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 304927,
+   "cached": 151621
+  },
+  {
+   "input": "intersection-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 403010,
+   "cached": 249704
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284088,
+   "cached": 130782
+  },
+  {
+   "input": "keyof-typeof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 318743,
+   "cached": 165437
+  },
+  {
+   "input": "literal-as-const",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 392906,
+   "cached": 239600
+  },
+  {
+   "input": "literal-boolean",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 281488,
+   "cached": 128182
+  },
+  {
+   "input": "literal-const-let",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 306812,
+   "cached": 153506
+  },
+  {
+   "input": "literal-enum-member",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311616,
+   "cached": 158310
+  },
+  {
+   "input": "literal-fresh-excess",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345660,
+   "cached": 192354
+  },
+  {
+   "input": "literal-numeric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 338509,
+   "cached": 185203
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307980,
+   "cached": 154674
+  },
+  {
+   "input": "literal-widening-object",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 411682,
+   "cached": 258376
+  },
+  {
+   "input": "lookup-element-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 342210,
+   "cached": 188904
+  },
+  {
+   "input": "mapped-custom-modifiers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 437582,
+   "cached": 284276
+  },
+  {
+   "input": "mapped-filter-keys",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 383374,
+   "cached": 230068
+  },
+  {
+   "input": "mapped-key-remap",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 447524,
+   "cached": 294218
+  },
+  {
+   "input": "mapped-partial-required",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 347415,
+   "cached": 194109
+  },
+  {
+   "input": "mapped-pick-omit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 370978,
+   "cached": 217672
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 363187,
+   "cached": 209881
+  },
+  {
+   "input": "namespace-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323501,
+   "cached": 170195
+  },
+  {
+   "input": "namespace-merge-class",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283038,
+   "cached": 129732
+  },
+  {
+   "input": "namespace-merge-function",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285802,
+   "cached": 132496
+  },
+  {
+   "input": "namespace-nested",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300006,
+   "cached": 146700
+  },
+  {
+   "input": "narrow-assertion-fn",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307565,
+   "cached": 154259
+  },
+  {
+   "input": "narrow-closure-reset",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321017,
+   "cached": 167711
+  },
+  {
+   "input": "narrow-control-flow-assign",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305228,
+   "cached": 151922
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433131,
+   "cached": 279825
+  },
+  {
+   "input": "narrow-equality",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344636,
+   "cached": 191330
+  },
+  {
+   "input": "narrow-exhaustive-never",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315296,
+   "cached": 161990
+  },
+  {
+   "input": "narrow-in",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333373,
+   "cached": 180067
+  },
+  {
+   "input": "narrow-instanceof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 340810,
+   "cached": 187504
+  },
+  {
+   "input": "narrow-optional-chain",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345535,
+   "cached": 192229
+  },
+  {
+   "input": "narrow-truthiness",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 300765,
+   "cached": 147459
+  },
+  {
+   "input": "narrow-typeof",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298047,
+   "cached": 144741
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368241,
+   "cached": 214935
+  },
+  {
+   "input": "overload-arity",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 294813,
+   "cached": 141507
+  },
+  {
+   "input": "overload-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 324826,
+   "cached": 171520
+  },
+  {
+   "input": "overload-impl-incompatible",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279796,
+   "cached": 126490
+  },
+  {
+   "input": "overload-method",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 331385,
+   "cached": 178079
+  },
+  {
+   "input": "recursive-alias-circular",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277250,
+   "cached": 123944
+  },
+  {
+   "input": "recursive-deep-readonly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 366269,
+   "cached": 212963
+  },
+  {
+   "input": "recursive-json",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 633817,
+   "cached": 480511
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 475807,
+   "cached": 322501
+  },
+  {
+   "input": "recursive-tuple-reverse",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 496849,
+   "cached": 343543
+  },
+  {
+   "input": "rest-params",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323405,
+   "cached": 170099
+  },
+  {
+   "input": "spread-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 342371,
+   "cached": 189065
+  },
+  {
+   "input": "syntax-bad-token",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 177816,
+   "cached": 51953
+  },
+  {
+   "input": "syntax-decl-modifiers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273632,
+   "cached": 120326
+  },
+  {
+   "input": "syntax-invalid-type",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 171296,
+   "cached": 45433
+  },
+  {
+   "input": "syntax-jsx-in-ts",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 170571,
+   "cached": 44708
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 165336,
+   "cached": 39473
+  },
+  {
+   "input": "syntax-missing-paren",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 165483,
+   "cached": 39620
+  },
+  {
+   "input": "syntax-numeric-literal",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 184765,
+   "cached": 58902
+  },
+  {
+   "input": "syntax-regex-errors",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 257522,
+   "cached": 104216
+  },
+  {
+   "input": "syntax-reserved-word",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 178084,
+   "cached": 52221
+  },
+  {
+   "input": "syntax-unexpected-keyword",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 167356,
+   "cached": 41493
+  },
+  {
+   "input": "syntax-unterminated-string",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 168481,
+   "cached": 42618
+  },
+  {
+   "input": "syntax-unterminated-template",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 166037,
+   "cached": 40174
+  },
+  {
+   "input": "template-basic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 330629,
+   "cached": 177323
+  },
+  {
+   "input": "template-infer",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 429034,
+   "cached": 275728
+  },
+  {
+   "input": "template-intrinsics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 410898,
+   "cached": 257592
+  },
+  {
+   "input": "template-union-expand",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 325517,
+   "cached": 172211
+  },
+  {
+   "input": "tuple-labeled",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334942,
+   "cached": 181636
+  },
+  {
+   "input": "tuple-length-index",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 345956,
+   "cached": 192650
+  },
+  {
+   "input": "tuple-optional-rest",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 395443,
+   "cached": 242137
+  },
+  {
+   "input": "tuple-variadic",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 502238,
+   "cached": 348932
+  },
+  {
+   "input": "union-call",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299278,
+   "cached": 145972
+  },
+  {
+   "input": "union-property-access",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 321446,
+   "cached": 168140
+  },
+  {
+   "input": "upstream/ArrowFunctionExpression1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272273,
+   "cached": 118967
+  },
+  {
+   "input": "upstream/ClassDeclaration10",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277327,
+   "cached": 124021
+  },
+  {
+   "input": "upstream/ClassDeclaration21",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277740,
+   "cached": 124434
+  },
+  {
+   "input": "upstream/ambientEnumElementInitializer3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 258020,
+   "cached": 104714
+  },
+  {
+   "input": "upstream/anyAndUnknownHaveFalsyComponents",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 386482,
+   "cached": 233176
+  },
+  {
+   "input": "upstream/arguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 473772,
+   "cached": 320466
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 593245,
+   "cached": 439939
+  },
+  {
+   "input": "upstream/arrayLiteral1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267616,
+   "cached": 114310
+  },
+  {
+   "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 637909,
+   "cached": 484603
+  },
+  {
+   "input": "upstream/assignmentToParenthesizedExpression1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273891,
+   "cached": 120585
+  },
+  {
+   "input": "upstream/baseClassImprovedMismatchErrors",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 644078,
+   "cached": 490772
+  },
+  {
+   "input": "upstream/breakInIterationOrSwitchStatement1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 253422,
+   "cached": 100116
+  },
+  {
+   "input": "upstream/callOverloads2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405809,
+   "cached": 252503
+  },
+  {
+   "input": "upstream/capturedLetConstInLoop10_ES6",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 663242,
+   "cached": 509936
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 333873,
+   "cached": 180567
+  },
+  {
+   "input": "upstream/classExtendingQualifiedName",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 292523,
+   "cached": 139217
+  },
+  {
+   "input": "upstream/classExtendsMultipleBaseClasses",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 285167,
+   "cached": 131861
+  },
+  {
+   "input": "upstream/classOrder1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 289311,
+   "cached": 136005
+  },
+  {
+   "input": "upstream/classVarianceResolveCircularity1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 370542,
+   "cached": 217236
+  },
+  {
+   "input": "upstream/collisionCodeGenModuleWithMethodChildren",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 395522,
+   "cached": 242216
+  },
+  {
+   "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 393514,
+   "cached": 240208
+  },
+  {
+   "input": "upstream/commentOnArrayElement12",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265480,
+   "cached": 112174
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272466,
+   "cached": 119160
+  },
+  {
+   "input": "upstream/commentOnClassAccessor2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 283624,
+   "cached": 130318
+  },
+  {
+   "input": "upstream/conditionalEqualityTestingNullability",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 533855,
+   "cached": 380549
+  },
+  {
+   "input": "upstream/conditionalExpressions2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 435278,
+   "cached": 281972
+  },
+  {
+   "input": "upstream/constructorArgsErrors3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272307,
+   "cached": 119001
+  },
+  {
+   "input": "upstream/contextualSignatureInstatiationContravariance",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 492556,
+   "cached": 339250
+  },
+  {
+   "input": "upstream/contextualTypeSelfReferencing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 597681,
+   "cached": 444375
+  },
+  {
+   "input": "upstream/contextualTyping19",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 341850,
+   "cached": 188544
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320543,
+   "cached": 167237
+  },
+  {
+   "input": "upstream/contextualTyping41",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 320596,
+   "cached": 167290
+  },
+  {
+   "input": "upstream/contextualTypingOfArrayLiterals1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344864,
+   "cached": 191558
+  },
+  {
+   "input": "upstream/contextualTypingOfConditionalExpression",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 472040,
+   "cached": 318734
+  },
+  {
+   "input": "upstream/contextuallyTypingOrOperator",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 513300,
+   "cached": 359994
+  },
+  {
+   "input": "upstream/declFileClassWithIndexSignature",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 265796,
+   "cached": 112490
+  },
+  {
+   "input": "upstream/declFileOptionalInterfaceMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270671,
+   "cached": 117365
+  },
+  {
+   "input": "upstream/declarationEmitDestructuringArrayPattern3",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311358,
+   "cached": 158052
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 470514,
+   "cached": 317208
+  },
+  {
+   "input": "upstream/declarationEmitNameConflictsWithAlias",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315350,
+   "cached": 162044
+  },
+  {
+   "input": "upstream/declarationEmitOptionalMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 319202,
+   "cached": 165896
+  },
+  {
+   "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 335176,
+   "cached": 181870
+  },
+  {
+   "input": "upstream/defaultValueInFunctionTypes",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 334205,
+   "cached": 180899
+  },
+  {
+   "input": "upstream/deleteOperatorInStrictMode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267626,
+   "cached": 114320
+  },
+  {
+   "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 384710,
+   "cached": 231404
+  },
+  {
+   "input": "upstream/discriminantsAndPrimitives",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 831775,
+   "cached": 678469
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344914,
+   "cached": 191608
+  },
+  {
+   "input": "upstream/duplicateErrorNameNotFound",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287553,
+   "cached": 134247
+  },
+  {
+   "input": "upstream/duplicateObjectLiteralProperty_computedName2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 475204,
+   "cached": 321898
+  },
+  {
+   "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 363184,
+   "cached": 209878
+  },
+  {
+   "input": "upstream/emitSkipsThisWithRestParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 379663,
+   "cached": 226357
+  },
+  {
+   "input": "upstream/emitThisInSuperMethodCall",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 382891,
+   "cached": 229585
+  },
+  {
+   "input": "upstream/emptyFile",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 246071,
+   "cached": 92765
+  },
+  {
+   "input": "upstream/enumMemberResolution",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 193024,
+   "cached": 67161
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307916,
+   "cached": 154610
+  },
+  {
+   "input": "upstream/errorsForCallAndAssignmentAreSimilar",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 684723,
+   "cached": 531417
+  },
+  {
+   "input": "upstream/errorsWithInvokablesInUnions01",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 551069,
+   "cached": 397763
+  },
+  {
+   "input": "upstream/es6DeclOrdering",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 323811,
+   "cached": 170505
+  },
+  {
+   "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277965,
+   "cached": 124659
+  },
+  {
+   "input": "upstream/excessPropertyCheckWithSpread",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 402091,
+   "cached": 248785
+  },
+  {
+   "input": "upstream/exportArrayBindingPattern",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 331455,
+   "cached": 178149
+  },
+  {
+   "input": "upstream/exportDeclarationsInAmbientNamespaces2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 284712,
+   "cached": 131406
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270411,
+   "cached": 117105
+  },
+  {
+   "input": "upstream/exportedBlockScopedDeclarations",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 455280,
+   "cached": 301974
+  },
+  {
+   "input": "upstream/externSemantics",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291274,
+   "cached": 137968
+  },
+  {
+   "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 306253,
+   "cached": 152947
+  },
+  {
+   "input": "upstream/functionAssignmentError",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 286953,
+   "cached": 133647
+  },
+  {
+   "input": "upstream/functionOverloads43",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 468551,
+   "cached": 315245
+  },
+  {
+   "input": "upstream/functionWithDefaultParameterWithNoStatements10",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282936,
+   "cached": 129630
+  },
+  {
+   "input": "upstream/functionsWithModifiersInBlocks1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295427,
+   "cached": 142121
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305580,
+   "cached": 152274
+  },
+  {
+   "input": "upstream/genericConstraintDeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 305386,
+   "cached": 152080
+  },
+  {
+   "input": "upstream/genericFunctions2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 391577,
+   "cached": 238271
+  },
+  {
+   "input": "upstream/genericTypeParameterEquivalence2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1229125,
+   "cached": 1075819
+  },
+  {
+   "input": "upstream/generics5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 349839,
+   "cached": 196533
+  },
+  {
+   "input": "upstream/identicalTypesNoDifferByCheckOrder",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1057280,
+   "cached": 903974
+  },
+  {
+   "input": "upstream/implicitAnyAmbients",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 433317,
+   "cached": 280011
+  },
+  {
+   "input": "upstream/indexerA",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 361514,
+   "cached": 208208
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 304151,
+   "cached": 150845
+  },
+  {
+   "input": "upstream/inferentialTypingObjectLiteralMethod1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 552953,
+   "cached": 399647
+  },
+  {
+   "input": "upstream/infinitelyExpandingBaseTypes2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 357560,
+   "cached": 204254
+  },
+  {
+   "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 316420,
+   "cached": 163114
+  },
+  {
+   "input": "upstream/inheritanceStaticFuncOverridingProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 313344,
+   "cached": 160038
+  },
+  {
+   "input": "upstream/innerExtern",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 315276,
+   "cached": 161970
+  },
+  {
+   "input": "upstream/instanceSubtypeCheck1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 344005,
+   "cached": 190699
+  },
+  {
+   "input": "upstream/instanceofTypeAliasToGenericClass",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 430615,
+   "cached": 277309
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 290084,
+   "cached": 136778
+  },
+  {
+   "input": "upstream/intersectionApparentTypeCaching",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 317612,
+   "cached": 164306
+  },
+  {
+   "input": "upstream/intersectionsAndOptionalProperties",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 616651,
+   "cached": 463345
+  },
+  {
+   "input": "upstream/lambdaPropSelf",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 398955,
+   "cached": 245649
+  },
+  {
+   "input": "upstream/letAndVarRedeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 492818,
+   "cached": 339512
+  },
+  {
+   "input": "upstream/letAsIdentifierInStrictMode",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295565,
+   "cached": 142259
+  },
+  {
+   "input": "upstream/library_StringSlice",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307971,
+   "cached": 154665
+  },
+  {
+   "input": "upstream/localImportNameVsGlobalName",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 362283,
+   "cached": 208977
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 291651,
+   "cached": 138345
+  },
+  {
+   "input": "upstream/moduleCodeGenTest5",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 378562,
+   "cached": 225256
+  },
+  {
+   "input": "upstream/multiExtendsSplitInterfaces1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 282573,
+   "cached": 129267
+  },
+  {
+   "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 307660,
+   "cached": 154354
+  },
+  {
+   "input": "upstream/namespaces2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 294383,
+   "cached": 141077
+  },
+  {
+   "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 414158,
+   "cached": 260852
+  },
+  {
+   "input": "upstream/narrowingTypeofUndefined1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 435114,
+   "cached": 281808
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings15",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 362575,
+   "cached": 209269
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 660711,
+   "cached": 507405
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings8",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 301163,
+   "cached": 147857
+  },
+  {
+   "input": "upstream/nestedTypeVariableInfersLiteral",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 764008,
+   "cached": 610702
+  },
+  {
+   "input": "upstream/noCheckNoEmit",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 279607,
+   "cached": 126301
+  },
+  {
+   "input": "upstream/noCrashOnMixin2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 485334,
+   "cached": 332028
+  },
+  {
+   "input": "upstream/noEmitHelpers",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272762,
+   "cached": 119456
+  },
+  {
+   "input": "upstream/noImplicitAnyForIn",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 691953,
+   "cached": 538647
+  },
+  {
+   "input": "upstream/noImplicitAnyIndexing",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 649409,
+   "cached": 496103
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 299861,
+   "cached": 146555
+  },
+  {
+   "input": "upstream/nongenericConditionalNotPartiallyComputed",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 295835,
+   "cached": 142529
+  },
+  {
+   "input": "upstream/objectLiteralArraySpecialization",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 514551,
+   "cached": 361245
+  },
+  {
+   "input": "upstream/objectLiteralMemberWithModifiers1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 277110,
+   "cached": 123804
+  },
+  {
+   "input": "upstream/overloadAssignmentCompat",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 502341,
+   "cached": 349035
+  },
+  {
+   "input": "upstream/overrideBaseIntersectionMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 767647,
+   "cached": 614341
+  },
+  {
+   "input": "upstream/parseEntityNameWithReservedWord",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 270836,
+   "cached": 117530
+  },
+  {
+   "input": "upstream/prespecializedGenericMembers1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 378907,
+   "cached": 225601
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 372768,
+   "cached": 219462
+  },
+  {
+   "input": "upstream/returnTypeTypeArguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1274827,
+   "cached": 1121521
+  },
+  {
+   "input": "upstream/scopeCheckClassProperty",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 298745,
+   "cached": 145439
+  },
+  {
+   "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 368099,
+   "cached": 214793
+  },
+  {
+   "input": "upstream/signatureInstantiationWithRecursiveConstraints",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 397170,
+   "cached": 243864
+  },
+  {
+   "input": "upstream/singletonLabeledTuple",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 407282,
+   "cached": 253976
+  },
+  {
+   "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 272062,
+   "cached": 118756
+  },
+  {
+   "input": "upstream/specializedLambdaTypeArguments",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 292875,
+   "cached": 139569
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 317544,
+   "cached": 164238
+  },
+  {
+   "input": "upstream/staticGetter1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 267599,
+   "cached": 114293
+  },
+  {
+   "input": "upstream/staticInstanceResolution4",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287554,
+   "cached": 134248
+  },
+  {
+   "input": "upstream/superCallAssignResult",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 327855,
+   "cached": 174549
+  },
+  {
+   "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 316914,
+   "cached": 163608
+  },
+  {
+   "input": "upstream/superCallInStaticMethod",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 463394,
+   "cached": 310088
+  },
+  {
+   "input": "upstream/superHasMethodsFromMergedInterface",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 314576,
+   "cached": 161270
+  },
+  {
+   "input": "upstream/superWithTypeArgument",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 188627,
+   "cached": 62764
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 273270,
+   "cached": 119964
+  },
+  {
+   "input": "upstream/thisInPropertyBoundDeclarations",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 684039,
+   "cached": 530733
+  },
+  {
+   "input": "upstream/typeArgumentConstraintResolution1",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 445104,
+   "cached": 291798
+  },
+  {
+   "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 618071,
+   "cached": 464765
+  },
+  {
+   "input": "upstream/typeInferenceFixEarly",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 311196,
+   "cached": 157890
+  },
+  {
+   "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 393353,
+   "cached": 240047
+  },
+  {
+   "input": "upstream/typePredicateTopLevelTypeParameter",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 405249,
+   "cached": 251943
+  },
+  {
+   "input": "upstream/typeofUsedBeforeBlockScoped",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 330553,
+   "cached": 177247
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 312106,
+   "cached": 158800
+  },
+  {
+   "input": "upstream/unusedModuleInModule",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 260601,
+   "cached": 107295
+  },
+  {
+   "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 287036,
+   "cached": 133730
+  },
+  {
+   "input": "upstream/vardecl",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 1091511,
+   "cached": 938205
+  },
+  {
+   "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 633214,
+   "cached": 479908
+  },
+  {
+   "input": "upstream/varianceReferences",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 931195,
+   "cached": 777889
+  },
+  {
+   "input": "upstream/voidAsOperator",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 274184,
+   "cached": 120878
+  },
+  {
+   "input": "upstream/vueLikeDataAndPropsInference2",
+   "lib": "mini",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 855340,
+   "cached": 702034
+  },
+  {
+   "input": "assign-any-unknown",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319144,
+   "cached": 172170
+  },
+  {
+   "input": "assign-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14272908,
+   "cached": 125934
+  },
+  {
+   "input": "assign-callback-bivariance",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14413227,
+   "cached": 266253
+  },
+  {
+   "input": "assign-enum-number",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14320880,
+   "cached": 173906
+  },
+  {
+   "input": "assign-function-params",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14333526,
+   "cached": 186552
+  },
+  {
+   "input": "assign-function-return",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14317978,
+   "cached": 171004
+  },
+  {
+   "input": "assign-index-signature",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14363827,
+   "cached": 216853
+  },
+  {
+   "input": "assign-never",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14318057,
+   "cached": 171083
+  },
+  {
+   "input": "assign-null-undefined",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305753,
+   "cached": 158779
+  },
+  {
+   "input": "assign-object-excess",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14332875,
+   "cached": 185901
+  },
+  {
+   "input": "assign-object-literal-nested",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14520360,
+   "cached": 373386
+  },
+  {
+   "input": "assign-object-missing",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14309697,
+   "cached": 162723
+  },
+  {
+   "input": "assign-optional",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14405309,
+   "cached": 258335
+  },
+  {
+   "input": "assign-readonly",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14454596,
+   "cached": 307622
+  },
+  {
+   "input": "assign-structural-class",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14339834,
+   "cached": 192860
+  },
+  {
+   "input": "assign-symbol-bigint-like",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14297872,
+   "cached": 150898
+  },
+  {
+   "input": "assign-tuple-array",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14634311,
+   "cached": 487337
+  },
+  {
+   "input": "assign-variance-arrays",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14411664,
+   "cached": 264690
+  },
+  {
+   "input": "assign-void",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14317246,
+   "cached": 170272
+  },
+  {
+   "input": "assign-weak-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14344756,
+   "cached": 197782
+  },
+  {
+   "input": "class-abstract",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14295156,
+   "cached": 148182
+  },
+  {
+   "input": "class-accessor",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14372960,
+   "cached": 225986
+  },
+  {
+   "input": "class-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14396702,
+   "cached": 249728
+  },
+  {
+   "input": "class-generic-constraint-error",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319895,
+   "cached": 172921
+  },
+  {
+   "input": "class-implements",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293605,
+   "cached": 146631
+  },
+  {
+   "input": "class-index-signature",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14282298,
+   "cached": 135324
+  },
+  {
+   "input": "class-override",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14367695,
+   "cached": 220721
+  },
+  {
+   "input": "class-private-protected",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14373936,
+   "cached": 226962
+  },
+  {
+   "input": "class-static",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14326591,
+   "cached": 179617
+  },
+  {
+   "input": "class-strict-property-init",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14283619,
+   "cached": 136645
+  },
+  {
+   "input": "class-super-call",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14339186,
+   "cached": 192212
+  },
+  {
+   "input": "class-this-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14375652,
+   "cached": 228678
+  },
+  {
+   "input": "clean-abstract-generic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14608052,
+   "cached": 461078
+  },
+  {
+   "input": "clean-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14258489,
+   "cached": 111515
+  },
+  {
+   "input": "clean-classes",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14491603,
+   "cached": 344629
+  },
+  {
+   "input": "clean-comments-only",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14243364,
+   "cached": 96390
+  },
+  {
+   "input": "clean-control-flow",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14545492,
+   "cached": 398518
+  },
+  {
+   "input": "clean-declare",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14318983,
+   "cached": 172009
+  },
+  {
+   "input": "clean-destructuring",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14766629,
+   "cached": 619655
+  },
+  {
+   "input": "clean-empty",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14241356,
+   "cached": 92039
+  },
+  {
+   "input": "clean-enums-namespaces",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14328408,
+   "cached": 181434
+  },
+  {
+   "input": "clean-functions",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14332827,
+   "cached": 185853
+  },
+  {
+   "input": "clean-generics",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14600656,
+   "cached": 453682
+  },
+  {
+   "input": "clean-labeled-loops",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14343666,
+   "cached": 196692
+  },
+  {
+   "input": "clean-mapped-conditional",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14395547,
+   "cached": 248573
+  },
+  {
+   "input": "clean-object-methods",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14333402,
+   "cached": 186428
+  },
+  {
+   "input": "clean-overloads-guards",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14381453,
+   "cached": 234479
+  },
+  {
+   "input": "clean-type-level",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15196660,
+   "cached": 1049686
+  },
+  {
+   "input": "clean-unicode",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14302910,
+   "cached": 155936
+  },
+  {
+   "input": "clean-unions",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14430410,
+   "cached": 283436
+  },
+  {
+   "input": "conditional-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14316447,
+   "cached": 169473
+  },
+  {
+   "input": "conditional-builtin-utils",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14628092,
+   "cached": 481118
+  },
+  {
+   "input": "conditional-deferred",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14292280,
+   "cached": 145306
+  },
+  {
+   "input": "conditional-distributive",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14758848,
+   "cached": 611874
+  },
+  {
+   "input": "conditional-infer-constraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14460198,
+   "cached": 313224
+  },
+  {
+   "input": "conditional-infer",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14429744,
+   "cached": 282770
+  },
+  {
+   "input": "enum-computed-error",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293031,
+   "cached": 146057
+  },
+  {
+   "input": "enum-const",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14317056,
+   "cached": 170082
+  },
+  {
+   "input": "enum-declaration-merge",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14263234,
+   "cached": 116260
+  },
+  {
+   "input": "enum-numeric",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14334179,
+   "cached": 187205
+  },
+  {
+   "input": "enum-string",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14306204,
+   "cached": 159230
+  },
+  {
+   "input": "error-abstract-instantiation",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14325681,
+   "cached": 178707
+  },
+  {
+   "input": "error-arg-count",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14283244,
+   "cached": 136270
+  },
+  {
+   "input": "error-await-outside-async",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14256891,
+   "cached": 109917
+  },
+  {
+   "input": "error-cannot-find-name",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14351507,
+   "cached": 204533
+  },
+  {
+   "input": "error-comparison-no-overlap",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305304,
+   "cached": 158330
+  },
+  {
+   "input": "error-const-assign",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14270757,
+   "cached": 123783
+  },
+  {
+   "input": "error-delete-non-optional",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14288502,
+   "cached": 141528
+  },
+  {
+   "input": "error-duplicate-property",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14294843,
+   "cached": 147869
+  },
+  {
+   "input": "error-generic-arity",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14329849,
+   "cached": 182875
+  },
+  {
+   "input": "error-implicit-any",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14310596,
+   "cached": 163622
+  },
+  {
+   "input": "error-index-implicit-any",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14304249,
+   "cached": 157275
+  },
+  {
+   "input": "error-label-break",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14265643,
+   "cached": 118669
+  },
+  {
+   "input": "error-missing-return-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14267876,
+   "cached": 120902
+  },
+  {
+   "input": "error-not-callable",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319530,
+   "cached": 172556
+  },
+  {
+   "input": "error-object-possibly-undefined",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14298974,
+   "cached": 152000
+  },
+  {
+   "input": "error-operator-types",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14360983,
+   "cached": 214009
+  },
+  {
+   "input": "error-property-not-exist",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14321553,
+   "cached": 174579
+  },
+  {
+   "input": "error-redeclare",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14308581,
+   "cached": 161607
+  },
+  {
+   "input": "error-satisfies",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14555975,
+   "cached": 409001
+  },
+  {
+   "input": "error-spread-non-object",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14321752,
+   "cached": 174778
+  },
+  {
+   "input": "error-switch-case-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14282842,
+   "cached": 135868
+  },
+  {
+   "input": "error-this-implicit",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14303027,
+   "cached": 156053
+  },
+  {
+   "input": "error-type-as-value",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14276806,
+   "cached": 129832
+  },
+  {
+   "input": "error-unicode-position",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14322151,
+   "cached": 175177
+  },
+  {
+   "input": "error-unique-symbol-and-readonly-array",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14348017,
+   "cached": 201043
+  },
+  {
+   "input": "error-unreachable-like",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14271632,
+   "cached": 124658
+  },
+  {
+   "input": "error-unused-ts-expect",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14306328,
+   "cached": 159354
+  },
+  {
+   "input": "error-used-before-declared",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14290876,
+   "cached": 143902
+  },
+  {
+   "input": "error-value-as-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14287701,
+   "cached": 140727
+  },
+  {
+   "input": "extreme/add-20-22",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 16116062,
+   "cached": 1969088
+  },
+  {
+   "input": "extreme/deep-recursion",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 65408555,
+   "cached": 51261581
+  },
+  {
+   "input": "extreme/large-unions",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 18142444,
+   "cached": 3995470
+  },
+  {
+   "input": "extreme/template-cross-product",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 37279121,
+   "cached": 23132147
+  },
+  {
+   "input": "generic-class",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14472687,
+   "cached": 325713
+  },
+  {
+   "input": "generic-const-type-param",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14504956,
+   "cached": 357982
+  },
+  {
+   "input": "generic-constraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14443761,
+   "cached": 296787
+  },
+  {
+   "input": "generic-default",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327697,
+   "cached": 180723
+  },
+  {
+   "input": "generic-higher-order",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14466937,
+   "cached": 319963
+  },
+  {
+   "input": "generic-identity",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14354811,
+   "cached": 207837
+  },
+  {
+   "input": "generic-infer-from-object",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14413469,
+   "cached": 266495
+  },
+  {
+   "input": "generic-inference-callback",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14601412,
+   "cached": 454438
+  },
+  {
+   "input": "generic-inference-multiple",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14541773,
+   "cached": 394799
+  },
+  {
+   "input": "generic-keyof-constraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14461974,
+   "cached": 315000
+  },
+  {
+   "input": "generic-return-inference",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14285014,
+   "cached": 138040
+  },
+  {
+   "input": "generic-unresolved-error",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327797,
+   "cached": 180823
+  },
+  {
+   "input": "indexed-access",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14382303,
+   "cached": 235329
+  },
+  {
+   "input": "indexed-union-key",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14299649,
+   "cached": 152675
+  },
+  {
+   "input": "interface-call-construct",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14384034,
+   "cached": 237060
+  },
+  {
+   "input": "interface-extends-conflict",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14286688,
+   "cached": 139714
+  },
+  {
+   "input": "interface-merge",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14313491,
+   "cached": 166517
+  },
+  {
+   "input": "intersection-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14411584,
+   "cached": 264610
+  },
+  {
+   "input": "keyof-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14303382,
+   "cached": 156408
+  },
+  {
+   "input": "keyof-typeof",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14338699,
+   "cached": 191725
+  },
+  {
+   "input": "literal-as-const",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14474724,
+   "cached": 327750
+  },
+  {
+   "input": "literal-boolean",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14287205,
+   "cached": 140231
+  },
+  {
+   "input": "literal-const-let",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14326106,
+   "cached": 179132
+  },
+  {
+   "input": "literal-enum-member",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14330910,
+   "cached": 183936
+  },
+  {
+   "input": "literal-fresh-excess",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14354232,
+   "cached": 207258
+  },
+  {
+   "input": "literal-numeric",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14346482,
+   "cached": 199508
+  },
+  {
+   "input": "literal-template-widen",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327274,
+   "cached": 180300
+  },
+  {
+   "input": "literal-widening-object",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14420244,
+   "cached": 273270
+  },
+  {
+   "input": "lookup-element-access",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14371408,
+   "cached": 224434
+  },
+  {
+   "input": "mapped-custom-modifiers",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14450503,
+   "cached": 303529
+  },
+  {
+   "input": "mapped-filter-keys",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14396295,
+   "cached": 249321
+  },
+  {
+   "input": "mapped-key-remap",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14596233,
+   "cached": 449259
+  },
+  {
+   "input": "mapped-partial-required",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14396315,
+   "cached": 249341
+  },
+  {
+   "input": "mapped-pick-omit",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14447446,
+   "cached": 300472
+  },
+  {
+   "input": "mapped-readonly-record",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14393917,
+   "cached": 246943
+  },
+  {
+   "input": "namespace-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14332727,
+   "cached": 185753
+  },
+  {
+   "input": "namespace-merge-class",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14291011,
+   "cached": 144037
+  },
+  {
+   "input": "namespace-merge-function",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305096,
+   "cached": 158122
+  },
+  {
+   "input": "namespace-nested",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319300,
+   "cached": 172326
+  },
+  {
+   "input": "narrow-assertion-fn",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327837,
+   "cached": 180863
+  },
+  {
+   "input": "narrow-closure-reset",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14387419,
+   "cached": 240445
+  },
+  {
+   "input": "narrow-control-flow-assign",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14326731,
+   "cached": 179757
+  },
+  {
+   "input": "narrow-discriminated",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14442355,
+   "cached": 295381
+  },
+  {
+   "input": "narrow-equality",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14351015,
+   "cached": 204041
+  },
+  {
+   "input": "narrow-exhaustive-never",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14334590,
+   "cached": 187616
+  },
+  {
+   "input": "narrow-in",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14342923,
+   "cached": 195949
+  },
+  {
+   "input": "narrow-instanceof",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14356050,
+   "cached": 209076
+  },
+  {
+   "input": "narrow-optional-chain",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14353508,
+   "cached": 206534
+  },
+  {
+   "input": "narrow-truthiness",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14320721,
+   "cached": 173747
+  },
+  {
+   "input": "narrow-typeof",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14324379,
+   "cached": 177405
+  },
+  {
+   "input": "narrow-user-guard",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14377791,
+   "cached": 230817
+  },
+  {
+   "input": "overload-arity",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14300214,
+   "cached": 153240
+  },
+  {
+   "input": "overload-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14349818,
+   "cached": 202844
+  },
+  {
+   "input": "overload-impl-incompatible",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14285197,
+   "cached": 138223
+  },
+  {
+   "input": "overload-method",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14344078,
+   "cached": 197104
+  },
+  {
+   "input": "recursive-alias-circular",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14282651,
+   "cached": 135677
+  },
+  {
+   "input": "recursive-deep-readonly",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14379190,
+   "cached": 232216
+  },
+  {
+   "input": "recursive-json",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14763467,
+   "cached": 616493
+  },
+  {
+   "input": "recursive-linked-list",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14433782,
+   "cached": 286808
+  },
+  {
+   "input": "recursive-tuple-reverse",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14872903,
+   "cached": 725929
+  },
+  {
+   "input": "rest-params",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14379078,
+   "cached": 232104
+  },
+  {
+   "input": "spread-call",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14411842,
+   "cached": 264868
+  },
+  {
+   "input": "syntax-bad-token",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11357735,
+   "cached": 51850
+  },
+  {
+   "input": "syntax-decl-modifiers",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14279033,
+   "cached": 132059
+  },
+  {
+   "input": "syntax-invalid-type",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11351215,
+   "cached": 45330
+  },
+  {
+   "input": "syntax-jsx-in-ts",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11350490,
+   "cached": 44605
+  },
+  {
+   "input": "syntax-missing-brace",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11345255,
+   "cached": 39370
+  },
+  {
+   "input": "syntax-missing-paren",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11345402,
+   "cached": 39517
+  },
+  {
+   "input": "syntax-numeric-literal",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11364684,
+   "cached": 58799
+  },
+  {
+   "input": "syntax-regex-errors",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14262923,
+   "cached": 115949
+  },
+  {
+   "input": "syntax-reserved-word",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11358003,
+   "cached": 52118
+  },
+  {
+   "input": "syntax-unexpected-keyword",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11347275,
+   "cached": 41390
+  },
+  {
+   "input": "syntax-unterminated-string",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11348400,
+   "cached": 42515
+  },
+  {
+   "input": "syntax-unterminated-template",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11345956,
+   "cached": 40071
+  },
+  {
+   "input": "template-basic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14349923,
+   "cached": 202949
+  },
+  {
+   "input": "template-infer",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14558930,
+   "cached": 411956
+  },
+  {
+   "input": "template-intrinsics",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14362725,
+   "cached": 215751
+  },
+  {
+   "input": "template-union-expand",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14344811,
+   "cached": 197837
+  },
+  {
+   "input": "tuple-labeled",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14428343,
+   "cached": 281369
+  },
+  {
+   "input": "tuple-length-index",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14421482,
+   "cached": 274508
+  },
+  {
+   "input": "tuple-optional-rest",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14523152,
+   "cached": 376178
+  },
+  {
+   "input": "tuple-variadic",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14709558,
+   "cached": 562584
+  },
+  {
+   "input": "union-call",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14307913,
+   "cached": 160939
+  },
+  {
+   "input": "union-property-access",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14330674,
+   "cached": 183700
+  },
+  {
+   "input": "upstream/ArrowFunctionExpression1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14277674,
+   "cached": 130700
+  },
+  {
+   "input": "upstream/ClassDeclaration10",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14282728,
+   "cached": 135754
+  },
+  {
+   "input": "upstream/ClassDeclaration21",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14283141,
+   "cached": 136167
+  },
+  {
+   "input": "upstream/ambientEnumElementInitializer3",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14263421,
+   "cached": 116447
+  },
+  {
+   "input": "upstream/anyAndUnknownHaveFalsyComponents",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14392545,
+   "cached": 245571
+  },
+  {
+   "input": "upstream/arguments",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14760148,
+   "cached": 613174
+  },
+  {
+   "input": "upstream/arrayDestructuringInSwitch1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14924989,
+   "cached": 778015
+  },
+  {
+   "input": "upstream/arrayLiteral1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14291083,
+   "cached": 144109
+  },
+  {
+   "input": "upstream/assignmentCompatability_checking-apply-member-off-of-function-interface",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14684908,
+   "cached": 537934
+  },
+  {
+   "input": "upstream/assignmentToParenthesizedExpression1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14279292,
+   "cached": 132318
+  },
+  {
+   "input": "upstream/baseClassImprovedMismatchErrors",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14667275,
+   "cached": 520301
+  },
+  {
+   "input": "upstream/breakInIterationOrSwitchStatement1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14258823,
+   "cached": 111849
+  },
+  {
+   "input": "upstream/callOverloads2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14411293,
+   "cached": 264319
+  },
+  {
+   "input": "upstream/capturedLetConstInLoop10_ES6",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14686709,
+   "cached": 539735
+  },
+  {
+   "input": "upstream/classExpressionAssignment",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14345191,
+   "cached": 198217
+  },
+  {
+   "input": "upstream/classExtendingQualifiedName",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14301749,
+   "cached": 154775
+  },
+  {
+   "input": "upstream/classExtendsMultipleBaseClasses",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14290568,
+   "cached": 143594
+  },
+  {
+   "input": "upstream/classOrder1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14294712,
+   "cached": 147738
+  },
+  {
+   "input": "upstream/classVarianceResolveCircularity1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14375943,
+   "cached": 228969
+  },
+  {
+   "input": "upstream/collisionCodeGenModuleWithMethodChildren",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14400923,
+   "cached": 253949
+  },
+  {
+   "input": "upstream/collisionThisExpressionAndLocalVarInProperty",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14398915,
+   "cached": 251941
+  },
+  {
+   "input": "upstream/commentOnArrayElement12",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14288947,
+   "cached": 141973
+  },
+  {
+   "input": "upstream/commentOnClassAccessor1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14277867,
+   "cached": 130893
+  },
+  {
+   "input": "upstream/commentOnClassAccessor2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14289025,
+   "cached": 142051
+  },
+  {
+   "input": "upstream/conditionalEqualityTestingNullability",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14514970,
+   "cached": 367996
+  },
+  {
+   "input": "upstream/conditionalExpressions2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14459723,
+   "cached": 312749
+  },
+  {
+   "input": "upstream/constructorArgsErrors3",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14277708,
+   "cached": 130734
+  },
+  {
+   "input": "upstream/contextualSignatureInstatiationContravariance",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14501126,
+   "cached": 354152
+  },
+  {
+   "input": "upstream/contextualTypeSelfReferencing",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14724032,
+   "cached": 577058
+  },
+  {
+   "input": "upstream/contextualTyping19",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14368508,
+   "cached": 221534
+  },
+  {
+   "input": "upstream/contextualTyping4",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14329115,
+   "cached": 182141
+  },
+  {
+   "input": "upstream/contextualTyping41",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14325997,
+   "cached": 179023
+  },
+  {
+   "input": "upstream/contextualTypingOfArrayLiterals1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14486776,
+   "cached": 339802
+  },
+  {
+   "input": "upstream/contextualTypingOfConditionalExpression",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14475457,
+   "cached": 328483
+  },
+  {
+   "input": "upstream/contextuallyTypingOrOperator",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14517016,
+   "cached": 370042
+  },
+  {
+   "input": "upstream/declFileClassWithIndexSignature",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14271197,
+   "cached": 124223
+  },
+  {
+   "input": "upstream/declFileOptionalInterfaceMethod",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14276072,
+   "cached": 129098
+  },
+  {
+   "input": "upstream/declarationEmitDestructuringArrayPattern3",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14384903,
+   "cached": 237929
+  },
+  {
+   "input": "upstream/declarationEmitExpandoWithGenericConstraint",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14475915,
+   "cached": 328941
+  },
+  {
+   "input": "upstream/declarationEmitNameConflictsWithAlias",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14320751,
+   "cached": 173777
+  },
+  {
+   "input": "upstream/declarationEmitOptionalMethod",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14327764,
+   "cached": 180790
+  },
+  {
+   "input": "upstream/declarationEmitTypeAliasWithTypeParameters5",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14340577,
+   "cached": 193603
+  },
+  {
+   "input": "upstream/defaultValueInFunctionTypes",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14339606,
+   "cached": 192632
+  },
+  {
+   "input": "upstream/deleteOperatorInStrictMode",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14273027,
+   "cached": 126053
+  },
+  {
+   "input": "upstream/discriminantUsingEvaluatableTemplateExpression",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14390111,
+   "cached": 243137
+  },
+  {
+   "input": "upstream/discriminantsAndPrimitives",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14836440,
+   "cached": 689466
+  },
+  {
+   "input": "upstream/distributiveConditionalTypeNeverIntersection1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14350315,
+   "cached": 203341
+  },
+  {
+   "input": "upstream/duplicateErrorNameNotFound",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14292954,
+   "cached": 145980
+  },
+  {
+   "input": "upstream/duplicateObjectLiteralProperty_computedName2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14480605,
+   "cached": 333631
+  },
+  {
+   "input": "upstream/emitOneLineVariableDeclarationRemoveCommentsFalse",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14368585,
+   "cached": 221611
+  },
+  {
+   "input": "upstream/emitSkipsThisWithRestParameter",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14631477,
+   "cached": 484503
+  },
+  {
+   "input": "upstream/emitThisInSuperMethodCall",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14388292,
+   "cached": 241318
+  },
+  {
+   "input": "upstream/emptyFile",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14251472,
+   "cached": 104498
+  },
+  {
+   "input": "upstream/enumMemberResolution",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11372943,
+   "cached": 67058
+  },
+  {
+   "input": "upstream/errorForUsingPropertyOfTypeAsType02",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14313317,
+   "cached": 166343
+  },
+  {
+   "input": "upstream/errorsForCallAndAssignmentAreSimilar",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14799188,
+   "cached": 652214
+  },
+  {
+   "input": "upstream/errorsWithInvokablesInUnions01",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14577739,
+   "cached": 430765
+  },
+  {
+   "input": "upstream/es6DeclOrdering",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14343712,
+   "cached": 196738
+  },
+  {
+   "input": "upstream/es6ModuleWithModuleGenTargetCommonjs",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14283366,
+   "cached": 136392
+  },
+  {
+   "input": "upstream/excessPropertyCheckWithSpread",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14407492,
+   "cached": 260518
+  },
+  {
+   "input": "upstream/exportArrayBindingPattern",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14404608,
+   "cached": 257634
+  },
+  {
+   "input": "upstream/exportDeclarationsInAmbientNamespaces2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14290113,
+   "cached": 143139
+  },
+  {
+   "input": "upstream/exportDefaultForNonInstantiatedModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14275812,
+   "cached": 128838
+  },
+  {
+   "input": "upstream/exportedBlockScopedDeclarations",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14460681,
+   "cached": 313707
+  },
+  {
+   "input": "upstream/externSemantics",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14296675,
+   "cached": 149701
+  },
+  {
+   "input": "upstream/fixTypeParameterInSignatureWithRestParameters",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14326209,
+   "cached": 179235
+  },
+  {
+   "input": "upstream/functionAssignmentError",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14292354,
+   "cached": 145380
+  },
+  {
+   "input": "upstream/functionOverloads43",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14523015,
+   "cached": 376041
+  },
+  {
+   "input": "upstream/functionWithDefaultParameterWithNoStatements10",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14306403,
+   "cached": 159429
+  },
+  {
+   "input": "upstream/functionsWithModifiersInBlocks1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14300828,
+   "cached": 153854
+  },
+  {
+   "input": "upstream/genericClasses1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14310981,
+   "cached": 164007
+  },
+  {
+   "input": "upstream/genericConstraintDeclaration",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14310787,
+   "cached": 163813
+  },
+  {
+   "input": "upstream/genericFunctions2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14420870,
+   "cached": 273896
+  },
+  {
+   "input": "upstream/genericTypeParameterEquivalence2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15498553,
+   "cached": 1351579
+  },
+  {
+   "input": "upstream/generics5",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14358401,
+   "cached": 211427
+  },
+  {
+   "input": "upstream/identicalTypesNoDifferByCheckOrder",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15647069,
+   "cached": 1500095
+  },
+  {
+   "input": "upstream/implicitAnyAmbients",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14438718,
+   "cached": 291744
+  },
+  {
+   "input": "upstream/indexerA",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14370098,
+   "cached": 223124
+  },
+  {
+   "input": "upstream/indirectSelfReferenceGeneric",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14309552,
+   "cached": 162578
+  },
+  {
+   "input": "upstream/inferentialTypingObjectLiteralMethod1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14568844,
+   "cached": 421870
+  },
+  {
+   "input": "upstream/infinitelyExpandingBaseTypes2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14362961,
+   "cached": 215987
+  },
+  {
+   "input": "upstream/inheritSameNamePrivatePropertiesFromDifferentOrigins",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14321821,
+   "cached": 174847
+  },
+  {
+   "input": "upstream/inheritanceStaticFuncOverridingProperty",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14318659,
+   "cached": 171685
+  },
+  {
+   "input": "upstream/innerExtern",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14320677,
+   "cached": 173703
+  },
+  {
+   "input": "upstream/instanceSubtypeCheck1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14349406,
+   "cached": 202432
+  },
+  {
+   "input": "upstream/instanceofTypeAliasToGenericClass",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14444636,
+   "cached": 297662
+  },
+  {
+   "input": "upstream/interfaceInReopenedModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14295485,
+   "cached": 148511
+  },
+  {
+   "input": "upstream/intersectionApparentTypeCaching",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15312408,
+   "cached": 1165434
+  },
+  {
+   "input": "upstream/intersectionsAndOptionalProperties",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15591411,
+   "cached": 1444437
+  },
+  {
+   "input": "upstream/lambdaPropSelf",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14421046,
+   "cached": 274072
+  },
+  {
+   "input": "upstream/letAndVarRedeclaration",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14498219,
+   "cached": 351245
+  },
+  {
+   "input": "upstream/letAsIdentifierInStrictMode",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14300966,
+   "cached": 153992
+  },
+  {
+   "input": "upstream/library_StringSlice",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14331572,
+   "cached": 184598
+  },
+  {
+   "input": "upstream/localImportNameVsGlobalName",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14367684,
+   "cached": 220710
+  },
+  {
+   "input": "upstream/memberAccessOnConstructorType",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14293239,
+   "cached": 146265
+  },
+  {
+   "input": "upstream/moduleCodeGenTest5",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14383963,
+   "cached": 236989
+  },
+  {
+   "input": "upstream/multiExtendsSplitInterfaces1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14300927,
+   "cached": 153953
+  },
+  {
+   "input": "upstream/multipleBaseInterfaesWithIncompatibleProperties",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14313061,
+   "cached": 166087
+  },
+  {
+   "input": "upstream/namespaces2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14299784,
+   "cached": 152810
+  },
+  {
+   "input": "upstream/narrowByClauseExpressionInSwitchTrue2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14419559,
+   "cached": 272585
+  },
+  {
+   "input": "upstream/narrowingTypeofUndefined1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14441493,
+   "cached": 294519
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings15",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14367976,
+   "cached": 221002
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings4",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14666112,
+   "cached": 519138
+  },
+  {
+   "input": "upstream/nestedBlockScopedBindings8",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14306564,
+   "cached": 159590
+  },
+  {
+   "input": "upstream/nestedTypeVariableInfersLiteral",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14836580,
+   "cached": 689606
+  },
+  {
+   "input": "upstream/noCheckNoEmit",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14298901,
+   "cached": 151927
+  },
+  {
+   "input": "upstream/noCrashOnMixin2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14526445,
+   "cached": 379471
+  },
+  {
+   "input": "upstream/noEmitHelpers",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14278163,
+   "cached": 131189
+  },
+  {
+   "input": "upstream/noImplicitAnyForIn",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15015833,
+   "cached": 868859
+  },
+  {
+   "input": "upstream/noImplicitAnyIndexing",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14646925,
+   "cached": 499951
+  },
+  {
+   "input": "upstream/noImplicitReturnsWithProtectedBlocks1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14305262,
+   "cached": 158288
+  },
+  {
+   "input": "upstream/nongenericConditionalNotPartiallyComputed",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14301324,
+   "cached": 154350
+  },
+  {
+   "input": "upstream/objectLiteralArraySpecialization",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14568353,
+   "cached": 421379
+  },
+  {
+   "input": "upstream/objectLiteralMemberWithModifiers1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14282511,
+   "cached": 135537
+  },
+  {
+   "input": "upstream/overloadAssignmentCompat",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14527165,
+   "cached": 380191
+  },
+  {
+   "input": "upstream/overrideBaseIntersectionMethod",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14859481,
+   "cached": 712507
+  },
+  {
+   "input": "upstream/parseEntityNameWithReservedWord",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14276237,
+   "cached": 129263
+  },
+  {
+   "input": "upstream/prespecializedGenericMembers1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14384308,
+   "cached": 237334
+  },
+  {
+   "input": "upstream/rectype",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14378169,
+   "cached": 231195
+  },
+  {
+   "input": "upstream/returnTypeTypeArguments",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15280198,
+   "cached": 1133224
+  },
+  {
+   "input": "upstream/scopeCheckClassProperty",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14304146,
+   "cached": 157172
+  },
+  {
+   "input": "upstream/scopeCheckExtendedClassInsideStaticMethod1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14394556,
+   "cached": 247582
+  },
+  {
+   "input": "upstream/signatureInstantiationWithRecursiveConstraints",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14402571,
+   "cached": 255597
+  },
+  {
+   "input": "upstream/singletonLabeledTuple",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14412683,
+   "cached": 265709
+  },
+  {
+   "input": "upstream/spaceBeforeQuestionMarkInPropertyAssignment",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14277463,
+   "cached": 130489
+  },
+  {
+   "input": "upstream/specializedLambdaTypeArguments",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14298276,
+   "cached": 151302
+  },
+  {
+   "input": "upstream/spreadObjectWithIndexDoesNotAddUndefinedToLocalIndex",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14322945,
+   "cached": 175971
+  },
+  {
+   "input": "upstream/staticGetter1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14273000,
+   "cached": 126026
+  },
+  {
+   "input": "upstream/staticInstanceResolution4",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14307451,
+   "cached": 160477
+  },
+  {
+   "input": "upstream/superCallAssignResult",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14335828,
+   "cached": 188854
+  },
+  {
+   "input": "upstream/superCallFromClassThatDerivesFromGenericType2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14322315,
+   "cached": 175341
+  },
+  {
+   "input": "upstream/superCallInStaticMethod",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14468795,
+   "cached": 321821
+  },
+  {
+   "input": "upstream/superHasMethodsFromMergedInterface",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14319977,
+   "cached": 173003
+  },
+  {
+   "input": "upstream/superWithTypeArgument",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 11368546,
+   "cached": 62661
+  },
+  {
+   "input": "upstream/thisInModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14278671,
+   "cached": 131697
+  },
+  {
+   "input": "upstream/thisInPropertyBoundDeclarations",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14869671,
+   "cached": 722697
+  },
+  {
+   "input": "upstream/typeArgumentConstraintResolution1",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14537215,
+   "cached": 390241
+  },
+  {
+   "input": "upstream/typeGuardNarrowsIndexedAccessOfKnownProperty6",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14647941,
+   "cached": 500967
+  },
+  {
+   "input": "upstream/typeInferenceFixEarly",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14316597,
+   "cached": 169623
+  },
+  {
+   "input": "upstream/typeParameterConstrainedToOuterTypeParameter",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14453992,
+   "cached": 307018
+  },
+  {
+   "input": "upstream/typePredicateTopLevelTypeParameter",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14540903,
+   "cached": 393929
+  },
+  {
+   "input": "upstream/typeofUsedBeforeBlockScoped",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14335954,
+   "cached": 188980
+  },
+  {
+   "input": "upstream/unknownPropertiesAreAssignableToObjectUnion",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14352157,
+   "cached": 205183
+  },
+  {
+   "input": "upstream/unusedModuleInModule",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14266002,
+   "cached": 119028
+  },
+  {
+   "input": "upstream/unusedMultipleParameters2InFunctionDeclaration",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14292437,
+   "cached": 145463
+  },
+  {
+   "input": "upstream/vardecl",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15127690,
+   "cached": 980716
+  },
+  {
+   "input": "upstream/varianceCantBeStrictWhileStructureIsnt",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14638615,
+   "cached": 491641
+  },
+  {
+   "input": "upstream/varianceReferences",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14939168,
+   "cached": 792194
+  },
+  {
+   "input": "upstream/voidAsOperator",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 14280563,
+   "cached": 133589
+  },
+  {
+   "input": "upstream/vueLikeDataAndPropsInference2",
+   "lib": "es5",
+   "sameOutput": true,
+   "warmupOutputEmpty": true,
+   "cold": 15211428,
+   "cached": 1064454
+  }
+ ]
+}

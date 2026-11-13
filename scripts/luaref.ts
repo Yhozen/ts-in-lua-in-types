@@ -4,17 +4,20 @@
 //
 // The program links the prelude, the modules tslua loads (oracle/modules.json,
 // what package.loaded holds after checking every input under real Lua) plus
-// lua/tsc.lua, and three entry chunks:
+// lua/tsc.lua and lua/sourcecache.lua, and the entry chunks:
 //
 //   =boot   require("tsc")                       (loading, once per state)
+//   =cache  require("sourcecache").enable()     (keep parsed and bound files across checks)
 //   =check  return require("tsc").check(          (one check; per lib mode)
 //             { ["/p/main.ts"] = INPUT, ["/p/<lib file>"] = LIB },
 //             { "--noLib", "--noEmit", "--skipLibCheck", "<lib file>", "main.ts" })
 //
 // INPUT and LIB are globals holding the source and the lib text (byte
 // strings). `=check` is the per-check entry: the boot image (scripts/boot.ts)
-// is the state after `=boot` and a warm-up `=check` of an empty INPUT, and a
-// check against the image runs exactly `=check` with INPUT preset.
+// is the state after `=boot`, `=cache` and a warm-up `=check` of an empty
+// INPUT (which parses and binds the lib into the cache), and a check against
+// the image runs exactly `=check` with INPUT preset. The gate without the
+// image (`vp run ref`) runs `=boot` and `=check` only, as the oracle does.
 import { existsSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import type { Program } from "../vendor/lua-in-types/src/aot/ir/ir.ts";
@@ -50,6 +53,7 @@ const luaPath = (file: string): string =>
     : `/t/lua/${relative(join(root, "lua"), file)}`;
 
 export const BOOT = `require("tsc")`;
+export const CACHE = `require("sourcecache").enable()`;
 
 /** The per-check entry chunk of a lib mode (INPUT and LIB are globals). */
 export const checkChunk = (lib: Lib): string =>
@@ -67,13 +71,16 @@ export function moduleNames(): string[] {
 
 /** The linked program (prelude, modules, entry chunks). */
 export function refProgram(names = moduleNames()): Program {
-  const mods: SourceModule[] = names.map((name) => {
+  // The lib cache is ours and loaded by =cache only, so real Lua's checks never list it.
+  const all = names.includes("sourcecache") ? names : [...names, "sourcecache"];
+  const mods: SourceModule[] = all.map((name) => {
     const file = moduleFile(name);
     if (file === undefined) throw new Error(`no source for module ${name}`);
     const path = luaPath(file);
     return { name, chunk: `@${path}`, path, source: toBytes(readFileSync(file, "utf8")) };
   });
   mods.push({ name: "\0boot", chunk: "=boot", path: "", source: BOOT });
+  mods.push({ name: "\0cache", chunk: "=cache", path: "", source: CACHE });
   for (const lib of Object.values(libs))
     mods.push({ name: entryName(lib.name), chunk: "=check", path: "", source: checkChunk(lib) });
   return linkWithPrelude(mods, "\0boot");
@@ -110,9 +117,11 @@ export function runCheck(interp: Interp, program: Program, lib: Lib, source: str
   return { output: String(r.results[0]), status: Number(r.results[1]), counters: r.counters, ms };
 }
 
-/** The boot image of a lib mode: =boot, a warm-up =check of an empty file, snapshot. */
+/** The boot image of a lib mode: =boot, =cache, a warm-up =check of an empty file, snapshot. */
 export function bootImage(program: Program, lib: Lib): { image: Snapshot; warm: RefCheck } {
   const { interp } = loadedInterp(program, lib);
+  const cache = runChunk(interp, program.modules["\0cache"]!);
+  if (cache.error !== undefined) throw new Error(`=cache failed: ${cache.error}`);
   const warm = runCheck(interp, program, lib, "");
   // The input of the warm-up is not part of the image.
   interp.globals.set("INPUT", undefined);

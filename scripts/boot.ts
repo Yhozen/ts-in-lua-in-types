@@ -54,7 +54,7 @@ async function main() {
       {
         generated: "by scripts/boot.ts (vp run boot); do not edit",
         image:
-          "state after =boot (require 'tsc') and a warm-up =check of an empty main.ts, LIB set; entries = array items + hash slots",
+          "state after =boot (require 'tsc'), =cache (require 'sourcecache'.enable()) and a warm-up =check of an empty main.ts, LIB set: the lib is parsed and bound in the cache; entries = array items + hash slots",
         program: { protos: program.protos.length },
         ...report,
       },

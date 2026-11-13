@@ -13,7 +13,7 @@
 // The manifest holds the reference's counters per check (scripts/luaref.ts
 // defines the program and the per-check chunk) next to real Lua's exact
 // instruction counts from oracle/manifest.json.
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { availableParallelism } from "node:os";
 import { join } from "node:path";
 import { Worker } from "node:worker_threads";
@@ -118,6 +118,17 @@ async function main() {
     entries: OracleEntry[];
   };
   const real = new Map(oracle.entries.map((e) => [`${e.input}.${e.lib}`, e]));
+  // Real Lua with the lib cache warm (vp run libcache): the state the image holds.
+  const cachedPath = join(root, "oracle/libcache.json");
+  const cached = existsSync(cachedPath)
+    ? new Map(
+        (
+          JSON.parse(readFileSync(cachedPath, "utf8")) as {
+            rows: { input: string; lib: string; cached: number }[];
+          }
+        ).rows.map((e) => [`${e.input}.${e.lib}`, e.cached]),
+      )
+    : new Map<string, number>();
   const names = listInputs().filter((n) => only === undefined || n.includes(only));
   const jobs: RefJob[] = [];
   const meta: { name: string; lib: Lib["name"] }[] = [];
@@ -163,6 +174,7 @@ async function main() {
       input: name,
       lib,
       instructions: real.get(`${name}.${lib}`)!.instructions,
+      ...(image ? { instructionsCached: cached.get(`${name}.${lib}`) } : {}),
       ...counterRow(r.check.counters),
       ms: Math.round(r.check.ms),
       setupMs: Math.round(r.setupMs),
@@ -185,6 +197,9 @@ async function main() {
           tableWrites: quantiles(es.map((e) => e.tableWrites)),
           tables: quantiles(es.map((e) => e.tables)),
           instructions: quantiles(es.map((e) => e.instructions)),
+          ...(image
+            ? { instructionsCached: quantiles(es.map((e) => e.instructionsCached ?? 0)) }
+            : {}),
           opsPerInstruction: quantiles(ratio.map((x) => Math.round(x * 1000) / 1000)),
           ms: quantiles(es.map((e) => e.ms)),
         },
@@ -196,10 +211,9 @@ async function main() {
     interpreter:
       "lua-in-types v2 reference (vendor/lua-in-types/src/aot/ref), see scripts/luaref.ts",
     mode: image
-      ? "each check restored from image/boot.<lib>.json (vp run boot): =boot and a warm-up check already ran"
+      ? "each check restored from image/boot.<lib>.json (vp run boot): =boot, =cache and a warm-up check already ran (the lib is parsed and bound)"
       : "each check in a fresh state: =boot (require 'tsc', counted under load), then =check",
-    counting:
-      "counters of the =check chunk only (Interp counters: ops = IR ops and terminators, blocks = blocks entered, luaCalls = Lua frames pushed, tableWrites = raw writes, tables/closures/cells = allocations, maxDepth = Lua frames); instructions = real Lua 5.4 VM instructions of tsc.check from oracle/manifest.json (fresh state, no warm-up)",
+    counting: `counters of the =check chunk only (Interp counters: ops = IR ops and terminators, blocks = blocks entered, luaCalls = Lua frames pushed, tableWrites = raw writes, tables/closures/cells = allocations, maxDepth = Lua frames); instructions = real Lua 5.4 VM instructions of tsc.check from oracle/manifest.json (fresh state, no warm-up)${image ? "; instructionsCached = the same after the lib cache (lua/sourcecache.lua) and a warm-up check (oracle/libcache.json), the state the image holds" : ""}`,
     ...(image ? {} : { load: counterRow(load) }),
     summary,
     entries,

@@ -13,6 +13,7 @@
     "profile": "node scripts/profile.ts",
     "tower": "node scripts/tower.ts",
     "warmup": "node scripts/warmup.ts",
+    "libcache": "node scripts/libcache.ts",
     "upstream": "node scripts/upstream.ts",
     "test": "vp test",
     "typecheck": "tsrs --noEmit --fast",

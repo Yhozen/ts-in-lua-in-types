@@ -64,4 +64,13 @@ tslua under real Lua 5.4 (wasmoon) is the ground truth.
   (`oracle/ref-image-manifest.json`); `-- --modules` rewrites
   `oracle/modules.json`.
 - `vp run boot` writes `image/boot.<lib>.json` (git-ignored snapshots, see
-  lua-in-types `docs/AOT.md`, "Snapshots") and `oracle/boot.json` (sizes).
+  lua-in-types `docs/AOT.md`, "Snapshots") and `oracle/boot.json` (sizes):
+  the state after `=boot`, `=cache` and a warm-up check, so the lib is
+  already parsed and bound.
+- The lib cache: `require("sourcecache").enable()` (lua/sourcecache.lua) makes the compiler
+  host hand back the SourceFile an earlier check parsed (and bound) when its
+  text is unchanged, as tsgo's watch host and parse cache do. Off by default
+  (the oracle measures plain checks). `vp run libcache` verifies under real
+  Lua that every output is unchanged with a warm cache (also with every input
+  checked in sequence in one state) and records the cost in
+  `oracle/libcache.json`.
