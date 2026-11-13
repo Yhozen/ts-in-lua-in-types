@@ -9,6 +9,8 @@ const ignored = [
   "lua/lib.mini.d.ts",
   "docs/CENSUS.md",
   "docs/PROFILE.md",
+  // The plan is the planner's; keep its tables as written.
+  "docs/PLAN.md",
 ];
 
 export default defineConfig({
