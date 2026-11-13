@@ -8,6 +8,7 @@
 //   vp run gate:types -- --only NAME  inputs whose name contains NAME
 //   vp run gate:types -- --lib es5    lib mode: mini (default), es5 or both
 //   vp run gate:types -- --jobs 3     tsrs processes in parallel (each takes 4-8 GB)
+//   vp run gate:types -- --drive 10   trampoline steps per chunk (default: the image's)
 //
 // Per input it writes .run/gate/<lib>/<input>/run.ts: `type S0 =
 // TSStart<source>`, one `type Sk = TSStep<Sk-1>` statement per chunk (the CLI
@@ -63,10 +64,17 @@ const argv = process.argv.slice(2);
 const opt = (k: string) => (argv.includes(k) ? argv[argv.indexOf(k) + 1] : undefined);
 const sum = (o: Record<string, number>) => Object.values(o).reduce((a, b) => a + b, 0);
 
-/** Budget chunks a check needs, from the reference's counters (with headroom). */
+/** Trampoline steps per chunk: the image's (Step), or --drive N (RunWith on the program). */
+const drive = Number(opt("--drive") ?? DRIVE);
+
+/**
+ * Budget chunks a check needs, from the reference's counters: the 40 inputs
+ * of the first gate ended at 0.17-0.18 of this estimate, so 0.4 leaves 2x
+ * headroom (a run that needs more reports "still running").
+ */
 export const chunksFor = (r: RefEntry): number => {
   const steps = 3 * (r.luaCalls + sum(r.metamethods) + sum(r.builtinCalls)) + r.blocks / 4 + 8;
-  return Math.ceil((1.3 * steps) / DRIVE) + 10;
+  return Math.ceil((0.4 * steps) / drive) + 20;
 };
 
 const lit = JSON.stringify;
@@ -78,9 +86,16 @@ export function entryText(source: string, lib: Lib["name"], chunks: number, expe
     `import type { TSStart, TSStep, TSOutput, TSTag } from "../../../../src/index.ts";`,
     "type Equal<A, B> = (<T>() => T extends A ? 1 : 2) extends <T>() => T extends B ? 1 : 2 ? true : false;",
     'type Stat<S> = 0 extends 1 & S ? "any" : [S] extends [never] ? "never" : TSTag<S>;',
+    ...(drive === DRIVE
+      ? ["type Chunk<S> = TSStep<S>;"]
+      : [
+          `import type { Prog } from "../../../../image/${progFile}";`,
+          `import type { RunWith } from "../../../../vendor/lua-in-types/src/aot/types/run.ts";`,
+          `type Chunk<S> = RunWith<Prog, S, ${lit("x".repeat(drive))}>;`,
+        ]),
     `type S0 = TSStart<${lit(toBytes(source))}, ${lit(lib)}>;`,
   ];
-  for (let k = 1; k <= chunks; k++) lines.push(`type S${k} = TSStep<S${k - 1}>;`);
+  for (let k = 1; k <= chunks; k++) lines.push(`type S${k} = Chunk<S${k - 1}>;`);
   const first = lines.length + 1;
   for (let k = 1; k <= chunks; k++) lines.push(`export const p${k}: 0 = null! as Stat<S${k}>;`);
   lines.push(`export const out: 0 = null! as TSOutput<S${chunks}>;`);
