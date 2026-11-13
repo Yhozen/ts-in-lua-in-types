@@ -6,6 +6,10 @@ const ignored = [
   "experiments/**",
   "oracle/**",
   ".run/**",
+  // The type-level image (vp run build) and what loads it: ~270 MB of declarations.
+  "image/**",
+  "examples/**",
+  "src/**",
   "lua/lib.mini.d.ts",
   "docs/CENSUS.md",
   "docs/PROFILE.md",

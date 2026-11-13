@@ -9,6 +9,9 @@
     "oracle": "node scripts/oracle.ts",
     "ref": "node scripts/ref.ts",
     "boot": "node scripts/boot.ts",
+    "build": "node --max-old-space-size=16000 scripts/build-image.ts",
+    "gate:types": "node --max-old-space-size=16000 scripts/types-gate.ts",
+    "hover": "node scripts/hover.ts",
     "census": "node scripts/census.ts",
     "profile": "node scripts/profile.ts",
     "tower": "node scripts/tower.ts",
@@ -18,7 +21,8 @@
     "test": "vp test",
     "typecheck": "tsrs --noEmit --fast",
     "check": "vp check && tsrs --noEmit --fast",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "gen:hover": "node scripts/gen-hover.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

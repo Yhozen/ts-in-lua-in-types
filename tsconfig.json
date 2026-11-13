@@ -17,6 +17,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["src", "tests", "scripts", "vite.config.ts"],
-  "exclude": ["vendor", "experiments", "oracle", ".run"]
+  "include": ["tests", "scripts", "vite.config.ts"],
+  "exclude": ["vendor", "experiments", "oracle", ".run", "image", "examples", "src"]
 }
