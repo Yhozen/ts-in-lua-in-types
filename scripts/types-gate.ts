@@ -9,6 +9,7 @@
 //   vp run gate:types -- --lib es5    lib mode: mini (default), es5 or both
 //   vp run gate:types -- --jobs 3     tsrs processes in parallel (each takes 4-8 GB)
 //   vp run gate:types -- --drive 10   trampoline steps per chunk (default: the image's)
+//   vp run gate:types -- --chunk-factor 1  more chunks than the default 0.4 estimate
 //   vp run gate:types -- --resume     keep per-input results newer than the image
 //   vp run gate:types -- --timeout 900  seconds per tsrs run (default 900)
 //   vp run gate:types -- --max-ops 10000000  skip inputs whose reference run is longer
@@ -93,7 +94,7 @@ const drive = Number(opt("--drive") ?? DRIVE);
  */
 export const chunksFor = (r: RefEntry): number => {
   const steps = 3 * (r.luaCalls + sum(r.metamethods) + sum(r.builtinCalls)) + r.blocks / 4 + 8;
-  return Math.ceil((0.4 * steps) / drive) + 20;
+  return Math.ceil((Number(opt("--chunk-factor") ?? 0.4) * steps) / drive) + 20;
 };
 
 const lit = JSON.stringify;
@@ -459,8 +460,8 @@ export const rowText = (r: GateRow): string =>
     r.endedAt !== undefined
       ? `ended at chunk ${r.endedAt}/${r.chunks} (${r.lastTag})`
       : `reached chunk ${r.lastGood}/${r.chunks} (${r.lastTag || "nothing"})`,
-    `${(r.instantiations / 1e6).toFixed(0)}M inst`,
-    `check ${r.checkSeconds.toFixed(1)} s (wall ${r.wallSeconds.toFixed(1)} s)`,
+    `${((r.instantiations ?? NaN) / 1e6).toFixed(0)}M inst`,
+    `check ${(r.checkSeconds ?? NaN).toFixed(1)} s (wall ${r.wallSeconds.toFixed(1)} s)`,
     `peak ${(r.peakBytes / 2 ** 30).toFixed(1)} GB`,
     `ref ${r.refOps} ops`,
     ...(r.pass ? [] : [`${r.kind}: ${r.detail ?? ""}`]),
@@ -543,7 +544,7 @@ export function gateDoc(rows: GateRow[]): string {
         ps.map((r) => r.peakBytes),
         "GB",
       )} | ${col(
-        ps.map((r) => r.instantiations / r.refOps),
+        ps.map((r) => Math.round(r.instantiations / r.refOps)),
         "",
       )} |`,
     );
