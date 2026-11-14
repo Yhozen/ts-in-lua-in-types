@@ -1,4 +1,4 @@
-# ts-in-types
+# ts-in-lua-in-types
 
 The TypeScript 7 compiler (tslua, a Lua 5.4 port of typescript-go) running
 inside the TypeScript type checker (tsrs), on lua-in-types v2 (Lua compiled

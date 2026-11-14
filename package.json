@@ -1,5 +1,5 @@
 {
-  "name": "ts-in-types",
+  "name": "ts-in-lua-in-types",
   "version": "0.0.0",
   "private": true,
   "description": "The TypeScript 7 compiler (tslua) running inside the TypeScript type checker.",

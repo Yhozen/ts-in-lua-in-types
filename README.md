@@ -1,4 +1,4 @@
-# ts-in-types
+# ts-in-lua-in-types
 
 The TypeScript 7 compiler, running inside the TypeScript type checker.
 

@@ -109,15 +109,15 @@ Key ideas, tested or not:
 | Phase | Where | Gate |
 |---|---|---|
 | P0 measurements | here | done (above) |
-| P1 oracle | ts-in-types | done: 328 inputs, exact counts, census, profile, warm-up |
+| P1 oracle | ts-in-lua-in-types | done: 328 inputs, exact counts, census, profile, warm-up |
 | P1 front end + IR | lua-in-types `src/aot/front`, `src/aot/ir` | done: all 725 tslua files, 0 failures, <1 s |
 | P1 numbers, strings | lua-in-types `src/aot/ref` | done: ~10M random cases, 0 mismatches |
 | P1 interpreter | lua-in-types `src/aot/ref` | done: 238 + 103 corpus programs, 10,500 fuzz programs |
-| P1 tslua on ref | ts-in-types | done: `vp run ref`, 328/328 per lib mode, fresh and from the boot image |
+| P1 tslua on ref | ts-in-lua-in-types | done: `vp run ref`, 328/328 per lib mode, fresh and from the boot image |
 | P2 type runtime | lua-in-types `src/aot/types` | done: int64 (11,835 assertions), tables + heap (4,724), strings + compiled patterns (15,382) |
 | P3 emitter | lua-in-types `src/aot/emit` | slice done (234/238 v1 corpus in types); full coverage + start from a snapshot in progress |
-| P4 image + `TS<>` | ts-in-types | one-liner hover shows TS2322 from the boot image, with the real `lib.es5.d.ts` |
-| P5 extremes | ts-in-types | inner `Add<20, 22>`; the image produced by the type checker itself through `tsrs -b` stages |
+| P4 image + `TS<>` | ts-in-lua-in-types | one-liner hover shows TS2322 from the boot image, with the real `lib.es5.d.ts` |
+| P5 extremes | ts-in-lua-in-types | inner `Add<20, 22>`; the image produced by the type checker itself through `tsrs -b` stages |
 
 **Boot image (P1, `vp run boot`)**: the state after loading, enabling
 `lua/sourcecache.lua` (a compiler host that reuses parsed and bound source
