@@ -29,11 +29,19 @@ measurements behind it.
   tslua loaded, the lib parsed and bound, one warm-up check. Each check runs
   from there.
 - The gate (`vp run gate:types`) checks oracle inputs through the CLI and
-  compares the output with `oracle/expected/` byte for byte. The 20 inputs
-  cheapest on the reference pass in both lib modes. That covers syntax
-  errors, clean programs, TS2322, upstream TypeScript cases and the
-  one-liner. The other ~300 inputs have not been run in types yet
-  (`-- --all`).
+  compares the output with `oracle/expected/` byte for byte. On all 328
+  inputs in both lib modes, **409 of 656 checks pass** (mini 210, es5 199;
+  [`docs/GATE.md`](docs/GATE.md)). Of the failures:
+  - 179 hit TS2589 because one 4-step chunk goes over the checker's 5M
+    budget, even though each step fits on its own. Late steps cost ~1M+
+    instantiations each.
+  - 62 hit the 900 s timeout.
+  - 2 give a wrong output: `template-basic` accepts `"id-x"` as
+    `` `id-${number}` ``.
+  - 1 runs out of chunks.
+  - The 2 largest extremes are skipped.
+- Cost per reference op grows with the run: the median passing check is
+  ~5k instantiations per op, the slowest ~12k.
 
 ## Use it
 
