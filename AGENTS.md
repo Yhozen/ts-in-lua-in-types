@@ -1,6 +1,7 @@
 # ts-in-lua-in-types
 
-The TypeScript 7 compiler (tslua, a Lua 5.4 port of typescript-go) running
+The TypeScript 7 compiler (tslua, a Lua 5.4 port of the Go compiler, typescript-go,
+now microsoft/TypeScript) running
 inside the TypeScript type checker (tsrs), on lua-in-types v2 (Lua compiled
 ahead of time to type aliases). Read `docs/PLAN.md` first, then
 `vendor/lua-in-types/docs/AOT.md`.

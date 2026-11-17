@@ -12,7 +12,8 @@ type Out = TS<"const x: number = 'hello';">;
 `TS<Source>` runs the real TypeScript 7 checker on a `main.ts` that holds
 `Source`, and the type it evaluates to is what `tsc` prints. No JavaScript
 runs at check time. The checker is [tslua](https://github.com/Yhozen/tslua), a
-Lua 5.4 port of typescript-go that matches tsgo's diagnostics byte for byte.
+Lua 5.4 port of the Go TypeScript 7 compiler (typescript-go, since merged into
+microsoft/TypeScript) that matches its diagnostics byte for byte.
 [lua-in-types](vendor/lua-in-types) v2 compiles tslua's Lua ahead of time
 to type aliases (one per basic-block segment, ~400k of them), and tsrs, a
 TypeScript 7 type checker, evaluates them. It is an experiment in how far the

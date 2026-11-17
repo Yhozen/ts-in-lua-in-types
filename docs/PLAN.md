@@ -6,7 +6,8 @@ computed by the real TypeScript 7 checker running inside tsrs's type checker.
 No JavaScript runs at check time.
 
 The checker is tslua (`vendor/tslua`, a faithful Lua 5.4 port of
-microsoft/typescript-go that matches tsgo's diagnostics byte for byte on
+microsoft/typescript-go, since merged into microsoft/TypeScript, that matches
+its diagnostics byte for byte on
 13,173 conformance configurations). It runs on lua-in-types v2
 (`vendor/lua-in-types`, design in its `docs/AOT.md`): Lua compiled ahead of
 time to type aliases.
